@@ -7,8 +7,9 @@
 		display flex
 		align-items flex-start
 		justify-content flex-start
-		max-width 720px
+		max-width 810px
 		width 100%
+		overflow hidden
         
 
 		.panel-calendar, .youtube, .instagram, .linkedin, .facebook, .telegram
@@ -22,7 +23,7 @@
 
 		.panel-calendar
 			max-width 355px
-			background-color #0080c6
+			background-color semiViolet
 			margin-left -20px
 
 			.calend
@@ -48,7 +49,7 @@
 						padding-right 15px
 
 				&:hover
-					background-color #379eda
+					background-color semiBlue
 
 		.youtube, .instagram, .linkedin, .facebook, .telegram
 			max-width 90px
@@ -201,16 +202,24 @@
 			.login
 
 				&:hover
-					background-color #379eda
+					background-color semiBlue
 
 		.panel-registration
 			max-width 280px
-			background-color #379eda
+			background-color semiPurple
 			margin-right -20px
+			position relative
+
+			&:hover
+				background-color themeColor
+
 
 		.panel-login
 			max-width 150px
-			background-color #0080c6
+			background-color semiViolet 
+
+			&:hover 
+				background-color semiBlue
 
 		.panel-search
 
@@ -222,10 +231,11 @@
 				align-items center
 
 			.input-search, .submit-search
-				width 200px
+				width 290px
 				border-bottom 1px solid #dbe0ea
 				border-left 1px solid #dbe0ea
 				height 70px
+				
 
 			img
 				position absolute
@@ -251,7 +261,7 @@
 
  
 			input[type="search"]::-webkit-input-placeholder
-				color #343537
+				color semiBlack
 				transform skewX(-30deg)
 				font-family 'HelveticaNeue-Light'
 				letter-spacing 0.1em
@@ -259,21 +269,21 @@
 				padding-left 35px
 
 			input[type="search"]:-ms-input-placeholder
-				color #343537
+				color semiBlack
 				transform skewX(-30deg)
 				font-family 'HelveticaNeue-Light'
 				letter-spacing 0.1em
 				font-size 14px
 
 			input[type="search"]::-ms-input-placeholder
-				color #343537
+				color semiBlack
 				transform skewX(-30deg)
 				font-family 'HelveticaNeue-Light'
 				letter-spacing 0.1em
 				font-size 14px
 
 			input[type="search"]::placeholder
-				color #343537
+				color semiBlack
 				transform skewX(-30deg)
 				font-family 'HelveticaNeue-Light'
 				letter-spacing 0.1em
@@ -297,7 +307,8 @@
 
 
 .panel-left--bottom
-	padding-left 320px
+	justify-content flex-end
+	padding-right 20px
 
 
 .panel-subscribe 
@@ -330,7 +341,7 @@
 	justify-content center
 
 	&:hover
-		background-color #5073b6
+		background-color semiPurple
 
 
 .panel-btn--subscribe
@@ -346,7 +357,7 @@
 	transition 0.2s all ease-in-out
 
 	&:hover
-		background-color #5073b6
+		background-color semiPurple
 
 .subscribe-link
 	width 100%
@@ -359,3 +370,12 @@
 	color #FFFFFF
 	letter-spacing 0.1em
 	text-transform uppercase
+
+
+.control-panel 
+
+	.panel-right-btm
+		max-width 900px
+
+	.panel-left--bottom
+		justify-content flex-end

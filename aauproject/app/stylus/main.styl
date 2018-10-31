@@ -34,21 +34,53 @@
 			align-items center
 
 			.menu-item
-				margin-left 23px
+				margin-left 30px
 
 				a
 					font-size 14px
 					font-family 'HelveticaNeue-Medium'
-					color #343537
+					color semiBlack
 					text-transform uppercase
 					letter-spacing 0.025em
 					line-height 1.2em
+					position relative
+					padding 0 0 23px 0
 
-					.hover
-						display none
+					&:after
+						position absolute
+						content ''
+						width 0
+						height 0
+						border-left 4px solid transparent
+						border-right 4px solid transparent
+						border-top 4px solid semiBlack //this is triangle
+						top 20%
+						left 110%
 
-				.submenu
-					display none
+					&:before 
+						content ""
+						position absolute
+						left 50%
+						bottom 0
+						width 0
+						height 3px
+						background semiViolet
+						transform translateX(-50%)
+						transition width 0.2s ease-in-out
+
+				&:hover
+
+					a
+						color semiViolet
+
+						&:after
+							border-top 4px solid semiViolet 
+						
+						&:before
+							width 100%
+
+			.submenu
+				display none
 
 
 	.menu-block.right
@@ -399,7 +431,7 @@
 			width 100%
 
 			.btn-xl
-				border 2px solid #0080c6
+				border 2px solid themeColor
 				line-height 76px
 
 		.appeal

@@ -22,8 +22,9 @@
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  max-width: 720px;
+  max-width: 810px;
   width: 100%;
+  overflow: hidden;
 }
 .control-panel .panel-left .panel-calendar,
 .control-panel .panel-right .panel-calendar,
@@ -61,7 +62,7 @@
 .control-panel .panel-left .panel-calendar,
 .control-panel .panel-right .panel-calendar {
   max-width: 355px;
-  background-color: #0080c6;
+  background-color: semiViolet;
   margin-left: -20px;
 }
 .control-panel .panel-left .panel-calendar .calend,
@@ -110,7 +111,7 @@
 }
 .control-panel .panel-left .panel-calendar .calend:hover,
 .control-panel .panel-right .panel-calendar .calend:hover {
-  background-color: #379eda;
+  background-color: semiBlue;
 }
 .control-panel .panel-left .youtube,
 .control-panel .panel-right .youtube,
@@ -735,16 +736,23 @@
 .panel-right .panel-search .login:hover,
 .panel-right .panel-login .login:hover,
 .panel-right .panel-registration .login:hover {
-  background-color: #379eda;
+  background-color: semiBlue;
 }
 .panel-right .panel-registration {
   max-width: 280px;
-  background-color: #379eda;
+  background-color: semiPurple;
   margin-right: -20px;
+  position: relative;
+}
+.panel-right .panel-registration:hover {
+  background-color: themeColor;
 }
 .panel-right .panel-login {
   max-width: 150px;
-  background-color: #0080c6;
+  background-color: semiViolet;
+}
+.panel-right .panel-login:hover {
+  background-color: semiBlue;
 }
 .panel-right .panel-search .search {
   width: 100%;
@@ -764,7 +772,7 @@
 }
 .panel-right .panel-search .input-search,
 .panel-right .panel-search .submit-search {
-  width: 200px;
+  width: 290px;
   border-bottom: 1px solid #dbe0ea;
   border-left: 1px solid #dbe0ea;
   height: 70px;
@@ -795,7 +803,7 @@
   border-color: #2b3384;
 }
 .panel-right .panel-search input[type="search"]::-webkit-input-placeholder {
-  color: #343537;
+  color: semiBlack;
   -webkit-transform: skewX(-30deg);
           transform: skewX(-30deg);
   font-family: 'HelveticaNeue-Light';
@@ -804,7 +812,7 @@
   padding-left: 35px;
 }
 .panel-right .panel-search input[type="search"]:-ms-input-placeholder {
-  color: #343537;
+  color: semiBlack;
   -ms-transform: skewX(-30deg);
       transform: skewX(-30deg);
   font-family: 'HelveticaNeue-Light';
@@ -812,7 +820,7 @@
   font-size: 14px;
 }
 .panel-right .panel-search input[type="search"]::-ms-input-placeholder {
-  color: #343537;
+  color: semiBlack;
   -ms-transform: skewX(-30deg);
       transform: skewX(-30deg);
   font-family: 'HelveticaNeue-Light';
@@ -820,14 +828,14 @@
   font-size: 14px;
 }
 .panel-right .panel-search input[type="search"]::-moz-placeholder {
-  color: #343537;
+  color: semiBlack;
   transform: skewX(-30deg);
   font-family: 'HelveticaNeue-Light';
   letter-spacing: 0.1em;
   font-size: 14px;
 }
 .panel-right .panel-search input[type="search"]::placeholder {
-  color: #343537;
+  color: semiBlack;
   -webkit-transform: skewX(-30deg);
       -ms-transform: skewX(-30deg);
           transform: skewX(-30deg);
@@ -843,7 +851,11 @@
   z-index: 99;
 }
 .panel-left--bottom {
-  padding-left: 320px;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
 }
 .panel-subscribe {
   display: -webkit-box;
@@ -894,7 +906,7 @@
           justify-content: center;
 }
 .subscribe-text:hover {
-  background-color: #5073b6;
+  background-color: semiPurple;
 }
 .panel-btn--subscribe {
   max-width: 280px;
@@ -922,7 +934,7 @@
   transition: 0.2s all ease-in-out;
 }
 .panel-btn--subscribe:hover {
-  background-color: #5073b6;
+  background-color: semiPurple;
 }
 .subscribe-link {
   width: 100%;
@@ -944,4 +956,13 @@
   color: #fff;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+.control-panel .panel-right-btm {
+  max-width: 900px;
+}
+.control-panel .panel-left--bottom {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
