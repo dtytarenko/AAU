@@ -1,0 +1,1539 @@
+footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.upperfooter {
+  background: url("../img/main/bottombg.png");
+  width: 100%;
+  padding: 60px 0 60px 0;
+}
+.bottomnav__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  height: 360px;
+}
+.bottomnav__list-item {
+  margin: 0;
+}
+.bottomnav__list-item:nth-child(1) {
+  margin-left: 321px;
+}
+.bottomnav__list-item-img {
+  width: 220px;
+  height: 160px;
+  margin-bottom: 47px;
+}
+.bottomnav__list-item--title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  font-family: 'HelveticaNeue-Roman';
+  text-align: left;
+}
+.bottomnav__list-item--subtitle {
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 230px;
+  font-family: 'HelveticaNeue-Roman';
+}
+.bottomnav__list-item--link {
+  color: #fff;
+  font-family: 'Helvetica-Regular';
+  font-size: 14px;
+  font-weight: 400px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+}
+.bottomnav__sublist {
+  list-style-type: disc;
+  margin-left: 40px;
+}
+.bottomnav__sublist-item--link {
+  color: #fff;
+  font-family: 'Helvetica-Regular';
+  font-size: 14px;
+  font-weight: 400px;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  text-transform: none;
+}
+.bottom-footer {
+  background-color: #496bab;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px;
+  height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  font-size: 14px;
+  font-family: 'Helvetica-Regular';
+  color: #fff;
+  line-height: 1.2em;
+  letter-spacing: 0.075em;
+}
+.bottom-footer .copyright {
+  max-width: 70%;
+}
+.bottom-footer .author {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 30%;
+  line-height: 1.5em;
+}
+.bottom-footer .author a {
+  padding-left: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.bottom-footer .author a:hover {
+  opacity: 0.6;
+}
+.control-panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.control-panel .panel-left,
+.control-panel .panel-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 720px;
+  width: 100%;
+}
+.control-panel .panel-left .panel-calendar,
+.control-panel .panel-right .panel-calendar,
+.control-panel .panel-left .youtube,
+.control-panel .panel-right .youtube,
+.control-panel .panel-left .instagram,
+.control-panel .panel-right .instagram,
+.control-panel .panel-left .linkedin,
+.control-panel .panel-right .linkedin,
+.control-panel .panel-left .facebook,
+.control-panel .panel-right .facebook,
+.control-panel .panel-left .telegram,
+.control-panel .panel-right .telegram {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.control-panel .panel-left .panel-calendar,
+.control-panel .panel-right .panel-calendar {
+  max-width: 355px;
+  background-color: #0080c6;
+  margin-left: -20px;
+}
+.control-panel .panel-left .panel-calendar .calend,
+.control-panel .panel-right .panel-calendar .calend {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-family: 'Helvetica-Bold';
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.control-panel .panel-left .panel-calendar .calend .transform,
+.control-panel .panel-right .panel-calendar .calend .transform {
+  -webkit-transform: skewX(30deg);
+      -ms-transform: skewX(30deg);
+          transform: skewX(30deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.control-panel .panel-left .panel-calendar .calend .transform img,
+.control-panel .panel-right .panel-calendar .calend .transform img {
+  padding-right: 15px;
+}
+.control-panel .panel-left .panel-calendar .calend:hover,
+.control-panel .panel-right .panel-calendar .calend:hover {
+  background-color: #379eda;
+}
+.control-panel .panel-left .youtube,
+.control-panel .panel-right .youtube,
+.control-panel .panel-left .instagram,
+.control-panel .panel-right .instagram,
+.control-panel .panel-left .linkedin,
+.control-panel .panel-right .linkedin,
+.control-panel .panel-left .facebook,
+.control-panel .panel-right .facebook,
+.control-panel .panel-left .telegram,
+.control-panel .panel-right .telegram {
+  max-width: 90px;
+  border-bottom: 1px solid #dbe0ea;
+  border-right: 1px solid #dbe0ea;
+  height: 69px;
+  background-color: #fff;
+}
+.control-panel .panel-left .youtube .yt,
+.control-panel .panel-right .youtube .yt,
+.control-panel .panel-left .instagram .yt,
+.control-panel .panel-right .instagram .yt,
+.control-panel .panel-left .linkedin .yt,
+.control-panel .panel-right .linkedin .yt,
+.control-panel .panel-left .facebook .yt,
+.control-panel .panel-right .facebook .yt,
+.control-panel .panel-left .telegram .yt,
+.control-panel .panel-right .telegram .yt,
+.control-panel .panel-left .youtube .insta,
+.control-panel .panel-right .youtube .insta,
+.control-panel .panel-left .instagram .insta,
+.control-panel .panel-right .instagram .insta,
+.control-panel .panel-left .linkedin .insta,
+.control-panel .panel-right .linkedin .insta,
+.control-panel .panel-left .facebook .insta,
+.control-panel .panel-right .facebook .insta,
+.control-panel .panel-left .telegram .insta,
+.control-panel .panel-right .telegram .insta,
+.control-panel .panel-left .youtube .linked,
+.control-panel .panel-right .youtube .linked,
+.control-panel .panel-left .instagram .linked,
+.control-panel .panel-right .instagram .linked,
+.control-panel .panel-left .linkedin .linked,
+.control-panel .panel-right .linkedin .linked,
+.control-panel .panel-left .facebook .linked,
+.control-panel .panel-right .facebook .linked,
+.control-panel .panel-left .telegram .linked,
+.control-panel .panel-right .telegram .linked,
+.control-panel .panel-left .youtube .fb,
+.control-panel .panel-right .youtube .fb,
+.control-panel .panel-left .instagram .fb,
+.control-panel .panel-right .instagram .fb,
+.control-panel .panel-left .linkedin .fb,
+.control-panel .panel-right .linkedin .fb,
+.control-panel .panel-left .facebook .fb,
+.control-panel .panel-right .facebook .fb,
+.control-panel .panel-left .telegram .fb,
+.control-panel .panel-right .telegram .fb,
+.control-panel .panel-left .youtube .teleg,
+.control-panel .panel-right .youtube .teleg,
+.control-panel .panel-left .instagram .teleg,
+.control-panel .panel-right .instagram .teleg,
+.control-panel .panel-left .linkedin .teleg,
+.control-panel .panel-right .linkedin .teleg,
+.control-panel .panel-left .facebook .teleg,
+.control-panel .panel-right .facebook .teleg,
+.control-panel .panel-left .telegram .teleg,
+.control-panel .panel-right .telegram .teleg {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.control-panel .panel-left .youtube .yt .transform,
+.control-panel .panel-right .youtube .yt .transform,
+.control-panel .panel-left .instagram .yt .transform,
+.control-panel .panel-right .instagram .yt .transform,
+.control-panel .panel-left .linkedin .yt .transform,
+.control-panel .panel-right .linkedin .yt .transform,
+.control-panel .panel-left .facebook .yt .transform,
+.control-panel .panel-right .facebook .yt .transform,
+.control-panel .panel-left .telegram .yt .transform,
+.control-panel .panel-right .telegram .yt .transform,
+.control-panel .panel-left .youtube .insta .transform,
+.control-panel .panel-right .youtube .insta .transform,
+.control-panel .panel-left .instagram .insta .transform,
+.control-panel .panel-right .instagram .insta .transform,
+.control-panel .panel-left .linkedin .insta .transform,
+.control-panel .panel-right .linkedin .insta .transform,
+.control-panel .panel-left .facebook .insta .transform,
+.control-panel .panel-right .facebook .insta .transform,
+.control-panel .panel-left .telegram .insta .transform,
+.control-panel .panel-right .telegram .insta .transform,
+.control-panel .panel-left .youtube .linked .transform,
+.control-panel .panel-right .youtube .linked .transform,
+.control-panel .panel-left .instagram .linked .transform,
+.control-panel .panel-right .instagram .linked .transform,
+.control-panel .panel-left .linkedin .linked .transform,
+.control-panel .panel-right .linkedin .linked .transform,
+.control-panel .panel-left .facebook .linked .transform,
+.control-panel .panel-right .facebook .linked .transform,
+.control-panel .panel-left .telegram .linked .transform,
+.control-panel .panel-right .telegram .linked .transform,
+.control-panel .panel-left .youtube .fb .transform,
+.control-panel .panel-right .youtube .fb .transform,
+.control-panel .panel-left .instagram .fb .transform,
+.control-panel .panel-right .instagram .fb .transform,
+.control-panel .panel-left .linkedin .fb .transform,
+.control-panel .panel-right .linkedin .fb .transform,
+.control-panel .panel-left .facebook .fb .transform,
+.control-panel .panel-right .facebook .fb .transform,
+.control-panel .panel-left .telegram .fb .transform,
+.control-panel .panel-right .telegram .fb .transform,
+.control-panel .panel-left .youtube .teleg .transform,
+.control-panel .panel-right .youtube .teleg .transform,
+.control-panel .panel-left .instagram .teleg .transform,
+.control-panel .panel-right .instagram .teleg .transform,
+.control-panel .panel-left .linkedin .teleg .transform,
+.control-panel .panel-right .linkedin .teleg .transform,
+.control-panel .panel-left .facebook .teleg .transform,
+.control-panel .panel-right .facebook .teleg .transform,
+.control-panel .panel-left .telegram .teleg .transform,
+.control-panel .panel-right .telegram .teleg .transform {
+  -webkit-transform: skewX(30deg);
+      -ms-transform: skewX(30deg);
+          transform: skewX(30deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.control-panel .panel-left .youtube .yt .yt-hover,
+.control-panel .panel-right .youtube .yt .yt-hover,
+.control-panel .panel-left .instagram .yt .yt-hover,
+.control-panel .panel-right .instagram .yt .yt-hover,
+.control-panel .panel-left .linkedin .yt .yt-hover,
+.control-panel .panel-right .linkedin .yt .yt-hover,
+.control-panel .panel-left .facebook .yt .yt-hover,
+.control-panel .panel-right .facebook .yt .yt-hover,
+.control-panel .panel-left .telegram .yt .yt-hover,
+.control-panel .panel-right .telegram .yt .yt-hover,
+.control-panel .panel-left .youtube .insta .yt-hover,
+.control-panel .panel-right .youtube .insta .yt-hover,
+.control-panel .panel-left .instagram .insta .yt-hover,
+.control-panel .panel-right .instagram .insta .yt-hover,
+.control-panel .panel-left .linkedin .insta .yt-hover,
+.control-panel .panel-right .linkedin .insta .yt-hover,
+.control-panel .panel-left .facebook .insta .yt-hover,
+.control-panel .panel-right .facebook .insta .yt-hover,
+.control-panel .panel-left .telegram .insta .yt-hover,
+.control-panel .panel-right .telegram .insta .yt-hover,
+.control-panel .panel-left .youtube .linked .yt-hover,
+.control-panel .panel-right .youtube .linked .yt-hover,
+.control-panel .panel-left .instagram .linked .yt-hover,
+.control-panel .panel-right .instagram .linked .yt-hover,
+.control-panel .panel-left .linkedin .linked .yt-hover,
+.control-panel .panel-right .linkedin .linked .yt-hover,
+.control-panel .panel-left .facebook .linked .yt-hover,
+.control-panel .panel-right .facebook .linked .yt-hover,
+.control-panel .panel-left .telegram .linked .yt-hover,
+.control-panel .panel-right .telegram .linked .yt-hover,
+.control-panel .panel-left .youtube .fb .yt-hover,
+.control-panel .panel-right .youtube .fb .yt-hover,
+.control-panel .panel-left .instagram .fb .yt-hover,
+.control-panel .panel-right .instagram .fb .yt-hover,
+.control-panel .panel-left .linkedin .fb .yt-hover,
+.control-panel .panel-right .linkedin .fb .yt-hover,
+.control-panel .panel-left .facebook .fb .yt-hover,
+.control-panel .panel-right .facebook .fb .yt-hover,
+.control-panel .panel-left .telegram .fb .yt-hover,
+.control-panel .panel-right .telegram .fb .yt-hover,
+.control-panel .panel-left .youtube .teleg .yt-hover,
+.control-panel .panel-right .youtube .teleg .yt-hover,
+.control-panel .panel-left .instagram .teleg .yt-hover,
+.control-panel .panel-right .instagram .teleg .yt-hover,
+.control-panel .panel-left .linkedin .teleg .yt-hover,
+.control-panel .panel-right .linkedin .teleg .yt-hover,
+.control-panel .panel-left .facebook .teleg .yt-hover,
+.control-panel .panel-right .facebook .teleg .yt-hover,
+.control-panel .panel-left .telegram .teleg .yt-hover,
+.control-panel .panel-right .telegram .teleg .yt-hover,
+.control-panel .panel-left .youtube .yt .insta-hover,
+.control-panel .panel-right .youtube .yt .insta-hover,
+.control-panel .panel-left .instagram .yt .insta-hover,
+.control-panel .panel-right .instagram .yt .insta-hover,
+.control-panel .panel-left .linkedin .yt .insta-hover,
+.control-panel .panel-right .linkedin .yt .insta-hover,
+.control-panel .panel-left .facebook .yt .insta-hover,
+.control-panel .panel-right .facebook .yt .insta-hover,
+.control-panel .panel-left .telegram .yt .insta-hover,
+.control-panel .panel-right .telegram .yt .insta-hover,
+.control-panel .panel-left .youtube .insta .insta-hover,
+.control-panel .panel-right .youtube .insta .insta-hover,
+.control-panel .panel-left .instagram .insta .insta-hover,
+.control-panel .panel-right .instagram .insta .insta-hover,
+.control-panel .panel-left .linkedin .insta .insta-hover,
+.control-panel .panel-right .linkedin .insta .insta-hover,
+.control-panel .panel-left .facebook .insta .insta-hover,
+.control-panel .panel-right .facebook .insta .insta-hover,
+.control-panel .panel-left .telegram .insta .insta-hover,
+.control-panel .panel-right .telegram .insta .insta-hover,
+.control-panel .panel-left .youtube .linked .insta-hover,
+.control-panel .panel-right .youtube .linked .insta-hover,
+.control-panel .panel-left .instagram .linked .insta-hover,
+.control-panel .panel-right .instagram .linked .insta-hover,
+.control-panel .panel-left .linkedin .linked .insta-hover,
+.control-panel .panel-right .linkedin .linked .insta-hover,
+.control-panel .panel-left .facebook .linked .insta-hover,
+.control-panel .panel-right .facebook .linked .insta-hover,
+.control-panel .panel-left .telegram .linked .insta-hover,
+.control-panel .panel-right .telegram .linked .insta-hover,
+.control-panel .panel-left .youtube .fb .insta-hover,
+.control-panel .panel-right .youtube .fb .insta-hover,
+.control-panel .panel-left .instagram .fb .insta-hover,
+.control-panel .panel-right .instagram .fb .insta-hover,
+.control-panel .panel-left .linkedin .fb .insta-hover,
+.control-panel .panel-right .linkedin .fb .insta-hover,
+.control-panel .panel-left .facebook .fb .insta-hover,
+.control-panel .panel-right .facebook .fb .insta-hover,
+.control-panel .panel-left .telegram .fb .insta-hover,
+.control-panel .panel-right .telegram .fb .insta-hover,
+.control-panel .panel-left .youtube .teleg .insta-hover,
+.control-panel .panel-right .youtube .teleg .insta-hover,
+.control-panel .panel-left .instagram .teleg .insta-hover,
+.control-panel .panel-right .instagram .teleg .insta-hover,
+.control-panel .panel-left .linkedin .teleg .insta-hover,
+.control-panel .panel-right .linkedin .teleg .insta-hover,
+.control-panel .panel-left .facebook .teleg .insta-hover,
+.control-panel .panel-right .facebook .teleg .insta-hover,
+.control-panel .panel-left .telegram .teleg .insta-hover,
+.control-panel .panel-right .telegram .teleg .insta-hover,
+.control-panel .panel-left .youtube .yt .linked-hover,
+.control-panel .panel-right .youtube .yt .linked-hover,
+.control-panel .panel-left .instagram .yt .linked-hover,
+.control-panel .panel-right .instagram .yt .linked-hover,
+.control-panel .panel-left .linkedin .yt .linked-hover,
+.control-panel .panel-right .linkedin .yt .linked-hover,
+.control-panel .panel-left .facebook .yt .linked-hover,
+.control-panel .panel-right .facebook .yt .linked-hover,
+.control-panel .panel-left .telegram .yt .linked-hover,
+.control-panel .panel-right .telegram .yt .linked-hover,
+.control-panel .panel-left .youtube .insta .linked-hover,
+.control-panel .panel-right .youtube .insta .linked-hover,
+.control-panel .panel-left .instagram .insta .linked-hover,
+.control-panel .panel-right .instagram .insta .linked-hover,
+.control-panel .panel-left .linkedin .insta .linked-hover,
+.control-panel .panel-right .linkedin .insta .linked-hover,
+.control-panel .panel-left .facebook .insta .linked-hover,
+.control-panel .panel-right .facebook .insta .linked-hover,
+.control-panel .panel-left .telegram .insta .linked-hover,
+.control-panel .panel-right .telegram .insta .linked-hover,
+.control-panel .panel-left .youtube .linked .linked-hover,
+.control-panel .panel-right .youtube .linked .linked-hover,
+.control-panel .panel-left .instagram .linked .linked-hover,
+.control-panel .panel-right .instagram .linked .linked-hover,
+.control-panel .panel-left .linkedin .linked .linked-hover,
+.control-panel .panel-right .linkedin .linked .linked-hover,
+.control-panel .panel-left .facebook .linked .linked-hover,
+.control-panel .panel-right .facebook .linked .linked-hover,
+.control-panel .panel-left .telegram .linked .linked-hover,
+.control-panel .panel-right .telegram .linked .linked-hover,
+.control-panel .panel-left .youtube .fb .linked-hover,
+.control-panel .panel-right .youtube .fb .linked-hover,
+.control-panel .panel-left .instagram .fb .linked-hover,
+.control-panel .panel-right .instagram .fb .linked-hover,
+.control-panel .panel-left .linkedin .fb .linked-hover,
+.control-panel .panel-right .linkedin .fb .linked-hover,
+.control-panel .panel-left .facebook .fb .linked-hover,
+.control-panel .panel-right .facebook .fb .linked-hover,
+.control-panel .panel-left .telegram .fb .linked-hover,
+.control-panel .panel-right .telegram .fb .linked-hover,
+.control-panel .panel-left .youtube .teleg .linked-hover,
+.control-panel .panel-right .youtube .teleg .linked-hover,
+.control-panel .panel-left .instagram .teleg .linked-hover,
+.control-panel .panel-right .instagram .teleg .linked-hover,
+.control-panel .panel-left .linkedin .teleg .linked-hover,
+.control-panel .panel-right .linkedin .teleg .linked-hover,
+.control-panel .panel-left .facebook .teleg .linked-hover,
+.control-panel .panel-right .facebook .teleg .linked-hover,
+.control-panel .panel-left .telegram .teleg .linked-hover,
+.control-panel .panel-right .telegram .teleg .linked-hover,
+.control-panel .panel-left .youtube .yt .fb-hover,
+.control-panel .panel-right .youtube .yt .fb-hover,
+.control-panel .panel-left .instagram .yt .fb-hover,
+.control-panel .panel-right .instagram .yt .fb-hover,
+.control-panel .panel-left .linkedin .yt .fb-hover,
+.control-panel .panel-right .linkedin .yt .fb-hover,
+.control-panel .panel-left .facebook .yt .fb-hover,
+.control-panel .panel-right .facebook .yt .fb-hover,
+.control-panel .panel-left .telegram .yt .fb-hover,
+.control-panel .panel-right .telegram .yt .fb-hover,
+.control-panel .panel-left .youtube .insta .fb-hover,
+.control-panel .panel-right .youtube .insta .fb-hover,
+.control-panel .panel-left .instagram .insta .fb-hover,
+.control-panel .panel-right .instagram .insta .fb-hover,
+.control-panel .panel-left .linkedin .insta .fb-hover,
+.control-panel .panel-right .linkedin .insta .fb-hover,
+.control-panel .panel-left .facebook .insta .fb-hover,
+.control-panel .panel-right .facebook .insta .fb-hover,
+.control-panel .panel-left .telegram .insta .fb-hover,
+.control-panel .panel-right .telegram .insta .fb-hover,
+.control-panel .panel-left .youtube .linked .fb-hover,
+.control-panel .panel-right .youtube .linked .fb-hover,
+.control-panel .panel-left .instagram .linked .fb-hover,
+.control-panel .panel-right .instagram .linked .fb-hover,
+.control-panel .panel-left .linkedin .linked .fb-hover,
+.control-panel .panel-right .linkedin .linked .fb-hover,
+.control-panel .panel-left .facebook .linked .fb-hover,
+.control-panel .panel-right .facebook .linked .fb-hover,
+.control-panel .panel-left .telegram .linked .fb-hover,
+.control-panel .panel-right .telegram .linked .fb-hover,
+.control-panel .panel-left .youtube .fb .fb-hover,
+.control-panel .panel-right .youtube .fb .fb-hover,
+.control-panel .panel-left .instagram .fb .fb-hover,
+.control-panel .panel-right .instagram .fb .fb-hover,
+.control-panel .panel-left .linkedin .fb .fb-hover,
+.control-panel .panel-right .linkedin .fb .fb-hover,
+.control-panel .panel-left .facebook .fb .fb-hover,
+.control-panel .panel-right .facebook .fb .fb-hover,
+.control-panel .panel-left .telegram .fb .fb-hover,
+.control-panel .panel-right .telegram .fb .fb-hover,
+.control-panel .panel-left .youtube .teleg .fb-hover,
+.control-panel .panel-right .youtube .teleg .fb-hover,
+.control-panel .panel-left .instagram .teleg .fb-hover,
+.control-panel .panel-right .instagram .teleg .fb-hover,
+.control-panel .panel-left .linkedin .teleg .fb-hover,
+.control-panel .panel-right .linkedin .teleg .fb-hover,
+.control-panel .panel-left .facebook .teleg .fb-hover,
+.control-panel .panel-right .facebook .teleg .fb-hover,
+.control-panel .panel-left .telegram .teleg .fb-hover,
+.control-panel .panel-right .telegram .teleg .fb-hover,
+.control-panel .panel-left .youtube .yt .telegram-hover,
+.control-panel .panel-right .youtube .yt .telegram-hover,
+.control-panel .panel-left .instagram .yt .telegram-hover,
+.control-panel .panel-right .instagram .yt .telegram-hover,
+.control-panel .panel-left .linkedin .yt .telegram-hover,
+.control-panel .panel-right .linkedin .yt .telegram-hover,
+.control-panel .panel-left .facebook .yt .telegram-hover,
+.control-panel .panel-right .facebook .yt .telegram-hover,
+.control-panel .panel-left .telegram .yt .telegram-hover,
+.control-panel .panel-right .telegram .yt .telegram-hover,
+.control-panel .panel-left .youtube .insta .telegram-hover,
+.control-panel .panel-right .youtube .insta .telegram-hover,
+.control-panel .panel-left .instagram .insta .telegram-hover,
+.control-panel .panel-right .instagram .insta .telegram-hover,
+.control-panel .panel-left .linkedin .insta .telegram-hover,
+.control-panel .panel-right .linkedin .insta .telegram-hover,
+.control-panel .panel-left .facebook .insta .telegram-hover,
+.control-panel .panel-right .facebook .insta .telegram-hover,
+.control-panel .panel-left .telegram .insta .telegram-hover,
+.control-panel .panel-right .telegram .insta .telegram-hover,
+.control-panel .panel-left .youtube .linked .telegram-hover,
+.control-panel .panel-right .youtube .linked .telegram-hover,
+.control-panel .panel-left .instagram .linked .telegram-hover,
+.control-panel .panel-right .instagram .linked .telegram-hover,
+.control-panel .panel-left .linkedin .linked .telegram-hover,
+.control-panel .panel-right .linkedin .linked .telegram-hover,
+.control-panel .panel-left .facebook .linked .telegram-hover,
+.control-panel .panel-right .facebook .linked .telegram-hover,
+.control-panel .panel-left .telegram .linked .telegram-hover,
+.control-panel .panel-right .telegram .linked .telegram-hover,
+.control-panel .panel-left .youtube .fb .telegram-hover,
+.control-panel .panel-right .youtube .fb .telegram-hover,
+.control-panel .panel-left .instagram .fb .telegram-hover,
+.control-panel .panel-right .instagram .fb .telegram-hover,
+.control-panel .panel-left .linkedin .fb .telegram-hover,
+.control-panel .panel-right .linkedin .fb .telegram-hover,
+.control-panel .panel-left .facebook .fb .telegram-hover,
+.control-panel .panel-right .facebook .fb .telegram-hover,
+.control-panel .panel-left .telegram .fb .telegram-hover,
+.control-panel .panel-right .telegram .fb .telegram-hover,
+.control-panel .panel-left .youtube .teleg .telegram-hover,
+.control-panel .panel-right .youtube .teleg .telegram-hover,
+.control-panel .panel-left .instagram .teleg .telegram-hover,
+.control-panel .panel-right .instagram .teleg .telegram-hover,
+.control-panel .panel-left .linkedin .teleg .telegram-hover,
+.control-panel .panel-right .linkedin .teleg .telegram-hover,
+.control-panel .panel-left .facebook .teleg .telegram-hover,
+.control-panel .panel-right .facebook .teleg .telegram-hover,
+.control-panel .panel-left .telegram .teleg .telegram-hover,
+.control-panel .panel-right .telegram .teleg .telegram-hover {
+  display: none;
+}
+.control-panel .panel-left .youtube .yt .transform,
+.control-panel .panel-right .youtube .yt .transform,
+.control-panel .panel-left .instagram .yt .transform,
+.control-panel .panel-right .instagram .yt .transform,
+.control-panel .panel-left .linkedin .yt .transform,
+.control-panel .panel-right .linkedin .yt .transform,
+.control-panel .panel-left .facebook .yt .transform,
+.control-panel .panel-right .facebook .yt .transform,
+.control-panel .panel-left .telegram .yt .transform,
+.control-panel .panel-right .telegram .yt .transform,
+.control-panel .panel-left .youtube .insta .transform,
+.control-panel .panel-right .youtube .insta .transform,
+.control-panel .panel-left .instagram .insta .transform,
+.control-panel .panel-right .instagram .insta .transform,
+.control-panel .panel-left .linkedin .insta .transform,
+.control-panel .panel-right .linkedin .insta .transform,
+.control-panel .panel-left .facebook .insta .transform,
+.control-panel .panel-right .facebook .insta .transform,
+.control-panel .panel-left .telegram .insta .transform,
+.control-panel .panel-right .telegram .insta .transform,
+.control-panel .panel-left .youtube .linked .transform,
+.control-panel .panel-right .youtube .linked .transform,
+.control-panel .panel-left .instagram .linked .transform,
+.control-panel .panel-right .instagram .linked .transform,
+.control-panel .panel-left .linkedin .linked .transform,
+.control-panel .panel-right .linkedin .linked .transform,
+.control-panel .panel-left .facebook .linked .transform,
+.control-panel .panel-right .facebook .linked .transform,
+.control-panel .panel-left .telegram .linked .transform,
+.control-panel .panel-right .telegram .linked .transform,
+.control-panel .panel-left .youtube .fb .transform,
+.control-panel .panel-right .youtube .fb .transform,
+.control-panel .panel-left .instagram .fb .transform,
+.control-panel .panel-right .instagram .fb .transform,
+.control-panel .panel-left .linkedin .fb .transform,
+.control-panel .panel-right .linkedin .fb .transform,
+.control-panel .panel-left .facebook .fb .transform,
+.control-panel .panel-right .facebook .fb .transform,
+.control-panel .panel-left .telegram .fb .transform,
+.control-panel .panel-right .telegram .fb .transform,
+.control-panel .panel-left .youtube .teleg .transform,
+.control-panel .panel-right .youtube .teleg .transform,
+.control-panel .panel-left .instagram .teleg .transform,
+.control-panel .panel-right .instagram .teleg .transform,
+.control-panel .panel-left .linkedin .teleg .transform,
+.control-panel .panel-right .linkedin .teleg .transform,
+.control-panel .panel-left .facebook .teleg .transform,
+.control-panel .panel-right .facebook .teleg .transform,
+.control-panel .panel-left .telegram .teleg .transform,
+.control-panel .panel-right .telegram .teleg .transform {
+  -webkit-transform: skewX(30deg);
+      -ms-transform: skewX(30deg);
+          transform: skewX(30deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.control-panel .panel-left .youtube:hover,
+.control-panel .panel-right .youtube:hover {
+  border-color: #d64848;
+  background-color: #d64848;
+}
+.control-panel .panel-left .youtube:hover .yt img,
+.control-panel .panel-right .youtube:hover .yt img {
+  display: none;
+}
+.control-panel .panel-left .youtube:hover .yt .yt-hover,
+.control-panel .panel-right .youtube:hover .yt .yt-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.control-panel .panel-left .instagram:hover,
+.control-panel .panel-right .instagram:hover {
+  border-color: #e39362;
+  background-color: #e39362;
+}
+.control-panel .panel-left .instagram:hover .insta img,
+.control-panel .panel-right .instagram:hover .insta img {
+  display: none;
+}
+.control-panel .panel-left .instagram:hover .insta .insta-hover,
+.control-panel .panel-right .instagram:hover .insta .insta-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.control-panel .panel-left .linkedin:hover,
+.control-panel .panel-right .linkedin:hover {
+  border-color: #0080c6;
+  background-color: #0080c6;
+}
+.control-panel .panel-left .linkedin:hover .linked img,
+.control-panel .panel-right .linkedin:hover .linked img {
+  display: none;
+}
+.control-panel .panel-left .linkedin:hover .linked .linked-hover,
+.control-panel .panel-right .linkedin:hover .linked .linked-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.control-panel .panel-left .facebook:hover,
+.control-panel .panel-right .facebook:hover {
+  border-color: #366199;
+  background-color: #366199;
+}
+.control-panel .panel-left .facebook:hover .fb img,
+.control-panel .panel-right .facebook:hover .fb img {
+  display: none;
+}
+.control-panel .panel-left .facebook:hover .fb .fb-hover,
+.control-panel .panel-right .facebook:hover .fb .fb-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.control-panel .panel-left .telegram:hover,
+.control-panel .panel-right .telegram:hover {
+  border-color: #1a89c0;
+  background-color: #1a89c0;
+}
+.control-panel .panel-left .telegram:hover .teleg img,
+.control-panel .panel-right .telegram:hover .teleg img {
+  display: none;
+}
+.control-panel .panel-left .telegram:hover .teleg .telegram-hover,
+.control-panel .panel-right .telegram:hover .teleg .telegram-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.panel-right .panel-search,
+.panel-right .panel-login,
+.panel-right .panel-registration {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: skewX(30deg);
+      -ms-transform: skewX(30deg);
+          transform: skewX(30deg);
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.panel-right .panel-search .login,
+.panel-right .panel-login .login,
+.panel-right .panel-registration .login,
+.panel-right .panel-search .registration,
+.panel-right .panel-login .registration,
+.panel-right .panel-registration .registration {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-family: 'Helvetica-Bold';
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.panel-right .panel-search .login .transform,
+.panel-right .panel-login .login .transform,
+.panel-right .panel-registration .login .transform,
+.panel-right .panel-search .registration .transform,
+.panel-right .panel-login .registration .transform,
+.panel-right .panel-registration .registration .transform {
+  -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.panel-right .panel-search .login:hover,
+.panel-right .panel-login .login:hover,
+.panel-right .panel-registration .login:hover,
+.panel-right .panel-search .registration:hover,
+.panel-right .panel-login .registration:hover,
+.panel-right .panel-registration .registration:hover {
+  background-color: #0080c6;
+}
+.panel-right .panel-search .login:hover,
+.panel-right .panel-login .login:hover,
+.panel-right .panel-registration .login:hover {
+  background-color: #379eda;
+}
+.panel-right .panel-registration {
+  max-width: 280px;
+  background-color: #379eda;
+  margin-right: -20px;
+}
+.panel-right .panel-login {
+  max-width: 150px;
+  background-color: #0080c6;
+}
+.panel-right .panel-search .search {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.panel-right .panel-search .input-search,
+.panel-right .panel-search .submit-search {
+  width: 200px;
+  border-bottom: 1px solid #dbe0ea;
+  border-left: 1px solid #dbe0ea;
+  height: 70px;
+}
+.panel-right .panel-search img {
+  position: absolute;
+  top: 23px;
+  right: 33px;
+  -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  z-index: 0;
+}
+.panel-right .panel-search .hover {
+  z-index: -1;
+}
+.panel-right .panel-search .submit-search {
+  width: 90px;
+  background-color: transparent;
+  position: relative;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  z-index: 1;
+}
+.panel-right .panel-search .submit-search:hover {
+  background-color: #2b3384;
+  border-color: #2b3384;
+}
+.panel-right .panel-search input[type="search"]::-webkit-input-placeholder {
+  color: #343537;
+  -webkit-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  font-family: 'HelveticaNeue-Light';
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  padding-left: 35px;
+}
+.panel-right .panel-search input[type="search"]:-ms-input-placeholder {
+  color: #343537;
+  -ms-transform: skewX(-30deg);
+      transform: skewX(-30deg);
+  font-family: 'HelveticaNeue-Light';
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+.panel-right .panel-search input[type="search"]::-ms-input-placeholder {
+  color: #343537;
+  -ms-transform: skewX(-30deg);
+      transform: skewX(-30deg);
+  font-family: 'HelveticaNeue-Light';
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+.panel-right .panel-search input[type="search"]::-moz-placeholder {
+  color: #343537;
+  transform: skewX(-30deg);
+  font-family: 'HelveticaNeue-Light';
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+.panel-right .panel-search input[type="search"]::placeholder {
+  color: #343537;
+  -webkit-transform: skewX(-30deg);
+      -ms-transform: skewX(-30deg);
+          transform: skewX(-30deg);
+  font-family: 'HelveticaNeue-Light';
+  letter-spacing: 0.1em;
+  font-size: 14px;
+}
+.main-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.logo-wrap {
+  position: relative;
+  bottom: 50px;
+}
+.menu-block {
+  max-width: 520px;
+  width: 100%;
+  margin: 30px 0 25px;
+}
+.menu-block .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu-block .menu .menu-item {
+  margin-left: 23px;
+}
+.menu-block .menu .menu-item a {
+  font-size: 14px;
+  font-family: 'HelveticaNeue-Medium';
+  color: #343537;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  line-height: 1.2em;
+}
+.menu-block .menu .menu-item a .hover {
+  display: none;
+}
+.menu-block .menu .menu-item .submenu {
+  display: none;
+}
+.menu-block.right {
+  max-width: 530px;
+}
+.menu-block.right .menu {
+  margin-right: 10px;
+}
+.menu-block.right .menu .menu-item {
+  margin-left: 29px;
+}
+.menu-block.right .menu .menu-item:first-child {
+  margin-left: 0;
+}
+.intro {
+  background: url("../img/main/background.png") no-repeat;
+  margin: 0 20px;
+}
+.intro .container {
+  max-width: 1880px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.intro-title {
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-family: 'Helvetica-Regular';
+  font-weight: 700;
+}
+.intro-title:after {
+  content: '';
+  display: block;
+  width: 261px;
+  height: 191px;
+  background: url("../img/main/logo-white.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 110%;
+}
+.intro-subtitle {
+  color: #fcdab0;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'HelveticaNeue-Roman';
+  line-height: 72px;
+  margin: 40px 0 50px 0;
+}
+.intro-bottomtitle {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'HelveticaNeue-Roman';
+  width: 520px;
+  text-align: center;
+}
+.intro__place {
+  margin-top: 30px;
+  padding: 5px 25px 5px 287px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+  background-color: #2b3384;
+  font-family: 'Helvetica-Regular';
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 3px;
+  position: relative;
+}
+.intro__place:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #2b3384;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: skew(-30deg, 0deg);
+      -ms-transform: skew(-30deg, 0deg);
+          transform: skew(-30deg, 0deg);
+}
+.main-about .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.main-about .container .about {
+  max-width: 730px;
+  width: 100%;
+  margin-right: 60px;
+}
+.main-about .container .about .btn-l {
+  margin-top: 40px;
+}
+.main-about .container .calendar {
+  max-width: 440px;
+  width: 100%;
+}
+.main-forum .full {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-forum .full .forum-media {
+  max-width: 35%;
+  width: 100%;
+  position: relative;
+  background: url("../img/main/main-forum.jpg") no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+}
+.main-forum .full .forum-media:before {
+  content: '';
+  display: block;
+  background: url("../img/main/main-forum-bg-line.jpg") no-repeat;
+  width: 10px;
+  height: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.main-forum .full .forum-media .video {
+  max-width: 420px;
+  width: 100%;
+  max-height: 230px;
+  height: 100%;
+  border: 10px solid #fff;
+  -webkit-box-shadow: -4.774px 5.119px 29px 0px rgba(0,0,0,0.54);
+          box-shadow: -4.774px 5.119px 29px 0px rgba(0,0,0,0.54);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 70px;
+  left: 320px;
+}
+.main-forum .full .forum-media .video iframe {
+  width: 100%;
+  height: 100%;
+}
+.main-forum .full .bg {
+  background: url("../img/main/main-forum-bg.jpg") no-repeat;
+  background-position: top right;
+  -webkit-background-size: cover;
+          background-size: cover;
+  max-width: 65%;
+  width: 100%;
+}
+.main-forum .full .bg .forum-about {
+  max-width: 800px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 165px;
+  padding: 0 15px;
+}
+.main-forum .full .bg .forum-about .forum-heading .heading-white {
+  color: #fff;
+  margin: 80px 0 40px;
+  text-transform: none;
+}
+.main-forum .full .bg .forum-about .forum-list-about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main-forum .full .bg .forum-about .forum-list-about .list-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 32%;
+  margin-bottom: 25px;
+}
+.main-forum .full .bg .forum-about .forum-list-about .list-item .item-text {
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+.main-forum .full .bg .forum-about .forum-list-about .list-item .item-text .uppercase {
+  text-transform: uppercase;
+  font-family: 'HelveticaNeue-Bold';
+}
+.main-forum .full .bg .forum-about .forum-list-about .list-item .item-text .indent {
+  padding-left: 20px;
+}
+.main-forum .full .bg .forum-about .second {
+  display: block;
+  margin-bottom: 55px;
+}
+.main-forum .full .bg .forum-about .second .list-item {
+  width: 100%;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.main-forum .full .bg .forum-about .second .list-item .item-text {
+  line-height: 24px;
+  margin-top: 10px;
+}
+.main-forum .full .bg .forum-about .btn-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+.main-forum .full .bg .forum-about .btn-block .btn-xl {
+  line-height: 70px;
+  height: 70px;
+}
+.main-forum .full .bg .forum-about .btn-block .btn-xl:hover {
+  background-color: #00598a;
+}
+.main-forum .full .bg .forum-about .btn-block .btn-s {
+  line-height: 66px;
+  height: 70px;
+  margin-left: 40px;
+}
+.slick-dots {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 60px;
+}
+.slick-dots li {
+  position: relative;
+  width: 18px;
+}
+.slick-dots li:hover {
+  cursor: pointer;
+}
+.slick-dots li:before {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 18px;
+  background: url("../img/all/dots.png") no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slick-dots li button {
+  background-color: transparent;
+  font-size: 10px;
+  color: transparent;
+}
+.slick-dots li button:nth-child(odd) {
+  top: 9px;
+}
+.slick-dots li:nth-child(1),
+.slick-dots li:nth-child(3),
+.slick-dots li:nth-child(5) {
+  top: 9px;
+}
+.slick-dots .slick-active:after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 8px;
+  background: url("../img/all/dots-active.png") no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.partners-slider {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.partners-slider .js-partners-slider .partners-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.partners-slider .js-partners-slider .partners-slide .logo {
+  max-width: 190px;
+  width: 100%;
+  height: 130px;
+  position: relative;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px dotted #ccc;
+  background-color: #fff;
+}
+.partners-slider .js-partners-slider .partners-slide .logo img {
+  max-width: 80%;
+  max-height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.general-partners {
+  background-color: #f0f2f4;
+}
+.general-partners .container {
+  max-width: 1340px;
+}
+.general-partners .container .heading {
+  padding: 0 15px;
+}
+.text p {
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.text p:last-child {
+  margin-bottom: 0;
+}
+.main-vote .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.main-vote .container .voting {
+  max-width: 440px;
+  width: 100%;
+}
+.main-vote .container .voting .btn-xl {
+  border: 2px solid #0080c6;
+  line-height: 76px;
+}
+.main-vote .container .appeal {
+  max-width: 730px;
+  width: 100%;
+  margin-left: 50px;
+}
+.blog .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.blog .container:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: -webkit-calc(100% - 20px);
+  height: calc(100% - 20px);
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  background-color: #ccc;
+}
+.blog .container .event {
+  max-width: 550px;
+  width: 100%;
+  margin-left: 20px;
+}
+.blog .container .event .btn-block {
+  display: none;
+}
+.blog .container .news {
+  max-width: 550px;
+  width: 100%;
+  margin-right: 20px;
+}
+.blog .container .news .btn-block {
+  display: none;
+}
+.blog .btn-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.blog .btn-block:before {
+  content: none;
+}
+.blog .btn-block .news-btn-block {
+  max-width: 550px;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog .btn-block .news-btn-block .btn-xs {
+  margin-right: 40px;
+}
+.blog .btn-block .entry-btn-block {
+  max-width: 550px;
+  width: 100%;
+}
+.event-link {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.event-link .event-link-slider {
+  max-width: 1880px;
+  width: 100%;
+  margin: 80px auto 30px;
+}
+.event-link .event-link-slider .slick-dots {
+  margin-top: 20px;
+}
+.event-link .event-link-slider .event-link-slide {
+  max-width: 215px;
+  width: 100%;
+  max-height: 310px;
+  height: 100%;
+  padding: 0 10px;
+}
+.event-link .event-link-slider .event-link-slide .banner a img {
+  max-width: 215px;
+  width: 100%;
+  height: 310px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

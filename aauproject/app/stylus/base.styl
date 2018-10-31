@@ -1,0 +1,220 @@
+
+h1
+  font-size 72px
+  line-height 1.2em
+  font-family 'Helvetica-Bold'
+  text-transform uppercase
+  color lightColor
+
+
+h2
+  font-size 60px
+  line-height 1.2em
+  letter-spacing 0.05em
+  font-family 'Helvetica-Bold'
+  color #fff
+
+h3
+  font-size 36px
+  line-height 1.2em
+  letter-spacing 0.05em
+  font-family 'Helvetica-Bold'
+  color #2b3384
+  text-transform uppercase
+
+h4
+  font-size 24px
+  line-height 30px
+  letter-spacing 0.05em
+  font-family 'HelveticaNeue-Roman'
+  color #0080c6
+  margin-bottom 30px
+
+h5
+  font-size 18px
+  font-family 'HelveticaNeue-Bold'
+  line-height 24px
+  letter-spacing 0.001em
+  color #2b3384
+
+p
+  font-size 16px
+  font-family 'HelveticaNeue-Light'
+  letter-spacing 0.05em
+
+a
+  font-family 'Helvetica-Bold'
+  font-size 16px
+  text-transform uppercase
+  letter-spacing 0.1em
+  color #0080c6
+  transition .2s all ease-in-out
+
+
+//------------------------------button------------------------------
+
+.btn
+  width 100%
+  display flex
+  justify-content center
+  height 80px
+  line-height 80px
+  box-sizing border-box
+
+.btn-xl
+  max-width 440px
+  background-color #fff
+
+  &:hover
+    background-color #0080c6
+    color #fff
+
+.btn-l
+  max-width 330px
+  background-color #0080c6
+  color #fff
+  line-height 76px
+  border 2px solid #0080c6
+
+  &:hover
+    background-color #FFFFFF
+    color #0080c6
+    border 2px solid #0080c6
+
+.btn-m
+  max-width 310px
+  background-color transparent
+  border 2px solid #0080c6
+  line-height 76px
+
+  &:hover
+    background-color #0080c6
+    color #FFFFFF
+    border 2px solid #0080c6
+
+.btn-s
+  max-width 290px
+  background-color transparent
+  border 2px solid #fff
+  color #fff
+  line-height 76px
+
+  &:hover
+    background-color #FFFFFF
+    color #0080c6
+    border 2px solid #fff
+
+.btn-xs
+  max-width 220px
+  background-color #0080c6
+  color #fff
+  border 2px solid #0080c6
+  line-height 76px
+
+  &:hover
+    color #0080c6
+    border 2px solid #0080c6
+    background-color #FFFFFF
+
+
+//-------------------------container-width----------------------------
+
+.container
+  max-width 1310px
+  width 100%
+  padding 0 15px
+  box-sizing border-box
+  margin 0 auto
+
+
+//-----------------------------heading-blue--------------------------------
+
+.heading
+
+  .heading-blue
+    padding 90px 0 10px
+
+  .separator
+    margin-bottom 40px
+    position relative
+    height 11px
+    display flex
+
+    &:after
+      content ''
+      display block
+      height 1px
+      width calc(100% - 20px)
+      background-color #0080c6
+      position absolute
+      top 5px
+      right 0
+
+
+//-------------------------------------blog-entry------------------------------
+
+.blog-entry
+  display flex
+  margin-bottom 45px
+
+  .blog-entry-preview
+    width 180px
+    height 180px
+    margin-top 5px
+
+    img
+      width 180px
+      height 180px
+      object-fit cover
+
+  .blog-entry-text
+    margin-left 40px
+
+    .blog-heading
+      margin-bottom 15px
+
+    .blog-date
+      color #FFFFFF
+      font-size 14px
+      line-height 24px
+      letter-spacing 0.001em
+      font-family 'HelveticaNeue-Bold'
+      background url("../img/all/date-blog.png") no-repeat
+      padding-left 22px
+      position relative
+      margin-bottom 20px
+
+      &:after
+        content ''
+        display block
+        height 1px
+        width calc(100% - 110px)
+        position absolute
+        top 11px
+        left 110px
+        background-color #0080c6
+
+    .blog-text-preview
+      font-size 14px
+      line-height 20px
+      letter-spacing 0.025em
+      margin-bottom 15px
+
+    .read-more
+      font-family 'HelveticaNeue-Black'
+      font-size 12px
+      line-height 24px
+      letter-spacing 0.01em
+      display flex
+      align-items center
+      justify-content flex-end
+
+      img
+        margin-left 10px
+
+      &:hover
+        opacity 0.7
+
+
+
+

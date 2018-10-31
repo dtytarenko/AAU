@@ -1,0 +1,280 @@
+.control-panel
+	display flex
+	justify-content space-between
+    
+
+	.panel-left, .panel-right
+		display flex
+		align-items flex-start
+		justify-content flex-start
+		max-width 720px
+		width 100%
+        
+
+		.panel-calendar, .youtube, .instagram, .linkedin, .facebook, .telegram
+			height 70px
+			width 100%
+			display flex
+			justify-content center
+			align-items center
+			transform skewX(-30deg)
+			transition 0.2s all ease-in-out
+
+		.panel-calendar
+			max-width 355px
+			background-color #0080c6
+			margin-left -20px
+
+			.calend
+				width 100%
+				height 100%
+				display flex
+				align-items center
+				justify-content center
+				font-size 14px
+				font-family 'Helvetica-Bold'
+				color #FFFFFF
+				letter-spacing 0.1em
+				text-transform uppercase
+
+
+				.transform
+					transform skewX(30deg)
+					display flex
+					align-items center
+					justify-content center
+
+					img
+						padding-right 15px
+
+				&:hover
+					background-color #379eda
+
+		.youtube, .instagram, .linkedin, .facebook, .telegram
+			max-width 90px
+			border-bottom 1px solid #dbe0ea
+			border-right 1px solid #dbe0ea
+			height 69px
+			background-color #FFFFFF
+
+			.yt, .insta, .linked, .fb, .teleg
+				width 100%
+				height 100%
+				display flex
+				align-items center
+				justify-content center
+
+				.transform
+					transform skewX(30deg)
+					display flex
+					align-items center
+					justify-content center
+
+				.yt-hover, .insta-hover, .linked-hover, .fb-hover, .telegram-hover
+					display none
+
+				.transform
+					transform skewX(30deg)
+					display flex
+					align-items center
+					justify-content center
+
+		.youtube
+
+			&:hover
+				border-color #d64848
+				background-color #d64848
+
+
+				.yt
+
+					img
+						display none
+
+					.yt-hover
+						display block
+						width 100%
+						height 100%
+
+		.instagram
+
+			&:hover
+				border-color #e39362
+				background-color #e39362
+
+				.insta
+
+					img
+						display none
+
+					.insta-hover
+						display block
+						width 100%
+						height 100%
+
+		.linkedin
+
+			&:hover
+				border-color #0080c6
+				background-color #0080c6
+
+				.linked
+
+					img
+						display none
+
+					.linked-hover
+						display block
+						width 100%
+						height 100%
+
+		.facebook
+
+			&:hover
+				border-color #366199
+				background-color #366199
+
+				.fb
+
+					img
+						display none
+
+					.fb-hover
+						display block
+						width 100%
+						height 100%
+
+		.telegram
+
+			&:hover
+				border-color #1a89c0
+				background-color #1a89c0
+
+				.teleg
+
+					img
+						display none
+
+					.telegram-hover
+						display block
+						width 100%
+						height 100%
+
+
+
+
+
+
+.panel-right
+
+		.panel-search, .panel-login, .panel-registration
+			height 70px
+			width 100%
+			display flex
+			justify-content center
+			align-items center
+			transform skewX(30deg)
+			transition 0.2s all ease-in-out
+			
+
+			.login, .registration
+				width 100%
+				height 100%
+				display flex
+				align-items center
+				justify-content center
+				font-size 14px
+				font-family 'Helvetica-Bold'
+				color #FFFFFF
+				letter-spacing 0.1em
+				text-transform uppercase
+
+				.transform
+					transform skewX(-30deg)
+					display flex
+					align-items center
+					justify-content center
+
+				&:hover
+					background-color #0080c6
+
+			.login
+
+				&:hover
+					background-color #379eda
+
+		.panel-registration
+			max-width 280px
+			background-color #379eda
+			margin-right -20px
+
+		.panel-login
+			max-width 150px
+			background-color #0080c6
+
+		.panel-search
+
+			.search
+				width 100%
+				height 100%
+				display flex
+				justify-content flex-end
+				align-items center
+
+			.input-search, .submit-search
+				width 200px
+				border-bottom 1px solid #dbe0ea
+				border-left 1px solid #dbe0ea
+				height 70px
+
+			img
+				position absolute
+				top 23px
+				right 33px
+				transform skewX(-30deg)
+				z-index 0
+
+			.hover
+				z-index -1
+                
+
+			.submit-search
+				width 90px
+				background-color transparent
+				position relative
+				transition 0.2s all ease-in-out
+				z-index 1
+
+				&:hover
+					background-color #2b3384
+					border-color #2b3384
+ 
+			input[type="search"]::-webkit-input-placeholder
+				color #343537
+				transform skewX(-30deg)
+				font-family 'HelveticaNeue-Light'
+				letter-spacing 0.1em
+				font-size 14px
+				padding-left 35px
+
+			input[type="search"]:-ms-input-placeholder
+				color #343537
+				transform skewX(-30deg)
+				font-family 'HelveticaNeue-Light'
+				letter-spacing 0.1em
+				font-size 14px
+
+			input[type="search"]::-ms-input-placeholder
+				color #343537
+				transform skewX(-30deg)
+				font-family 'HelveticaNeue-Light'
+				letter-spacing 0.1em
+				font-size 14px
+
+			input[type="search"]::placeholder
+				color #343537
+				transform skewX(-30deg)
+				font-family 'HelveticaNeue-Light'
+				letter-spacing 0.1em
+				font-size 14px
+

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: HelveticaNeue-Roman;
+  src: url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Roman/HelveticaNeueCyr-Roman.ttf") format('truetype'), url("../fonts/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNeue-Medium;
+  src: url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot");
+  src: url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Medium/HelveticaNeueCyr-Medium.ttf") format('truetype'), url("../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNeue-Black;
+  src: url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.eot");
+  src: url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Black/HelveticaNeueCyr-Black.ttf") format('truetype'), url("../fonts/HelveticaNeueCyr-Black.svg#HelveticaNeueCyr-Black") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNeue-Light;
+  src: url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot");
+  src: url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Light/HelveticaNeueCyr-Light.ttf") format('truetype'), url("../fonts/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: HelveticaNeue-Bold;
+  src: url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.woff") format('woff'), url("../fonts/HelveticaNeueCyr-Bold/HelveticaNeueCyr-Bold.ttf") format('truetype'), url("../fonts/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: OpenSans-Light;
+  src: url("../fonts/OpenSans-Light/OpenSans-Light.eot");
+  src: url("../fonts/OpenSans-Light/OpenSans-Light.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Light/OpenSans-Light.woff") format('woff'), url("../fonts/OpenSans-Light/OpenSans-Light.ttf") format('truetype'), url("../fonts/OpenSans-Light.svg#OpenSans-Light") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans-Bold/OpenSans-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format('woff'), url("../fonts/OpenSans-Bold/OpenSans-Bold.ttf") format('truetype'), url("../fonts/OpenSans-Bold.svg#OpenSans-Bold") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Helvetica-Regular;
+  src: url("../fonts/HelveticaWorld-Regular/HelveticaWorld-Regular.eot");
+  src: url("../fonts/HelveticaWorld-Regular/HelveticaWorld-Regular.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaWorld-Regular/HelveticaWorld-Regular.woff") format('woff'), url("../fonts/HelveticaWorld-Regular/HelveticaWorld-Regular.ttf") format('truetype'), url("../fonts/HelveticaWorld-Regular.svg#HelveticaWorld-Regular") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: Helvetica-Bold;
+  src: url("../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.eot");
+  src: url("../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.eot?#iefix") format('embedded-opentype'), url("../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.woff") format('woff'), url("../fonts/HelveticaWorld-Bold/HelveticaWorld-Bold.ttf") format('truetype'), url("../fonts/HelveticaWorld-Bold.svg#HelveticaWorld-Bold") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
