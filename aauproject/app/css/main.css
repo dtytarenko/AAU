@@ -71,6 +71,9 @@ footer {
   width: 230px;
   font-family: 'HelveticaNeue-Roman';
 }
+.bottomnav__list-item--subtitle:hover {
+  font-family: 'Helvetica-Bold';
+}
 .bottomnav__list-item--link {
   color: #fff;
   font-family: 'Helvetica-Regular';
@@ -78,6 +81,9 @@ footer {
   font-weight: 400px;
   letter-spacing: 0.4px;
   line-height: 30px;
+}
+.bottomnav__list-item--link:hover {
+  font-family: 'Helvetica-Bold';
 }
 .bottomnav__sublist {
   list-style-type: disc;
@@ -91,6 +97,9 @@ footer {
   letter-spacing: 0.4px;
   line-height: 30px;
   text-transform: none;
+}
+.bottomnav__sublist-item--link:hover {
+  font-family: 'Helvetica-Bold';
 }
 .bottom-footer {
   background-color: #496bab;
@@ -1109,6 +1118,10 @@ footer {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #dbe0ea;
+}
 .main-menu {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1118,10 +1131,12 @@ footer {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 80px;
 }
 .logo-wrap {
   position: relative;
   bottom: 50px;
+  left: 2%;
 }
 .menu-block {
   max-width: 520px;
@@ -1164,7 +1179,7 @@ footer {
   border-right: 4px solid transparent;
   border-top: 4px solid #343537;
   top: 20%;
-  left: 110%;
+  left: 105%;
 }
 .menu-block .menu .menu-item a:before {
   content: "";
@@ -1457,7 +1472,7 @@ footer {
   height: 70px;
 }
 .main-forum .full .bg .forum-about .btn-block .btn-xl:hover {
-  background-color: #00598a;
+  background-color: #5073b6;
 }
 .main-forum .full .bg .forum-about .btn-block .btn-s {
   line-height: 66px;
@@ -1569,10 +1584,15 @@ footer {
 .general-partners .container .heading {
   padding: 0 15px;
 }
+.text {
+  color: #343537;
+}
 .text p {
   line-height: 30px;
   text-align: justify;
   margin-bottom: 20px;
+  font-weight: 300;
+  font-family: 'HelveticaNeue-Roman';
 }
 .text p:last-child {
   margin-bottom: 0;

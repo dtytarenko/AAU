@@ -71,6 +71,9 @@ footer {
   width: 230px;
   font-family: 'HelveticaNeue-Roman';
 }
+.bottomnav__list-item--subtitle:hover {
+  font-family: 'Helvetica-Bold';
+}
 .bottomnav__list-item--link {
   color: lightColor;
   font-family: 'Helvetica-Regular';
@@ -78,6 +81,9 @@ footer {
   font-weight: 400px;
   letter-spacing: 0.4px;
   line-height: 30px;
+}
+.bottomnav__list-item--link:hover {
+  font-family: 'Helvetica-Bold';
 }
 .bottomnav__sublist {
   list-style-type: disc;
@@ -91,6 +97,9 @@ footer {
   letter-spacing: 0.4px;
   line-height: 30px;
   text-transform: none;
+}
+.bottomnav__sublist-item--link:hover {
+  font-family: 'Helvetica-Bold';
 }
 .bottom-footer {
   background-color: #496bab;

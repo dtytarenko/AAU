@@ -2,11 +2,13 @@
 @import 'footer'
 @import 'controlpanel'
 
+//----------------------------header--------------------------------
 
+header
+	margin-bottom 20px
+	border-bottom 1px solid #dbe0ea
 
-//-----------------------------control-panel-----------------------------
-
-	//----------------------------menu----------------------------------
+//----------------------------menu----------------------------------
 
 
 
@@ -14,12 +16,13 @@
 .main-menu
 	display flex
 	justify-content space-between
-
+	height 80px
 
 
 .logo-wrap {
 	position relative
 	bottom: 50px
+	left 2%
 }
 
 
@@ -55,7 +58,7 @@
 						border-right 4px solid transparent
 						border-top 4px solid semiBlack //this is triangle
 						top 20%
-						left 110%
+						left 105%
 
 					&:before 
 						content ""
@@ -305,7 +308,7 @@
 						height 70px
 
 						&:hover
-							background-color darkCerulean
+							background-color semiPurple
 
 					.btn-s
 						line-height 66px
@@ -404,16 +407,19 @@
 		.heading
 			padding 0 15px
 
-
+			
 
 //----------------------------------------------------main-vote--------------------------------------------
 
 .text
-
+	color semiBlack
+	
 	p
 		line-height 30px
 		text-align justify
 		margin-bottom 20px
+		font-weight 300
+		font-family 'HelveticaNeue-Roman'
 
 		&:last-child
 			margin-bottom 0

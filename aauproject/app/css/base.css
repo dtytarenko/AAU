@@ -45,7 +45,7 @@ a {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #0080c6;
+  color: #5073b6;
   -webkit-transition: 0.2s all ease-in-out;
   -o-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
@@ -70,31 +70,33 @@ a {
   background-color: #fff;
 }
 .btn-xl:hover {
-  background-color: #0080c6;
+  background-color: #5073b6;
   color: #fff;
 }
 .btn-l {
   max-width: 330px;
-  background-color: #0080c6;
+  background-color: #5073b6;
   color: #fff;
-  line-height: 76px;
-  border: 2px solid #0080c6;
+  border: 2px solid #5073b6;
+  font-size: 16px;
+  letter-spacing: 1.6px;
+  font-family: 'Helvetica-Bold';
 }
 .btn-l:hover {
-  background-color: #fff;
-  color: #0080c6;
-  border: 2px solid #0080c6;
+  background-color: transparent;
+  color: #5073b6;
+  border: 2px solid #5073b6;
 }
 .btn-m {
   max-width: 310px;
   background-color: transparent;
-  border: 2px solid #0080c6;
+  border: 2px solid #5073b6;
   line-height: 76px;
 }
 .btn-m:hover {
-  background-color: #0080c6;
+  background-color: #5073b6;
   color: #fff;
-  border: 2px solid #0080c6;
+  border: 2px solid #5073b6;
 }
 .btn-s {
   max-width: 290px;
@@ -110,14 +112,14 @@ a {
 }
 .btn-xs {
   max-width: 220px;
-  background-color: #0080c6;
+  background-color: #5073b6;
   color: #fff;
-  border: 2px solid #0080c6;
+  border: 2px solid #5073b6;
   line-height: 76px;
 }
 .btn-xs:hover {
-  color: #0080c6;
-  border: 2px solid #0080c6;
+  color: #5073b6;
+  border: 2px solid #5073b6;
   background-color: #fff;
 }
 .container {
@@ -150,6 +152,11 @@ a {
   position: absolute;
   top: 5px;
   right: 0;
+}
+.heading .heading-purple {
+  color: #5c77b3;
+  font-weight: 400;
+  letter-spacing: 1.2px;
 }
 .blog-entry {
   display: -webkit-box;
@@ -195,7 +202,7 @@ a {
   position: absolute;
   top: 11px;
   left: 110px;
-  background-color: #0080c6;
+  background-color: #5073b6;
 }
 .blog-entry .blog-entry-text .blog-text-preview {
   font-size: 14px;
@@ -220,6 +227,7 @@ a {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  color: #2b3384;
 }
 .blog-entry .blog-entry-text .read-more img {
   margin-left: 10px;
