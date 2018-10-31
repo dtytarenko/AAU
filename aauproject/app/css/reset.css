@@ -115,6 +115,3 @@ input[type="file"i]::-webkit-file-upload-button,
 button {
   padding: 0;
 }
-body {
-  overflow-x: hidden;
-}

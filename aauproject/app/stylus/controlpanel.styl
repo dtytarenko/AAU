@@ -248,6 +248,7 @@
 				&:hover
 					background-color #2b3384
 					border-color #2b3384
+
  
 			input[type="search"]::-webkit-input-placeholder
 				color #343537
@@ -278,3 +279,83 @@
 				letter-spacing 0.1em
 				font-size 14px
 
+
+.panel-right 
+
+	.panel-search 
+
+		.search
+			
+			&:hover
+				
+				.submit-search-img 
+					display none
+
+				.hover 
+					display block
+					z-index 99
+
+
+.panel-left--bottom
+	padding-left 320px
+
+
+.panel-subscribe 
+	display flex
+	flex-direction column
+	color darkCerulean
+	align-items center
+	padding 10px 40px 10px 0
+	
+
+.panel-subscribe-title, .panel-subscribe-subtitle
+	width 305px
+
+
+.panel-subscribe-title
+	font-weight 700
+	font-family 'OpenSans-Bold'
+	font-size 18px
+
+
+.panel-subscribe-subtitle 
+	font-weight 300
+	font-family 'OpenSans-Light'
+	font-size 14px
+
+.subscribe-text
+	transform skewX(-30deg)
+	display flex
+	align-items center
+	justify-content center
+
+	&:hover
+		background-color #5073b6
+
+
+.panel-btn--subscribe
+	max-width 280px
+	background-color #2d3484
+	margin-right -20px
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transform skewX(30deg)
+	transition 0.2s all ease-in-out
+
+	&:hover
+		background-color #5073b6
+
+.subscribe-link
+	width 100%
+	height 100%
+	display flex
+	align-items center
+	justify-content center
+	font-size 14px
+	font-family 'Helvetica-Bold'
+	color #FFFFFF
+	letter-spacing 0.1em
+	text-transform uppercase
