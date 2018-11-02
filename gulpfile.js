@@ -4,12 +4,13 @@ const   gulp         = require('gulp'),  //основной плагин gulp
 				maps		 = require('gulp-sourcemaps'),
 				concat       = require('gulp-concat'), // конкатенация (используется для js)
 				uglify       = require('gulp-uglifyjs'),  //минификация js
-				csso		 = require('gulp-csso');
+				csso		 = require('gulp-csso'),
 				rename       = require('gulp-rename'),
 				del          = require('del'),
-				autoprefixer = require('gulp-autoprefixer');  //расставление автопрефиксов
-				imagemin     = require('gulp-imagemin');  //минимизация изображений
-				rigger       = require('gulp-rigger');  //работа с инклюдами в html и js
+				autoprefixer = require('gulp-autoprefixer'),  //расставление автопрефиксов
+				imagemin     = require('gulp-imagemin'),  //минимизация изображений
+				rigger       = require('gulp-rigger'),  //работа с инклюдами в html и js
+				fileinclude  = require('gulp-file-include');
 
 
 gulp.task('css', () => {
@@ -47,16 +48,12 @@ gulp.task('fonts',() => {
 	  .pipe(gulp.dest('dist/fonts'));
   })
 
-gulp.task('html', () => {
-  return gulp.src('app/**/*.html')
-    .pipe(gulp.dest('dist/'))
-    .pipe(browserSync.stream())
-});
+
 
 gulp.task('js', () => {
 	return gulp.src('appp/js/**/*.js')
 	  .pipe(gulp.dest('dist/'))
-	  .pipe(browserSync.stream())
+		.pipe(browserSync.stream())
   });
 
 gulp.task('reload', () => {
@@ -74,10 +71,24 @@ gulp.task('clean', function() {
 	return del.sync('dist');
 });
 
-gulp.task('watch', ['reload','css', 'html', 'js'], () => {
-	gulp.watch('app/stylus/**/*.styl', ['css']);
-	gulp.watch(['app/*.html'], ['html'])
-	gulp.watch('dist/*.html', browserSync.reload)
-  });
 
+gulp.task('fileinclude', function() {
+	gulp.src(['app/**/*.html'])
+		.pipe(fileinclude({
+			prefix: '@@',
+			basepath: '@file'
+			}))
+			.pipe(gulp.dest('dist'))
+		});
+
+		gulp.task('html', () => {
+			return gulp.src('app/**/*.html')
+				.pipe(gulp.dest('dist/'))
+		});
+
+gulp.task('watch', ['reload','css', 'html', 'js','fileinclude'], () => {
+	gulp.watch('app/stylus/**/*.styl', ['css']);
+	gulp.watch(['app/*.html'], ['html'], ['fileinclude'], browserSync.reload )
+	gulp.watch(['dist/*.html'], ['html'], ['fileinclude'], browserSync.reload)
+});
 
