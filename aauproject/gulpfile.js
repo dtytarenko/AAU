@@ -1,55 +1,33 @@
-var gulp         = require('gulp'),  //основной плагин gulp
-	stylus       = require('gulp-stylus'),  //препроцессор stylus
-	browserSync  = require('browser-sync'), 
-	concat       = require('gulp-concat'), // конкатенация (используется для js)
-	uglify       = require('gulp-uglifyjs'),  //минификация js
-	cssnano      = require('gulp-cssnano'), 
-	rename       = require('gulp-rename'),
-	del          = require('del'),
-	autoprefixer = require('gulp-autoprefixer');  //расставление автопрефиксов
-	imagemin     = require('gulp-imagemin');  //минимизация изображений
-	rigger       = require('gulp-rigger');  //работа с инклюдами в html и js
-	// pngquant    = require('imagemin-pngquant');
+const   gulp         = require('gulp'),  //основной плагин gulp
+		stylus       = require('gulp-stylus'),  //препроцессор stylus
+		browserSync  = require('browser-sync'),
+		maps		 = require('gulp-sourcemaps'),
+		concat       = require('gulp-concat'), // конкатенация (используется для js)
+		uglify       = require('gulp-uglifyjs'),  //минификация js
+		csso		 = require('gulp-csso');
+		rename       = require('gulp-rename'),
+		del          = require('del'),
+		autoprefixer = require('gulp-autoprefixer');  //расставление автопрефиксов
+		imagemin     = require('gulp-imagemin');  //минимизация изображений
+		rigger       = require('gulp-rigger');  //работа с инклюдами в html и js
 
 
-gulp.task('stylus', function() {
+gulp.task('css', () => {
 	return gulp.src('app/stylus/**/*.styl')
-		.pipe(stylus())
+		.pipe(maps.init())
+		.pipe(stylus())	
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-		.pipe (gulp.dest('app/css'))
-		.pipe(browserSync.reload({stream: true}))
+		.pipe(csso())
+		.pipe(rename({
+			suffix:'.min'
+		}))
+		.pipe(maps.write())
+		.pipe(gulp.dest('dist/css'))
+		.pipe(browserSync.stream())
 });
 
-
-gulp.task('scripts', function() {
-	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-	])
-	.pipe(concat('libs.min.js'))
-	.pipe(uglify())
-	.pipe(gulp.dest('app/js'));
-});
-
-gulp.task('browser-sync', function() {
-	browserSync({
-		server: {
-			baseDir: 'app'
-		},
-		notify: false
-	});
-});
-
-
-/* gulp-clean для очистки сборочной директории 
-*/
-gulp.task('clean', function() {
-	return del.sync('dist');
-});
-
-
-gulp.task('img', function() {
-	return gulp.src('app/img/**/*')
+gulp.task('img', () => {
+	return gulp.src('src/img/**/*.*')
 	.pipe(imagemin([
 		imagemin.gifsicle({interlaced: true}),
 		imagemin.jpegtran({progressive: true}),
@@ -64,33 +42,42 @@ gulp.task('img', function() {
 	.pipe(gulp.dest('dist/img'));
 });
 
-// таск для билдинга html
-gulp.task('html:dist', function () {
-    gulp.src(path.app.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.dist.html)) //выгрузим их в папку build
-        .pipe(browserSync.reload());  //И перезагрузим наш сервер для обновлений
+gulp.task('fonts',() => {
+	var buildFonts = gulp.src('app/fonts/**/*')
+	  .pipe(gulp.dest('dist/fonts'));
+  })
+
+gulp.task('html', () => {
+  return gulp.src('app/**/*.html')
+    .pipe(gulp.dest('dist/'))
+    .pipe(browserSync.stream())
 });
 
-gulp.task('watch', ['browser-sync', 'scripts', 'stylus'], function() {
-	gulp.watch('app/stylus/**/*.styl', ['stylus']);
-	gulp.watch('app/*.html', browserSync.reload);
-	gulp.watch('app/js/**/*.html', browserSync.reload);
-})
+gulp.task('js', () => {
+	return gulp.src('appp/js/**/*.js')
+	  .pipe(gulp.dest('dist/'))
+	  .pipe(browserSync.stream())
+  });
 
-gulp.task('build', ['clean', 'stylus', 'scripts'], function() {
-	var buildCss = gulp.src([
-		'app/css/main.css',
-		'app/css/libs.min.css',
-	])
-	.pipe(gulp.dest('dist/css'));
+gulp.task('reload', () => {
+  browserSync({
+    server: {
+      baseDir: 'dist/'
+    },
+    notify: false,
+  });
+});  
+  
+/* gulp-clean для очистки сборочной директории 
+*/
+gulp.task('clean', function() {
+	return del.sync('dist');
+});
 
-	var buildFonts = gulp.src('app/fonts/**/*')
-		.pipe(gulp.dest('dist/fonts'));
+gulp.task('watch', ['reload','css', 'html', 'img', 'fonts', 'js'], () => {
+	gulp.watch('app/stylus/**/*.styl', ['css']);
+	gulp.watch(['src/*.html'], ['html'])
+	gulp.watch('dist/*.html', browserSync.reload)
+  });
 
-	var buildJs = gulp.src('app/js/**/*')
-		.pipe(gulp.dest('dist/js'));
 
-	var buildHtml = gulp.src('app/*.html')
-		.pipe(gulp.dest('dist'));
-})
