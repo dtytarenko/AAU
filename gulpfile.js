@@ -78,7 +78,7 @@ gulp.task('fileinclude', function() {
 			prefix: '@@',
 			basepath: '@file'
 			}))
-			.pipe(gulp.dest('dist'))
+			.pipe(gulp.dest('dist'));
 		});
 
 		gulp.task('html', () => {
@@ -88,7 +88,6 @@ gulp.task('fileinclude', function() {
 
 gulp.task('watch', ['reload','css', 'html', 'js','fileinclude'], () => {
 	gulp.watch('app/stylus/**/*.styl', ['css']);
-	gulp.watch(['app/*.html'], ['html'], ['fileinclude'], browserSync.reload )
-	gulp.watch(['dist/*.html'], ['html'], ['fileinclude'], browserSync.reload)
+	gulp.watch(['app/*.html'], ['html'], ['fileinclude'], browserSync.reload);
 });
 
