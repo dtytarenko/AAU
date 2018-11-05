@@ -107,6 +107,22 @@ a
     color themeColor
     border 2px solid #fff
 
+
+.btn-asidemenu
+  max-width 240px
+  background-color transparent
+  border 2px solid #fff
+  color #fff
+  text-transform uppercase
+  font-family 'Helvetica-Bold'
+
+
+  &:hover
+    background-color #FFFFFF
+    color themeColor
+    border 2px solid #fff
+
+
 .btn-xs
   max-width 220px
   background-color semiPurple 
@@ -132,31 +148,40 @@ a
 
 //-----------------------------heading-blue--------------------------------
 
-.heading
+.defaultTitle
+  font-size 36px
+  line-height 1.2em
+  letter-spacing 0.05em
+  font-family 'Helvetica-Bold'
+  color #2b3384
+  text-transform uppercase
+  padding 90px 0 10px
+  font-size 36px
+    
+    
+.separator
+  margin 20px 0 40px 0
+  position relative
+  height 11px
+  display flex
 
-  .heading-blue
-    padding 90px 0 10px
-
-  .separator
-    margin-bottom 40px
-    position relative
-    height 11px
-    display flex
-
-    &:after
-      content ''
-      display block
-      height 1px
-      width calc(100% - 20px)
-      background-color themeColor
-      position absolute
-      top 5px
-      right 0
+  &:after
+    content ''
+    display block
+    height 1px
+    width calc(100% - 20px)
+    background-color themeColor
+    position absolute
+    top 5px
+    right 0
   
-  .heading-purple
-    color #5c77b3
-    font-weight 400
-    letter-spacing 1.2px
+
+.defaultSubTitle
+  color #5c77b3
+  font-weight 400
+  letter-spacing 1.2px
+  font-size 24px
+  margin-bottom 47px
 
 
 //-------------------------------------blog-entry------------------------------
