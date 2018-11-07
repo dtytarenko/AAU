@@ -8,16 +8,23 @@ header
     display flex
     justify-content space-between
     align-items center
+    background-color #f0f2f4
     position fixed
-    top 0%
+    width 100%
+    padding-left 290px
 
+    @media screen and (max-width: lg) {
+        padding 0
+        flex-direction column
+    }
+    
 .controlpanel__left 
     display flex
     flex-direction column
     margin-left 130px
     position relative
     padding-left 24px
-    
+
     &:before 
         content ''
         display block
@@ -27,11 +34,18 @@ header
         top 0%
         right 100%
         background-image url('../../img/account/user.png')
+    
+    @media screen and (max-width: lg) {
+        order 2
+        margin 10px 0 10px 225px
+        width 100%
+    }
 
 .controlpanel__left-name 
     font-size 18px
     font-family 'HelveticaNeue-Bold'
     color semiBlack
+    justify-content flex-end
 
 .controlpanel__left-mail 
     font-size 14px
@@ -41,30 +55,112 @@ header
 .controlpanel__right 
     display flex
     width 600px
-    margin-right -20px
+    position relative
+    right 250px
+
+    @media screen and (max-width: lg) {
+        order 1
+        width 100%
+        right 0
+        height 70px
+    }
+
+.menu-burger 
+    display none
+
+    p
+        text-transform uppercase
+        color semiPurple
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px   
+        font-size 14px
+        width 150px
+        margin 0 50px 0 25px
+
+    img 
+        width 26px
+        height 18px
+        
+
+    @media screen and (max-width: lg) {
+        display flex
+        align-items center
+        background lightColor
+        padding-left 57px
+    }
+        
+    
 
 .btn__violet
     background semiViolet
     width  310px
     height 70px
     transform skewX(30deg)
+    transition all 0.4s ease-in-out
+
+    &:hover
+        background semiPurple
+
+        .btn__semiViolet
+            background semiViolet
+    
+    @media screen and (max-width: lg) {
+        transform skewX(0deg)
+        width  224px
+        height 100%
+    }
 
 .btn__violet-link 
-    
+    display block
+    width 100%
+    height 100%
+    margin 30px 63px    
+
+    @media screen and (max-width: lg) {
+        margin 0 23px
+        display flex
+        align-items center
+    }
+
     p
         font-family 'HelveticaNeue-Bold'
         font-size 14px
         color lightColor
-        letter-spacing 1.4px
-        margin 30px 63px
+        letter-spacing 1.4px   
         padding 0
         transform skewX(-30deg)
+
+        @media screen and (max-width: lg) {
+        transform skewX(0deg)
+       
+        }
     
 .btn__semiViolet
     background semiPurple 
     width  310px
     height 70px
     transform skewX(30deg)
+    transition all 0.4s ease-in-out
+
+    @media screen and (max-width: lg) {
+        transform skewX(0deg)
+        width  250px
+        height 100%
+    }
+
+    &:hover
+        background semiViolet 
+    
+    .btn__semiViolet-link
+        display block
+        width 100%
+        height 100%
+    
+        @media screen and (max-width: lg) {
+            display flex
+            align-items center
+            width 100%
+        }
 
     p
         font-family 'HelveticaNeue-Bold'
@@ -74,16 +170,20 @@ header
         margin 30px 43px
         padding 0
         transform skewX(-30deg)
+        width 100%
+
+        @media screen and (max-width: lg) {
+            transform skewX(0deg)
+            margin 0 15px
+        }
 
 
-.info__descr 
-    text-align justify
 
 .menu
     position fixed
     top 0%
     left 0%
-    width 15%
+    width 320px
     height 100vh
     background url('../../img/account/menubg.jpg')
     display flex
@@ -91,12 +191,19 @@ header
     align-items center
     padding-top 70px
 
+    @media screen and (max-width: lg) {
+        display none
+    }
+    
 main 
-    padding-left 430px
+    padding-left 375px
     padding-right 110px
 
-header 
-    padding-left 320px
+    @media screen and (max-width: lg) {
+        padding 0 35px
+        margin-top 75px
+    }
+
 
 .btn-account 
     font-size 14px
@@ -112,9 +219,14 @@ header
 
 .nav__wrap 
     margin-top 60px
+    height 700px
 
 .nav__list-item 
-    margin-bottom 35px
+    margin-bottom 5px
+
+.nav__list
+    max-width 240px
+    margin-right 25px
 
 .nav__list-item--link
     color lightColor
@@ -122,13 +234,114 @@ header
     text-transform none
     font-family 'HelveticaNeue-Bold'
     letter-spacing 0.8px
+    display flex
+    align-items center
+
+    .link-img 
+        display block
+
+    .link-img--hover 
+        display none  
+
+    &:hover 
+        .link-img 
+            display none
+        
+        .link-img--hover
+            display block
+        
+
+.nav__list-item--link---txt 
+    margin-left 20px
 
 .bottom-footer
     position fixed
+    margin 0
+    padding 0
     bottom 0%
     left 0%
-    width 15%
-    height 200px
+    width 320px
+    height 195px
+    display flex
     flex-direction column
+    font-size 12px
+    align-items center
+    justify-content flex-start
+
+    @media screen and (max-width: lg) {
+        margin-top 220px
+        width 100%
+        height 100%
+        position relative
+        bottom 0
+    }
+
+    .copyright 
+        max-width  80%
+        text-align center
+        width 100%
+        margin-top 20px 
+        height 35%
+    
+        @media screen and (max-width: lg) {
+        width 100%
+        height 50px
+        margin-top 10px
+        font-size 14px
+        }
+
+
+
+.responsibility 
+    margin-top 10px
+    margin-bottom 20px
+    width 100%
+
+    @media screen and (max-width: lg) {
+        margin 0
+        font-size 12.5px
+    }
+
+.developer 
+    margin-top 30px
+    display flex
     align-items center
     justify-content center
+
+    @media screen and (max-width: lg) {
+        margin-bottom 26px
+        font-size 14px
+    }
+    
+    img 
+        margin-left 10px
+        width 119px
+        height 40px
+
+footer 
+    display flex
+    width 100%
+
+// info
+
+.info__title
+    @media screen and (max-width: lg) {
+        width 75%
+    }
+
+.info__descr 
+    text-align justify
+
+.menu-burger
+    &:hover
+        cursor pointer
+
+.separator 
+    z-index -1
+
+.menu-cls 
+    display none
+
+    @media screen and (max-width: lg) {
+        display block
+    }
