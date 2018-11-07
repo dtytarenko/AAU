@@ -65,32 +65,6 @@ header
         height 70px
     }
 
-.menu-burger 
-    display none
-
-    p
-        text-transform uppercase
-        color semiPurple
-        font-family 'Helvetica-Bold'
-        letter-spacing 1.4px   
-        font-size 14px
-        width 150px
-        margin 0 50px 0 25px
-
-    img 
-        width 26px
-        height 18px
-        
-
-    @media screen and (max-width: lg) {
-        display flex
-        align-items center
-        background lightColor
-        padding-left 57px
-    }
-        
-    
-
 .btn__violet
     background semiViolet
     width  310px
@@ -177,24 +151,6 @@ header
             margin 0 15px
         }
 
-
-
-.menu
-    position fixed
-    top 0%
-    left 0%
-    width 320px
-    height 100vh
-    background url('../../img/account/menubg.jpg')
-    display flex
-    flex-direction column
-    align-items center
-    padding-top 70px
-
-    @media screen and (max-width: lg) {
-        display none
-    }
-    
 main 
     padding-left 375px
     padding-right 110px
@@ -209,13 +165,6 @@ main
     font-size 14px
     letter-spacing 1.4px
     padding 17px 20px
-
-.menu__logo-link--img 
-    width 170px
-    height 125px
-
-.menu__logo-link 
-    margin-bottom 30px
 
 .nav__wrap 
     margin-top 60px
@@ -249,7 +198,14 @@ main
         
         .link-img--hover
             display block
+    
+
+    &:active 
+        .link-img 
+            display none
         
+        .link-img--hover
+            display block  
 
 .nav__list-item--link---txt 
     margin-left 20px
@@ -332,6 +288,54 @@ footer
 .info__descr 
     text-align justify
 
+.menu
+    position fixed
+    top 0%
+    left 0%
+    width 320px
+    height 100vh
+    background url('../../img/account/menubg.jpg')
+    display flex
+    flex-direction column
+    align-items center
+    justify-content center
+    padding-top 70px
+
+
+    @media screen and (max-width: lg) {
+        padding 0
+        display none
+    }
+
+.menu__close
+    display none
+
+    @media screen and (max-width: lg) {
+        padding 25px 67px
+        display flex
+        align-items center
+        background semiViolet
+        font-size 14px
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px
+        color lightColor
+        text-transform uppercase
+        justify-content center  
+        margin-bottom 40px
+    }
+
+    .menu__close-img 
+        width 19px
+        height 19px
+        margin-right 33px
+     
+.menu__logo-link--img 
+    width 170px
+    height 125px
+
+.menu__logo-link 
+    margin-bottom 30px
+
 .menu-burger
     &:hover
         cursor pointer
@@ -339,9 +343,36 @@ footer
 .separator 
     z-index -1
 
-.menu-cls 
+.menu-burger 
     display none
 
+    p
+        text-transform uppercase
+        color semiPurple
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px   
+        font-size 14px
+        width 150px
+        margin 0 50px 0 25px
+
+    img 
+        width 26px
+        height 18px
+        
+
     @media screen and (max-width: lg) {
-        display block
+        display flex
+        align-items center
+        background lightColor
+        padding-left 57px
     }
+
+.overlay 
+    display none
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color #fff
+    opacity 0.8
+    z-index 50

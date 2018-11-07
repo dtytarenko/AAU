@@ -1,10 +1,10 @@
 $( document ).ready(function() {
-    $( ".menu" ).hide();
     $( ".menu-burger" ).click(function() {
         $( ".menu" ).slideToggle( "slow");
+        $('.menu').css('display', 'flex');
     });
     
-    $( ".menu-close" ).click(function() {
+    $( ".menu__close" ).click(function() {
         $( ".menu" ).slideToggle( "slow");
     });
 });
