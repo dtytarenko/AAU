@@ -1,5 +1,5 @@
-$( document ).ready(function() {
-    $( ".menu-burger" ).click(function() {
+$(document).ready(function() {
+    $( ".menu-burger, .menu-burger-mobile" ).click(function() {
         $( ".menu" ).slideToggle( "slow");
         $('.menu').css('display', 'flex');
         $('.menu').css('z-index', '4');

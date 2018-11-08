@@ -5,6 +5,10 @@ header
     overflow hidden
     padding-left 290px
 
+    @media screen and (max-width: lg) {
+        padding-left 0px
+    }
+    
 .controlpanel
     display flex
     justify-content space-between
@@ -18,10 +22,27 @@ header
         flex-direction column
     }
     
+    @media screen and (max-width: lg) {
+        padding 0
+    }
+
 .controlpanel__left 
     display flex
     flex-direction column
     margin-left 130px
+    
+    @media screen and (max-width: xl) {
+        order 2
+        margin 10px 0 10px 225px
+        width 100%
+    }
+
+    @media screen and (max-width: sm) {
+        margin 0
+        flex-direction row
+    }
+
+.controlpanel__left-textwrap
     position relative
     padding-left 24px
 
@@ -34,12 +55,21 @@ header
         top 0%
         right 100%
         background-image url('../../img/account/user.png')
-    
-    @media screen and (max-width: xl) {
-        order 2
-        margin 10px 0 10px 225px
-        width 100%
+
+        @media screen and (max-width: sm) {
+            top 15%
+            left 10px
+        }
+
+    @media screen and (max-width: sm) {
+        background lightColor
+        width 80%
+        display flex
+        flex-direction column
+        justify-content center
+        padding-left 70px
     }
+
 
 .controlpanel__left-name 
     font-size 18px
@@ -47,10 +77,18 @@ header
     color semiBlack
     justify-content flex-end
 
+    @media screen and (max-width: sm) {
+        font-size 14px    
+    }
+
 .controlpanel__left-mail 
     font-size 14px
     font-family 'HelveticaNeue-Medium'
     color semiPurple
+
+    @media screen and (max-width: sm) {
+        font-size 13px    
+    }
 
 .controlpanel__right 
     display flex
@@ -86,6 +124,10 @@ header
         height 100%
     }
 
+    @media screen and (max-width: sm) {
+        width 50%    
+    }
+
 .btn__violet-link 
     display block
     margin 30px 63px    
@@ -94,6 +136,8 @@ header
         margin 0 23px
         display flex
         align-items center
+        justify-content center
+        text-align center
     }
 
     p
@@ -113,14 +157,19 @@ header
     background semiPurple 
     width  310px
     height 70px
+    transform skewX(30deg)
     transition all 0.4s ease-in-out
     display flex
     justify-content center
 
     @media screen and (max-width: xl) {
         transform skewX(0deg)
-        width  37%
+        width 37%
         height 100%
+    }
+
+    @media screen and (max-width sm) {
+        width 50%    
     }
 
     &:hover
@@ -143,6 +192,7 @@ header
         letter-spacing 1.4px
         margin 30px 43px
         padding 0
+        transform skewX(-30deg)
         width 100%
 
         @media screen and (max-width: xl) {
@@ -162,6 +212,10 @@ main
 
     @media screen and (max-width: lg) {
         padding 0 35px
+    }
+
+    @media screen and (max-width: sm) {
+        padding 0 20px   
     }
 
 
@@ -231,7 +285,15 @@ main
     
     
     @media screen and (max-width: lg)  {
-        margin-top 220px
+        margin-top 60px
+        width 100%
+        height 100%
+        position relative
+        bottom 0
+    }
+
+    @media screen and (max-height: 850px){
+        margin-top 60px
         width 100%
         height 100%
         position relative
@@ -246,10 +308,14 @@ main
         height 35%
     
         @media screen and (max-width: lg) {
-        width 100%
-        height 50px
-        margin-top 10px
-        font-size 14px
+            width 100%
+            height 50px
+            margin-top 20px
+            font-size 14px
+        }
+
+        @media screen and (max-width: sm) {
+            font-size 12px
         }
 
 
@@ -262,6 +328,10 @@ main
     @media screen and (max-width: lg) {
         margin 0
         font-size 12.5px
+    }
+
+    @media screen and (max-width: sm) {
+        font-size 12px
     }
 
 .developer 
@@ -295,6 +365,17 @@ footer
         width 75%
     }
 
+    @media screen and (max-width: sm) {
+        width 100%
+        text-align center
+        font-size 30px
+    }
+
+.info__subtitle 
+    @media screen and (max-width: sm) {
+        text-align center
+    }
+
 .info__descr 
     text-align justify
 
@@ -308,10 +389,10 @@ footer
     flex-direction column
     align-items center
     justify-content center
-    height 100vh
+    height calc(100vh - 195px) //195px - it`s height footer
     
-    @media screen and (max-height: 700px) {
-        height 100%
+    @media screen and (max-height: 850px) {
+        height 100vh
         overflow scroll 
     }
 
@@ -340,7 +421,6 @@ footer
         justify-content center  
         position fixed
         top 0%
-        clear both
     }
 
     .menu__close-img 
@@ -353,19 +433,32 @@ footer
     height 125px
     margin-top 70px
 
-    @media screen and (max-height: 1000px) {
+    @media screen and (max-width: xl) {
         margin-top 140px
     }
+
 
 .menu__logo-link 
     margin-bottom 30px
 
-.menu-burger
-    &:hover
-        cursor pointer
 
 .separator 
     z-index -1
+
+.menu-burger-mobile 
+    display none
+
+    @media screen and (max-width: sm) {
+        display flex
+        width 20%
+        justify-content center
+    }
+
+    img 
+        width 26px
+        height 18px
+        margin 21px auto
+
 
 .menu-burger 
     display none
@@ -390,6 +483,13 @@ footer
         background lightColor
         padding-left 57px
     }
+
+    @media screen and (max-width: sm) {
+        display none
+    }
+    
+    &:hover
+        cursor pointer
 
 .overlay 
     display none
