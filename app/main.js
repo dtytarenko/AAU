@@ -4,5 +4,4 @@ $('.menu-btn').on('click', function (e) {
         if ($(this).hasClass('opened')) {
     $('.bottom__nav').slideDown();
     } else $('.bottom__nav').slideUp();
-
 });
