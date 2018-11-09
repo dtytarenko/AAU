@@ -94,7 +94,7 @@ header
     display flex
     width 600px
     position relative
-    right 250px
+    right 265px
 
     @media screen and (max-width: xl) {
         order 1
@@ -138,6 +138,10 @@ header
         align-items center
         justify-content center
         text-align center
+    }
+
+    @media screen and (max-width: sm) {
+        margin 0 14px
     }
 
     p
@@ -378,6 +382,11 @@ footer
 
 .info__descr 
     text-align justify
+    line-height 30px
+    font-size 16px
+    color semiBlack
+    font-family HelveticaNeue-Light
+    margin-bottom 40px
 
 .menu
     position fixed
@@ -405,6 +414,10 @@ footer
         justify-content stretch     
     }
 
+    @media screen and (max-width: sm) {
+        top 70px
+    }
+
 .menu__close
     display none
 
@@ -413,21 +426,47 @@ footer
         display flex
         align-items center
         background semiViolet
-        font-size 14px
-        font-family 'Helvetica-Bold'
-        letter-spacing 1.4px
-        color lightColor
-        text-transform uppercase
         justify-content center  
         position fixed
         top 0%
+    }
+
+    @media screen and (max-width: sm) {
+        display none
     }
 
     .menu__close-img 
         width 19px
         height 19px
         margin-right 33px
-     
+    
+    .menu__close-txt 
+        font-size 14px
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px
+        color lightColor
+        text-transform uppercase
+
+        @media screen and (max-width: 319) {
+            display none
+        }
+
+.menu__btn-wrap 
+    
+    @media screen and (max-width: sm) {
+        display flex    
+        align-items center
+        margin-top 10px
+    }
+
+.menu__close-img--mob
+    display none
+
+    @media screen and (max-width: sm) {
+        display block
+        margin-right 20px
+    }
+
 .menu__logo-link--img 
     width 170px
     height 125px
@@ -440,6 +479,10 @@ footer
 
 .menu__logo-link 
     margin-bottom 30px
+
+    @media screen and (max-width: sm) {
+        display none
+    }
 
 
 .separator 
@@ -502,3 +545,7 @@ footer
     width 100vw
     height 100vh
     overflow hidden
+
+    @media screen and (max-width: 320) {
+        display none
+    }

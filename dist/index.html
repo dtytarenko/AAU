@@ -18,7 +18,146 @@
 
 <body>
 	<!-- HEADER block start -->
-	@@include('include/header.html')
+	<header>
+		<div class="control-panel">
+			<div class="panel-left">
+				<div class="panel-calendar">
+					<a href="#" class="calend"><div class="transform"><img src="img/main/menu-calendar.png" alt="">календар заходiв</div></a>
+				</div>
+				<div class="youtube">
+					<a href="#" target="_blank" class="yt"><div class="transform"><img src="img/main/menu-youtube.png" alt=""><img src="img/main/menu-youtube-hover.png" alt="" class="yt-hover"></div></a>
+				</div>
+				<div class="instagram">
+					<a href="#" target="_blank" class="insta"><div class="transform"><img src="img/main/menu-insta.png" alt=""><img src="img/main/menu-insta-hover.png" alt="" class="insta-hover"></div></a>
+				</div>
+				<div class="linkedin">
+					<a href="#" target="_blank" class="linked"><div class="transform"><img src="img/main/menu-linked.png" alt=""><img src="img/main/menu-linked-hover.png" alt="" class="linked-hover"></div></a>
+				</div>
+				<div class="facebook">
+					<a href="https://www.facebook.com/www.uaa.org.ua/" target="_blank" class="fb"><div class="transform"><img src="img/main/menu-fb.png" alt=""><img src="img/main/menu-fb-hover.png" alt="" class="fb-hover"></div></a>
+				</div>
+				<div class="telegram">
+					<a href="#" target="_blank" class="teleg"><div class="transform"><img src="img/main/telegram.png" alt=""><img src="img/main/telegram-hover.png" alt="" class="telegram-hover"></div></a>
+				</div>
+			</div>
+
+			<div class="panel-right">
+				<div class="panel-search">
+					<form action="" method="post" class="search">
+						<input type="search" name="" placeholder="Що ви шукаете..." class="input-search"> 
+						<input type="submit" name="" value="" class="submit-search">
+						<img src="img/main/menu-search.png" alt="" class="submit-search-img">
+						<img src="img/main/menu-search-hover.png" alt="" class="hover">
+					</form>
+				</div>
+				<div class="panel-login">
+					<a href="account.html" class="login"><div class="transform">вxiд</div></a>
+				</div>
+				<div class="panel-registration">
+					<a href="#" class="registration"><div class="transform">зареєструватися</div></a>
+				</div>
+			</div>
+		</div>
+		<div class="container main-menu">
+            <div class="menu-block left">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">про ААУ </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">про ААУ</li>
+                            <li class="submenu-item">
+                                <a href="#">Структура ААУ</a>
+                                <ul class="submenu second-submenu">
+                                    <li class="submenu-item"><a href="#">З'їзд ААУ</a></li>
+                                    <li class="submenu-item"><a href="#">Президент</a></li>
+                                    <li class="submenu-item"><a href="#">Віце-президент</a></li>
+                                    <li class="submenu-item"><a href="#">Правління</a></li>
+                                    <li class="submenu-item"><a href="#">Наглядова рада</a></li>
+                                    <li class="submenu-item"><a href="#">Ревізійна комісія</a></li>
+                                    <li class="submenu-item"><a href="#">Науково-експертна рада</a></li>
+                                    <li class="submenu-item"><a href="#">Відділення ААУ</a></li>
+                                    <li class="submenu-item"><a href="#">Комітети ААУ</a></li>
+                                    <li class="submenu-item"><a href="#">Секретаріат</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Форуми і заходи </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Майбутні заходи</a></li>
+                            <li class="submenu-item"><a href="#">Архів форумів і заходів</a></li>
+                            <li class="submenu-item"><a href="#">Календар</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">членство </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Інформація про членство</a></li>
+                            <li class="submenu-item"><a href="#">Як приєднатись до ААУ</a></li>
+                            <li class="submenu-item"><a href="#">Як приєднатись до КМА ААУ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">проекти </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Школа адвокатури</a></li>
+                            <li class="submenu-item"><a href="#">Третейський суд</a></li>
+                            <li class="submenu-item"><a href="#">Обличчя адвокатури</a></li>
+                            <li class="submenu-item"><a href="#">Конкурс «Адвокат року»</a></li>
+                            <li class="submenu-item"><a href="#">Емблема регіону</a></li>
+                            <li class="submenu-item"><a href="#">Ярмарок проектів</a></li>
+                            <li class="submenu-item"><a href="#">Жіночий клуб</a></li>
+                            <li class="submenu-item"><a href="#">Клуб майбутніх адвокатів</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+			<div class="logo-wrap">
+				<a class="logo-link">
+					<img src="img/main/logo.png" alt="logo">
+				</a>
+			</div>
+            <div class="menu-block right">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">Новини </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Новини ААУ</a></li>
+                            <li class="submenu-item"><a href="#">Новини партнерiв ААУ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">бюлетень</a></li>
+                    <li class="menu-item">
+                        <a href="#">партнери </a>
+                        <ul class="submenu">
+                            <li class="submenu-item"><a href="#">Генеральні партнери ААУ</a></li>
+                            <li class="submenu-item"><a href="#">Партнери комiтетiв</a></li>
+                            <li class="submenu-item"><a href="#">Генеральний медіа-партнер</a></li>
+                            <li class="submenu-item"><a href="#">Медіа партнери</a></li>
+                            <li class="submenu-item"><a href="#">Партнерська програма</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Галерея </a>
+                        <ul class="submenu">
+                            <li class="submenu-item">
+                                <a href="#">Фотогалерея</a>
+                                <ul class="submenu second-submenu">
+                                    <li class="submenu-item"><a href="#">Форуми</a></li>
+                                    <li class="submenu-item"><a href="#">Iншi заходи</a></li>
+                                </ul>
+                            </li>
+                            <li class="submenu-item"><a href="#">Вiдеогалерея</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="#">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
+</header>
+
+	
 	<!-- HEADER block end -->
 	<section class="intro"> 
 			<div class="intro-slider">
@@ -566,275 +705,6 @@
 					<div class="banner">
 						<a href="#">
 							<img src="img/main/event-link-2.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-3.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-4.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-5.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-6.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-7.jpg" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="event-link-slide slide">
-					<div class="banner">
-						<a href="#">
-							<img src="img/main/event-link-8.jpg" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!--EVENT-LINK section end-->
-
-	<!-- BOOTOM CONTROL PANEL START -->
-
-	<div class="control-panel">
-			<div class="panel-left panel-left--bottom">
-				<div class="youtube">
-					<a href="#" target="_blank" class="yt"><div class="transform"><img src="img/main/menu-youtube.png" alt=""><img src="img/main/menu-youtube-hover.png" alt="" class="yt-hover"></div></a>
-				</div>
-				<div class="instagram">
-					<a href="#" target="_blank" class="insta"><div class="transform"><img src="img/main/menu-insta.png" alt=""><img src="img/main/menu-insta-hover.png" alt="" class="insta-hover"></div></a>
-				</div>
-				<div class="linkedin">
-					<a href="#" target="_blank" class="linked"><div class="transform"><img src="img/main/menu-linked.png" alt=""><img src="img/main/menu-linked-hover.png" alt="" class="linked-hover"></div></a>
-				</div>
-				<div class="facebook">
-					<a href="https://www.facebook.com/www.uaa.org.ua/" target="_blank" class="fb"><div class="transform"><img src="img/main/menu-fb.png" alt=""><img src="img/main/menu-fb-hover.png" alt="" class="fb-hover"></div></a>
-				</div>
-				<div class="telegram">
-					<a href="#" target="_blank" class="teleg"><div class="transform"><img src="img/main/telegram.png" alt=""><img src="img/main/telegram-hover.png" alt="" class="telegram-hover"></div></a>
-				</div>
-			</div>
-
-			<div class="panel-right panel-right-btm">
-				<div class="panel-subscribe">
-					<span class="panel-subscribe-title"> Підпишіться на нашу розсилку</span>
-					<span class="panel-subscribe-subtitle">Ми гарантуємо конфіденційність ваших даних</span>
-				</div>
-				<div class="panel-search">
-					<form action="" method="post" class="search">
-						<input type="search" name="" placeholder="Ваш e-mail" class="input-search">
-					</form>
-				</div>
-				<div class="panel-btn--subscribe">
-					<a href="#" class="subscribe-link"><div class="subscribe-text">ПIдписатися</div></a>
-				</div>
-			</div>
-		</div>	
-
-	<!-- BOTTOM CONTROL PANEL END -->
-	
-	<!-- FOOTER block start -->
-	@@include('include/footer.html')
-	<!-- FOOTER block end -->
-
-	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-
-
-
-	<script>
-		$(document).ready(function () {
-
-			var header = $(".header");
-			var closeBtnContainer = $('.close-btn-container');
-
-			$(window).on('scroll', function () {
-			    if ($(this).scrollTop() > 50) {
-			        header.addClass('fixed')
-			        closeBtnContainer.addClass('scrolled')
-			    }
-			    else {
-			        header.removeClass('fixed')
-			        closeBtnContainer.removeClass('scrolled')
-			    }
-			});
-
-			$("#lang-list > ul > li > a").click(function() {
-				$(this).find("~ ul").stop().slideToggle("slov");
-			});
-			
-			
-			
-
-            $('.js-partners-slider').slick({
-                arrows: false,
-                dots: true,
-                infinite: false,
-                speed: 700,
-                // prevArrow: $('.js-prev-arr'),
-                // nextArrow: $('.js-next-arr'),
-                autoplay: true,
-                autoplaySpeed: 6000,
-                slidesToShow: 6,
-                slidesToScroll: 6,
-                responsive: [
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-
-            $('.js-event-link-slider').slick({
-                arrows: false,
-                dots: true,
-                infinite: false,
-                speed: 700,
-                // prevArrow: $('.js-prev-arr'),
-                // nextArrow: $('.js-next-arr'),
-                autoplay: true,
-                autoplaySpeed: 6000,
-                slidesToShow: 8,
-                slidesToScroll: 8,
-                responsive: [
-                    {
-                        breakpoint: 1441,
-                        settings: {
-                            slidesToShow: 6,
-                            slidesToScroll: 6
-                        }
-                    },
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    }
-                ]
-            });
-
-
-            $('.zoom-gallery').magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                closeOnContentClick: false,
-                closeBtnInside: false,
-                mainClass: 'mfp-with-zoom mfp-img-mobile',
-                image: {
-                    verticalFit: true,
-                    titleSrc: function(item) {
-                        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-                    }
-                },
-                gallery: {
-                    enabled: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300,
-                    opener: function(element) {
-                        return element.find('img');
-                    }
-                }
-            });
-
-
-
-
-
-            $('.popup-youtube').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				mainClass: 'mfp-fade',
-				removalDelay: 160,
-				preloader: false,
-				fixedContentPos: false
-			});
-
-
-
-			var menuWrapper = $('.js-menu-wrapper')
-			var openMenuBtn = $('.js-open-menu-btn')
-			var closeMenuBtn = $('.js-close-menu-btn')
-			var menuItem = $('.js-nav-item')
-
-			openMenuBtn.click(function () {
-				menuWrapper.addClass('open')
-			})
-
-			closeMenuBtn.click(function () {
-				menuWrapper.removeClass('open')
-			})
-
-			menuItem.click(function () {
-				menuWrapper.removeClass('open')
-			})
-
-			$('a[href*="#"]').on('click', function (e) {
-		        e.preventDefault();
-		        e.stopPropagation();
-		        var target = $(this).attr('href');
-		        $(target).velocity('scroll', {
-		            duration: 1500,
-		            offset: -70,
-		            easing: 'ease-in-out'
-		        });
-		    });
-
-		    new WOW({
-		    	mobile: false
-		    }).init();
-		})
-	</script>
-	
-
-</body>
-</html> alt="">
 						</a>
 					</div>
 				</div>
