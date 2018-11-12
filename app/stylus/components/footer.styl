@@ -12,11 +12,21 @@ footer
  
 
 .upperfooter 
-    background url("../../img/main/bottombg.png") 
+    background url("../../img/main/bottombg.jpg")
+    background-repeat no-repeat
+    background-size cover
     width 100%
-    padding 60px 0 60px 0
+    padding 60px 0 
     
-    
+    @media screen and (max-width: 1100px) {
+        padding 40px 0
+    }
+
+.bottomnav
+    @media screen and (max-width: 1100px) {
+        height 700px
+        padding 40px 0 0 0
+    }
 
 .bottomnav__list 
     display flex
@@ -24,12 +34,28 @@ footer
     flex-wrap wrap
     height 360px
 
+    @media screen and (max-width: 1100px) {
+        height 100%
+    }
+
 .bottomnav__list-item 
     margin 0
     width 270px
 
+    @media screen and (max-width: 1100px) {
+        width 245px
+    }
+
     &:nth-child(1)
         margin-left 321px
+
+        @media screen and (max-width: 1400px) {
+            margin-left 35px
+        }
+
+        @media screen and (max-width: 1100px) {
+            height 100%
+        }
     
 .bottomnav__list-item-img
     width 220px

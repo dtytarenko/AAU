@@ -171,145 +171,56 @@
 
 
 
-.panel-right
-
-		.panel-search, .panel-login, .panel-registration
-			height 70px
-			width 100%
-			display flex
-			justify-content center
-			align-items center
-			transform skewX(30deg)
-			transition 0.2s all ease-in-out
+.panel-login, .panel-registration
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transform skewX(30deg)
+	transition 0.2s all ease-in-out
 			
 
-			.login, .registration
-				width 100%
-				height 100%
-				display flex
-				align-items center
-				justify-content center
-				font-size 14px
-				font-family 'Helvetica-Bold'
-				color #FFFFFF
-				letter-spacing 0.1em
-				text-transform uppercase
+.login, .registration
+	width 100%
+	height 100%
+	display flex
+	align-items center
+	justify-content center
+	font-size 14px
+	font-family 'Helvetica-Bold'
+	color #FFFFFF
+	letter-spacing 0.1em
+	text-transform uppercase
 
-				.transform
-					transform skewX(-30deg)
-					display flex
-					align-items center
-					justify-content center
+.transform
+	transform skewX(-30deg)
+	display flex
+	align-items center
+	justify-content center
 
-				&:hover
-					background-color #0080c6
+	&:hover
+		background-color #0080c6
 
-			.login
+.login
+	&:hover
+		background-color semiBlue
 
-				&:hover
-					background-color semiBlue
+.panel-registration
+	max-width 280px
+	background-color semiPurple
+	margin-right -20px
+	position relative
 
-		.panel-registration
-			max-width 280px
-			background-color semiPurple
-			margin-right -20px
-			position relative
+	&:hover
+		background-color themeColor
 
-			&:hover
-				background-color themeColor
+.panel-login
+	max-width 150px
+	background-color semiViolet 
 
-
-		.panel-login
-			max-width 150px
-			background-color semiViolet 
-
-			&:hover 
-				background-color semiBlue
-
-		.panel-search
-
-			.search
-				width 100%
-				height 100%
-				display flex
-				justify-content flex-end
-				align-items center
-
-			.input-search, .submit-search
-				width 290px
-				border-bottom 1px solid #dbe0ea
-				border-left 1px solid #dbe0ea
-				height 70px
-				
-
-			img
-				position absolute
-				top 23px
-				right 33px
-				transform skewX(-30deg)
-				z-index 0
-
-			.hover
-				z-index -1
-                
-
-			.submit-search
-				width 90px
-				background-color transparent
-				position relative
-				transition 0.2s all ease-in-out
-				z-index 1
-
-				&:hover
-					background-color #2b3384
-					border-color #2b3384
-
- 
-			input[type="search"]::-webkit-input-placeholder
-				color semiBlack
-				transform skewX(-30deg)
-				font-family 'HelveticaNeue-Light'
-				letter-spacing 0.1em
-				font-size 14px
-				padding-left 35px
-
-			input[type="search"]:-ms-input-placeholder
-				color semiBlack
-				transform skewX(-30deg)
-				font-family 'HelveticaNeue-Light'
-				letter-spacing 0.1em
-				font-size 14px
-
-			input[type="search"]::-ms-input-placeholder
-				color semiBlack
-				transform skewX(-30deg)
-				font-family 'HelveticaNeue-Light'
-				letter-spacing 0.1em
-				font-size 14px
-
-			input[type="search"]::placeholder
-				color semiBlack
-				transform skewX(-30deg)
-				font-family 'HelveticaNeue-Light'
-				letter-spacing 0.1em
-				font-size 14px
-
-
-.panel-right 
-
-	.panel-search 
-
-		.search
-			
-			&:hover
-				
-				.submit-search-img 
-					display none
-
-				.hover 
-					display block
-					z-index 99
-
+	&:hover 
+		background-color semiBlue
 
 .panel-left--bottom
 	justify-content flex-end
@@ -384,3 +295,95 @@
 
 	.panel-left--bottom
 		justify-content flex-end
+
+
+ 
+
+// input[type="search"]::-webkit-input-placeholder
+// 	color semiBlack
+// 	transform skewX(-30deg)
+// 	font-family 'HelveticaNeue-Light'
+// 	letter-spacing 0.1em
+// 	font-size 14px
+// 	padding-left 35px
+
+// input[type="search"]:-ms-input-placeholder
+// 	color semiBlack
+// 	transform skewX(-30deg)
+// 	font-family 'HelveticaNeue-Light'
+// 	letter-spacing 0.1em
+// 	font-size 14px
+
+// input[type="search"]::-ms-input-placeholder
+// 	color semiBlack
+// 	transform skewX(-30deg)
+// 	font-family 'HelveticaNeue-Light'
+// 	letter-spacing 0.1em
+// 	font-size 14px
+
+// input[type="search"]::placeholder
+// 	color semiBlack
+// 	transform skewX(-30deg)
+// 	font-family 'HelveticaNeue-Light'
+// 	letter-spacing 0.1em
+// 	font-size 14px
+
+
+.panel-search
+	transform skewX(30deg)
+	width 580px
+	height 70px
+	border-bottom 1px solid #dbe0ea
+	border-left 1px solid #dbe0ea
+
+.search
+	width 100%
+	height 100%
+	display flex
+	justify-content flex-end
+	align-items center
+	transform skewX(-30deg)
+
+// .input-search, .submit-search
+// 	width 290px
+// 	border-bottom 1px solid #dbe0ea
+// 	border-left 1px solid #dbe0ea
+// 	height 70px
+
+
+// 	img
+// 		position absolute
+// 		top 23px
+// 		right 33px
+// 		transform skewX(-30deg)
+// 		z-index 0
+
+// 		.hover
+// 			z-index -1
+
+
+.submit-search
+	width 90px
+	background-color transparent
+	position relative
+	transition 0.2s all ease-in-out
+	z-index 1
+	transform skewX(30deg)
+	position relative
+	height 100%
+
+	&:before
+		content ''
+		position absolute
+		display block
+		background url('../../img/main/menu-search.png')
+		top 0%
+		right 0%
+		width 50px
+		height 20px
+
+	&:hover
+		background-color #2b3384
+		border-color #2b3384
+
+
