@@ -104,7 +104,6 @@ header
 
 //-------------------------------------------preview-------------------------------------------
 .intro
-	background url("../../img/main/background.png") no-repeat
 	margin: 0 20px
 
 	.container 
@@ -115,11 +114,16 @@ header
 		justify-content space-between
 		align-items center
 
-.intro-slide
+.intro__slide-item
+	background url("../../img/main/introbg.jpg")
+	background-repeat no-repeat
+	background-size cover
+
+.intro__event 
+	width 100%
 	display flex
 	flex-direction column
 	align-items center
-	width 100%
 
 
 .intro-title 
@@ -148,6 +152,8 @@ header
 	font-family 'HelveticaNeue-Roman'
 	line-height 72px
 	margin 40px 0 50px 0	
+	width 100%
+	text-align center
 
 .intro-bottomtitle 
 	color lightColor
@@ -160,7 +166,6 @@ header
 .intro-place-wrap
 	margin 30px 0 60px 0
 	align-self flex-start
-	margin-left -15px
 	
 .intro__place 
 	padding 0 25px 0 287px
@@ -189,6 +194,91 @@ header
 		transform skew(-30deg, 0deg)
 
 
+.intro-dots
+	position relative
+	bottom 50px
+	display flex	
+	width 100%
+	padding 0
+	list-style none
+	text-align center
+	justify-content center
+
+.intro-dots 
+	li
+		position relative
+		height 10px
+		padding 0
+		cursor pointer
+
+		&:before
+			content ''
+			display block
+			width 19px
+			height 18px
+			background url("../../img/all/intro-dots.png") no-repeat
+
+		&:hover
+			cursor pointer
+
+		&:nth-child(odd)
+			top 9px
+
+		&:nth-child(1), &:nth-child(3), &:nth-child(5)
+			top 9px
+
+		button
+			background-color transparent
+			font-size 10px
+			color transparent
+
+	.slick-active
+		&:before
+			content ''
+			display block
+			width 19px
+			height 18px
+			background url("../../img/all/intro-dots-actv.png") no-repeat
+
+.main-dots
+	display flex
+	justify-content center
+	padding 40px 0 
+
+	li
+		position relative
+		height 10px
+		padding 0
+		cursor pointer
+
+		&:before
+			content ''
+			display block
+			width 19px
+			height 18px
+			background url("../../img/all/dots.png") no-repeat
+
+		&:hover
+			cursor pointer
+
+		&:nth-child(odd)
+			top 9px
+
+		&:nth-child(1), &:nth-child(3), &:nth-child(5)
+			top 9px
+
+		button
+			background-color transparent
+			font-size 10px
+			color transparent
+
+	.slick-active
+		&:before
+			content ''
+			display block
+			width 19px
+			height 18px
+			background url("../../img/all/dots-active.png") no-repeat
 
 
 //--------------------------------------------main-about---------------------------------------
@@ -333,58 +423,59 @@ header
 
 //-------------------------------------general-partners-------------------------------------
 
-.slick-dots
-	display flex
-	justify-content center
-	padding-bottom 60px
+// .slick-dots
+// 	display flex
+// 	justify-content center
+// 	padding-bottom 60px
 
-	li
-		position relative
-		width 18px
+// 	li
+// 		position relative
+// 		width 18px
 
-		&:hover
-			cursor pointer
+// 		&:hover
+// 			cursor pointer
 
-		&:before
-			content ''
-			display block
-			width 19px
-			height 18px
-			background url("../img/all/dots.png") no-repeat
-			position absolute
-			top 0
-			left 0
+// 		&:before
+// 			content ''
+// 			display block
+// 			width 19px
+// 			height 18px
+// 			background url("../img/all/dots.png") no-repeat
+// 			position absolute
+// 			top 0
+// 			left 0
 
 
 
-		button
-			background-color transparent
-			font-size 10px
-			color transparent
+// 		button
+// 			background-color transparent
+// 			font-size 10px
+// 			color transparent
 
-			&:nth-child(odd)
-				top 9px
+// 			&:nth-child(odd)
+// 				top 9px
 
-		&:nth-child(1), &:nth-child(3), &:nth-child(5)
-			top 9px
+// 		&:nth-child(1), &:nth-child(3), &:nth-child(5)
+// 			top 9px
 
-	.slick-active
+// 	.slick-active
 
-		&:after
-			content ''
-			display block
-			width 9px
-			height 8px
-			background url("../img/all/dots-active.png") no-repeat
-			position absolute
-			top 5px
-			left 5px
+// 		&:after
+// 			content ''
+// 			display block
+// 			width 9px
+// 			height 8px
+// 			background url("../img/all/dots-active.png") no-repeat
+// 			position absolute
+// 			top 5px
+// 			left 5px
 
 .partners-slider
 	max-width 1300px
 	width 100%
 	margin 0 auto
 	box-sizing border-box
+	padding-bottom 40px
 
 	.js-partners-slider
 
@@ -523,6 +614,7 @@ header
 	margin auto
 	padding 0 10px
 	box-sizing border-box
+	padding-bottom 60px
 
 	.event-link-slider
 		max-width 1880px

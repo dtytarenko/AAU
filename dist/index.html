@@ -161,21 +161,67 @@
 	<!-- HEADER block end -->
 	<section class="intro"> 
 			<div class="intro-slider">
-					<!-- <div class="js-partners-slider "> -->
-						<div class="container">
-							<div class="intro-slide">
-								<p class="intro-title">VIII Форум ААУ</h1>
-								<p class="intro-subtitle">20 вересня 2018</p>
-								<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
-								<div class="intro-place-wrap"> 
+				<div class="intro__slide-item"> 
+					<div class="intro__event">
+						<p class="intro-title">VIII Форум ААУ</h1>
+						<p class="intro-subtitle">20 вересня 2018</p>
+						<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
+						<div class="intro-place-wrap"> 
+							<p class="intro__place">
+								конференц-хол "Депо"
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="intro__slide-item">
+						<div class="intro__event">
+							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-subtitle">20 вересня 2018</p>
+							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
+							<div class="intro-place-wrap"> 
 								<p class="intro__place">
 									конференц-хол "Депо"
 								</p>
-								</div>
 							</div>
-						<div>
-			</div>
-			
+						</div>
+				</div>
+				<div class="intro__slide-item">
+						<div class="intro__event">
+							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-subtitle">20 вересня 2018</p>
+							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
+							<div class="intro-place-wrap"> 
+								<p class="intro__place">
+									конференц-хол "Депо"
+								</p>
+							</div>
+						</div>
+				</div>
+				<div class="intro__slide-item">
+						<div class="intro__event">
+							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-subtitle">20 вересня 2018</p>
+							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
+							<div class="intro-place-wrap"> 
+								<p class="intro__place">
+									конференц-хол "Депо"
+								</p>
+							</div>
+						</div>
+				</div>
+				<div class="intro__slide-item">
+						<div class="intro__event">
+							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-subtitle">20 вересня 2018</p>
+							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
+							<div class="intro-place-wrap"> 
+								<p class="intro__place">
+									конференц-хол "Депо"
+								</p>
+							</div>
+						</div>
+				</div>		
+			</div>		
 	</section>
 
 	<!-- MAIN-ABOUT section start -->
@@ -750,6 +796,15 @@
 						</a>
 					</div>
 				</div>
+				<div class="event-link-slide slide">
+						<div class="banner">
+							<a href="#">
+								<img src="img/main/event-link-6.jpg" alt="">
+							</a>
+						</div>
+				</div>
+					
+				
 			</div>
 		</div>
 	</section>
@@ -927,13 +982,17 @@
 			<div class="bottom-footer">
 				<div class="copyright">«© 2018 ААУ – Ассоциация Адвокатов Украины.  Все права защищены».<br>
 					Администрация сайта не несет ответственности за содержание размещенных объявлений.</div>
-				<div class="author">Сайт разработан <a href="https://gagarinstudio.com.ua" target="_blank"><img src="img/main/gagarin.png"></a></div>
+				<div class="author">
+					<p>Сайт разработан </p>
+					<a href="https://gagarinstudio.com.ua" target="_blank">
+						<img src="img/main/gagarin.png"></a>
+				</div>
 			</div>
 		</footer>
 	<!-- BOTTOM CONTROL PANEL END -->
 	
 	<!-- FOOTER block start -->
-	
+	<!-- @@include('include/footer.html') -->
 	<!-- FOOTER block end -->
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -941,179 +1000,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
-
-
-
-	<script>
-		$(document).ready(function () {
-
-			var header = $(".header");
-			var closeBtnContainer = $('.close-btn-container');
-
-			$(window).on('scroll', function () {
-			    if ($(this).scrollTop() > 50) {
-			        header.addClass('fixed')
-			        closeBtnContainer.addClass('scrolled')
-			    }
-			    else {
-			        header.removeClass('fixed')
-			        closeBtnContainer.removeClass('scrolled')
-			    }
-			});
-
-			$("#lang-list > ul > li > a").click(function() {
-				$(this).find("~ ul").stop().slideToggle("slov");
-			});
-			
-			
-			
-
-            $('.js-partners-slider').slick({
-                arrows: false,
-                dots: true,
-                infinite: false,
-                speed: 700,
-                // prevArrow: $('.js-prev-arr'),
-                // nextArrow: $('.js-next-arr'),
-                autoplay: true,
-                autoplaySpeed: 6000,
-                slidesToShow: 6,
-                slidesToScroll: 6,
-                responsive: [
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-
-            $('.js-event-link-slider').slick({
-                arrows: false,
-                dots: true,
-                infinite: false,
-                speed: 700,
-                // prevArrow: $('.js-prev-arr'),
-                // nextArrow: $('.js-next-arr'),
-                autoplay: true,
-                autoplaySpeed: 6000,
-                slidesToShow: 8,
-                slidesToScroll: 8,
-                responsive: [
-                    {
-                        breakpoint: 1441,
-                        settings: {
-                            slidesToShow: 6,
-                            slidesToScroll: 6
-                        }
-                    },
-                    {
-                        breakpoint: 1025,
-                        settings: {
-                            slidesToShow: 4,
-                            slidesToScroll: 4
-                        }
-                    },
-                    {
-                        breakpoint: 767,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    }
-                ]
-            });
-
-
-            $('.zoom-gallery').magnificPopup({
-                delegate: 'a',
-                type: 'image',
-                closeOnContentClick: false,
-                closeBtnInside: false,
-                mainClass: 'mfp-with-zoom mfp-img-mobile',
-                image: {
-                    verticalFit: true,
-                    titleSrc: function(item) {
-                        return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-                    }
-                },
-                gallery: {
-                    enabled: true
-                },
-                zoom: {
-                    enabled: true,
-                    duration: 300,
-                    opener: function(element) {
-                        return element.find('img');
-                    }
-                }
-            });
-
-
-
-
-
-            $('.popup-youtube').magnificPopup({
-				disableOn: 700,
-				type: 'iframe',
-				mainClass: 'mfp-fade',
-				removalDelay: 160,
-				preloader: false,
-				fixedContentPos: false
-			});
-
-
-
-			var menuWrapper = $('.js-menu-wrapper')
-			var openMenuBtn = $('.js-open-menu-btn')
-			var closeMenuBtn = $('.js-close-menu-btn')
-			var menuItem = $('.js-nav-item')
-
-			openMenuBtn.click(function () {
-				menuWrapper.addClass('open')
-			})
-
-			closeMenuBtn.click(function () {
-				menuWrapper.removeClass('open')
-			})
-
-			menuItem.click(function () {
-				menuWrapper.removeClass('open')
-			})
-
-			$('a[href*="#"]').on('click', function (e) {
-		        e.preventDefault();
-		        e.stopPropagation();
-		        var target = $(this).attr('href');
-		        $(target).velocity('scroll', {
-		            duration: 1500,
-		            offset: -70,
-		            easing: 'ease-in-out'
-		        });
-		    });
-
-		    new WOW({
-		    	mobile: false
-		    }).init();
-		})
-	</script>
-	
-
-</body>
-</html>
-		})
-	</script>
-	
+	<script src="index.js"> </script>
 
 </body>
 </html>
