@@ -8,82 +8,132 @@
 	justify-content space-between
     
 
-	.panel-left, .panel-right
+.panel-left, .panel-right
+	display flex
+	align-items flex-start
+	max-width 810px
+	width 100%
+
+	@media screen and (max-width: 1800px) {
+		max-width 750px
+	}
+
+	@media screen and (max-width: 1650px) {
+		max-width 700px
+	}
+
+	@media screen and (max-width: 1500px) {
+		max-width 600px
+	}
+
+	@media screen and (max-width: 1280px) {
+		max-width none
+		width 50%
+	}
+
+.panel-right
+	justify-content flex-end
+
+
+.panel-left
+	justify-content flex-start
+
+	@media screen and (max-width: 1280px) {
+		flex-wrap wrap
+		max-width 350px
+	}
+
+.youtube, .instagram, .linkedin, .facebook, .telegram
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transform skewX(-30deg)
+	transition 0.2s all ease-in-out
+	
+	@media screen and (max-width: 1280px) {
+		transform skewX(0deg)
+	}
+
+.panel-calendar
+	max-width 355px
+	background-color semiViolet
+	margin-left -20px
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transform skewX(-30deg)
+	transition 0.2s all ease-in-out
+
+	@media screen and (max-width: 1280px) {
+		order 6
+		transform skewX(0deg)
+	}
+
+
+.calend
+	width 100%
+	height 100%
+	display flex
+	align-items center
+	justify-content center
+	font-size 14px
+	font-family 'Helvetica-Bold'
+	color #FFFFFF
+	letter-spacing 0.1em
+	text-transform uppercase
+
+
+	.transform
+		transform skewX(30deg)
 		display flex
-		align-items flex-start
-		justify-content flex-start
-		max-width 810px
-		width 100%
+		align-items center
+		justify-content center
 
-        
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
 
-		.panel-calendar, .youtube, .instagram, .linkedin, .facebook, .telegram
-			height 70px
-			width 100%
-			display flex
-			justify-content center
-			align-items center
-			transform skewX(-30deg)
-			transition 0.2s all ease-in-out
+	img
+		padding-right 15px
 
-		.panel-calendar
-			max-width 355px
-			background-color semiViolet
-			margin-left -20px
-
-			.calend
-				width 100%
-				height 100%
-				display flex
-				align-items center
-				justify-content center
-				font-size 14px
-				font-family 'Helvetica-Bold'
-				color #FFFFFF
-				letter-spacing 0.1em
-				text-transform uppercase
+	&:hover
+		background-color semiBlue
 
 
-				.transform
-					transform skewX(30deg)
-					display flex
-					align-items center
-					justify-content center
+.youtube, .instagram, .linkedin, .facebook, .telegram
+	max-width 90px
+	border-bottom 1px solid #dbe0ea
+	border-right 1px solid #dbe0ea
+	height 69px
+	background-color #FFFFFF
 
-					img
-						padding-right 15px
+	@media screen and (max-width: 1500px) {
+		max-width 65px
+	}
 
-				&:hover
-					background-color semiBlue
+.yt, .insta, .linked, .fb, .teleg
+	width 100%
+	height 100%
+	display flex
+	align-items center
+	justify-content center
 
-		.youtube, .instagram, .linkedin, .facebook, .telegram
-			max-width 90px
-			border-bottom 1px solid #dbe0ea
-			border-right 1px solid #dbe0ea
-			height 69px
-			background-color #FFFFFF
+	.transform
+		transform skewX(30deg)
+		display flex
+		align-items center
+		justify-content center
 
-			.yt, .insta, .linked, .fb, .teleg
-				width 100%
-				height 100%
-				display flex
-				align-items center
-				justify-content center
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
 
-				.transform
-					transform skewX(30deg)
-					display flex
-					align-items center
-					justify-content center
-
-				.yt-hover, .insta-hover, .linked-hover, .fb-hover, .telegram-hover
-					display none
-
-				.transform
-					transform skewX(30deg)
-					display flex
-					align-items center
-					justify-content center
+		.yt-hover, .insta-hover, .linked-hover, .fb-hover, .telegram-hover
+			display none
 
 		.youtube
 
@@ -167,10 +217,6 @@
 						height 100%
 
 
-
-
-
-
 .panel-login
 	height 70px
 	width 100%
@@ -179,6 +225,10 @@
 	align-items center
 	transform skewX(30deg)
 	transition 0.2s all ease-in-out
+
+	@media screen and (max-width: 1280px) {
+		transform skewX(0deg)
+	}
 
 .login, .registration
 	width 100%
@@ -192,18 +242,24 @@
 	letter-spacing 0.1em
 	text-transform uppercase
 
-.transform
-	transform skewX(-30deg)
-	display flex
-	align-items center
-	justify-content center
+	.transform
+		transform skewX(-30deg)
+		display flex
+		align-items center
+		justify-content center
 
-	&:hover
-		background-color #0080c6
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
+
 
 .login
 	&:hover
 		background-color semiBlue
+
+
+.registration 
+	z-index 3
 
 .panel-registration
 	max-width 280px
@@ -216,20 +272,33 @@
 	align-items center
 	transition 0.2s all ease-in-out	
 
+	@media screen and (max-width: 1650px) {
+		max-width 240px
+	}
+
+	@media screen and (max-width: 1500px) {
+		max-width 210px
+	}
+
+
 	&:after	
 		position relative
 		display block
 		width 50px
 		height 100%
 		top 0 
-		right 80%
+		right 81%
 		background semiPurple
 		transform-origin bottom left
 		transform skew(30deg, 0deg)
-		z-index: 99
+		z-index: 2
 		content ''
 		transition 0.2s all ease-in-out	
 		cursor pointer
+
+		@media screen and (max-width: 1280px) {
+			display none
+		}
 
 	&:hover
 		background-color themeColor
@@ -242,6 +311,10 @@
 	max-width 150px
 	background-color semiViolet 
 	z-index 1
+
+	@media screen and (max-width: 1500px) {
+		max-width 100px
+	}
 
 	&:hover 
 		background-color semiBlue
@@ -286,7 +359,7 @@
 
 .panel-btn--subscribe
 	max-width 280px
-	background-color #2d3484
+	background-color semiViolet
 	height 70px
 	width 100%
 	display flex
@@ -294,8 +367,26 @@
 	align-items center
 	transition 0.2s all ease-in-out
 
+	&:after		
+		position relative
+		display block
+		width 50px
+		height 100%
+		top 0 
+		right 85%
+		background semiViolet
+		transform-origin bottom left
+		transform skew(30deg, 0deg)
+		z-index: 99
+		content ''
+		transition 0.2s all ease-in-out	
+		cursor pointer
+
 	&:hover
 		background-color semiPurple
+
+.panel-btn--subscribe:hover:after 
+	background-color semiPurple
 
 .subscribe-link
 	width 100%
@@ -355,7 +446,21 @@
 	transform skewX(30deg)
 	width 580px
 	height 70px
-	border-bottom 1px solid #dbe0ea
+	border-left 1px solid #dbe0ea
+	border-bottom: 1px solid #dbe0ea
+
+	@media screen and (max-width: 1500px) {
+		width 250px
+	}
+
+	@media screen and (max-width: 1280px) {
+		transform skewX(0deg)
+	}
+
+.panel-email
+	transform skewX(30deg)
+	width 580px
+	height 70px
 	border-left 1px solid #dbe0ea
 
 .search
@@ -365,6 +470,10 @@
 	justify-content flex-end
 	align-items center
 	transform skewX(-30deg)
+
+	@media screen and (max-width: 1280px) {
+		transform skewX(0deg)
+	}
 
 .submit-search
 	width 100%
@@ -381,6 +490,10 @@
 	height 100%
 	border-left 1px solid #dbe0ea
 
+	@media screen and (max-width: 1280px) {
+		transform skewX(0deg)
+	}
+
 	&:before
 		content ''
 		position absolute
@@ -393,6 +506,14 @@
 		height 24px
 		z-index 99
 		cursor pointer
+
+		@media screen and (max-width: 1500px) {
+			right 12px
+		}
+
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
 	
 	&:hover
 		background-color #2b3384
@@ -412,7 +533,7 @@
 	padding-left 50px
 
 .search-bar
-	width 50%
+	width 80%
 	display block
 	transition all 0.5ms ease-in-out
 	cursor text
@@ -423,6 +544,8 @@
 	
 .input-search
 	cursor text
+	width 100%
+	height 100%
 
 	&:focus ~ .search-input-label
 		top 5px
@@ -435,6 +558,7 @@
 	color semiBlack
 	letter-spacing 1.4px
 	position absolute
-	top 20px
+	top 30px
 	transition: all 0.2s ease 
 	cursor text
+
