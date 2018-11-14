@@ -14,7 +14,7 @@
 		justify-content flex-start
 		max-width 810px
 		width 100%
-		overflow hidden
+
         
 
 		.panel-calendar, .youtube, .instagram, .linkedin, .facebook, .telegram
@@ -171,7 +171,7 @@
 
 
 
-.panel-login, .panel-registration
+.panel-login
 	height 70px
 	width 100%
 	display flex
@@ -179,7 +179,6 @@
 	align-items center
 	transform skewX(30deg)
 	transition 0.2s all ease-in-out
-			
 
 .login, .registration
 	width 100%
@@ -209,15 +208,40 @@
 .panel-registration
 	max-width 280px
 	background-color semiPurple
-	margin-right -20px
-	position relative
+	position relative	
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transition 0.2s all ease-in-out	
+
+	&:after	
+		position relative
+		display block
+		width 50px
+		height 100%
+		top 0 
+		right 80%
+		background semiPurple
+		transform-origin bottom left
+		transform skew(30deg, 0deg)
+		z-index: 99
+		content ''
+		transition 0.2s all ease-in-out	
+		cursor pointer
 
 	&:hover
 		background-color themeColor
+		
+
+.panel-registration:hover:after 
+	background-color themeColor
 
 .panel-login
 	max-width 150px
 	background-color semiViolet 
+	z-index 1
 
 	&:hover 
 		background-color semiBlue
@@ -263,13 +287,11 @@
 .panel-btn--subscribe
 	max-width 280px
 	background-color #2d3484
-	margin-right -20px
 	height 70px
 	width 100%
 	display flex
 	justify-content center
 	align-items center
-	transform skewX(30deg)
 	transition 0.2s all ease-in-out
 
 	&:hover
@@ -344,46 +366,75 @@
 	align-items center
 	transform skewX(-30deg)
 
-// .input-search, .submit-search
-// 	width 290px
-// 	border-bottom 1px solid #dbe0ea
-// 	border-left 1px solid #dbe0ea
-// 	height 70px
-
-
-// 	img
-// 		position absolute
-// 		top 23px
-// 		right 33px
-// 		transform skewX(-30deg)
-// 		z-index 0
-
-// 		.hover
-// 			z-index -1
-
-
 .submit-search
-	width 90px
+	width 100%
+	height 100%
 	background-color transparent
+
+.submit-search__wrap
 	position relative
 	transition 0.2s all ease-in-out
-	z-index 1
 	transform skewX(30deg)
-	position relative
+	height 70px
+	width 90px
+	z-index 1
 	height 100%
+	border-left 1px solid #dbe0ea
 
 	&:before
 		content ''
 		position absolute
 		display block
 		background url('../../img/main/menu-search.png')
-		top 0%
-		right 0%
-		width 50px
-		height 20px
-
+		transform skewX(-30deg)
+		top 26px
+		right 20px
+		width 24px
+		height 24px
+		z-index 99
+		cursor pointer
+	
 	&:hover
 		background-color #2b3384
 		border-color #2b3384
 
+.submit-search__wrap:hover::before
+	background url('../../img/main/menu-search-hover.png')
 
+.search-input__wrap
+	width 100%
+	height 100%
+	position relative
+	display flex
+	flex-direction column
+	align-items flex-start
+	justify-content center
+	padding-left 50px
+
+.search-bar
+	width 50%
+	display block
+	transition all 0.5ms ease-in-out
+	cursor text
+
+.input-search:focus ~ .search-bar
+	padding-top 2px
+	border-bottom 3px solid semiViolet
+	
+.input-search
+	cursor text
+
+	&:focus ~ .search-input-label
+		top 5px
+		color semiViolet
+		font-size 12px
+
+.search-input-label 
+	font-family 'HelveticaNeue-Light'
+	font-size 14px
+	color semiBlack
+	letter-spacing 1.4px
+	position absolute
+	top 20px
+	transition: all 0.2s ease 
+	cursor text

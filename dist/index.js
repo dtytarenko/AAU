@@ -5,40 +5,12 @@ $(document).ready(function () {
         infinite: false,
         prevArrow: false,
         nextArrow: false,
-        autoplay: true,
+        // autoplay: true,
         infinite: true,
         autoplaySpeed: 2000,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-        ]
+        slidesToScroll: 1
     });
 
 
@@ -53,33 +25,50 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        autoplay: true,
+        // autoplay: true,
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1200,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 3,
+            slidesToShow: 5,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 1000,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 820,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 620,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 430,
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1
             }
-        }]
+        }
+    ]
     });
 
 
@@ -93,15 +82,33 @@ $(document).ready(function () {
         slidesToShow: 8,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        autoplay: true,
+        // autoplay: true,
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
         {
-            breakpoint: 1024,
+            breakpoint: 1800,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 3,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+            }
+        },
+        {
+            breakpoint: 1250,
+            settings: {
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+            }
+        },
+        {
+            breakpoint: 1000,
+            settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
             infinite: true,
             dots: true
             }
@@ -109,15 +116,19 @@ $(document).ready(function () {
         {
             breakpoint: 600,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 2
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 500,
             settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
             }
         }]
     });
