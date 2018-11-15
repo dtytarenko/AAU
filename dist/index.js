@@ -1,3 +1,21 @@
+$(document).ready(function() {
+    $( ".menu-burger, .menu-burger-mobile" ).click(function() {
+        $( ".menu" ).slideToggle( "slow");
+        $('.menu').css('display', 'flex');
+        $('.menu').css('z-index', '4');
+        if(window.innerWidth >= 321) {
+            $('.overlay').slideToggle("slow");
+        } // it`s for delete overlay for mobile-width
+    });
+    
+    $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {
+        $( ".menu" ).slideToggle( "slow");
+        if(window.innerWidth >= 321) {
+            $('.overlay').slideToggle("slow");
+        }
+    });
+});
+
 $(document).ready(function () {
     $('.intro-slider').slick({
         dots: true,
@@ -12,9 +30,11 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1
     });
+});
 
 
 
+$(document).ready(function () {
     $('.js-partners-slider').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s
@@ -70,8 +90,10 @@ $(document).ready(function () {
         }
     ]
     });
+});
 
 
+$(document).ready(function () {
     $('.js-event-link-slider').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s

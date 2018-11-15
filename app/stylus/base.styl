@@ -157,6 +157,10 @@ a
   text-transform uppercase
   padding 90px 0 10px
   font-size 36px
+
+  @media screen and (max-width: 410px) {
+    text-align center
+  }
     
     
 .separator
@@ -164,6 +168,10 @@ a
   position relative
   height 11px
   display flex
+
+  @media screen and (max-width: 410px) {
+    justify-content center
+  }
 
   &:after
     content ''
@@ -174,7 +182,11 @@ a
     position absolute
     top 5px
     right 0
-  
+
+    @media screen and (max-width: 410px) {
+      width 100%
+    }
+    
 
 .defaultSubTitle
   color #5c77b3

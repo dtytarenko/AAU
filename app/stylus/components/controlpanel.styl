@@ -6,7 +6,38 @@
 .control-panel
 	display flex
 	justify-content space-between
-    
+
+
+.control-panel-btm
+	background-color #f0f2f4
+	border-top 1px solid #dbe0ea
+
+	.panel-left
+		background-color #f0f2f4
+
+	@media screen and (max-width: 1280px) {
+		padding 0
+	}	
+	
+	.youtube, .instagram, .linkedin, .facebook, .telegram
+		background-color #f0f2f4
+	
+	.panel-email
+		background white
+
+.control-panel-btm
+	.panel-left--bottom
+		justify-content center
+		padding-right 20px
+
+		@media screen and (max-width:1550px) {
+			justify-content flex-start
+		}
+
+	.panel-right-btm
+		max-width 875px
+		flex 1
+
 
 .panel-left, .panel-right
 	display flex
@@ -34,6 +65,9 @@
 .panel-right
 	justify-content flex-end
 
+	@media screen and (max-width: 1280px) {
+		flex-wrap wrap
+	}
 
 .panel-left
 	justify-content flex-start
@@ -52,9 +86,116 @@
 	transform skewX(-30deg)
 	transition 0.2s all ease-in-out
 	
-	@media screen and (max-width: 1280px) {
-		transform skewX(0deg)
+.panel-left-top
+	.youtube, .instagram, .linkedin, .facebook, .telegram
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
+
+.panel-left-top
+	.yt, .insta, .linked, .fb, .teleg
+		.transform
+			@media screen and (max-width: 1280px) {
+				transform skewX(0deg)
+			}
+
+.youtube, .instagram, .linkedin, .facebook, .telegram
+	max-width 90px
+	border-bottom 1px solid #dbe0ea
+	border-right 1px solid #dbe0ea
+	height 69px
+	background-color #FFFFFF
+
+	@media screen and (max-width: 1500px) {
+		max-width 65px
 	}
+
+.yt, .insta, .linked, .fb, .teleg
+	width 100%
+	height 100%
+	display flex
+	align-items center
+	justify-content center
+
+	.transform
+		transform skewX(30deg)
+		display flex
+		align-items center
+		justify-content center
+
+		.yt-hover, .insta-hover, .linked-hover, .fb-hover, .telegram-hover
+			display none
+
+.youtube
+	&:hover
+		border-color #d64848
+		background-color #d64848
+
+		.yt
+			img
+				display none
+
+			.yt-hover
+				display block
+				width 100%
+				height 100%
+
+.instagram
+	&:hover
+		border-color #e39362
+		background-color #e39362
+
+		.insta
+			img
+				display none
+
+			.insta-hover
+				display block
+				width 100%
+				height 100%
+
+.linkedin
+	&:hover
+		border-color #0080c6
+		background-color #0080c6
+
+		.linked
+			img
+				display none
+
+			.linked-hover
+				display block
+				width 100%
+				height 100%
+
+.facebook
+	&:hover
+		border-color #366199
+		background-color #366199
+
+		.fb
+			img
+				display none
+
+			.fb-hover
+				display block
+				width 100%
+				height 100%
+
+.telegram
+	&:hover
+		border-color #1a89c0
+		background-color #1a89c0
+
+		.teleg
+			img
+				display none
+
+			.telegram-hover
+				display block
+				width 100%
+				height 100%
+
 
 .panel-calendar
 	max-width 355px
@@ -102,119 +243,6 @@
 
 	&:hover
 		background-color semiBlue
-
-
-.youtube, .instagram, .linkedin, .facebook, .telegram
-	max-width 90px
-	border-bottom 1px solid #dbe0ea
-	border-right 1px solid #dbe0ea
-	height 69px
-	background-color #FFFFFF
-
-	@media screen and (max-width: 1500px) {
-		max-width 65px
-	}
-
-.yt, .insta, .linked, .fb, .teleg
-	width 100%
-	height 100%
-	display flex
-	align-items center
-	justify-content center
-
-	.transform
-		transform skewX(30deg)
-		display flex
-		align-items center
-		justify-content center
-
-		@media screen and (max-width: 1280px) {
-			transform skewX(0deg)
-		}
-
-		.yt-hover, .insta-hover, .linked-hover, .fb-hover, .telegram-hover
-			display none
-
-		.youtube
-
-			&:hover
-				border-color #d64848
-				background-color #d64848
-
-
-				.yt
-
-					img
-						display none
-
-					.yt-hover
-						display block
-						width 100%
-						height 100%
-
-		.instagram
-
-			&:hover
-				border-color #e39362
-				background-color #e39362
-
-				.insta
-
-					img
-						display none
-
-					.insta-hover
-						display block
-						width 100%
-						height 100%
-
-		.linkedin
-
-			&:hover
-				border-color #0080c6
-				background-color #0080c6
-
-				.linked
-
-					img
-						display none
-
-					.linked-hover
-						display block
-						width 100%
-						height 100%
-
-		.facebook
-
-			&:hover
-				border-color #366199
-				background-color #366199
-
-				.fb
-
-					img
-						display none
-
-					.fb-hover
-						display block
-						width 100%
-						height 100%
-
-		.telegram
-
-			&:hover
-				border-color #1a89c0
-				background-color #1a89c0
-
-				.teleg
-
-					img
-						display none
-
-					.telegram-hover
-						display block
-						width 100%
-						height 100%
 
 
 .panel-login
@@ -319,17 +347,16 @@
 	&:hover 
 		background-color semiBlue
 
-.panel-left--bottom
-	justify-content flex-end
-	padding-right 20px
-
-
 .panel-subscribe 
 	display flex
 	flex-direction column
 	color darkCerulean
 	align-items center
 	padding 10px 40px 10px 0
+
+	@media screen and (max-width: 1280px) {
+		align-items flex-start	
+	}
 	
 
 .panel-subscribe-title, .panel-subscribe-subtitle
@@ -401,16 +428,6 @@
 	text-transform uppercase
 
 
-.control-panel 
-
-	.panel-right-btm
-		max-width 875px
-
-	.panel-left--bottom
-		justify-content flex-end
-
-
- 
 
 // input[type="search"]::-webkit-input-placeholder
 // 	color semiBlack
@@ -471,9 +488,11 @@
 	align-items center
 	transform skewX(-30deg)
 
-	@media screen and (max-width: 1280px) {
-		transform skewX(0deg)
-	}
+.panel-right-top
+	.search	
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+		}
 
 .submit-search
 	width 100%
@@ -562,3 +581,43 @@
 	transition: all 0.2s ease 
 	cursor text
 
+.menu-burger 
+	display none
+
+	img
+		margin-right 26px
+	
+	p
+		font-family Helvetica-Bold, sans-serif
+		text-transform uppercase
+		font-size 14px
+		letter-spacing 1.4px
+		color semiPurple
+	
+	&:after		
+		position relative
+		display block
+		width 50px
+		height 100%
+		top 0 
+		right 85%
+		background bgHeaderColor
+		transform-origin bottom left
+		transform skew(30deg, 0deg)
+		z-index: 99
+		content ''
+		transition 0.2s all ease-in-out	
+		cursor pointer
+
+	@media screen and (max-width: 1280px) {
+		background-color bgHeaderColor
+		max-width 295px
+		width 100%
+		height 70px
+		display flex
+		align-items center
+		justify-content flex-end
+		order 5
+	}  
+
+	
