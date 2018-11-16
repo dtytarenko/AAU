@@ -12,6 +12,10 @@
 	background-color #f0f2f4
 	border-top 1px solid #dbe0ea
 
+	@media screen and (max-width: 1280px) {
+		flex-wrap wrap
+	}	
+
 	.panel-left
 		background-color #f0f2f4
 
@@ -25,6 +29,30 @@
 	.panel-email
 		background white
 
+		@media screen and (max-width: 1600px) {
+			width 400px
+		}
+
+		@media screen and (max-width: 1280px) {
+			transform skewX(0deg)
+			max-width 1000px
+			width 100%
+		}
+
+		.search
+			@media screen and (max-width: 1280px) {
+				transform skewX(0deg)
+			}
+
+	.panel-btm
+		display flex
+
+		@media screen and (max-width: 1280px) {
+			width 100%
+			justify-content space-between
+		}
+
+			
 .control-panel-btm
 	.panel-left--bottom
 		justify-content center
@@ -34,9 +62,35 @@
 			justify-content flex-start
 		}
 
+		@media screen and (max-width: 729px) {
+			width 100%
+			max-width none
+			padding 0
+			justify-content center
+		}
+
+		.youtube
+			@media screen and (max-width: 720px) {
+				border-left none
+			}
+		
+		.telegram
+			@media screen and (max-width: 720px) {
+				border-right none
+			}
+
 	.panel-right-btm
 		max-width 875px
 		flex 1
+
+		@media screen and (max-width: 1280px) {
+			justify-content flex-start
+		}
+
+		@media screen and (max-width: 729px) {
+			display none
+		}
+
 
 
 .panel-left, .panel-right
@@ -69,7 +123,7 @@
 		flex-wrap wrap
 	}
 
-.panel-left
+.panel-left-top
 	justify-content flex-start
 
 	@media screen and (max-width: 1280px) {
@@ -394,6 +448,17 @@
 	align-items center
 	transition 0.2s all ease-in-out
 
+	@media screen and (max-width: 540px) {
+		max-width 180px
+		flex-direction row-reverse
+	}
+
+	@media screen and (max-width: 370px) {
+		position relative
+		max-width 45%
+	}
+
+
 	&:after		
 		position relative
 		display block
@@ -409,8 +474,26 @@
 		transition 0.2s all ease-in-out	
 		cursor pointer
 
+		@media screen and (max-width: 540px) {
+			right 0%
+			width 100px
+		}
+
+		@media screen and (max-width: 370px) {
+			position absolute
+			width 50px
+			right 70%
+		}
+
+		@media screen and (max-width: 320px) {
+			width 45px
+		}
+
+
 	&:hover
 		background-color semiPurple
+
+
 
 .panel-btn--subscribe:hover:after 
 	background-color semiPurple
@@ -427,6 +510,15 @@
 	letter-spacing 0.1em
 	text-transform uppercase
 
+	@media screen and (max-width: 540px) {
+		width 100%
+		margin-right 20px
+	}
+
+	@media screen and (max-width: 540px) {
+		margin-right 5px
+		z-index 100
+	}
 
 
 // input[type="search"]::-webkit-input-placeholder
@@ -551,11 +643,17 @@
 	justify-content center
 	padding-left 50px
 
+	@media screen and (max-width: 1280px) {
+		padding-left 10%
+	}
+
 .search-bar
 	width 80%
 	display block
 	transition all 0.5ms ease-in-out
 	cursor text
+	position relative
+	bottom 10px
 
 .input-search:focus ~ .search-bar
 	padding-top 2px
