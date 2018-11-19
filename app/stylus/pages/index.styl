@@ -317,119 +317,154 @@ header
 
 //------------------------------------main-forum-------------------------------------
 
-.main-forum
+.forum__wrap
+	display flex
 
-	.full
-		display flex
+.forum__media
+	max-width 35%
+	width 100%
+	position relative
+	background url("../../img/main/main-forum.jpg")
+	background-size cover
+	background-position center
 
-		.forum-media
-			max-width 35%
-			width 100%
-			position relative
-			background url("../../img/main/main-forum.jpg") no-repeat
-			background-size cover
-			background-position center
+	&:before
+		content ''
+		display block
+		background url("../../img/main/main-forum-bg-line.jpg")
+		background-repeat round
+		width 10px
+		height 100%
+		background-size cover
+		position absolute
+		top 0
+		right 10px
 
-			&:before
-				content ''
-				display block
-				background url("../img/main/main-forum-bg-line.jpg") no-repeat
-				width 10px
-				height 100%
-				background-size cover
-				position absolute
-				top 0
-				right 10px
+.video
+	max-width 420px
+	width 100%
+	max-height 230px
+	height 100%
+	border 10px solid #fff
+	box-shadow -4.774px 5.119px 29px 0px rgba(0, 0, 0, 0.54)
+	display flex
+	align-items center
+	justify-content center
+	position absolute
+	top 70px
+	left 320px
 
-			.video
-				max-width 420px
-				width 100%
-				max-height 230px
-				height 100%
-				border 10px solid #fff
-				box-shadow -4.774px 5.119px 29px 0px rgba(0, 0, 0, 0.54)
-				display flex
-				align-items center
-				justify-content center
-				position absolute
-				top 70px
-				left 320px
+	iframe
+		width 100%
+		height 100%
 
-				iframe
-					width 100%
-					height 100%
+.forum__info--wrap
+	background url("../../img/main/main-forum-bg.jpg")
+	background-size cover
+	max-width 65%
+	width 100%
+	padding-left 165px
 
-		.bg
-			background url("../../img/main/main-forum-bg.jpg") no-repeat
-			background-position top right
-			background-size cover
-			max-width 65%
-			width 100%
+.forum__info
+	max-width 850px
+	width 100%
+	box-sizing border-box
+	padding 0 15px
 
-			.forum-about
-				max-width 800px
-				width 100%
-				box-sizing border-box
-				margin-left 165px
-				padding 0 15px
+.forum__heading
+	margin 80px 0 40px
+	font-size 36px
+	
+	.heading__title
+		width 50%
+		color #fff
+		text-transform none
+		font-family 'HelveticaNeue-Bold'
+	
+	.heading__subtitle 
+		color #fff
+		text-transform none
+		font-family 'HelveticaNeue-Bold'
 
-				.forum-heading
+.forum__timeplace-list
+	display flex
+	align-items center
 
-					.heading-white
-						color #fff
-						margin 80px 0 40px
-						text-transform none
-						font-size 36px
+.forum__timeplace-list--item
+	display flex
+	align-items center
+	justify-content flex-start
+	width 30%
+	margin-bottom 25px
 
-				.forum-list-about
-					display flex
+	&:nth-child(3)
+		width 40%
 
-					.list-item
-						display flex
-						align-items center
-						justify-content flex-start
-						width 32%
-						margin-bottom 25px
+	&:before
+		content ''
+		display block
+		width 62px
+		height 58px
+		margin-right 10px
+		right 50%
+		top -50%
+	
+	&:nth-child(1):before
+		background: url('../../img/main/icon-date.png') no-repeat;
 
-						.item-text
-							color #fff
-							font-size 14px
-							line-height 18px
+	&:nth-child(2):before
+		background: url('../../img/main/icon-time.png') no-repeat;
 
-							.uppercase
-								text-transform uppercase
-								font-family 'HelveticaNeue-Bold'
+	&:nth-child(3):before
+		background: url('../../img/main/icon-gps.png') no-repeat;
 
-							.indent
-								padding-left 20px
 
-				.second
-					display block
-					margin-bottom 55px
+.forum__main-list--item
+	display flex
+	flex-direction column
+	margin-bottom 55px
 
-					.list-item
-						width 100%
-						align-items flex-start
+.item__text
+	color #fff
+	font-size 14px
+	line-height 18px
+	position relative
 
-						.item-text
-							line-height 24px
-							margin-top 10px
+.item__text-title
+	width 100%
+	text-transform uppercase
+	font-family 'HelveticaNeue-Bold'
+	color lightColor
 
-				.btn-block
-					display flex
-					margin-bottom 60px
+.indent
+	padding-left 20px
+	font-size 14px
+	font-family 'HelveticaNeue-Light'
+	line-height 24px
 
-					.btn-xl
-						line-height 70px
-						height 70px
+.list-item
+	width 100%
+	align-items flex-start
 
-						&:hover
-							background-color semiPurple
+.item-text
+	line-height 24px
+	margin-top 10px
 
-					.btn-s
-						line-height 66px
-						height 70px
-						margin-left 40px
+.btn-group
+	display flex
+	margin-bottom 30px
+
+.btn-xl
+	line-height 70px
+	height 70px
+
+	&:hover
+		background-color semiPurple
+
+.btn-s
+	line-height 66px
+	height 70px
+	margin-left 40px
 
 
 
