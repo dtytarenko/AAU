@@ -141,7 +141,7 @@ header
 .intro-title 
 	text-transform uppercase
 	font-size 72px
-	color lightColor
+	color whiteColor
 	text-align center
 	position relative
 	font-family 'Helvetica-Regular'
@@ -168,7 +168,7 @@ header
 	text-align center
 
 .intro-bottomtitle 
-	color lightColor
+	color whiteColor
 	font-size 60px
 	font-weight 700 
 	font-family 'HelveticaNeue-Roman'
@@ -181,7 +181,7 @@ header
 	
 .intro__place 
 	padding 0 25px 0 287px
-	color lightColor
+	color whiteColor
 	text-transform uppercase
 	align-self flex-start
 	background-color #2b3384
@@ -317,9 +317,32 @@ header
 
 //------------------------------------main-forum-------------------------------------
 
+////*! start general style for this block
+
+.forum-subtitle
+	width 100%
+	color whiteColor
+	text-transform uppercase
+	font-family 'HelveticaNeue-Bold'
+	font-size 14px
+
+
+.forum-text
+	font-size 14px
+	color whiteColor 
+	font-family 'HelveticaNeue-Light'
+	text-transform none
+
+////*! end general style for this block
+
 .forum__wrap
 	display flex
-
+	
+	@media screen and (max-width: 1280px) {
+		flex-direction column
+	}
+		
+		
 .forum__media
 	max-width 35%
 	width 100%
@@ -327,6 +350,12 @@ header
 	background url("../../img/main/main-forum.jpg")
 	background-size cover
 	background-position center
+
+	@media screen and (max-width: 1280px) {
+		max-width none
+		width 100%
+	}
+		
 
 	&:before
 		content ''
@@ -336,16 +365,16 @@ header
 		width 10px
 		height 100%
 		background-size cover
-		position absolute
 		top 0
 		right 10px
+
 
 .video
 	max-width 420px
 	width 100%
 	max-height 230px
 	height 100%
-	border 10px solid #fff
+	border 10px solid whiteColor
 	box-shadow -4.774px 5.119px 29px 0px rgba(0, 0, 0, 0.54)
 	display flex
 	align-items center
@@ -354,6 +383,22 @@ header
 	top 70px
 	left 320px
 
+	@media screen and (max-width: 1680px) {
+		left 180px
+	}
+
+	@media screen and (max-width: 1500px) {
+		left 120px
+	}	
+
+	@media screen and (max-width: 1400px) {
+		left 80px
+	}		
+
+	@media screen and (max-width: 1400px) {
+		left 50px
+	}		
+
 	iframe
 		width 100%
 		height 100%
@@ -361,9 +406,29 @@ header
 .forum__info--wrap
 	background url("../../img/main/main-forum-bg.jpg")
 	background-size cover
+	background-repeat round
 	max-width 65%
 	width 100%
-	padding-left 165px
+	padding 0 0 40px 165px
+
+	@media screen and (max-width: 1680px) {
+		padding 0 0 40px 100px
+	}
+
+	@media screen and (max-width: 1500px) {
+		padding 0 0 40px 80px
+	}		
+
+	@media screen and (max-width: 1400px) {
+		padding 0 0 40px 60px
+	}
+
+	@media screen and (max-width: 1280px) {
+		max-width none
+		width 100%
+	}
+
+
 
 .forum__info
 	max-width 850px
@@ -377,14 +442,25 @@ header
 	
 	.heading__title
 		width 50%
-		color #fff
+		color whiteColor
 		text-transform none
 		font-family 'HelveticaNeue-Bold'
-	
+
+		@media screen and (max-width: 1680px) {
+			width 100%
+		}
+
 	.heading__subtitle 
-		color #fff
+		color whiteColor
 		text-transform none
 		font-family 'HelveticaNeue-Bold'
+
+
+// 
+// 
+///////// start .forum__timeplace-list
+//
+//
 
 .forum__timeplace-list
 	display flex
@@ -403,7 +479,7 @@ header
 	&:before
 		content ''
 		display block
-		width 62px
+		width 63px
 		height 58px
 		margin-right 10px
 		right 50%
@@ -419,40 +495,89 @@ header
 		background: url('../../img/main/icon-gps.png') no-repeat;
 
 
-.forum__main-list--item
-	display flex
-	flex-direction column
-	margin-bottom 55px
-
-.item__text
-	color #fff
-	font-size 14px
-	line-height 18px
+.timeplace__text-wrap
 	position relative
-
-.item__text-title
-	width 100%
-	text-transform uppercase
-	font-family 'HelveticaNeue-Bold'
-	color lightColor
-
-.indent
-	padding-left 20px
-	font-size 14px
+	max-width 200px
 	font-family 'HelveticaNeue-Light'
-	line-height 24px
 
-.list-item
-	width 100%
-	align-items flex-start
+// 
+// 
+///////// end forum__timeplace-list
+//
+//
 
-.item-text
-	line-height 24px
+// 
+// 
+//////// start forum__main-list
+//
+//
+
+.forum__main-list
+	margin 0 0 60px 60px
+
+.forum__main-list-item
+	position relative
+	padding-left 10px
+
+	&:not(:last-child)
+		margin-bottom 50px
+	
+	&:before
+		content ''
+		position absolute
+		display block
+		right 100%
+		width 62px
+		height 58px
+		transform translateY(-50%)
+
+	&:nth-child(1):before
+		background url('../../img/main/icon-format.png') no-repeat
+		top 25%
+	
+	&:nth-child(2):before
+		background url('../../img/main/icon-info.png') no-repeat
+		top 16%
+
+	&:nth-child(3):before
+		background url('../../img/main/icon-speaker.png') no-repeat
+		top 50%
+
+	&:nth-child(4):before
+		background url('../../img/main/icon-tel.png') no-repeat
+		top 35%
+
+.forummain__item-text
+	.forum-subtitle
+		margin-bottom 10px
+
+.forummain__item-text--subtitle:not(&:last-child)
+	margin-bottom 10px		
+
+.forummain__item-sublist 
 	margin-top 10px
+
+	.forummain__item-sublist--item
+		margin 0 0 10px 25px
+		padding-left 5px
+		position relative
+
+		&:before
+			position absolute
+			content '-'
+			right 100%
+			color #fff
+			bottom 0%
+			
+
+// 
+// 
+//////// start btn-group
+//
+//
 
 .btn-group
 	display flex
-	margin-bottom 30px
 
 .btn-xl
 	line-height 70px
@@ -466,56 +591,13 @@ header
 	height 70px
 	margin-left 40px
 
-
+// 
+// 
+//////// start btn-group
+//
+//
 
 //-------------------------------------general-partners-------------------------------------
-
-// .slick-dots
-// 	display flex
-// 	justify-content center
-// 	padding-bottom 60px
-
-// 	li
-// 		position relative
-// 		width 18px
-
-// 		&:hover
-// 			cursor pointer
-
-// 		&:before
-// 			content ''
-// 			display block
-// 			width 19px
-// 			height 18px
-// 			background url("../img/all/dots.png") no-repeat
-// 			position absolute
-// 			top 0
-// 			left 0
-
-
-
-// 		button
-// 			background-color transparent
-// 			font-size 10px
-// 			color transparent
-
-// 			&:nth-child(odd)
-// 				top 9px
-
-// 		&:nth-child(1), &:nth-child(3), &:nth-child(5)
-// 			top 9px
-
-// 	.slick-active
-
-// 		&:after
-// 			content ''
-// 			display block
-// 			width 9px
-// 			height 8px
-// 			background url("../img/all/dots-active.png") no-repeat
-// 			position absolute
-// 			top 5px
-// 			left 5px
 
 .partners-slider
 	max-width 1300px
@@ -541,7 +623,7 @@ header
 				justify-content center
 				align-items center
 				border 1px dotted #ccc
-				background-color #fff
+				background-color whiteColor
 
 				img
 					max-width 80%

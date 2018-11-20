@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
 	<meta charset="UTF-8">
@@ -74,8 +74,8 @@
 				<div class="panel-search">
 				<form action="" method="post" class="search">
 						<div class="search-input__wrap">
-							<input type="search" name="" class="input-search"> 
-							<label for="" class="search-input-label">Що ви шукаєте...</label>
+							<input type="search" name="input-search" class="input-search" id="input__search"> 
+							<label for="input__search" class="search-input-label">Що ви шукаєте...</label>
 							<span class="search-bar"></span>
 						</div>
 						<div class="submit-search__wrap"> 
@@ -103,7 +103,7 @@
                     <li class="menu-item">
                         <a href="#">про ААУ </a>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#">про ААУ</li>
+                            <li class="submenu-item"><a href="#">про ААУ</a></li>
                             <li class="submenu-item">
                                 <a href="#">Структура ААУ</a>
                                 <ul class="second-submenu">
@@ -205,7 +205,7 @@
 			<div class="intro-slider">
 				<div class="intro__slide-item"> 
 					<div class="intro__event">
-						<p class="intro-title">VIII Форум ААУ</h1>
+						<p class="intro-title">VIII Форум ААУ</p>
 						<p class="intro-subtitle">20 вересня 2018</p>
 						<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
 						<div class="intro-place-wrap"> 
@@ -217,7 +217,7 @@
 				</div>
 				<div class="intro__slide-item">
 						<div class="intro__event">
-							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-title">VIII Форум ААУ</p>
 							<p class="intro-subtitle">20 вересня 2018</p>
 							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
 							<div class="intro-place-wrap"> 
@@ -229,7 +229,7 @@
 				</div>
 				<div class="intro__slide-item">
 						<div class="intro__event">
-							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-title">VIII Форум ААУ</p>
 							<p class="intro-subtitle">20 вересня 2018</p>
 							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
 							<div class="intro-place-wrap"> 
@@ -241,7 +241,7 @@
 				</div>
 				<div class="intro__slide-item">
 						<div class="intro__event">
-							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-title">VIII Форум ААУ</p>
 							<p class="intro-subtitle">20 вересня 2018</p>
 							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
 							<div class="intro-place-wrap"> 
@@ -253,7 +253,7 @@
 				</div>
 				<div class="intro__slide-item">
 						<div class="intro__event">
-							<p class="intro-title">VIII Форум ААУ</h1>
+							<p class="intro-title">VIII Форум ААУ</p>
 							<p class="intro-subtitle">20 вересня 2018</p>
 							<p class= "intro-bottomtitle">Адвокатура формула успiху</p>
 							<div class="intro-place-wrap"> 
@@ -312,13 +312,15 @@
 	<section class="forum">
 		<div class="forum__wrap">
 
+	
 				<div class="forum__media">
 					<div class="video">
-						<iframe src="https://www.youtube.com/embed/yflvdAVZhQk?version=3&rel=0&loop=1&playlist=yflvdAVZhQk&mute=1&controls=0" frameborder="0" disablekb="1" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/yflvdAVZhQk?version=3&rel=0&loop=1&playlist=yflvdAVZhQk&mute=1&controls=0" frameborder="0" disable="1" allowfullscreen></iframe>
 					</div>
 				</div>
 
 				<div class="forum__info--wrap">
+
 					<div class="forum__info">
 
 						<div class="forum__heading">
@@ -327,76 +329,89 @@
 						</div>
 
 						<ul class="forum__timeplace-list">
-
 							<li class="forum__timeplace-list--item">
-								<p class="item__text">
-									<span class="item__text-title">Дата проведення: </span><br>
-									20 вересня 2018 року
-								</p>
+								<div class="timeplace__text-wrap">
+									<p class="forum-subtitle">Дата проведення: </p>
+									<p class="forum-text">20 вересня 2018 року</p>
+								</div>
 							</li>
 							<li class="forum__timeplace-list--item">
-								<p class="item__text">
-									<span class="item__text-title">Час проведення: </span><br>
-									09:00 - 17:30
-								</p>
+								<div class="timeplace__text-wrap">
+									<p class="forum-subtitle">Час проведення: </p>
+									<p class="forum-text">09:00 - 17:30</p>
+								</div>
 							</li>
-							<li class="forum__timeplace-list--item">
-								<p class="item__text">
-									<span class="item__text-title">Місце проведення: </span><br>
-									конференц-хол "Депо",  вул. Антоновича, 50
-								</p>
+							<li class="forum__timeplace-list--item forum-subtitle">
+								<div class="timeplace__text-wrap">
+									<p class="forum-subtitle">Місце проведення:</p>
+									<p class="forum-text">конференц-хол "Депо",  вул. Антоновича, 50</p>
+								</div>
 							</li>
 						</ul>
 
-
 						<ul class="forum__main-list">
-
-							<li class="forum__main-list--item">
-								<!-- <img src="img/main/icon-format.png" alt=""> -->
-								<div class="item-text">
-									<p class="item__text-title">Формат:</p>
-									Вже по традиції Асоціація адвокатів України проводить форум «Адвокатура. Формула успіху»,
-									адже це саме той майданчик, на якому ми говоримо про інновації, тенденції та нові стратегії будування власного бренду в юридичному бізнесі!
-								</div>
-							</li>
-							<li class="forum__main-list--item">
-								<!-- <img src="img/main/icon-info.png" alt=""> -->
-								<div class="item-text">
-									<p class="item__text-title">загальна інформація: </p>
-									Поговоримо про наступне:
-									<p class="indent">- Майбутнє юридичного бізнесу, а саме:</p>
-									<p class="indent">- Тенденції та конкуренція на юридичному ринку</p>
-									<p class="indent">- Full-service чи сімейний бізнес? Де знайти місце індивідуально практикуючому адвокату?...</p>
+							<li class="forum__main-list-item">
+								<div class="forummain__item-text">
+									<p class="forum-subtitle">Формат</p>
+									<p class="forum-text">Вже по традиції Асоціація адвокатів України проводить форум «Адвокатура. Формула успіху»,
+										адже це саме той майданчик, на якому ми говоримо про інновації, тенденції та нові стратегії будування власного бренду в юридичному бізнесі!
+									</p>
 								</div>
 							</li>
 
-							<li class="forum__main-list--item">
-								<!-- <img src="img/main/icon-speaker.png" alt=""> -->
-								<p class="item-text">
-									<span class="item__text-title">cпікери: </span><br>
-									Успішні адвокати, юристи, маркетологи, науковці та ін.
-								</p>
+							<li class="forum__main-list-item">
+								<div class="forummain__item-text">
+									<p class="forum-subtitle">загальна інформація:</p>
+									<p class="forum-text">Поговоримо про наступне:</p>
+
+									<ul class="forummain__item-sublist">
+										<li class="forummain__item-sublist--item">
+											<p class="forum-text"> Майбутнє юридичного бізнесу, а саме:</p>
+										</li>
+										<li class="forummain__item-sublist--item">
+											<p class="forum-text"> Тенденції та конкуренція на юридичному ринку</p>
+										</li>
+										<li class="forummain__item-sublist--item">
+											<p class="forum-text"> Full-service чи сімейний бізнес? Де знайти місце індивідуально практикуючому адвокату?...</p>
+										</li>
+
+									</ul>
+								</div>
 							</li>
-							<li class="forum__main-list--item">
-								<!-- <img src="img/main/icon-tel.png" alt=""> -->
-								<p class="item-text">
-									<span class="item__text-title">Для довідки звертайтесь: </span><br>
-									за тел.:   067-343-34-07 <br>
-									email:     forum@uaa.org.ua
-								</p>
+
+							<li class="forum__main-list-item">
+								<div class="forummain__item-text">
+									<p class="forum-subtitle">cпікери:</p>
+									<p class="forum-text">Успішні адвокати, юристи, маркетологи, науковці та ін.
+									</p>
+								</div>
 							</li>
-						</div>
+
+							
+							<li class="forum__main-list-item">
+								<div class="forummain__item-text">
+									<p class="forum-subtitle">Для довідки звертайтесь:</p>
+									<p class="forummain__item-text--subtitle forum-text">за тел.: 067-343-34-07 </p>
+									<p class="forummain__item-text--subtitle forum-text">email: forum@uaa.org.ua </p>
+								</div>
+							</li>
+
+
+						</ul>
+
 						<div class="btn-group">
 							<a href="#" class="btn btn-xl">Записатися на форум</a>
 							<a href="#" class="btn btn-s">Детальнiше</a>
 						</div>
+
 					</div>
 
-			</div>
+				</div>
+
 		</div>
 	</section>
 
-	<!--MAIN-FORUM section start-->
+	<!--end MAIN-FORUM section -->
 
 	<!--GENERAL-PARTNERS section start-->
 	<section class="general-partners">
