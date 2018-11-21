@@ -43,6 +43,7 @@ gulp.task('img', () => {
 	.pipe(gulp.dest('dist/img'));
 });
 
+
 gulp.task('fonts',() => {
 	var buildFonts = gulp.src('app/fonts/**/*')
 	  .pipe(gulp.dest('dist/fonts'));
@@ -83,6 +84,7 @@ gulp.task('fileinclude', function() {
 
 		gulp.task('html', () => {
 			return gulp.src('app/**/*.html')
+			
 				.pipe(gulp.dest('dist/'))
 		});
 

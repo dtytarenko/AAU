@@ -23,7 +23,7 @@ $(document).ready(function () {
         infinite: false,
         prevArrow: false,
         nextArrow: false,
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         autoplaySpeed: 2000,
         speed: 500,
@@ -45,7 +45,7 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
@@ -104,7 +104,7 @@ $(document).ready(function () {
         slidesToShow: 8,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [

@@ -3,6 +3,23 @@
 @import '../reset'
 @import '../vars'
 
+.social 
+	display flex
+	max-width 350px
+	width 100%
+	
+	@media screen and (max-width: 1280px) {
+		padding-top 1px
+	}
+
+	@media screen and (max-width: 920px) {
+		max-width 255px
+	}	
+
+	@media screen and (max-width: 767px) {
+		display none
+	}
+
 .control-panel
 	display flex
 	justify-content space-between
@@ -92,7 +109,6 @@
 		}
 
 
-
 .panel-left, .panel-right
 	display flex
 	align-items flex-start
@@ -131,6 +147,19 @@
 		max-width 350px
 	}
 
+	@media screen and (max-width: 920px) {
+		max-width 255px
+	}
+
+	@media screen and (max-width: 767px) {
+		max-width none
+		width 0
+	}
+	
+
+
+
+
 .youtube, .instagram, .linkedin, .facebook, .telegram
 	height 70px
 	width 100%
@@ -161,7 +190,11 @@
 	background-color whiteColor
 
 	@media screen and (max-width: 1500px) {
-		max-width 65px
+		max-width 69px
+	}
+
+	@media screen and (max-width: 920px) {
+		max-width 50px
 	}
 
 .yt, .insta, .linked, .fb, .teleg
@@ -265,7 +298,12 @@
 
 	@media screen and (max-width: 1280px) {
 		order 6
-		transform skewX(0deg)
+	}
+
+	@media screen and (max-width: 920px) {
+		position absolute
+		top 71px
+		max-width 290px
 	}
 
 
@@ -288,10 +326,6 @@
 		align-items center
 		justify-content center
 
-		@media screen and (max-width: 1280px) {
-			transform skewX(0deg)
-		}
-
 	img
 		padding-right 15px
 
@@ -300,17 +334,27 @@
 
 
 .panel-login
-	height 70px
-	width 100%
 	display flex
 	justify-content center
 	align-items center
+	height 70px
+	width 100%
+	max-width 150px
+	background-color semiViolet 
 	transform skewX(30deg)
 	transition 0.2s all ease-in-out
+	z-index 1
+
+	@media screen and (max-width: 1500px) {
+		max-width 100px
+	}
 
 	@media screen and (max-width: 1280px) {
 		transform skewX(0deg)
 	}
+
+	&:hover 
+		background-color semiBlue
 
 .login, .registration
 	width 100%
@@ -362,6 +406,13 @@
 		max-width 210px
 	}
 
+	@media screen and (max-width: 1500px) {
+		max-width 198px
+	}
+
+	// @media screen and (max-width: 767px) {
+	// 	order 2
+	// }
 
 	&:after	
 		position relative
@@ -389,17 +440,6 @@
 .panel-registration:hover:after 
 	background-color themeColor
 
-.panel-login
-	max-width 150px
-	background-color semiViolet 
-	z-index 1
-
-	@media screen and (max-width: 1500px) {
-		max-width 100px
-	}
-
-	&:hover 
-		background-color semiBlue
 
 .panel-subscribe 
 	display flex
@@ -564,7 +604,18 @@
 
 	@media screen and (max-width: 1280px) {
 		transform skewX(0deg)
+		flex-grow 1
 	}
+
+	@media screen and (max-width: 920px) {
+		width 158px
+	}
+
+	// @media screen and (max-width: 767px) {
+	// 	order 3
+	// }
+
+
 
 .panel-email
 	transform skewX(30deg)
@@ -581,9 +632,14 @@
 	transform skewX(-30deg)
 
 .panel-right-top
+	@media screen and (max-width: 1280px) {
+		flex-grow 1
+	}
+
 	.search	
 		@media screen and (max-width: 1280px) {
 			transform skewX(0deg)
+			flex-grow 1
 		}
 
 .submit-search
@@ -603,6 +659,8 @@
 
 	@media screen and (max-width: 1280px) {
 		transform skewX(0deg)
+		background bgHeaderColor
+		width 60px
 	}
 
 	&:before
@@ -612,15 +670,11 @@
 		background url('../../img/main/menu-search.png')
 		transform skewX(-30deg)
 		top 26px
-		right 20px
+		left 25%
 		width 24px
 		height 24px
 		z-index 99
 		cursor pointer
-
-		@media screen and (max-width: 1500px) {
-			right 12px
-		}
 
 		@media screen and (max-width: 1280px) {
 			transform skewX(0deg)
@@ -645,6 +699,10 @@
 
 	@media screen and (max-width: 1280px) {
 		padding-left 10%
+	}
+
+	@media screen and (max-width: 920px) {
+		padding-left 5%
 	}
 
 .search-bar
@@ -678,6 +736,15 @@
 	top 30px
 	transition: all 0.2s ease 
 	cursor text
+
+.menu-burger-wrap
+	display none
+
+	@media screen and (max-width: 1280px) {
+		display flex
+		justify-content: flex-end
+		width 100%
+	}
 
 .menu-burger 
 	display none

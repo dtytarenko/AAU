@@ -193,6 +193,10 @@ header
 	position relative
 	margin 0
 		
+	@media screen and (max-width: 1280px) {
+		padding 0 25px 0 54px
+	}
+		
 	&:after
 		content ''
 		position absolute
@@ -301,6 +305,12 @@ header
 		display flex
 		justify-content space-between
 		margin-bottom 100px
+		
+		@media screen and (max-width: 1280px) {
+			flex-direction column
+			align-items center
+		}
+
 
 		.about
 			max-width 730px
@@ -354,8 +364,9 @@ header
 	@media screen and (max-width: 1280px) {
 		max-width none
 		width 100%
+		height 450px
+		background-size cover
 	}
-		
 
 	&:before
 		content ''
@@ -367,6 +378,11 @@ header
 		background-size cover
 		top 0
 		right 10px
+		position absolute
+
+		@media screen and (max-width: 1280px) {
+			display none
+		}
 
 
 .video
@@ -397,11 +413,40 @@ header
 
 	@media screen and (max-width: 1400px) {
 		left 50px
-	}		
+	}
 
-	iframe
-		width 100%
-		height 100%
+	@media screen and (max-width: 1280px) {
+		left 30%
+		top 70%
+	}
+
+	@media screen and (max-width: 920px) {
+		left 25%
+	}
+
+	@media screen and (max-width: 800px) {
+		max-width 350px
+		max-height 200px
+	}
+	
+	@media screen and (max-width: 660px) {
+		left 23%
+		max-width 350px
+		max-height 200px
+	}
+
+	@media screen and (max-width: 600px) {
+		left 20%
+	}
+
+	@media screen and (max-width: 540px) {
+		max-width 300px
+	}
+
+iframe
+	width 100%
+	height 100%
+
 
 .forum__info--wrap
 	background url("../../img/main/main-forum-bg.jpg")
@@ -409,26 +454,36 @@ header
 	background-repeat round
 	max-width 65%
 	width 100%
-	padding 0 0 40px 165px
+	padding 80px 0 40px 165px
 
 	@media screen and (max-width: 1680px) {
-		padding 0 0 40px 100px
+		padding 80px 0 40px 100px
 	}
 
 	@media screen and (max-width: 1500px) {
-		padding 0 0 40px 80px
+		padding 80px 0 40px 80px
 	}		
 
 	@media screen and (max-width: 1400px) {
-		padding 0 0 40px 60px
+		padding 80px 0 40px 60px
 	}
 
 	@media screen and (max-width: 1280px) {
 		max-width none
 		width 100%
+		padding 160px 40px 80px 60px
 	}
 
+	@media screen and (max-width: 1150px) {
+		padding 160px 40px 80px 0px
+		display flex
+		justify-content center
+	}
 
+	@media screen and (max-width: 600px) {
+		background: url("../../img/main/main-forum-bg-mob.jpg")
+		background-repeat round
+	}
 
 .forum__info
 	max-width 850px
@@ -436,9 +491,33 @@ header
 	box-sizing border-box
 	padding 0 15px
 
+	@media screen and (max-width: 1280px) {
+		max-width 1100px
+	}
+
+	@media screen and (max-width: 1150px) {
+		max-width 900px
+	}
+
+	@media screen and (max-width: 850px) {
+		padding 0 30px
+	}
+
+	@media screen and (max-width: 500px) {
+		padding 0 20px
+	}
+
 .forum__heading
-	margin 80px 0 40px
+	margin-bottom 40px
 	font-size 36px
+
+	@media screen and (max-width: 1280px) {
+		text-align center
+	}
+
+	@media screen and (max-width: 500px) {
+		margin: 0 0 80px 0
+	}
 	
 	.heading__title
 		width 50%
@@ -466,15 +545,42 @@ header
 	display flex
 	align-items center
 
+	@media screen and (max-width: 920px) {
+		flex-direction column
+		align-items flex-start
+	}
+
+
+
 .forum__timeplace-list--item
 	display flex
 	align-items center
 	justify-content flex-start
 	width 30%
 	margin-bottom 25px
+	position relative
+
+	@media screen and (max-width: 920px){
+		width 100%
+	}
+
+	@media screen and (max-width: 500px){
+		justify-content center
+		margin-bottom 80px
+		padding-top 15px
+	}
 
 	&:nth-child(3)
 		width 40%
+
+		@media screen and (max-width: 920px){
+			width 100%
+		}
+
+		@media screen and (max-width: 500px){
+			padding-top 10px
+		}
+		
 
 	&:before
 		content ''
@@ -484,6 +590,12 @@ header
 		margin-right 10px
 		right 50%
 		top -50%
+
+		@media screen and (max-width: 500px){
+			position absolute
+			top -100%
+			left 42%
+		}
 	
 	&:nth-child(1):before
 		background: url('../../img/main/icon-date.png') no-repeat;
@@ -500,6 +612,24 @@ header
 	max-width 200px
 	font-family 'HelveticaNeue-Light'
 
+	@media screen and (max-width: 920px) {
+		max-width none
+	}
+
+	@media screen and (max-width: 500px){
+		max-width: none
+		width 100%
+		text-align center
+		display flex
+		flex-direction column
+		align-items center
+	}
+
+	.forum-text
+		@media screen and (max-width: 500px){
+			width 40%
+		}
+
 // 
 // 
 ///////// end forum__timeplace-list
@@ -515,12 +645,28 @@ header
 .forum__main-list
 	margin 0 0 60px 60px
 
+	@media screen and (max-width: 920px) {
+		margin 0 60px 60px 60px
+	}
+
+	@media screen and (max-width: 500px) {
+		margin: 0 0 60px 0
+	}
+
 .forum__main-list-item
 	position relative
 	padding-left 10px
 
+	@media screen and (max-width: 500px) {
+		padding 0
+	}
+
 	&:not(:last-child)
 		margin-bottom 50px
+
+		@media screen and (max-width: 500px) {
+			margin-bottom 100px
+		}
 	
 	&:before
 		content ''
@@ -531,23 +677,47 @@ header
 		height 58px
 		transform translateY(-50%)
 
+		@media screen and (max-width: 500px) {
+			right 45%
+		}
+
 	&:nth-child(1):before
 		background url('../../img/main/icon-format.png') no-repeat
 		top 25%
+
+		@media screen and (max-width: 500px) {
+			top -40%
+		}
 	
 	&:nth-child(2):before
 		background url('../../img/main/icon-info.png') no-repeat
 		top 16%
 
+		@media screen and (max-width: 500px) {
+			top -25%
+		}
+
 	&:nth-child(3):before
 		background url('../../img/main/icon-speaker.png') no-repeat
 		top 50%
+
+		@media screen and (max-width: 500px) {
+			top -70%
+		}
 
 	&:nth-child(4):before
 		background url('../../img/main/icon-tel.png') no-repeat
 		top 35%
 
+		@media screen and (max-width: 500px) {
+			top -50%
+		}
+
 .forummain__item-text
+	@media screen and (max-width: 500px) {
+		text-align center
+	}	
+
 	.forum-subtitle
 		margin-bottom 10px
 
@@ -556,6 +726,10 @@ header
 
 .forummain__item-sublist 
 	margin-top 10px
+
+	@media screen and (max-width: 500px) {
+		text-align left
+	}	
 
 	.forummain__item-sublist--item
 		margin 0 0 10px 25px
@@ -579,6 +753,14 @@ header
 .btn-group
 	display flex
 
+	@media screen and (max-width: 1280px) {
+		justify-content center
+	}
+
+	@media screen and (max-width: 600px) {
+		flex-direction column
+	}
+
 .btn-xl
 	line-height 70px
 	height 70px
@@ -586,10 +768,21 @@ header
 	&:hover
 		background-color semiPurple
 
+	@media screen and (max-width: 600px) {
+		max-width none
+		width 100%
+	}
+	
 .btn-s
 	line-height 66px
 	height 70px
 	margin-left 40px
+
+	@media screen and (max-width: 600px) {
+		margin 10px 0 0 0
+		max-width none
+		width 100%
+	}
 
 // 
 // 
