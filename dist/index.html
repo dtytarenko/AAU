@@ -102,16 +102,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="container main-menu">
+		<div class="main-menu">
             <div class="menu-block-left">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#">про ААУ </a>
+                        <a href="#" class="item-with-sublist">про ААУ</a>
                         <ul class="submenu">
                             <li class="submenu-item"><a href="#">про ААУ</a></li>
                             <li class="submenu-item">
-                                <a href="#">Структура ААУ</a>
-                                <ul class="second-submenu">
+								<a href="#" class="submenu-item__link">Структура ААУ</a>
+								  <ul class="second-submenu">
                                     <li class="submenu-item"><a href="#">З'їзд ААУ</a></li>
                                     <li class="submenu-item"><a href="#">Президент</a></li>
                                     <li class="submenu-item"><a href="#">Віце-президент</a></li>
@@ -128,16 +128,33 @@
 					</li>
 					
                     <li class="menu-item">
-                		<p><a href="#">Форуми і заходи </a></p>
+						<a href="#" class="item-with-sublist">Форуми і заходи </a>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#">Майбутні заходи</a></li>
-                            <li class="submenu-item"><a href="#">Архів форумів і заходів</a></li>
-                            <li class="submenu-item"><a href="#">Календар</a></li>
+                            <li class="submenu-item">
+								<a href="#" class="submenu-item__link">Майбутні заходи</a>
+								<ul class="second-submenu">
+									<li class="submenu-item"><a href="#">Всi</a></li>
+                                    <li class="submenu-item"><a href="#">Форуми</a></li>
+                                    <li class="submenu-item"><a href="#">Iншi заходи</a></li>
+								</ul>
+							</li>
+							
+							<li class="submenu-item">
+								<a href="#" class="submenu-item__link">Архів форумів і заходів</a>
+								<ul class="second-submenu">
+									<li class="submenu-item"><a href="#">Всi</a></li>
+                                    <li class="submenu-item"><a href="#">Форуми</a></li>
+                                    <li class="submenu-item"><a href="#">Iншi заходи</a></li>
+								</ul>
+							</li>
+							
+							
+							<li class="submenu-item"><a href="#">Календар</a></li>
                         </ul>
 					</li>
 					
                     <li class="menu-item">
-                        <a href="#">членство </a>
+                        <a href="#" class="item-with-sublist">членство</a>
                         <ul class="submenu">
                             <li class="submenu-item"><a href="#">Інформація про членство</a></li>
                             <li class="submenu-item"><a href="#">Як приєднатись до ААУ</a></li>
@@ -146,13 +163,10 @@
 					</li>
 					
                     <li class="menu-item">
-                        <a href="#">проекти </a>
+                        <a href="#" class="item-with-sublist">проекти </a>
                         <ul class="submenu">
-                            <li class="submenu-item"><a href="#">Школа адвокатури</a></li>
-                            <li class="submenu-item"><a href="#">Третейський суд</a></li>
                             <li class="submenu-item"><a href="#">Обличчя адвокатури</a></li>
                             <li class="submenu-item"><a href="#">Конкурс «Адвокат року»</a></li>
-                            <li class="submenu-item"><a href="#">Емблема регіону</a></li>
                             <li class="submenu-item"><a href="#">Ярмарок проектів</a></li>
                             <li class="submenu-item"><a href="#">Жіночий клуб</a></li>
                             <li class="submenu-item"><a href="#">Клуб майбутніх адвокатів</a></li>
@@ -168,7 +182,7 @@
             <div class="menu-block-right">
                 <ul class="menu">
                     <li class="menu-item">
-                        <a href="#">Новини </a>
+                        <a href="#" class="item-with-sublist">Новини </a>
                         <ul class="submenu">
                             <li class="submenu-item"><a href="#">Новини ААУ</a></li>
                             <li class="submenu-item"><a href="#">Новини партнерiв ААУ</a></li>
@@ -176,21 +190,20 @@
                     </li>
                     <li class="menu-item"><a href="#">бюлетень</a></li>
                     <li class="menu-item">
-                        <a href="#">партнери </a>
+                        <a href="#" class="item-with-sublist">партнери </a>
                         <ul class="submenu">
                             <li class="submenu-item"><a href="#">Генеральні партнери ААУ</a></li>
                             <li class="submenu-item"><a href="#">Партнери комiтетiв</a></li>
-                            <li class="submenu-item"><a href="#">Генеральний медіа-партнер</a></li>
-                            <li class="submenu-item"><a href="#">Медіа партнери</a></li>
+                            <li class="submenu-item"><a href="#">Iнформацiйнi та медіа партнери</a></li>
                             <li class="submenu-item"><a href="#">Партнерська програма</a></li>
                         </ul>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Галерея </a>
+                        <a href="#" class="item-with-sublist">Галерея </a>
                         <ul class="submenu">
                             <li class="submenu-item">
-                                <a href="#">Фотогалерея</a>
-                                <ul class="submenu second-submenu">
+                                <a href="#" class="item-with-sublist">галерея</a>
+                                <ul class="second-submenu">
                                     <li class="submenu-item"><a href="#">Форуми</a></li>
                                     <li class="submenu-item"><a href="#">Iншi заходи</a></li>
                                 </ul>
@@ -1070,7 +1083,7 @@
 	<!-- BOTTOM CONTROL PANEL END -->
 	
 	<!-- FOOTER block start -->
-	<!-- @@include('include/footer.html') -->
+	
 	<!-- FOOTER block end -->
 	
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
@@ -1079,6 +1092,10 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 	<script src="index.js"></script>
+</body>
+</html>
+
+index.js"></script>
 </body>
 </html>
 

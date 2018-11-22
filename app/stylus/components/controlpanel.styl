@@ -112,7 +112,6 @@
 .panel-left, .panel-right
 	display flex
 	align-items flex-start
-	max-width 810px
 	width 100%
 
 	@media screen and (max-width: 1800px) {
@@ -133,11 +132,15 @@
 	}
 
 .panel-right
+	max-width 810px
 	justify-content flex-end
 
 	@media screen and (max-width: 1280px) {
 		flex-wrap wrap
 	}
+
+.panel-left
+	max-width 700px
 
 .panel-left-top
 	justify-content flex-start
@@ -420,7 +423,7 @@
 		width 50px
 		height 100%
 		top 0 
-		right 81%
+		right 80%
 		background semiPurple
 		transform-origin bottom left
 		transform skew(30deg, 0deg)
