@@ -3,11 +3,31 @@
 @import '../reset'
 @import '../vars'
 
+//----------------------------------------- START general style for control panel
+
+.youtube, .instagram, .linkedin, .facebook, .telegram
+	height 70px
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	transform skewX(-30deg)
+	transition 0.2s all ease-in-out
+	
+//----------------------------------------- END general style for control panel
 .social 
 	display flex
 	max-width 350px
 	width 100%
 	
+	@media screen and (max-width: 1650px) {
+		max-width 265px
+	}
+
+	@media screen and (max-width: 1440px) {
+		height 50px
+	}
+
 	@media screen and (max-width: 1280px) {
 		padding-top 1px
 	}
@@ -16,13 +36,18 @@
 		max-width 255px
 	}	
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 720px) {
 		display none
 	}
 
 .control-panel
 	display flex
 	justify-content space-between
+	position relative
+
+	@media screen and (max-width: 630px) {
+		height 210px // высота 3 рядов панели для перехода на мобильную версию
+	}
 
 
 .control-panel-btm
@@ -114,18 +139,6 @@
 	align-items flex-start
 	width 100%
 
-	@media screen and (max-width: 1800px) {
-		max-width 750px
-	}
-
-	@media screen and (max-width: 1650px) {
-		max-width 700px
-	}
-
-	@media screen and (max-width: 1500px) {
-		max-width 600px
-	}
-
 	@media screen and (max-width: 1280px) {
 		max-width none
 		width 50%
@@ -139,41 +152,53 @@
 		flex-wrap wrap
 	}
 
+
 .panel-left
 	max-width 700px
 
 .panel-left-top
 	justify-content flex-start
 
+	@media screen and (max-width: 1800px) {
+		max-width 650px
+	}
+
+	@media screen and (max-width: 1700px) {
+		max-width 600px
+	}
+
+	@media screen and (max-width: 1500px) {
+		max-width 550px
+	}
+
+	@media screen and (max-width: 1370px) {
+		max-width 520px
+	}
+
 	@media screen and (max-width: 1280px) {
 		flex-wrap wrap
-		max-width 350px
+		max-width 260px
 	}
 
 	@media screen and (max-width: 920px) {
 		max-width 255px
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
+		max-width 200px
+	}
+
+	@media screen and (max-width: 720px) {
 		max-width none
 		width 0
 	}
 	
-
-
-
-
-.youtube, .instagram, .linkedin, .facebook, .telegram
-	height 70px
-	width 100%
-	display flex
-	justify-content center
-	align-items center
-	transform skewX(-30deg)
-	transition 0.2s all ease-in-out
-	
 .panel-left-top
 	.youtube, .instagram, .linkedin, .facebook, .telegram
+		@media screen and (max-width: 1440px) {
+			height 50px
+		}
+
 		@media screen and (max-width: 1280px) {
 			transform skewX(0deg)
 		}
@@ -299,14 +324,24 @@
 	transform skewX(-30deg)
 	transition 0.2s all ease-in-out
 
-	@media screen and (max-width: 1280px) {
-		order 6
+	@media screen and (max-width: 1650px) {
+		max-width 280px
+		width 100%
 	}
 
-	@media screen and (max-width: 920px) {
+	@media screen and (max-width: 1280px) {
+		order 6
 		position absolute
-		top 71px
-		max-width 290px
+		top 51px
+	}
+
+	@media screen and (max-width: 1440px) {
+		height 50px
+	}
+
+	@media screen and (max-width: 630px) {
+		top 101px
+		max-width 100px
 	}
 
 
@@ -316,11 +351,6 @@
 	display flex
 	align-items center
 	justify-content center
-	font-size 14px
-	font-family 'Helvetica-Bold'
-	color whiteColor
-	letter-spacing 0.1em
-	text-transform uppercase
 
 
 	.transform
@@ -329,8 +359,25 @@
 		align-items center
 		justify-content center
 
-	img
-		padding-right 15px
+		img
+			padding-right 15px
+
+			@media screen and (max-width: 630px) {
+				padding 0
+
+			}
+		
+		p
+			font-size 14px
+			font-family 'Helvetica-Bold'
+			color whiteColor
+			letter-spacing 0.1em
+			text-transform uppercase
+
+			
+			@media screen and (max-width: 630px) {
+				display none
+			}
 
 	&:hover
 		background-color semiBlue
@@ -348,12 +395,21 @@
 	transition 0.2s all ease-in-out
 	z-index 1
 
-	@media screen and (max-width: 1500px) {
+	@media screen and (max-width: 1650px) {
 		max-width 100px
+	}
+
+	@media screen and (max-width: 1440px) {
+		height 52px
 	}
 
 	@media screen and (max-width: 1280px) {
 		transform skewX(0deg)
+	}
+
+	@media screen and (max-width: 630px) {
+		width 35%
+		max-width none
 	}
 
 	&:hover 
@@ -405,17 +461,18 @@
 		max-width 240px
 	}
 
-	@media screen and (max-width: 1500px) {
-		max-width 210px
+	@media screen and (max-width: 1440px) {
+		height 52px
 	}
 
-	@media screen and (max-width: 1500px) {
-		max-width 198px
+	@media screen and (max-width: 800px) {
+		max-width 200px
 	}
 
-	// @media screen and (max-width: 767px) {
-	// 	order 2
-	// }
+	@media screen and (max-width: 630px) {
+		max-width none
+		width 65%
+	}
 
 	&:after	
 		position relative
@@ -596,28 +653,32 @@
 
 .panel-search
 	transform skewX(30deg)
-	width 580px
+	width 100%
 	height 70px
 	border-left 1px solid #dbe0ea
 	border-bottom: 1px solid #dbe0ea
 
-	@media screen and (max-width: 1500px) {
-		width 250px
+	@media screen and (max-width: 1440px) {
+		height 51px
 	}
 
 	@media screen and (max-width: 1280px) {
 		transform skewX(0deg)
 		flex-grow 1
+		width 200px
 	}
 
-	@media screen and (max-width: 920px) {
-		width 158px
+	@media screen and (max-width: 630px) {
+		order 3
+		position absolute
+		top 50px
+		width 100%
 	}
 
-	// @media screen and (max-width: 767px) {
-	// 	order 3
-	// }
-
+	.search-input-label
+		@media screen and (max-width: 1440px) {
+			top 15px
+		}
 
 
 .panel-email
@@ -635,8 +696,21 @@
 	transform skewX(-30deg)
 
 .panel-right-top
+	@media screen and (max-width: 1800px) {
+		max-width 750px
+	}
+
+	@media screen and (max-width: 1700px) {
+		max-width 700px
+	}
+
+	@media screen and (max-width: 1370px) {
+		max-width 650px
+	}
+
 	@media screen and (max-width: 1280px) {
 		flex-grow 1
+		max-width none
 	}
 
 	.search	
@@ -678,6 +752,10 @@
 		height 24px
 		z-index 99
 		cursor pointer
+
+		@media screen and (max-width: 1440px) {
+			top 15px
+		}
 
 		@media screen and (max-width: 1280px) {
 			transform skewX(0deg)
@@ -742,18 +820,33 @@
 
 .menu-burger-wrap
 	display none
+	height 50px
 
 	@media screen and (max-width: 1280px) {
 		display flex
 		justify-content: flex-end
 		width 100%
+
 	}
+
+	@media screen and (max-width: 630px) {
+		position absolute
+		top 100px
+		max-width 70px
+	}
+
+	&:hover
+		cursor pointer
 
 .menu-burger 
 	display none
 
 	img
 		margin-right 26px
+
+		@media screen and (max-width: 630px) {
+			margin 0
+		}
 	
 	p
 		font-family Helvetica-Bold, sans-serif
@@ -761,6 +854,10 @@
 		font-size 14px
 		letter-spacing 1.4px
 		color semiPurple
+
+		@media screen and (max-width: 630px) {
+			display none
+		}
 	
 	&:after		
 		position relative
@@ -777,15 +874,27 @@
 		transition 0.2s all ease-in-out	
 		cursor pointer
 
+		@media screen and (max-width: 630px) {
+			position absolute
+			right 40%
+			z-index -10
+			width 40px
+		}
+
 	@media screen and (max-width: 1280px) {
 		background-color bgHeaderColor
 		max-width 295px
 		width 100%
-		height 70px
+		height 50px
 		display flex
 		align-items center
 		justify-content flex-end
 		order 5
 	}  
+
+	@media screen and (max-width: 630px) {
+		max-width 70px
+		justify-content center
+	}
 
 	
