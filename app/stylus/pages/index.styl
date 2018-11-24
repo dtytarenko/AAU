@@ -4,6 +4,7 @@
 @import '../vars'
 @import '../components/footer'
 @import '../components/controlpanel'
+@import '../normalbase'
 
 
 //----------------------------header--------------------------------
@@ -27,6 +28,10 @@ header
 	padding 0 40px
 	height 80px
 	position relative
+
+	@media screen and (max-width: 1280px) {
+		padding 0 20px
+	}
  
 .logo-wrap 
 	align-self center
@@ -84,14 +89,12 @@ header
 
 .menu-block-left
 	.menu
-		justify-content center
+		justify-content flex-end
+		margin-right 200px
 
-		@media screen and (max-width: 1700px) {
-			margin-right 70px
-		}
-
-		@media screen and (max-width: 1550px) {
+		@media screen and (max-width: 1440px) {
 			justify-content flex-start
+			margin 0
 		}
 
 	.menu-item:nth-of-type(2)
@@ -287,24 +290,33 @@ header
 	display flex
 	flex-direction column
 	align-items center
+	position relative
+	padding-top 90px
 
 	&:before 
 		content ''
-		display none
+		display block
 		width 261px
 		height 191px
 		background url("../../img/all/logo.png") no-repeat
-		position relative
-		top 40px
-		right: 0%
+		position absolute
+		top 135px
+		right 75%
 		margin-bottom 120px
 		background-size cover
 
-		@media screen and (max-width 1280px) {
-			display block
+		@media screen and (max-width 1600px) {
+			right: 75%
 		}
 
-		@media screen and (max-width 630px) {
+		@media screen and (max-width 1280px) {
+			display block
+			position relative
+			top 40px 
+			right 0%
+		}
+
+		@media screen and (max-width 700px) {
 			width 179px
 			height 131px
 		}
@@ -326,10 +338,10 @@ header
 	color whiteColor
 	text-align center
 	position relative
-	font-family 'Helvetica-Regular'
+	font-family 'Helvetica-Bold'
 	font-weight 700
 
-	@media screen and (max-width: 630px) {
+	@media screen and (max-width: 700px) {
 		font-size 30px
 		margin 0 30px 0 30px
 	}
@@ -337,8 +349,7 @@ header
 .intro-subtitle 
 	color #fcdab0
 	font-size 48px
-	font-weight 700
-	font-family 'HelveticaWorld-Bold'
+	font-family 'HelveticaNeue-Bold'
 	line-height 72px
 	margin 40px 0 50px 0	
 	width 100%
@@ -348,21 +359,24 @@ header
 		margin 30px 0
 	}
 
-	@media screen and (max-width: 630px) {
+	@media screen and (max-width: 700px) {
 		font-size 24px
 		letter-spacing 1.2px
 		line-height 36px
+		margin 15px 0
 	}
+
 
 .intro-bottomtitle 
 	color whiteColor
 	font-size 60px
 	font-weight 700 
-	font-family 'HelveticaNeue-Roman'
-	width 520px
+	font-family 'HelveticaNeue-Bold'
+	width 600px
 	text-align center
+	line-height 1.2
 
-	@media screen and (max-width: 630px) {
+	@media screen and (max-width: 700px) {
 		font-size 24px
 		letter-spacing 1.2px
 		width 250px
@@ -370,7 +384,7 @@ header
 	}
 
 .intro-place-wrap
-	margin 30px 0 60px 0
+	margin 60px 0
 	align-self flex-start
 	position relative
 
@@ -390,16 +404,16 @@ header
 		transform-origin bottom left
 		transform skew(-30deg, 0deg)
 	
-		@media screen and (max-width: 643px) {
+		@media screen and (max-width: 700px) {
 			width 100px
 		}
 	
 .intro__place 
-	padding 0 25px 0 287px
+	padding 25px 25px 25px 287px
 	color #e1e1eb
 	text-transform uppercase
 	align-self flex-start
-	background-color #2b3384
+	background-color semiViolet
 	font-family 'Helvetica-Bold'
 	font-size 24px 
 	font-weight 500
@@ -409,15 +423,17 @@ header
 	margin 0
 	text-align center
 	z-index 99
-		
+
 	@media screen and (max-width: 1280px) {
-		padding 0 25px 0 54px
+		padding 15px 25px 15px 54px
 	}
 
-	@media screen and (max-width: 643px) {
+	@media screen and (max-width: 700px) {
 		text-align left
 		font-size 18px
 		letter-spacing 0.9px
+		line-height 1.5
+		padding 5px 10px 5px 20px
 	}
 		
 .intro-dots
@@ -471,11 +487,18 @@ header
 	justify-content center
 	padding 40px 0 
 
+	@media screen and (max-width: 320px) {
+		flex-wrap: wrap
+	}
+
 	li
 		position relative
 		height 10px
 		padding 0
 		cursor pointer
+
+		:nth-child(n+7)
+			margin-top 10px
 
 		&:before
 			content ''
@@ -518,33 +541,91 @@ header
 		
 		@media screen and (max-width: 1280px) {
 			flex-direction column
-			align-items center
+			align-items flex-start
+			margin-bottom 80px
+			padding 0 35px 0 30px
 		}
 
+		@media screen and (max-width: 510px) {
+			margin-bottom 60px
+		}
 
 .about__article-wrap
 	max-width 730px
 	width 100%
 	margin-right 60px
+	display flex
+	flex-direction column
+	padding-top 70px
 
 	@media screen and (max-width: 1280px) {
 		max-width none
 		margin 0
 	}
 
+	@media screen and (max-width: 510px) {
+		text-align center
+		align-items center
+		padding-top 40px
+	}
+
+	.separator
+		@media screen and (max-width: 510px) {
+			justify-content center
+		}
+
+		&:after
+			@media screen and (max-width: 510px) {
+				width 100%
+			}
+
+.about__article-title
+	@media screen and (max-width: 510px) {
+		font-size 30px
+	}
+
+.about__article-subtitle 
+	@media screen and (max-width: 510px) {
+		text-align center
+		font-size 18px
+		letter-spacing 0.9px
+	}
 
 	.btn-l
 		margin-top 40px
 
-.about__article-text
+.about__article-text-wrap
 	@media screen and (max-width: 1280px) {
 		padding-right 20px
 	}
 
+	@media screen and (max-width: 510px) {
+		padding 0
+	}
+
+.about__article-btn-link
+	margin-top 45px
+	
+
 .calendar
 	max-width 440px
 	width 100%
+	padding-top 70px
 
+	@media screen and (max-width: 1280px) {
+		max-width none
+	}
+
+
+.calendar__title-wrap 
+
+	@media screen and (max-width: 1280px) {
+		margin-top 80px
+	}
+
+	@media screen and (max-width 510px) {
+		margin-top 60px
+	}
 
 //------------------------------------main-forum-------------------------------------
 
@@ -1061,9 +1142,6 @@ iframe
 	color semiBlack
 	
 	p
-		line-height 30px
-		text-align justify
-		margin-bottom 20px
 		font-weight 300
 		font-family 'HelveticaNeue-Roman'
 
@@ -1113,7 +1191,7 @@ iframe
 				text-align center
 			}
 
-		.appeal
+		.appeal__wrap
 			max-width 730px
 			width 100%
 			margin-left 50px

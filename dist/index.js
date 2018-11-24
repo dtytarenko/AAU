@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $( ".menu-burger" ).click(function() {
         $( ".menu-block-left, .menu-block-right").slideToggle( "slow");
@@ -156,4 +157,3 @@ $(document).ready(function () {
         }]
     });
 })
-
