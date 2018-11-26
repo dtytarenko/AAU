@@ -96,7 +96,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.js-event-link-slider').slick({
+    $('.event-link__slider-js').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s
         infinite: false,

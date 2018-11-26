@@ -533,11 +533,12 @@ header
 //--------------------------------------------main-about---------------------------------------
 
 .main-about
+	display flex
+	justify-content center
 
 	.container
 		display flex
 		justify-content space-between
-		margin-bottom 100px
 		
 		@media screen and (max-width: 1280px) {
 			flex-direction column
@@ -556,7 +557,6 @@ header
 	margin-right 60px
 	display flex
 	flex-direction column
-	padding-top 70px
 
 	@media screen and (max-width: 1280px) {
 		max-width none
@@ -566,7 +566,6 @@ header
 	@media screen and (max-width: 510px) {
 		text-align center
 		align-items center
-		padding-top 40px
 	}
 
 	.separator
@@ -610,7 +609,6 @@ header
 .calendar
 	max-width 440px
 	width 100%
-	padding-top 70px
 
 	@media screen and (max-width: 1280px) {
 		max-width none
@@ -1099,7 +1097,6 @@ iframe
 	width 100%
 	margin 0 auto
 	box-sizing border-box
-	padding-bottom 40px
 
 	.js-partners-slider
 
@@ -1222,62 +1219,69 @@ iframe
 				
 
 
-
-//-------------------------------------blog---------------------------------------
+//------------------------------------Event-block-----------------------------------------------
 
 .blog
-
-	.container
-		display flex
-		justify-content space-between
-		position relative
-
-		&:before
-			content ''
-			display block
-			width 1px
-			height calc(100% - 20px)
-			position absolute
-			top 100px
-			left 50%
-			background-color #CCCCCC
-
-		.event
-			max-width 550px
-			width 100%
-			margin-left 20px
-
-			.btn-block
-				display none
-
-		.news
-			max-width 550px
-			width 100%
-			margin-right 20px
-
-			.btn-block
-				display none
-
-	.btn-block
-		display flex
+	@media screen and (max-width: 1360px) {
+		flex-direction column
 		align-items center
-		justify-content space-between
-		margin-bottom 100px
+		margin 80px auto
+		padding 0 40px
+	}
 
-		&:before
-			content none
+	@media screen and (max-width: 510px) {
+		padding 0 20px
+		margin 40px auto
+	}
 
-		.news-btn-block
-			max-width 550px
-			width 100%
-			display flex
+.event
+	display flex
+	flex-direction column
+	max-width 550px
+	width 100%
+	margin-left 20px
 
-			.btn-xs
-				margin-right 40px
+	@media screen and (max-width: 1360px) {
+		margin 80px 0 0 0
+		max-width none
+	}
 
-		.entry-btn-block
-			max-width 550px
-			width 100%
+.event-entry__btn-group
+	max-width 550px
+	width 100%
+
+	@media screen and (max-width: 1360px) {
+		justify-content flex-start
+	}
+
+//-------------------------------------News-block---------------------------------------
+.news
+	max-width 550px
+	width 100%
+	margin-right 20px
+
+	@media screen and (max-width: 1360px) {
+		margin-right 0
+		max-width none
+	}
+
+	&:before
+		content ''
+		display block
+		width 1px
+		height calc(100% - 100px)
+		position absolute
+		left 50%
+		background-color #CCCCCC
+
+		@media screen and (max-width: 1360px) {
+			display none
+		}
+
+.news-entry__btn-group 
+	@media screen and (max-width: 1360px) {
+		justify-content flex-start
+	}
 
 //--------------------------------------------------------------event-link-----------------------------------------------
 
@@ -1289,32 +1293,28 @@ iframe
 	box-sizing border-box
 	padding-bottom 60px
 
-	.event-link-slider
-		max-width 1880px
-		width 100%
-		margin 80px auto 30px
+.event-link__slider-wrap
+	max-width 1880px
+	width 100%
+	margin 80px auto 30px
 
-		.slick-dots
-			margin-top 20px
+.event-link-slide
+	max-width 215px
+	width 100%
+	max-height 310px
+	height 100%
+	padding 0 10px
 
-		.event-link-slide
-			max-width 215px
-			width 100%
-			max-height 310px
-			height 100%
-			padding 0 10px
+.banner
+	a
+		img
+			width 215px
+			height 310px
+			object-fit cover
 
-			.banner
-
-				a
-
-					img
-						max-width 215px
-						width 100%
-						height 310px
-						object-fit cover
-
-
+.event-link__slide--link
+	width 100%
+	height 100%
+	display block
 //---------------------------------footer-----------------------------------------------------
-
 
