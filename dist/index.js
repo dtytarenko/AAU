@@ -103,7 +103,7 @@ $(document).ready(function () {
         prevArrow: false,
         nextArrow: false,
         speed: 500,
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
         // autoplay: true, 
@@ -114,6 +114,15 @@ $(document).ready(function () {
             breakpoint: 1800,
             settings: {
             slidesToShow: 6,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true
+            }
+        },
+        {
+            breakpoint: 1450,
+            settings: {
+            slidesToShow: 5,
             slidesToScroll: 1,
             infinite: true,
             dots: true
