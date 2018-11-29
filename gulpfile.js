@@ -16,9 +16,8 @@ gulp.task('css', () => {
 	return gulp
 		.src([
 			'src/common/common-stylus/main.styl',
-			'src/common/common-stylus/components-indextype.styl',
-			'src/common/common-stylus/components-accounttype.styl',
-			'src/pages/**/*.styl'
+			'src/pages/**/*.styl',
+			'src/libs/**/*.css'
 		]) // массив путей
 		.pipe(plumber()) // отслеживание ошибок
 		.pipe(stylus()) // для препроцессора css - stylus 
@@ -67,7 +66,9 @@ gulp.task('fonts',() => {
 gulp.task('js', () => {
 	return gulp.src([
 		'src/common/common-js',
-		'src/pages/**/*.js'])
+		'src/pages/**/*.js',
+		'src/libs/**/*.js'
+		])
 		.pipe(plumber())
 		.pipe(rename({dirname: ''}))
 		.pipe(gulp.dest('dist/js'))
@@ -103,6 +104,7 @@ gulp.task('fileinclude', function() {
 
 gulp.task('watch', ['html','css','js','fileinclude', 'reload'], () => {
 	watch(['src/common/common-stylus/**/*.styl', 'src/pages/**/*.styl'], ()  => gulp.start('css'));
-	watch(['src/common/common-html', 'src/pages/**/*.html'], () => gulp.start('html'));
+	watch(['src/common/common-html/*.html', 'src/pages/**/*.html'], () => gulp.start('html'));
+	watch(['src/common/common-js/*.js', 'src/pages/**/*.js', 'src/libs/**/*.js'], () => gulp.start('js'));
 });
 
