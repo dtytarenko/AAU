@@ -1,7 +1,6 @@
 const   gulp         = require('gulp'),  //основной плагин gulp
 				stylus       = require('gulp-stylus'),  //препроцессор stylus
 				browserSync  	= require('browser-sync'),
-				maps		 = require('gulp-sourcemaps'),
 				concat       = require('gulp-concat'), // конкатенация (используется для js)
 				uglify       = require('gulp-uglifyjs'),  //минификация js
 				csso		 = require('gulp-csso'), 
@@ -15,9 +14,13 @@ const   gulp         = require('gulp'),  //основной плагин gulp
 
 gulp.task('css', () => {
 	return gulp
-		.src('app/stylus/**/*.styl')
+		.src([
+			'src/common/common-stylus/main.styl',
+			'src/common/common-stylus/components-indextype.styl',
+			'src/common/common-stylus/components-accounttype.styl',
+			'src/pages/**/*.styl'
+		])
 		.pipe(plumber())
-		.pipe(maps.init())
 		.pipe(stylus())
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
 		{ cascade: true }))
@@ -25,25 +28,26 @@ gulp.task('css', () => {
 		.pipe(rename({
 			suffix:'.min'
 		}))
-		.pipe(maps.write())
-		.pipe(gulp.dest('dist/css'))
+		.pipe(rename({dirname: ''}))
+		.pipe(gulp.dest('dist/css/'))
 		.pipe(browserSync.reload({
 			stream: true}));
 });
 
 gulp.task('html', () => {
   return gulp
-    .src('app/**/*.html')
+    .src('src/pages/**/*.html')
     .pipe(plumber())
 		.pipe(plumber.stop())
 		.pipe(fileinclude())
+		.pipe(rename({dirname: ''}))
     .pipe(gulp.dest('dist/'))
     .pipe(browserSync.reload({
 			stream: true}));
 });
 
 gulp.task('img', () => {
-	return gulp.src('app/img/**/*.*')
+	return gulp.src('src/img/**/*.*')
 	.pipe(imagemin([
 		imagemin.gifsicle({interlaced: true}),
 		imagemin.jpegtran({progressive: true}),
@@ -59,13 +63,17 @@ gulp.task('img', () => {
 });
 
 gulp.task('fonts',() => {
-	var buildFonts = gulp.src('app/fonts/**/*')
+		return gulp.src('src/fonts/**/*')
 	  .pipe(gulp.dest('dist/fonts'));
   })
 
 gulp.task('js', () => {
-	return gulp.src('app/js/**/*.js')
-	  .pipe(gulp.dest('dist/'))
+	return gulp.src([
+		'src/common/common-js',
+		'src/pages/**/*.js'])
+		.pipe(plumber())
+		.pipe(rename({dirname: ''}))
+		.pipe(gulp.dest('dist/js'))
 		.pipe(browserSync.reload({
 			stream: true}));
 });
@@ -98,7 +106,7 @@ gulp.task('fileinclude', function() {
 
 
 gulp.task('watch', ['html','css','js','fileinclude', 'reload'], () => {
-	watch('app/stylus/**/*.styl', ()  => gulp.start('css'));
-	watch('app/*.html', () => gulp.start('html'));
+	watch(['src/common/common-stylus/**/*.styl', 'src/pages/**/*.styl'], ()  => gulp.start('css'));
+	watch(['src/common/common-html', 'src/pages/**/*.html'], () => gulp.start('html'));
 });
 
