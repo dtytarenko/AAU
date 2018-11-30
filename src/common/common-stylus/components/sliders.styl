@@ -1,17 +1,20 @@
+@import '../vars'
+
 //-------------------------------slider------------------------
 .tpc-slider__wrap
 	max-width 1300px
 	width 100%
 	margin 0 auto
 	box-sizing border-box
-	
+
 	.container
 		padding 100px 0 0 0
 
-.tpc-slider__slide
-	display flex
-	justify-content center
-	margin-bottom 20px
+.tpc-slider__wrap
+	.tpc-slider__slide
+		display flex
+		justify-content center
+		margin-bottom 20px
 
 .tpc-slider__slide--img---wrap
 	max-width 190px
@@ -34,6 +37,7 @@
 .tpc-slider
 	.container
 		max-width 1340px
+		flex-direction column
 
 		.heading
 			padding 0 15px

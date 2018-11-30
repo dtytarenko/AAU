@@ -75,6 +75,11 @@ button
 //         font-size 12px
 //         position absolute
 
+.heading
+    @media screen and (max-width: 1280px) {
+        align-self flex-start
+        width 100%
+    }
 
 .defaultTitle
     font-size 36px
@@ -155,12 +160,6 @@ button
 
 //------------------------blog-------------------------
 
-.blog
-    display flex
-    justify-content space-between
-    position relative
-    margin 100px auto
-
 .blog-entry
     display flex
     margin-bottom 50px
@@ -190,6 +189,8 @@ button
     margin-left 40px
 
     @media screen and (max-width: 510px) {
+        max-width 800px
+        width 100%
         margin-left 0
     }
 
@@ -317,13 +318,17 @@ button
     padding 100px 0
     box-sizing border-box
     margin 0 auto
+    display flex
+    justify-content space-between
 
     @media screen and (max-width: 1280px) {
-        padding 80px 0
+        flex-direction column
+        align-items center
+        padding 80px 35px
     }
 
     @media screen and (max-width: 510px) {
-        padding 40px 0
+        padding 40px 22px
     }
  
 //-------------------------------video-------------------------
