@@ -206,11 +206,10 @@ header
 
 main 
     display inline-block //it`s important for IE
-    padding-left 375px
-    padding-right 110px
+    padding 133px 110px 0 375px
 
     @media screen and (max-width: xl) {
-        margin-top 75px
+        margin-top 145px
         padding 0 35px 0 375px
     }
 
@@ -231,6 +230,11 @@ main
 .nav__wrap 
     margin-top 60px
     height 700px
+
+    @media screen and (max-width: lg) {
+        display flex
+        justify-content center
+    }
 
 .nav__list-item 
     margin-bottom 5px
@@ -399,6 +403,7 @@ footer
     align-items center
     justify-content center
     height calc(100vh - 195px) //195px - it`s height footer
+    z-index 99
     
     @media screen and (max-height: 850px) {
         height 100vh
@@ -454,7 +459,8 @@ footer
 .menu__btn-wrap 
     
     @media screen and (max-width: sm) {
-        display flex    
+        display flex
+        justify-content center
         align-items center
         margin-top 10px
     }
@@ -549,3 +555,4 @@ footer
     @media screen and (max-width: 320) {
         display none
     }
+

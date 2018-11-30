@@ -3,6 +3,7 @@ const   gulp         = require('gulp'),  //основной плагин gulp
 				browserSync  	= require('browser-sync'),
 				concat       = require('gulp-concat'), // конкатенация (используется для js)
 				uglify       = require('gulp-uglifyjs'),  //минификация js
+				maps		 = require('gulp-sourcemaps'),
 				csso		 = require('gulp-csso'), // минификация css
 				rename       = require('gulp-rename'), // используется для переименования конечных файлов css и для изменения конечной структуры проекта
 				del          = require('del'), // очистка сборочной директории	
@@ -17,15 +18,19 @@ gulp.task('css', () => {
 		.src([
 			'src/common/common-stylus/main.styl',
 			'src/pages/**/*.styl',
+			'src/common/common-stylus/main-acc.styl',
+			'src/common/common-stylus/main-index.styl',
 			'src/libs/**/*.css'
 		]) // массив путей
 		.pipe(plumber()) // отслеживание ошибок
+		.pipe(maps.init())
 		.pipe(stylus()) // для препроцессора css - stylus 
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
 		{ cascade: true })) // для кроссбраузерности
 		.pipe(csso()) // минификация css
 		.pipe(rename(
 			{suffix:'.min', dirname: ''})) // для переименования конечных файлов css и для изменения конечной структуры проекта
+		.pipe(maps.write())
 		.pipe(gulp.dest('dist/css/')) // сборка проекта с указанием конечной директории
 		.pipe(browserSync.reload({
 			stream: true})); // отслеживание ошибок в режиме стрима

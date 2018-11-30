@@ -2,12 +2,6 @@
 $(document).ready(function() {
     $( ".menu-burger" ).click(function() {
         $( ".menu-block-left, .menu-block-right").slideToggle( "slow");
-        // $('.menu').css('display', 'flex');
-
-        // $('.menu').css('z-index', '4');
-        // if(window.innerWidth >= 321) {
-        //     $('.overlay').slideToggle("slow");
-        // } // it`s for delete overlay for mobile-width
     });
     
     $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {
@@ -37,7 +31,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.js-partners-slider').slick({
+    $('.tpc-slider__js').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s
         infinite: false,
@@ -47,7 +41,7 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        // autoplay: true,
+        // autoplay: true, 
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
@@ -94,7 +88,6 @@ $(document).ready(function () {
     });
 });
 
-
 $(document).ready(function () {
     $('.event-link__slider-js').slick({
         dots: true,
@@ -103,7 +96,7 @@ $(document).ready(function () {
         prevArrow: false,
         nextArrow: false,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 8,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
         // autoplay: true, 
@@ -111,25 +104,7 @@ $(document).ready(function () {
         autoplaySpeed: 1500,
         responsive: [
         {
-            breakpoint: 1800,
-            settings: {
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-            }
-        },
-        {
-            breakpoint: 1450,
-            settings: {
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-            }
-        },
-        {
-            breakpoint: 1250,
+            breakpoint: 1200,
             settings: {
             slidesToShow: 5,
             slidesToScroll: 1,
@@ -147,22 +122,27 @@ $(document).ready(function () {
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 820,
             settings: {
             slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            slidesToScroll: 1
             }
         },
         {
-            breakpoint: 500,
+            breakpoint: 620,
             settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+            slidesToScroll: 1
             }
-        }]
+        },
+        {
+            breakpoint: 430,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+    ]
     });
-})
+});
+
