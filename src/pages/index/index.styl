@@ -2,7 +2,6 @@
 @import '../../common/common-stylus/components/controlpanel'
 @import '../../common/common-stylus/components/footer'
 
-
 //-------------------------------------------preview-------------------------------------------
 .intro
 	margin: 0 20px
@@ -244,20 +243,8 @@
 				width 100%
 			}
 
-.about__article-title
-	@media screen and (max-width: 510px) {
-		font-size 30px
-	}
-
-.about__article-subtitle 
-	@media screen and (max-width: 510px) {
-		text-align center
-		font-size 18px
-		letter-spacing 0.9px
-	}
-
-	.btn-l
-		margin-top 40px
+.about__article-subtitle
+	margin-bottom 47px
 
 .about__article-text-wrap
 	@media screen and (max-width: 1280px) {
@@ -294,6 +281,9 @@
 //------------------------------------main-forum-------------------------------------
 
 ////*! start general style for this block
+	
+	// .heading__subtitle
+
 
 .forum-subtitle
 	width 100%
@@ -333,16 +323,18 @@
 		width 100%
 		height 450px
 		background-size cover
+		display flex
+		align-items flex-end
+		justify-content center
 	}
 
 	&:before
 		content ''
 		display block
-		background url("../../img/main/main-forum-bg-line.jpg")
+		background url("../../img/main/main-forum-bg-line.jpg") repeat round
 		background-repeat round
 		width 10px
 		height 100%
-		background-size cover
 		top 0
 		right 10px
 		position absolute
@@ -374,39 +366,17 @@
 		}
 
 		@media screen and (max-width: 1280px) {
-			left 30%
-			top 70%
+			left initial 
+			top 100px
+			position relative
 		}
 
-		@media screen and (max-width: 920px) {
-			left 25%
-		}
-
-		@media screen and (max-width: 760px) {
-			max-width 350px
-			max-height 200px
-		}
-
-		@media screen and (max-width: 660px) {
-			max-width 280px
-			max-height 160px
-		}
-
-		@media screen and (max-width: 550px) {
-			top 80%
-			left 20%
-		}
+		@media screen and (max-width: 500px) {
+			max-width 275px
+			max-height 153px
+			border 5px solid whiteColor
+			}
 		
-		@media screen and (max-width: 550px) {
-			max-width 250px
-			max-height 140px
-			border 5px solid #fff
-		}
-
-
-		@media screen and (max-width: 320px) {
-			left 10%
-		}
 
 .forum__info--wrap
 	background url("../../img/main/main-forum-bg.jpg")
@@ -418,6 +388,7 @@
 
 	@media screen and (max-width: 1680px) {
 		padding 80px 0 60px 100px
+		background-repeat round
 	}
 
 	@media screen and (max-width: 1500px) {
@@ -432,6 +403,7 @@
 		max-width none
 		width 100%
 		padding 160px 60px 80px 60px
+		background-repeat round
 	}
 
 	@media screen and (max-width: 1150px) {
@@ -468,32 +440,24 @@
 	}
 
 .forum__heading
-	margin-bottom 40px
-	font-size 36px
-
-	@media screen and (max-width: 1280px) {
-		text-align center
-	}
-
-	@media screen and (max-width: 500px) {
-		margin: 0 0 80px 0
-	}
-	
-	.heading__title
-		width 50%
+	h1
+		margin-bottom 40px
+		font-size 36px
+		display flex
+		flex-direction column
+		width 100%
+		letter-spacing 1.8px
 		color whiteColor
 		text-transform none
 		font-family 'HelveticaNeue-Bold'
 
-		@media screen and (max-width: 1680px) {
-			width 100%
+		@media screen and (max-width: 1280px) {
+			text-align center
 		}
 
-	.heading__subtitle 
-		color whiteColor
-		text-transform none
-		font-family 'HelveticaNeue-Bold'
-
+		@media screen and (max-width: 500px) {
+			margin: 0 0 80px 0
+		}
 
 // 
 // 
@@ -525,9 +489,8 @@
 	}
 
 	@media screen and (max-width: 500px){
-		justify-content center
-		margin-bottom 80px
-		padding-top 15px
+		flex-direction column
+		margin-bottom 18px
 	}
 
 	&:nth-child(3)
@@ -537,10 +500,7 @@
 			width 100%
 		}
 
-		@media screen and (max-width: 500px){
-			padding-top 10px
-		}
-		
+
 
 	&:before
 		content ''
@@ -552,9 +512,7 @@
 		top -50%
 
 		@media screen and (max-width: 500px){
-			position absolute
-			top -100%
-			left 42%
+			margin 0
 		}
 	
 	&:nth-child(1):before
@@ -618,6 +576,10 @@
 	padding-left 10px
 
 	@media screen and (max-width: 500px) {
+		display flex
+		flex-direction column
+		justify-content center
+		align-items center
 		padding 0
 	}
 
@@ -625,7 +587,7 @@
 		margin-bottom 50px
 
 		@media screen and (max-width: 500px) {
-			margin-bottom 100px
+			margin-bottom 18px
 		}
 	
 	&:before
@@ -638,40 +600,42 @@
 		transform translateY(-50%)
 
 		@media screen and (max-width: 500px) {
-			right 45%
+			position static
+			right initial 
+			transform none
 		}
 
 	&:nth-child(1):before
 		background url('../../img/main/icon-format.png') no-repeat
 		top 25%
 
-		@media screen and (max-width: 500px) {
-			top -40%
-		}
+		// @media screen and (max-width: 500px) {
+		// 	top -40%
+		// }
 	
 	&:nth-child(2):before
 		background url('../../img/main/icon-info.png') no-repeat
 		top 16%
 
-		@media screen and (max-width: 500px) {
-			top -25%
-		}
+		// @media screen and (max-width: 500px) {
+		// 	top -25%
+		// }
 
 	&:nth-child(3):before
 		background url('../../img/main/icon-speaker.png') no-repeat
 		top 50%
 
-		@media screen and (max-width: 500px) {
-			top -70%
-		}
+		// @media screen and (max-width: 500px) {
+		// 	top -70%
+		// }
 
 	&:nth-child(4):before
 		background url('../../img/main/icon-tel.png') no-repeat
 		top 35%
 
-		@media screen and (max-width: 500px) {
-			top -50%
-		}
+		// @media screen and (max-width: 500px) {
+		// 	top -50%
+		// }
 
 .forummain__item-text
 	@media screen and (max-width: 500px) {
@@ -879,23 +843,33 @@
 
 .event-link
 	width 100%
-	padding 80px 0
+	padding 80px 30px
 	display flex
 	justify-content center
-
-.event-link__slider-wrap, .event-link__slider-js
-	max-width 1880px
+	max-width 1920px
 	width 100%
+	box-sizing border-box
+	margin 0 auto
+	display flex
+	flex-direction column
+	margin auto
+
+.event-link__slider-js
+	width 100%
+	max-width 1880px
 	display flex
 	flex-direction column
 	justify-content center
+	overflow hidden
+	margin: 0 auto
+	
 
 .event-link__slide
-	max-width 215px
+	width 215px
 	width 100%
-	max-height 310px
+	height 310px
 	height 100%
-	padding 0 5px
+	padding 0 10px
 
 .event-link__slide--link
 	width 100%
@@ -903,8 +877,6 @@
 	display block
 
 	img
-		max-width 215px
-		max-height 310px
 		width 100%
 		height 100%
 		object-fit cover

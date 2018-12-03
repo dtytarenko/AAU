@@ -81,21 +81,6 @@ button
         width 100%
     }
 
-.defaultTitle
-    font-size 36px
-    line-height 1.2em
-    letter-spacing 0.05em
-    font-family 'Helvetica-Bold'
-    color semiViolet
-    text-transform uppercase
-    font-size 36px
-        
-    @media screen and (max-width: 510px) {
-        font-size 30px
-        letter-spacing 1.5px
-        text-align center
-    }
-
 .separator
     margin 20px 0 40px 0
     position relative
@@ -120,13 +105,6 @@ button
         justify-content center
     }
 
-.defaultSubTitle
-    color #5c77b3
-    font-weight 400
-    letter-spacing 1.2px
-    font-size 24px
-    margin-bottom 47px
-
 
 //////article
 .stndrt__text
@@ -139,7 +117,7 @@ button
 
     @media screen and (max-width: 510px) {
         text-align center
-        line-height 24px
+        line-height 22px
         font-size 16px
     }
 
@@ -149,14 +127,6 @@ button
         @media screen and (max-width: 510px) {
             margin-bottom 30px
         }
-
-
-.typical-container
-    max-width 1920px
-    width 100%
-    margin auto
-    padding 100px 20px
-
 
 //------------------------blog-------------------------
 
@@ -187,12 +157,14 @@ button
 
 .blog-entry__wraptext
     margin-left 40px
-
-    @media screen and (max-width: 510px) {
-        max-width 800px
+    @media screen and (max-width: 1280px){
         width 100%
-        margin-left 0
-    }
+        }
+
+.blog-entry__wraptext
+        @media screen and (max-width: 510px) {
+        margin 0
+        }
 
 .blog-entry__title
     font-weight 500

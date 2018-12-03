@@ -92,39 +92,44 @@ $(document).ready(function () {
     $('.event-link__slider-js').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s
-        infinite: false,
         prevArrow: false,
         nextArrow: false,
         speed: 500,
         slidesToShow: 8,
         slidesToScroll: 1,
+        infinite: true,
         lazyLoad: 'ondemand',
         // autoplay: true, 
-        infinite: true,
         autoplaySpeed: 1500,
         responsive: [
         {
-            breakpoint: 1200,
+            breakpoint: 1800,
+            settings: {
+            slidesToShow: 7,
+            slidesToScroll: 1,
+            dots: true
+            }
+        },
+        {
+            breakpoint: 1500,
+            settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            dots: true
+            }
+        },
+        {
+            breakpoint: 1300,
             settings: {
             slidesToShow: 5,
             slidesToScroll: 1,
-            infinite: true,
             dots: true
             }
         },
         {
-            breakpoint: 1000,
+            breakpoint: 800,
             settings: {
             slidesToShow: 4,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-            }
-        },
-        {
-            breakpoint: 820,
-            settings: {
-            slidesToShow: 3,
             slidesToScroll: 1
             }
         },

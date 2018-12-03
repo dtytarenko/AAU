@@ -1,3 +1,21 @@
+@import '../../common/common-stylus/vars'
+@import '../../common/common-stylus/components/controlpanel'
+@import '../../common/common-stylus/components/footer'
+
+
+//-------------------------------------------general_style-------------------------------------
+.about-aau
+    .about-aau__principle, .about-aau__objective
+        .container
+            flex-direction column
+
+.about-aau
+    h2
+        font-size 24px
+        font-weight 500
+//-----------------------------------------end_general_style-------------------------------------
+
+
 section:nth-of-type(even):not(:nth-of-type(6))
     background-color #f0f2f4
 
@@ -48,6 +66,23 @@ section:nth-of-type(even):not(:nth-of-type(6))
 
 .main-info
     display flex
+    justify-content center
+
+    .structure
+        max-width 811px
+    
+    .documents
+        max-width 320px
+
+
+
+
+//-----------------------------------------start block documents-------------------------------------
+
+
+//-----------------------------------------end block documents-------------------------------------
+
+//-----------------------------------------sliders-------------------------------------
 
 .about-aau--subsliders
     display flex
