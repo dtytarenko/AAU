@@ -17,7 +17,7 @@
 
 
 section:nth-of-type(even):not(:nth-of-type(6))
-    background-color #f0f2f4
+    background-color semiGray
 
 .about-aau__intro-wrap
     display flex
@@ -68,16 +68,69 @@ section:nth-of-type(even):not(:nth-of-type(6))
     display flex
     justify-content center
 
-    .structure
+.structure
+    max-width 1200px
+    width 100%
+    padding 100px 70px 100px 0
+    display flex
+    flex-direction column
+    align-items flex-end
+
+
+    .structure__heading, .structure__article
         max-width 811px
+
+.structure__heading
+    align-self center
+    margin-left 20px
+
+.structure__text-link
+    color semiViolet
+    text-decoration underline
+    text-transform none
+    font-family 'HelveticaNeue-Bold'
+    font-weight 700
     
-    .documents
-        max-width 320px
-
-
-
+    &:hover
+        color: semiPurple
 
 //-----------------------------------------start block documents-------------------------------------
+.documents
+    background url('../img/about/main-bg.jpg')
+    background-repeat round
+    max-width 720px
+    width 100%
+    padding 100px 0 100px 70px
+    
+    .structure__heading-left
+        max-width 330px
+        width 100%
+
+        .structure__title-left
+            color whiteColor 
+            text-transform none
+
+        .separator
+            &:after
+                background-color whiteColor 
+
+.documents__list-item
+    display flex
+    flex-direction column
+    margin-bottom 60px
+
+.documents__list-item--link
+    color whiteColor
+    text-transform none
+    font-size 16px
+    line-height 36px
+    text-decoration underline
+    letter-spacing 0.8px
+    font-family 'HelveticaNeue-Bold'
+
+    &:hover
+        font-family 'HelveticaNeue-Black'
+
 
 
 //-----------------------------------------end block documents-------------------------------------
@@ -88,11 +141,7 @@ section:nth-of-type(even):not(:nth-of-type(6))
     display flex
     justify-content center
     width 100%
-    background whiteColor
-
-    .general-partners
-        width 100%
-        max-width 600px
+    background semiGray
     
     .media-partners
         max-width 680px
@@ -100,19 +149,24 @@ section:nth-of-type(even):not(:nth-of-type(6))
 
 
 .about-aau
-    .media-partners__title, .partners-committee__title
+    .media-partners__title, .partners-committee__title, .general-partners__title
         font-size 30px
-
-.partners-committee, .media-parners
-    max-width 600px
 
     .tpc-slider__slide
         max-width 190px
         max-height 130px
         width 100%
         height 100%
-        margin-right 15px
+        margin-right 25px
 
 .partners-committee
     margin-right 40px
+    max-width 600px
 
+.about-aau
+    .about-aau--subsliders 
+        .media-partners
+            max-width 700px
+            padding 0 20px
+
+            

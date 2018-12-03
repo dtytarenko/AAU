@@ -20,14 +20,14 @@ $(document).ready(function() {
 
 
 $(document).ready(function () {
-    $('.js-partners-slider').slick({
+    $('.general-partners__js').slick({
         dots: true,
         dotsClass: "main-dots", //customize dot`s with add class dot`s
         infinite: false,
         prevArrow: false,
         nextArrow: false,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
         // autoplay: true,
