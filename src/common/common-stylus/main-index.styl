@@ -30,4 +30,86 @@ h3
         font-size 18px
         letter-spacing 0.9px
     }
-  
+
+//---------------------------------about
+.checklist-item
+    position relative
+    font-family 'HelveticaNeue-Light'
+    line-height 30px
+    padding-left 60px
+    margin-bottom 20px
+    color: #4a4b4d
+    max-height 50px
+    height 100px
+
+    &:before
+        content ''
+        display block
+        background url('../../img/all/icon-check.png')
+        width 43px
+        height 50px
+        left 0
+        top 0
+        position absolute
+        transform translateY(-25%)
+
+.about-stndrt
+    .media-partners__title, .partners-committee__title
+        font-size 30px
+
+    .subsliders
+        display flex
+        justify-content center
+        width 100%
+
+        @media screen and (max-width: 1280px){
+            flex-direction column
+            }
+        
+        .media-partners, .partners-committee
+            max-width 600px
+            width 100%
+            
+            @media screen and (max-width: 1280px){
+                max-width none
+                }
+
+        .media-partners
+            padding 0 20px
+
+            @media screen and (max-width: 1500px){
+                padding 0
+                }
+
+            .media-partners__heading
+                width 625px
+            
+            .media-partners__wrap
+                margin-left 15px
+                
+                @media screen and (max-width: 1280px){
+                margin 0
+                }
+
+        .partners-committee
+            margin-right 40px
+
+            @media screen and (max-width: 1280px){
+                margin 0
+                }
+
+ .about-stndrt
+    .container
+        @media screen and (max-width: 1280px) {
+            padding 60px 35px
+        }
+
+.structure__text-link
+    color semiViolet
+    text-decoration underline
+    text-transform none
+    font-family 'HelveticaNeue-Bold'
+    font-weight 700
+    
+    &:hover
+        color: semiPurple

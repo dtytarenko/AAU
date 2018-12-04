@@ -1,0 +1,69 @@
+@import '../../common/common-stylus/vars'
+@import '../../common/common-stylus/components/controlpanel'
+@import '../../common/common-stylus/components/footer'
+
+//-----------------------start geneeral styles ------------------------
+.container
+    flex-direction column
+
+//-----------------------end general styles------------------------
+
+
+//-----------------------styles for title------------------------
+
+.congress-aau
+    h2, h3
+        text-transform none
+    
+    .general-partners__title, .media-partners__title, .partners-committee__title
+        text-transform uppercase
+
+.congress-aau__intro-article--title
+    margin-bottom 54px
+    font-size 24px
+    color #5073b6
+
+
+.congress-aau__competence--title, .congress-aau__competence--title
+    font-size 24px
+    font-weight 600
+    letter-spacing 1.2px
+
+.congress-aau__competence-subtitle 
+    font-size 16px
+    line-height 30px
+    color semiPurple
+    font-family 'HelveticaNeue-Bold'
+
+//---------------------end styles for title------------------------
+
+
+.congress-aau__competence, .general-partners 
+    background semiGray
+
+.congress-aau__competence-list
+    margin-bottom: 40px
+    
+    @media screen and (max-width: 1280px){
+        margin-bottom: 40px
+        }
+
+.congress-aau__exclusive-article
+    .congress-aau__exclusive-article--text:not(:last-child)
+        margin-bottom 40px
+
+.congress-aau__exclusive-heading
+    margin-top 77px
+
+    @media screen and (max-width: 1280px){
+        margin-top 50px
+        }
+
+.congress-aau__competence-list, .congress-aau__exclusive-list
+    @media screen and (max-width: 1280px){
+        width 100%
+        }
+
+.subsliders
+    .container
+        padding 0 0 100px 0
