@@ -20,6 +20,7 @@ gulp.task('css', () => {
 			'src/pages/**/*.styl',
 			'src/common/common-stylus/main-acc.styl',
 			'src/common/common-stylus/main-index.styl',
+			'src/common/common-stylus/about-workers.styl',
 			'src/libs/**/*.css'
 		]) // массив путей
 		.pipe(plumber()) // отслеживание ошибок
