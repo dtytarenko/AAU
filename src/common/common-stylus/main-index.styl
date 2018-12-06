@@ -113,3 +113,45 @@ h3
     
     &:hover
         color: semiPurple
+
+
+.breadcrumbs
+    background-color semiGray
+
+.breadcrumbs__list
+    display flex
+    justify-content center
+    padding 10px 0
+
+
+    .breadcrumbs__list-item
+        padding-right 30px
+        position relative
+        padding-left 30px
+
+        &:after
+            display block
+            content ''
+            width 5px
+            height 5px
+            background-color themeColor
+            border-radius 50%
+            position absolute
+            right 0%
+            top 50%
+        
+        &:last-of-type
+            &:after
+                display none
+
+    .breadcrumbs__list-item--link
+        font-size 14px
+        line-height 24px
+        letter-spacing 1.4px
+        color #2e3686
+        font-family 'HelveticaNeue-Roman'
+        text-transform none
+        font-weight 600
+
+    .active
+        color #79797a
