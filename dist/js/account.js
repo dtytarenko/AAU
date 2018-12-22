@@ -5,7 +5,7 @@ $(document).ready(function() {
         $('.menu').css('z-index', '4');
     });
     
-    $( ".menu__close-img--mob, .overlay" ).click(function() {
+    $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {
         $( ".menu, .overlay" ).slideToggle( "slow");
     });
-});
+}); 

@@ -3,9 +3,99 @@
 
 h2 
     color semiPurple
-    font-family 'Helvetica-Bold'
-    font-size 36px
-    line-height 36px
+    font-family 'HelveticaNeue-Roman'
+    font-size 24px
+    line-height 30px
     letter-spacing 1.8px
+    font-weight: 400
+    margin-bottom: 50px
+
+.bottom-footer
+    position fixed
+    margin 0
+    padding 0
+    bottom 0%
+    left 0%
+    width 320px
+    height 195px
+    display flex
+    flex-direction column
+    font-size 12px
+    align-items center
+    justify-content flex-start
+    margin-left 320px
+
+    @media screen and (max-width: 998px)  {
+        margin-top 60px
+        width 100%
+        height 100%
+        position relative
+        bottom 0
+    }
+
+    @media screen and (max-height: 850px){
+        margin-top 60px
+        width 100%
+        height 100%
+        position relative
+        bottom 0
+    }
+
+    @media screen and (max-height: 992px) {
+        margin-left 0
+        }
+
+    .copyright 
+        max-width  80%
+        text-align center
+        width 100%
+        margin-top 20px 
+        height 35%
+    
+        @media screen and (max-width: lg) {
+            width 100%
+            max-height 30px
+            height 100%
+            margin-top 20px
+            font-size 14px
+        }
+
+        @media screen and (max-width: sm) {
+            font-size 12px
+        }
 
 
+.menu
+    position fixed
+    top 0%
+    left 0%
+    width 320px
+    background-image url('../../img/account/menubg.jpg')
+    background-size cover
+    display flex
+    flex-direction column
+    align-items center
+    height calc(100vh - 192px)
+    z-index 99
+
+    @media screen and (max-width: 992px) {
+        padding 0
+        display none
+    }
+
+    @media screen and (max-height: 850px){ 
+        height 100vh
+    }
+
+    @media screen and (max-height: 700px) {
+        justify-content stretch     
+    }
+
+    @media screen and (max-height: 600px) {
+        overflow scroll
+    }
+
+    @media screen and (max-width: sm) {
+        top 70px
+        width: 100%;
+    }
