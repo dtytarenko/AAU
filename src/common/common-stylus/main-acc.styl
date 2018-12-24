@@ -10,6 +10,45 @@ h2
     font-weight: 400
     margin-bottom: 50px
 
+.header
+    overflow hidden
+    width calc(100% - 320px)
+    width 100%
+
+    @media screen and (max-width: lg) {
+        padding-left 0px
+    }
+
+main 
+    display flex
+
+    @media screen and (max-width: xl) {
+        margin-top 145px
+    }
+
+    @media screen and (max-width: lg) {
+        padding 0 35px
+    }
+
+    @media screen and (max-width: sm) {
+        padding 0 20px   
+    }
+
+.controlpanel__left 
+    display flex
+    flex-direction column
+    
+    @media screen and (max-width: xl) {
+        order 2
+        margin 10px 0 10px 225px
+        width 100%
+    }
+
+    @media screen and (max-width: sm) {
+        margin 0
+        flex-direction row
+    }
+
 .bottom-footer
     position fixed
     margin 0
@@ -23,18 +62,15 @@ h2
     font-size 12px
     align-items center
     justify-content flex-start
-    margin-left 320px
+    z-index: 100
 
-    @media screen and (max-width: 998px)  {
-        margin-top 60px
+    @media screen and (max-width: 1280px)  {
         width 100%
         height 100%
-        position relative
         bottom 0
     }
 
     @media screen and (max-height: 850px){
-        margin-top 60px
         width 100%
         height 100%
         position relative
@@ -66,16 +102,13 @@ h2
 
 
 .menu
-    position fixed
-    top 0%
-    left 0%
-    width 320px
+    max-width 320px
+    width 100%
     background-image url('../../img/account/menubg.jpg')
     background-size cover
     display flex
     flex-direction column
     align-items center
-    height calc(100vh - 192px)
     z-index 99
 
     @media screen and (max-width: 992px) {
@@ -83,19 +116,45 @@ h2
         display none
     }
 
-    @media screen and (max-height: 850px){ 
-        height 100vh
-    }
-
-    @media screen and (max-height: 700px) {
-        justify-content stretch     
-    }
-
     @media screen and (max-height: 600px) {
         overflow scroll
     }
 
-    @media screen and (max-width: sm) {
-        top 70px
-        width: 100%;
+.intro
+    display flex
+    flex-direction column
+    max-width 1580px
+    width 100%
+
+.info-wrap
+    max-width 1380px
+    width 100%
+    margin 0 auto
+    padding-top 130px
+
+.info__title
+    @media screen and (max-width: lg) {
+        width 75%
     }
+
+    @media screen and (max-width: sm) {
+        width 100%
+        text-align center
+        font-size 30px
+    }
+
+.info__subtitle 
+    @media screen and (max-width: sm) {
+        text-align center
+    }
+
+.info__descr 
+    text-align justify
+    line-height 30px
+    font-size 16px
+    color semiBlack
+    font-family HelveticaNeue-Light
+    margin-bottom 40px
+
+    &:nth-of-type(1)
+        margin-top 40px

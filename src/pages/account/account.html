@@ -11,106 +11,117 @@
 </head>
 <body>
     <div class="overlay"> </div>
-    <header>
-        <div class="controlpanel">
-            <div class="controlpanel__left">
-                <div class="menu-burger-mobile"><img src="img/all/menu-burger.png" alt="menu"></div>
-                <div class="controlpanel__left-textwrap">
-                <p class="controlpanel__left-name">Іванов Іван Іванович</p>
-                <p class="controlpanel__left-mail">ivanov.i@gmail.com</p>
-                </div>
+    <main>
+
+        <aside class="menu">
+            <div class="menu__close">
+                <img src="img/account/close.png" class="menu__close-img" alt="close"> 
+                <span class="menu__close-txt">Закрити меню</span> 
             </div>
 
-            <div class="controlpanel__right">
-                <div class="menu-burger"> <img src="img/all/menu-burger.png" alt="menu"><p>вiдкрити меню</p></div>
-                <div class="btn__violet">
-                    <a href="#" class="btn__violet-link"><p>Стати членом ААУ</p></a>
-                </div>
-                <div class="btn__semiViolet">
-                    <a href="#" class="btn__semiViolet-link"><p>Стати членом КМА ААУ</p></a>
-                </div>
+            <a href="#" class="menu__logo-link"><img src="img/account/logo.png" class="menu__logo-link--img" alt="logo"></a>
+            <div class="menu__btn-wrap"> 
+                <img src="img/account/close.png" class="menu__close-img--mob" alt="close">
+                <a class="btn-asidemenu btn-account" href="index.html">перейти на сайт ААУ</a>
             </div>
-        </div>
-    </header>
-    <main>
-        <section class="info">
-            <div class="heading">
-				<h1 class="defaultTitle info__title">Особистий кабінет 
-                        користувача</h1>
-                <div class="separator">
-				     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+
+            <nav class="nav__wrap">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item--link active">
+                            <img src="img/account/main.png" alt="main" class="link-img--hover">
+                            <img src="img/account/main-hover.png" alt="main" class="link-img">
+                            <span class="nav__list-item--link---txt">Головна</span>
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item--link">
+                            <img src="img/account/personaldate.png" alt="personaldate" class="link-img">
+                            <img src="img/account/personaldate-hover.png" alt="personaldate" class="link-img--hover"> 
+                            <span class="nav__list-item--link---txt">Персональні данні</span>
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item--link">
+                            <img src="img/account/subscribe.png" alt="subscribe" class="link-img">
+                            <img src="img/account/subscribe-hover.png" alt="subscribe" class="link-img--hover"> 
+                            <span class="nav__list-item--link---txt">Підписки</span>
+                        </a>
+                    </li>
+                    <li class="nav__list-item">        
+                        <a href="" class="nav__list-item--link">
+                            <img src="img/account/paymenthistory.png" alt="paymenthistory"  class="link-img">
+                            <img src="img/account/paymenthistory-hover.png" alt="paymenthistory" class="link-img--hover"> 
+                            <span class="nav__list-item--link---txt">Історія платежів</span>
+                        </a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item--link">
+                            <img src="img/account/logout.png" alt="logout" class="link-img">
+                            <img src="img/account/logout-hover.png" alt="logout" class="link-img--hover"> 
+                            <span class="nav__list-item--link---txt">Вийти</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="intro">
+
+            <header class="header">
+                    <div class="controlpanel">
+                        <div class="controlpanel__left">
+                            <div class="menu-burger-mobile"><img src="img/all/menu-burger.png" alt="menu"></div>
+                                <div class="controlpanel__left-textwrap">
+                                <p class="controlpanel__left-name">Іванов Іван Іванович</p>
+                                <p class="controlpanel__left-mail">ivanov.i@gmail.com</p>
+                                </div>
+                            </div>
+                
+                            <div class="controlpanel__right">
+                                <div class="menu-burger"> <img src="img/all/menu-burger.png" alt="menu"><p>вiдкрити меню</p></div>
+                                <div class="btn__violet">
+                                    <a href="#" class="btn__violet-link"><p>Стати членом ААУ</p></a>
+                                </div>
+                                <div class="btn__semiViolet">
+                                    <a href="#" class="btn__semiViolet-link"><p>Стати членом КМА ААУ</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+            <section class="info-wrap"> 
+            
+                <div class="heading">
+                    <h1 class="defaultTitle info__title">Особистий кабінет 
+                            користувача</h1>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>  
                 </div>
-            <h2 class="defaultSubTitle info__subtitle">Ласкаво просимо в особистий кабінет користувача сайтом ААУ. </h2>
-            <p class="info__descr">
-                Текст про те для чого людині кабінет і що він може в ньому робити. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur egestas rutrum felis, rutrum ultricies arcu commodo eu. Nam venenatis quam lacus, eget suscipit felis consectetur a. 
-                Etiam sagittis lectus egestas ipsum feugiat, non dapibus orci aliquet. Duis eu orci nec neque euismod volutpat a in eros. 
-                Fusce et justo ut quam imperdiet dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In auctor posuere accumsan.
-            </p>
-            <p class="info__descr">      
-                    Donec rhoncus pulvinar fermentum. Nunc vulputate odio quis blandit viverra. Morbi nec cursus felis. Donec placerat mi vel nibh aliquet sollicitudin. Pellentesque ut justo aliquam nibh efficitur posuere ac id orci. Proin ex est, aliquet id mollis et, hendrerit nec justo. Vivamus at egestas purus. Aenean tempus lectus at blandit fermentum. Suspendisse lacinia dui vel placerat laoreet.     
-                    Morbi luctus elementum sollicitudin. Morbi placerat, tortor ut lacinia interdum, libero magna hendrerit ligula, viverra pellentesque dui purus eu dolor. Curabitur at imperdiet justo. Vivamus eget purus arcu. Nunc ac hendrerit libero. Aliquam nec eros metus. Etiam vel risus nec nulla condimentum dictum.        
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ante purus, interdum vitae sollicitudin quis, vulputate in nulla. Aenean lobortis metus id molestie vestibulum. Quisque mauris elit, rutrum eu maximus quis, tincidunt a sem. Nullam luctus venenatis tortor, vehicula elementum mi. Nunc nec dolor a odio aliquet eleifend eget at nulla. Etiam ac augue ultricies, maximus nisl at, ornare odio. Donec nec elit at massa interdum feugiat in nec neque. Etiam cursus leo facilisis condimentum rutrum. Aliquam tempus massa ac nisi consequat rutrum. Integer facilisis tellus lacinia augue condimentum, sit amet bibendum tellus molestie. Aliquam molestie vestibulum hendrerit. Maecenas efficitur porta pharetra. Sed placerat aliquet ultricies.     
-            </p>
-            <p class="info__descr">
-                    In ut nisl sagittis, semper arcu et, tempor elit. Suspendisse vitae felis viverra velit posuere fringilla. Quisque arcu augue, commodo in fringilla sed, elementum ut justo. Vivamus ut enim malesuada, hendrerit augue nec, blandit eros. Phasellus lacinia lacus ac bibendum suscipit. Donec nec rhoncus sem. Nullam convallis mi vitae commodo rhoncus. Donec sit amet condimentum sem. Curabitur cursus elit lorem, eget consequat risus interdum sit amet. Suspendisse vitae diam vitae mi pretium mollis sed at tellus.                    
-                    Donec rhoncus pulvinar fermentum. Nunc vulputate odio quis blandit viverra. Morbi nec cursus felis. Donec placerat mi vel nibh aliquet sollicitudin. Pellentesque ut justo aliquam nibh efficitur posuere ac id orci. Proin ex est, aliquet id mollis et, hendrerit nec justo. Vivamus at egestas purus. Aenean tempus lectus at blandit fermentum. Suspendisse lacinia dui vel placerat laoreet. 
-                    Morbi luctus elementum sollicitudin. Morbi placerat, tortor ut lacinia interdum, libero magna hendrerit ligula, viverra pellentesque dui purus eu dolor. Curabitur at imperdiet justo. Vivamus eget purus arcu. Nunc ac hendrerit libero. Aliquam nec eros metus. Etiam vel risus nec nulla condimentum dictum.
-            </p>
-            </div>
+                <h2 class="defaultSubTitle info__subtitle">Ласкаво просимо в особистий кабінет користувача сайтом ААУ. </h2>
+                <p class="info__descr">
+                    Текст про те для чого людині кабінет і що він може в ньому робити. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Curabitur egestas rutrum felis, rutrum ultricies arcu commodo eu. Nam venenatis quam lacus, eget suscipit felis consectetur a. 
+                    Etiam sagittis lectus egestas ipsum feugiat, non dapibus orci aliquet. Duis eu orci nec neque euismod volutpat a in eros. 
+                    Fusce et justo ut quam imperdiet dignissim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In auctor posuere accumsan.
+                </p>
+                <p class="info__descr">      
+                        Donec rhoncus pulvinar fermentum. Nunc vulputate odio quis blandit viverra. Morbi nec cursus felis. Donec placerat mi vel nibh aliquet sollicitudin. Pellentesque ut justo aliquam nibh efficitur posuere ac id orci. Proin ex est, aliquet id mollis et, hendrerit nec justo. Vivamus at egestas purus. Aenean tempus lectus at blandit fermentum. Suspendisse lacinia dui vel placerat laoreet.     
+                        Morbi luctus elementum sollicitudin. Morbi placerat, tortor ut lacinia interdum, libero magna hendrerit ligula, viverra pellentesque dui purus eu dolor. Curabitur at imperdiet justo. Vivamus eget purus arcu. Nunc ac hendrerit libero. Aliquam nec eros metus. Etiam vel risus nec nulla condimentum dictum.        
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean ante purus, interdum vitae sollicitudin quis, vulputate in nulla. Aenean lobortis metus id molestie vestibulum. Quisque mauris elit, rutrum eu maximus quis, tincidunt a sem. Nullam luctus venenatis tortor, vehicula elementum mi. Nunc nec dolor a odio aliquet eleifend eget at nulla. Etiam ac augue ultricies, maximus nisl at, ornare odio. Donec nec elit at massa interdum feugiat in nec neque. Etiam cursus leo facilisis condimentum rutrum. Aliquam tempus massa ac nisi consequat rutrum. Integer facilisis tellus lacinia augue condimentum, sit amet bibendum tellus molestie. Aliquam molestie vestibulum hendrerit. Maecenas efficitur porta pharetra. Sed placerat aliquet ultricies.     
+                </p>
+                <p class="info__descr">
+                        In ut nisl sagittis, semper arcu et, tempor elit. Suspendisse vitae felis viverra velit posuere fringilla. Quisque arcu augue, commodo in fringilla sed, elementum ut justo. Vivamus ut enim malesuada, hendrerit augue nec, blandit eros. Phasellus lacinia lacus ac bibendum suscipit. Donec nec rhoncus sem. Nullam convallis mi vitae commodo rhoncus. Donec sit amet condimentum sem. Curabitur cursus elit lorem, eget consequat risus interdum sit amet. Suspendisse vitae diam vitae mi pretium mollis sed at tellus.                    
+                        Donec rhoncus pulvinar fermentum. Nunc vulputate odio quis blandit viverra. Morbi nec cursus felis. Donec placerat mi vel nibh aliquet sollicitudin. Pellentesque ut justo aliquam nibh efficitur posuere ac id orci. Proin ex est, aliquet id mollis et, hendrerit nec justo. Vivamus at egestas purus. Aenean tempus lectus at blandit fermentum. Suspendisse lacinia dui vel placerat laoreet. 
+                        Morbi luctus elementum sollicitudin. Morbi placerat, tortor ut lacinia interdum, libero magna hendrerit ligula, viverra pellentesque dui purus eu dolor. Curabitur at imperdiet justo. Vivamus eget purus arcu. Nunc ac hendrerit libero. Aliquam nec eros metus. Etiam vel risus nec nulla condimentum dictum.
+                </p>
+                </div>
+
+            </section>
         </section>
     </main>
-    
-    <aside class="menu">
-        <div class="menu__close">
-            <img src="img/account/close.png" class="menu__close-img" alt="close"> 
-            <span class="menu__close-txt">Закрити меню</span> 
-        </div>
-       <a href="#" class="menu__logo-link"><img src="img/account/logo.png" class="menu__logo-link--img" alt="logo"></a>
-        <div class="menu__btn-wrap"> 
-            <img src="img/account/close.png" class="menu__close-img--mob" alt="close">
-            <a class="btn-asidemenu btn-account" href="index.html">перейти на сайт ААУ</a>
-        </div>
-        <nav class="nav__wrap">
-            <ul class="nav__list">
-                <li class="nav__list-item">
-                    <a href="" class="nav__list-item--link active">
-                        <img src="img/account/main.png" alt="main" class="link-img--hover">
-                        <img src="img/account/main-hover.png" alt="main" class="link-img">
-                        <span class="nav__list-item--link---txt">Головна</span>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="" class="nav__list-item--link">
-                        <img src="img/account/personaldate.png" alt="personaldate" class="link-img">
-                        <img src="img/account/personaldate-hover.png" alt="personaldate" class="link-img--hover"> 
-                        <span class="nav__list-item--link---txt">Персональні данні</span>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="" class="nav__list-item--link">
-                        <img src="img/account/subscribe.png" alt="subscribe" class="link-img">
-                        <img src="img/account/subscribe-hover.png" alt="subscribe" class="link-img--hover"> 
-                        <span class="nav__list-item--link---txt">Підписки</span>
-                    </a>
-                </li>
-                <li class="nav__list-item">        
-                     <a href="" class="nav__list-item--link">
-                        <img src="img/account/paymenthistory.png" alt="paymenthistory"  class="link-img">
-                        <img src="img/account/paymenthistory-hover.png" alt="paymenthistory" class="link-img--hover"> 
-                        <span class="nav__list-item--link---txt">Історія платежів</span>
-                    </a>
-                </li>
-                <li class="nav__list-item">
-                    <a href="" class="nav__list-item--link">
-                        <img src="img/account/logout.png" alt="logout" class="link-img">
-                        <img src="img/account/logout-hover.png" alt="logout" class="link-img--hover"> 
-                        <span class="nav__list-item--link---txt">Вийти</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </aside>
+
     <footer>
             <div class="bottom-footer">
                     <div class="copyright">«© 2018 ААУ – Ассоциация Адвокатов Украины.  Все права защищены». 

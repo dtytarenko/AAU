@@ -1,12 +1,6 @@
 @import '../../common/common-stylus/vars'
     
-header 
-    overflow hidden
-    padding-left 290px
 
-    @media screen and (max-width: lg) {
-        padding-left 0px
-    }
     
 .controlpanel
     display flex
@@ -15,6 +9,9 @@ header
     background-color #f0f2f4
     position fixed
     width 100%
+    max-width 1380px
+    max-height 70px
+    height 100%
 
     @media screen and (max-width: xl) {
         padding-left 30px
@@ -25,25 +22,12 @@ header
         padding 0
     }
 
-.controlpanel__left 
-    display flex
-    flex-direction column
-    margin-left 130px
-    
-    @media screen and (max-width: xl) {
-        order 2
-        margin 10px 0 10px 225px
-        width 100%
-    }
 
-    @media screen and (max-width: sm) {
-        margin 0
-        flex-direction row
-    }
 
 .controlpanel__left-textwrap
     position relative
     padding-left 24px
+    margin-left 140px
 
     &:before 
         content ''
@@ -91,25 +75,26 @@ header
 
 .controlpanel__right 
     display flex
-    width 600px
-    position relative
-    right 265px
+    position fixed
+    max-width 620px
+    width 100%
+    right 0
 
     @media screen and (max-width: xl) {
         order 1
         width 100%
-        right 0
-        height 70px
     }
 
 .btn__violet
     background semiViolet
-    width  310px
+    max-width  320px
+    width 100%
     height 70px
     transform skewX(30deg)
     transition all 0.4s ease-in-out
     display flex
     justify-content center
+    z-index 2
 
     &:hover
         background semiPurple
@@ -128,16 +113,11 @@ header
     }
 
 .btn__violet-link 
-    display block
-    margin 30px 63px    
-
-    @media screen and (max-width: xl) {
-        margin 0 23px
-        display flex
-        align-items center
-        justify-content center
-        text-align center
-    }
+    display flex
+    width 100%
+    align-items center
+    justify-content center
+    text-align center
 
     @media screen and (max-width: sm) {
         margin 0 14px
@@ -158,28 +138,36 @@ header
     
 .btn__semiViolet
     background semiPurple 
-    width  310px
-    height 70px
-    transform skewX(30deg)
+    max-width  310px
+    width 100%
     transition all 0.4s ease-in-out
     display flex
     justify-content center
+    position relative
 
     @media screen and (max-width: xl) {
-        transform skewX(0deg)
-        width 37%
         height 100%
     }
 
-    @media screen and (max-width sm) {
-        width 50%    
-    }
-
     &:hover
-        background semiViolet 
+        background semiViolet
+
+    &:before
+        content ''
+        width 40px
+        height 100%
+        display block
+        position absolute
+        background semiPurple
+        left -20px
+        top 0
+        transform skewX(30deg)
     
     .btn__semiViolet-link
-        display block
+        display flex
+        width 100%
+        height 100%
+        align-items center
     
         @media screen and (max-width: xl) {
             display flex
@@ -193,33 +181,14 @@ header
         font-size 14px
         color whiteColor
         letter-spacing 1.4px
-        margin 30px 43px
         padding 0
-        transform skewX(-30deg)
         width 100%
+        text-align center
+        z-index: 1
 
         @media screen and (max-width: xl) {
-            transform skewX(0deg)
-            margin 0 15px
             text-align center
         }
-
-main 
-    display inline-block //it`s important for IE
-    padding 133px 110px 0 375px
-
-    @media screen and (max-width: xl) {
-        margin-top 145px
-        padding 0 35px 0 375px
-    }
-
-    @media screen and (max-width: lg) {
-        padding 0 35px
-    }
-
-    @media screen and (max-width: sm) {
-        padding 0 20px   
-    }
 
 
 .btn-account 
@@ -316,32 +285,6 @@ footer
 
 // info
 
-.info__title
-    @media screen and (max-width: lg) {
-        width 75%
-    }
-
-    @media screen and (max-width: sm) {
-        width 100%
-        text-align center
-        font-size 30px
-    }
-
-.info__subtitle 
-    @media screen and (max-width: sm) {
-        text-align center
-    }
-
-.info__descr 
-    text-align justify
-    line-height 30px
-    font-size 16px
-    color semiBlack
-    font-family HelveticaNeue-Light
-    margin-bottom 40px
-
-    &:nth-of-type(1)
-        margin-top 40px
 
 
 .menu__close
