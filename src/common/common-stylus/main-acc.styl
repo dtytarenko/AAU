@@ -1,6 +1,29 @@
 @import 'vars'
 @import 'components/general-footer'
 
+
+//////////////////////////////////////////////////////////
+//
+// START GENERAL INFO FOR ACCOUNT TYPE PAGE
+// 
+//////////////////////////////////////////////////////////
+
+//1280px - switch to tablet
+//760px - switch to mobile
+
+//////////////////////////////////////////////////////////
+//
+// END GENERAL INFO FOR ACCOUNT TYPE PAGE
+// 
+//////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////
+//
+// START GENERAL STYLE FOR ACCOUNT TYPE PAGE
+// 
+//////////////////////////////////////////////////////////
+
+
 h2 
     color semiPurple
     font-family 'HelveticaNeue-Roman'
@@ -10,47 +33,572 @@ h2
     font-weight: 400
     margin-bottom: 50px
 
+//////////////////////////////////////////////////////////
+//
+// END GENERAL STYLE FOR ACCOUNT TYPE PAGE
+// 
+//////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE FOR HEADER
+// 
+//////////////////////////////////////////////////////////
+
 .header
     overflow hidden
-    width calc(100% - 320px)
     width 100%
+    position relative
+    left -50px //size of padding info block;
 
-    @media screen and (max-width: lg) {
-        padding-left 0px
+    @media screen and (max-width: 1280px) {
+        left -35px
     }
 
-main 
+.controlpanel
     display flex
+    justify-content space-between
+    align-items center
+    background-color #f0f2f4
+    position fixed
+    width 100%
+    max-width 1380px
+    max-height 70px
+    height 100%
 
-    @media screen and (max-width: xl) {
-        margin-top 145px
+    @media screen and (max-width: 1280px) {
+        flex-direction column
+        max-height 100px
+        background-color whiteColor
     }
 
-    @media screen and (max-width: lg) {
-        padding 0 35px
-    }
-
-    @media screen and (max-width: sm) {
-        padding 0 20px   
-    }
 
 .controlpanel__left 
     display flex
     flex-direction column
     
-    @media screen and (max-width: xl) {
+    @media screen and (max-width: 1280px) {
         order 2
-        margin 10px 0 10px 225px
         width 100%
+        max-height 50px
+        height 100%
     }
 
-    @media screen and (max-width: sm) {
+    @media screen and (max-width: 760px) {
         margin 0
         flex-direction row
     }
 
-.bottom-footer
+.controlpanel__left-textwrap
+    position relative
+    padding-left 24px
+    margin-left 150px
+
+    &:before 
+        content ''
+        display block
+        width 46px
+        height 40px
+        position absolute
+        top 0%
+        right 100%
+        background url('../../img/account/user.png') center center no-repeat
+
+
+        @media screen and (max-width: 1280px) {
+            right inherit
+            height 32px
+            width 31px
+            background-size 32px 28px
+            top 50%
+            transform translateY(-50%)
+        }
+
+    @media screen and (max-width: 1680px) {
+        margin-left 90px //fixing margin for cntrlpanel-textwrap
+    }
+
+    @media screen and (max-width: 1280px) {
+        background semiWhite
+        width 100%
+        display flex
+        flex-direction column
+        justify-content center
+        margin-left 0
+        height 50px
+        padding-left 34px
+    }
+
+    @media screen and (max-width 760px) {
+        background-color whiteColor
+        padding-left 5px
+        }
+
+.controlpanel__left-name
+    font-size 18px
+    line-height 18px
+    font-family 'HelveticaNeue-Bold'
+    color semiBlack
+    justify-content flex-end
+
+    @media screen and (max-width: 1280px){
+        padding-left 50px
+        }
+
+    @media screen and (max-width: 760px) {
+        font-size 14px    
+    }
+
+.controlpanel__left-mail 
+    font-size 14px
+    line-height 14px
+    font-family 'HelveticaNeue-Medium'
+    color semiPurple
+
+
+    @media screen and (max-width: 1280px){
+        padding-left 50px
+        }
+
+    @media screen and (max-width: 760px) {
+        font-size 13px    
+    }
+
+.controlpanel__right 
+    display flex
     position fixed
+    max-width 620px
+    width 100%
+    right 0
+
+    @media screen and (max-width: 1280px) {
+        order 1
+        max-width inherit
+        position relative
+        max-height 50px
+        height 100%
+    }
+
+.btn__violet
+    background semiViolet
+    max-width  320px
+    width 100%
+    height 70px
+    transform skewX(30deg)
+    transition all 0.4s ease-in-out
+    display flex
+    justify-content center
+    z-index 2
+
+    &:hover
+        background semiPurple
+
+    
+    @media screen and (max-width: 1280px) {
+        transform skewX(0deg)
+        max-width 33%
+        height 100%
+    }
+    
+    @media screen and (max-width 760px) {
+        max-width 50%
+        }
+
+.btn__violet-link 
+    display flex
+    width 100%
+    align-items center
+    justify-content center
+    text-align center
+
+    @media screen and (max-width: 760px) {
+        margin 0 14px
+    }
+
+    p
+        font-family 'HelveticaNeue-Bold'
+        font-size 14px
+        color whiteColor
+        letter-spacing 1.4px   
+        padding 0
+        transform skewX(-30deg)
+
+        @media screen and (max-width: 1280px) {
+        transform skewX(0deg)
+        }
+    
+.btn__semiViolet
+    background semiPurple 
+    max-width  310px
+    width 100%
+    transition all 0.4s ease-in-out
+    display flex
+    justify-content center
+    position relative
+
+    @media screen and (max-width: 1280px) {
+        height 100%
+        max-width 33%
+    }
+
+    @media screen and (max-width 760px){
+        max-width 50%
+    }
+
+    &:hover
+        background semiViolet
+
+    &:before
+        content ''
+        width 40px
+        height 100%
+        display block
+        position absolute
+        background semiPurple
+        left -20px
+        top 0
+        transform skewX(30deg)
+    
+    .btn__semiViolet-link
+        display flex
+        width 100%
+        height 100%
+        align-items center
+    
+        @media screen and (max-width: 1280px) {
+            display flex
+            align-items center
+            justify-content center
+            width 100%
+        }
+
+    p
+        font-family 'HelveticaNeue-Bold'
+        font-size 14px
+        color whiteColor
+        letter-spacing 1.4px
+        padding 0
+        width 100%
+        text-align center
+        z-index: 1
+
+        @media screen and (max-width: 1280px) {
+            text-align center
+        }
+
+
+
+//////////////////////////////////////////////////////////
+//
+// END STYLE FOR HEADER
+// 
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE FOR MENU
+//
+//////////////////////////////////////////////////////////
+
+.menu
+    max-width 320px
+    width 100%
+    background-image url('../../img/account/menubg.jpg')
+    background-size cover
+    display flex
+    flex-direction column
+    align-items center
+    z-index 99
+
+    @media screen and (max-width: 1280px) {
+        padding 0
+        display none
+    }
+
+    @media screen and (max-height: 600px) {
+        overflow scroll
+    }
+
+.btn-account 
+    font-size 14px
+    letter-spacing 1.4px
+    padding 17px 20px
+
+
+.nav__wrap 
+    margin-top 60px
+    height 700px
+
+    @media screen and (max-width: 1280px) {
+        display flex
+        justify-content center
+    }
+
+.nav__list-item 
+    margin-bottom 5px
+
+.nav__list
+    max-width 240px
+    margin-right 25px
+
+.nav__list-item--link
+    color whiteColor
+    font-size 14px
+    text-transform none
+    font-family 'HelveticaNeue-Bold'
+    letter-spacing 0.8px
+    display flex
+    align-items center
+
+    .link-img 
+        display block
+        max-width 62px
+        max-height 58px
+        width 100%
+        height 100%
+
+    .link-img--hover 
+        display none
+        max-width 62px
+        max-height 58px
+        width 100%
+        height 100%
+
+    &:hover 
+        .link-img 
+            display none
+        
+        .link-img--hover
+            display block
+    
+
+    &:active 
+        .link-img 
+            display none
+        
+        .link-img--hover
+            display block  
+
+.nav__list-item--link---txt 
+    margin-left 20px
+
+.menu__close
+    display none
+
+    @media screen and (max-width: 1280px) {
+        padding 25px 67px
+        display flex
+        align-items center
+        background semiViolet
+        justify-content center  
+        position fixed
+        top 0%
+    }
+
+    @media screen and (max-width: 760px) {
+        display none
+    }
+
+    .menu__close-img 
+        width 19px
+        height 19px
+        margin-right 33px
+    
+    .menu__close-txt 
+        font-size 14px
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px
+        color whiteColor
+        text-transform uppercase
+
+        @media screen and (max-width: 319) {
+            display none
+        }
+
+.menu__btn-wrap 
+    @media screen and (max-width: 760px) {
+        display flex
+        justify-content center
+        align-items center
+        margin-top 10px
+    }
+
+.menu__close-img--mob
+    display none
+
+    @media screen and (max-width: 760px) {
+        display block
+        margin-right 20px
+        max-width 18px
+        max-height 20px
+        width 100%
+        height 100%
+    }
+
+.menu__logo-link--img 
+    width 170px
+    height 125px
+    margin-top 70px
+
+    @media screen and (max-width: 1280px) {
+        margin-top 140px
+    }
+
+
+.menu__logo-link 
+    margin-bottom 30px
+
+    @media screen and (max-width: 760px) {
+        display none
+    }
+
+.menu-burger-mobile 
+    display none
+
+    @media screen and (max-width: 760px) {
+        display flex
+        width 20%
+        justify-content center
+        align-items center
+        background-color semiWhite
+    }
+
+    img 
+        width 26px
+        height 18px
+
+.menu-burger 
+    display none
+
+    p
+        text-transform uppercase
+        color semiPurple
+        font-family 'Helvetica-Bold'
+        letter-spacing 1.4px   
+        font-size 14px
+        width 150px
+        margin 0 50px 0 25px
+
+    img 
+        width 26px
+        height 18px
+        
+
+    @media screen and (max-width: 1280px) {
+        display flex
+        align-items center
+        background whiteColor
+        max-width 34%
+        width 100%
+        padding-left 35px
+    }
+
+    @media screen and (max-width: 760px) {
+        display none
+    }
+    
+    &:hover
+        cursor pointer
+
+
+
+//////////////////////////////////////////////////////////
+//
+// END STYLE FOR MENU
+// 
+//////////////////////////////////////////////////////////
+
+
+
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE FOR MAIN
+// 
+//////////////////////////////////////////////////////////
+
+
+main 
+    display flex
+
+.intro
+    display flex
+    flex-direction column
+    max-width 1580px
+    width 100%
+    margin 0 auto
+    align-items center
+    padding-left 50px
+    padding-right 50px
+
+    @media screen and (max-width 1280px){
+        padding-left 35px
+        padding-right 35px
+        }
+
+.info-wrap
+    max-width 1380px
+    width 100%
+    margin 0 10px
+    padding-top 130px
+
+    @media screen and (max-width 1280px){
+        margin 0
+    }
+
+.info__title
+    @media screen and (max-width: 1280px) {
+        width 75%
+    }
+
+    @media screen and (max-width: 760px) {
+        width 100%
+        text-align center
+        font-size 30px
+    }
+
+.info__subtitle 
+    @media screen and (max-width: 760px) {
+        text-align center
+    }
+
+.info__descr 
+    text-align justify
+    line-height 30px
+    font-size 16px
+    color semiBlack
+    font-family HelveticaNeue-Light
+    margin-bottom 40px
+
+    &:nth-of-type(1)
+        margin-top 40px
+
+
+
+
+
+//////////////////////////////////////////////////////////
+//
+// END STYLE FOR MAIN
+// 
+//////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE FOR FOOTER
+// 
+//////////////////////////////////////////////////////////
+footer 
+    display flex
+    width 100%
+
+.bottom-footer
+    position relative
     margin 0
     padding 0
     bottom 0%
@@ -66,95 +614,96 @@ main
 
     @media screen and (max-width: 1280px)  {
         width 100%
+        max-height 110px
         height 100%
         bottom 0
     }
 
-    @media screen and (max-height: 850px){
-        width 100%
-        height 100%
-        position relative
-        bottom 0
+    @media screen and (max-height: 760px) {
+        max-height 155px
+        padding-left 30px
+        padding-right 30px
     }
-
-    @media screen and (max-height: 992px) {
-        margin-left 0
-        }
 
     .copyright 
-        max-width  80%
+        max-width 100%
         text-align center
         width 100%
         margin-top 20px 
-        height 35%
-    
-        @media screen and (max-width: lg) {
-            width 100%
-            max-height 30px
-            height 100%
-            margin-top 20px
+        font-size 12px
+        line-height 1.2
+
+        @media screen and (max-width: 1280px) {
+            margin-top 10px
             font-size 14px
+            line-height 14px
         }
 
-        @media screen and (max-width: sm) {
+        @media screen and (max-width: 760px) {
             font-size 12px
         }
 
 
-.menu
-    max-width 320px
+.responsibility 
+    margin-top 10px
+    margin-bottom 20px
     width 100%
-    background-image url('../../img/account/menubg.jpg')
-    background-size cover
-    display flex
-    flex-direction column
-    align-items center
-    z-index 99
 
-    @media screen and (max-width: 992px) {
-        padding 0
+    @media screen and (max-width: 1280px) {
+        margin 0
+        font-size 14px
+        line-height 14px
+    }
+
+    @media screen and (max-width: 760px) {
+        font-size 12px
+    }
+
+.developer 
+    display flex
+    align-items center
+    justify-content center
+    font-size 14px
+    margin-top 30px
+    margin-bottom 17px
+
+    @media screen and (max-width 900px){
+        margin-top 0 
+        }
+
+    img 
+        margin-left 10px
+        width 119px
+        height 40px
+        transition all 0.4s ease-in-out
+        
+        &:hover
+            opacity 0.6
+
+
+
+//////////////////////////////////////////////////////////
+//
+// END STYLE FOR FOOTER
+// 
+//////////////////////////////////////////////////////////
+
+
+.separator 
+    z-index -1
+
+.overlay 
+    display none
+    top 0
+    left 0
+    background-color whiteColor
+    opacity 0.8
+    z-index 3
+    position fixed
+    width 100vw
+    height 100vh
+    overflow hidden
+
+    @media screen and (max-width: 320) {
         display none
     }
-
-    @media screen and (max-height: 600px) {
-        overflow scroll
-    }
-
-.intro
-    display flex
-    flex-direction column
-    max-width 1580px
-    width 100%
-
-.info-wrap
-    max-width 1380px
-    width 100%
-    margin 0 auto
-    padding-top 130px
-
-.info__title
-    @media screen and (max-width: lg) {
-        width 75%
-    }
-
-    @media screen and (max-width: sm) {
-        width 100%
-        text-align center
-        font-size 30px
-    }
-
-.info__subtitle 
-    @media screen and (max-width: sm) {
-        text-align center
-    }
-
-.info__descr 
-    text-align justify
-    line-height 30px
-    font-size 16px
-    color semiBlack
-    font-family HelveticaNeue-Light
-    margin-bottom 40px
-
-    &:nth-of-type(1)
-        margin-top 40px
