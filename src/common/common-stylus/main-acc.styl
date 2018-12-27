@@ -67,6 +67,7 @@ h2
     max-width 1380px
     max-height 70px
     height 100%
+    z-index 9
 
     @media screen and (max-width: 1280px) {
         flex-direction column
@@ -230,7 +231,7 @@ h2
         }
     
 .btn__semiViolet
-    background semiPurple 
+    background-color semiPurple 
     max-width  310px
     width 100%
     transition all 0.4s ease-in-out
@@ -248,7 +249,10 @@ h2
     }
 
     &:hover
-        background semiViolet
+        background-color semiViolet
+
+        &:before
+            background-color semiViolet
 
     &:before
         content ''
@@ -256,10 +260,11 @@ h2
         height 100%
         display block
         position absolute
-        background semiPurple
+        background-color semiPurple
         left -20px
         top 0
         transform skewX(30deg)
+        transition all 0.4s ease-in-out
     
     .btn__semiViolet-link
         display flex
@@ -286,6 +291,100 @@ h2
 
         @media screen and (max-width: 1280px) {
             text-align center
+        }
+
+
+.intro,.account-user
+    .cntrlpnl-right-user
+        max-width 700px
+
+        @media screen and (max-width 1360px){
+            justify-content flex-end
+        }
+
+        @media screen and (max-width 1280px) {
+            max-width inherit
+            justify-content space-between
+        }
+
+        .menu-burger
+            @media screen and (max-width 1280px) {
+                width 50%
+            }
+
+        .btn__semiViolet
+            @media screen and (max-width 1280px) {
+                width 50%
+            }
+
+            @media screen and (max-width 760px){
+                width 100%
+                max-width inherit
+            }
+
+        .info-user
+            display flex
+            flex-direction column
+            align-items flex-start
+            background-color inherit
+            transform skewX(0deg)
+            margin-left 40px
+            margin-right 40px
+
+            @media screen and (max-width 1360px){
+                margin 0
+            }
+    
+            @media screen and (max-width 1280px){
+                position absolute
+                align-items flex-end
+                max-width 500px
+                top 50px
+                right 0
+                padding-right 35px
+            }
+
+            @media screen and (max-width 760px){
+                top 100px
+                padding-right 0
+                align-items center
+                max-width inherit 
+                width 100%
+                background-color whiteColor
+            }
+
+            .user-date-entry
+                font-size 14px
+                text-transform underline
+                text-align left
+                transform skewX(0deg)
+                font-family 'HelveticaNeue-Medium'
+
+            .user-time
+                font-size 18px
+                text-transform none
+                text-align left
+                transform skewX(0deg)
+                font-family 'HelveticaNeue-Bold'
+                color semiPurple
+
+                @media screen and (max-width 1280px){
+                    font-size 14px
+                }
+
+                .time-number
+                    font-weight 1000
+                    font-size 24px
+
+                    @media screen and (max-width 1280px){
+                        font-size 18px
+                    }
+    
+
+.account-user
+    .info-wrap
+        @media screen and (max-width 760px){
+            padding-top 180px
         }
 
 
@@ -316,6 +415,10 @@ h2
     @media screen and (max-width: 1280px) {
         padding 0
         display none
+    }
+
+    @media screen and (max-width: 1280px) {
+        position absolute
     }
 
     @media screen and (max-height: 600px) {
@@ -611,6 +714,8 @@ footer
     align-items center
     justify-content flex-start
     z-index: 100
+    padding-left 30px
+    padding-right 30px
 
     @media screen and (max-width: 1280px)  {
         width 100%
@@ -619,7 +724,7 @@ footer
         bottom 0
     }
 
-    @media screen and (max-height: 760px) {
+    @media screen and (max-width: 760px) {
         max-height 155px
         padding-left 30px
         padding-right 30px
@@ -646,7 +751,6 @@ footer
 
 .responsibility 
     margin-top 10px
-    margin-bottom 20px
     width 100%
 
     @media screen and (max-width: 1280px) {
@@ -670,9 +774,8 @@ footer
     @media screen and (max-width 900px){
         margin-top 0 
         }
-
+        
     img 
-        margin-left 10px
         width 119px
         height 40px
         transition all 0.4s ease-in-out
@@ -703,7 +806,3 @@ footer
     width 100vw
     height 100vh
     overflow hidden
-
-    @media screen and (max-width: 320) {
-        display none
-    }
