@@ -7,17 +7,47 @@
         text-transform uppercase
         color semiViolet
         line-height 36px
-        height 51px
+
+        @media screen and (max-width 1280px){
+            width 100%
+        }
+
+        @media screen and (max-width 760px){
+            font-size 24px
+            font-weight bold
+        }
+
+
+
+.personal-info
+    h2
+        font-size 36px
+        font-family 'Helvetica-Bold'
+        text-transform uppercase
+        color semiViolet
+        line-height 36px
+
+        @media screen and (max-width 1280px){
+            width 100%
+        }
+
+        @media screen and (max-width 760px){
+            font-size 24px
+            font-weight bold
+        }
 
 .two-section,.intro,.account-user
     .info-wrap
         display flex
         flex-direction row
 
+        @media screen and (max-width 1659px)
+            flex-direction column
+
         .personal-info
             max-width 840px
             width 100%
-
+        
             .info__descr
                 max-width 600px
                 width 100%
@@ -25,16 +55,26 @@
                 line-height 30px
                 letter-spacing 1.667
                 color rgb(52, 53, 55)
+                font-family 'HelveticaNeue-Roman'
 
-        .change-password
-            max-width 430px
-            width 100%
-            margin-left 100px
+                @media screen and (max-width 1280px){
+                    text-align left
+                }
 
+                @media screen and (max-width 760px){
+                    text-align center
+                    max-width inherit
+                }
+
+.change-password
+    max-width 430px
+    width 100%
+    margin-left 100px
 
 .personal-info__form
     display flex
     flex-direction column
+
 
 .personal-info__form-maininfo
     max-width 620px
@@ -60,6 +100,10 @@
     color semiPurple
     line-height 2
     font-family 'HelveticaNeue-Bold'
+
+    @media screen and (max-width 760px){
+        font-size 16px
+    }
 
 .personal-info__user
     font-size 16px
@@ -87,7 +131,9 @@
     border 1px solid rgb(219, 224, 234)
     margin-top 16px
     height 60px
-    width 590px
+    max-width 620px
+    width 100%
+    box-sizing border-box
     padding-left 28px
     transition 0.2s all ease-in-out
     font-style normal
@@ -170,6 +216,7 @@
         color rgb(52, 53, 55)
         line-height: 2.571
 
+
 .personal-info__form-submit
     height 70px
     width 100%
@@ -186,20 +233,124 @@
         border 2px solid #5073b6
         color whiteColor
 
+.license-wrap
+    max-width inherit
+    width 100%
+    margin-bottom 50px
+
+.license-title
+    font-size 18px
+    line-height 36px
+    font-family 'HelveticaNeue-Bold'
+    color semiPurple
+
+    @media screen and (max-width 760px){
+        font-size 16px
+        line-height 20px
+    }
+
+.license-link
+    color semiViolet
+    font-family 'HelveticaNeue-Bold'
+    font-size 18px
+    line-height 36px
+
+    @media screen and (max-width 760px){
+        font-size 16px
+        display inline-block
+        width 100%
+        line-height 16px
+    }
+
+.license-user
+    font-size 18px
+    line-height 36px
+    font-family 'HelveticaNeue-Light'
+    margin-left 25px
+
+    @media screen and (max-width 760px){
+        font-size 16px
+        margin-left 0
+        line-height 16px
+    }
+
 
 .change-password
     .change-password__descr
         max-width 350px
         width 100%
 
+        @media screen and (max-width 1280px){
+            max-width inherit
+            text-align left
+        }
+
+        @media screen and (max-width 760px){
+            text-align center
+        }
+
+
+
 .personal-info__form-password
     max-width 430px
     width 100%
-
-    .personal-info__input
-        width 390px
     
+    .personal-info__input
+        max-width 420px
+        width 100%
+        box-sizing border-box
+
+        @media screen and (max-width 1659px) {
+            max-width 620px
+        }
+
+@media screen and (max-width 1659px) {
+    .change-password__submit,
+    .personal-info{
+        max-width 620px
+    }
+
+    .personal-info__form-password{
+        max-width 700px
+    }
+
+    .change-password{
+        margin-left 0
+        margin-top 90px
+        max-width 700px
+        margin-bottom 100px
+    }
 
 
-           
+}
 
+@media screen and (max-width 1280px) {
+    .personal-info__form-maininfo,
+    .personal-info__input,
+    .personal-info__block,
+    .personal-info__input.personal-current-password,
+    .personal-info__input.personal-info__new-password,
+    .personal-info__input.personal-info__confirm-password {
+        max-width 700px
+        width 100%
+    }
+
+    //some style for input type submit in tablet
+    .personal-info__form-submit {
+        max-width 620px
+        margin-left 40px
+    }
+}
+
+@media screen and (max-width 760px){
+    .personal-info__form-submit{
+        margin-left 0
+        max-width inherit
+        font-size 16px
+    }
+
+    .change-password__submit{
+        max-width inherit
+        font-size 16px
+    }
+}

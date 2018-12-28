@@ -98,14 +98,14 @@
             
                 <section class="personal-info">
                     <div class="heading">
-                        <h1 class="defaultTitle info__title">Персональні дані користувача</h1>
+                        <h2 class="defaultTitle info__title">Персональні дані користувача</h2>
                         <div class="separator">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
                         </div>  
                     </div>
                     <section class="personal-info--details">
                         <p class="personal-info--details__descr info__descr">
-                            Заповніть анкету ваших персональниі данних в повному об’ємі,
+                            Заповніть анкету ваших персональних данних в повному об’ємі,
                             це полегшить вашу реестрацію на різні заходи та форуми
                         </p>
                     
@@ -168,7 +168,14 @@
                             <label for="personal-info__skype" class="personal-info__label personal-info__title"> Skype
                                 <input type="text" class="personal-info__input personal-info__skype" id="personal-info__skype" placeholder="Введіть відповідь" tabindex="8">
                             </label>
-
+                            
+                            <div class="license-wrap">
+                                <p class="license-title">Свідоцтво про право на заняття адвокатською діяльністю</p> 
+                                <p>
+                                    <span class="license-link">www.erau.unba.org.ua/profile/</span> 
+                                    <span class="license-user" id="license-user">ivanov.i</span>
+                                </p>
+                            </div>
 
                             <input type="submit" class="personal-info__form-submit" id="personal-info__form-submit" value="Зберегти данні" tabindex="9">
                         </form>
@@ -192,15 +199,15 @@
 
                     <form action="" method="GET" class="personal-info__form personal-info__form-password">
                         <label for="personal-info__current-password" class="personal-info__label personal-info__title"> Поточний пароль
-                            <input type="text" class="personal-info__input personal-current-password" id="personal-info__current-password" placeholder="Введіть відповідь" tabindex="10">
+                            <input type="password" class="personal-info__input personal-current-password" id="personal-info__current-password" placeholder="Введіть відповідь" tabindex="10" required>
                         </label>
-
+                        
                         <label for="personal-info__new-password" class="personal-info__label personal-info__title"> Новий пароль
-                            <input type="text" class="personal-info__input personal-info__new-password" id="personal-info__new-password" placeholder="Введіть відповідь" tabindex="10">
+                            <input type="password" class="personal-info__input personal-info__new-password" id="personal-info__new-password" placeholder="Введіть відповідь" tabindex="10" required>
                         </label>
 
                         <label for="personal-info__confirm-password" class="personal-info__label personal-info__title"> Підтвердіть пароль
-                            <input type="text" class="personal-info__input personal-info__confirm-password" id="personal-info__confirm-password" placeholder="Введіть відповідь" tabindex="10">
+                            <input type="password" class="personal-info__input personal-info__confirm-password" id="personal-info__confirm-password" placeholder="Введіть відповідь" tabindex="10" required>
                         </label>
 
                         <input type="submit" class="personal-info__form-submit change-password__submit" id="personal-info__form-submit" value="змінити пароль" tabindex="9">
