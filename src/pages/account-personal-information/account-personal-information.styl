@@ -1,5 +1,12 @@
 @import '../../common/common-stylus/vars'
 
+.intro.account-user.two-section
+    .header
+        @media screen and (max-width 760px){
+            left 0
+            position absolute
+        }
+
 .change-password
     h2
         font-size 36px
@@ -16,8 +23,6 @@
             font-size 24px
             font-weight bold
         }
-
-
 
 .personal-info
     h2
@@ -119,7 +124,11 @@
 
     .personal-info__input__date
         width 200px
-        
+    
+        @media screen and (max-width:1280px){
+            width 33%
+        }
+
         &:not(:last-child)
             margin-right 10px
 
@@ -189,7 +198,7 @@
         right 28px
 
     .personal-info__select
-        background-color #d4d4d5
+        background-color #f0f2f4
         height 60px
         width 100%
         padding-left 30px
@@ -353,4 +362,12 @@
         max-width inherit
         font-size 16px
     }
+
+    .intro.account-user.two-section{
+        padding-left 25px
+        padding-right 25px
+        max-width 280px
+    }
+
+
 }
