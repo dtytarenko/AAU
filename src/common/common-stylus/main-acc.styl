@@ -675,7 +675,7 @@ main
     line-height 30px
     font-size 16px
     color semiBlack
-    font-family HelveticaNeue-Light
+    font-family 'HelveticaNeue-Light'
     margin-bottom 40px
 
     &:nth-of-type(1)
@@ -807,3 +807,201 @@ footer
     width 100vw
     height 100vh
     overflow hidden
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE INPUT
+// 
+//////////////////////////////////////////////////////////
+
+.personal-info__input
+    border 1px solid rgb(219, 224, 234)
+    margin-top 16px
+    height 60px
+    max-width 620px
+    width 100%
+    box-sizing border-box
+    padding-left 28px
+    transition 0.2s all ease-in-out
+    font-style normal
+
+    &:focus
+        border 2px solid semiPurple
+
+    &:hover
+        border 1px solid rgb(219, 224, 234)
+    
+
+.personal-info__form
+    input[placeholder]
+        font-style italic
+        font-size 14px
+        font-family 'HelveticaNeue-Light'
+        color rgb(52, 53, 55)
+        line-height: 2.571
+        
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button
+        -webkit-appearance none
+        -moz-appearance none
+        -ms-appearance none
+        -o-appearance none 
+        appearance none
+        margin 0
+
+    input[type=number]
+        -moz-appearance:textfield
+        
+    select:-moz-focusring 
+        color transparent
+        text-shadow 0 0 0 #000
+
+.personal-info__select-wrap
+    position relative
+    margin-top 10px
+
+    &:hover
+        cursor pointer
+
+    &:after
+        position absolute
+        content ''
+        width 0
+        height 0
+        border-left 4px solid transparent
+        border-right 4px solid transparent
+        border-top 4px solid #343537
+        top 50%
+        right 28px
+
+    .personal-info__select
+        background-color #f0f2f4
+        height 60px
+        width 100%
+        padding-left 30px
+        border 1px solid rgb(219, 224, 234)
+        -webkit-appearance button
+        -moz-appearance button
+        -webkit-user-select none
+        -moz-user-select none
+        outline 0
+        font-style italic
+        font-size 14px
+        font-family 'HelveticaNeue-Light'
+        color rgb(52, 53, 55)
+        line-height: 2.571
+        position relative
+
+        &:focus
+            border 1px solid rgb(219, 224, 234)
+
+    .personal-info__select-item
+        font-style normal
+        font-size 14px
+        font-family 'HelveticaNeue-Light'
+        color rgb(52, 53, 55)
+        line-height: 2.571
+
+.personal-info__form-submit
+    height 70px
+    width 100%
+    text-transform uppercase
+    font-size 16px
+    font-family 'HelveticaNeue-Bold'
+    transition all 0.4s ease-in-out
+    background-color whiteColor
+    border 2px solid rgb(0, 128, 198)
+    color rgb(0, 128, 198)
+
+    &:hover
+        background-color #5073b6
+        border 2px solid #5073b6
+        color whiteColor
+
+.personal-info__label
+    display flex
+    flex-direction column
+    margin-bottom 30px
+
+    .personal-info__input__date
+        width 200px
+    
+        @media screen and (max-width:1280px){
+            width 33%
+        }
+
+        &:not(:last-child)
+            margin-right 10px
+
+        &:first-child
+            @media screen and (max-width 760px){
+                width 29%
+            }
+
+.personal-info__title
+    font-size 18px
+    color semiPurple
+    line-height 2
+    font-family 'HelveticaNeue-Bold'
+
+    @media screen and (max-width 760px){
+        font-size 16px
+    }
+
+//////////////////////////////////////////////////////////
+//
+// END STYLE FOR INPUT
+// 
+//////////////////////////////////////////////////////////
+
+.account-checkbox__wrap
+    display flex
+    flex-direction row
+    align-items center
+    position relative
+    margin-bottom 25px
+
+.account-checkbox__input
+    appearance none
+    margin 0
+    width 23px
+    height 20px
+    box-sizing border-box
+    position relative
+    z-index 3
+
+.account-checkbox__input-wrap
+    width 23px
+    height 23px
+
+.account-checkbox__input-checkmark
+    position absolute
+    display inline-block
+    width 23px
+    height 23px
+    left 0
+    top 0
+    transform translateY(25%)
+    
+    &:after
+        display block
+        content ''
+        width 23px
+        height 20px
+        background url('../img/all/dots.png') no-repeat
+        position absolute
+        top 50%
+        transform translateY(-50%)
+        z-index: 1
+
+.account-checkbox__input-wrap input:checked ~ .account-checkbox__input-checkmark:after
+    background url('../img/all/dots-active.png') no-repeat
+
+.account-checkbox__descr
+    margin-left 17px
+    font-family 'Helvetica-Regular'
+    font-size 24px
+
+    @media screen and (max-width 760px)
+        font-size 16px
