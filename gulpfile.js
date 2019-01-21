@@ -91,7 +91,6 @@ gulp.task('reload', () => {
   });
 });
 
-
 gulp.task('clean', function() {
 	return del.sync('dist'); // очистка конечной директории, в данном случае с dist
 });

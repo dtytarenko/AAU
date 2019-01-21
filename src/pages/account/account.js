@@ -2,7 +2,6 @@ $(document).ready(function() {
     $( ".menu-burger, .menu-burger-mobile" ).click(function() {
         $( ".menu, .overlay").slideToggle( "slow");
         $('.menu').css('display', 'flex');
-        $('.menu').css('z-index', '4');
     });
     
     $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {
@@ -11,6 +10,12 @@ $(document).ready(function() {
             $('.overlay').style.display = "none";
         }
     });
+
+    $(document).ready( function () {
+        $('#table_id').DataTable();
+    } );
 });
 
 $('.personal-info__city > option:first').hide();
+
+

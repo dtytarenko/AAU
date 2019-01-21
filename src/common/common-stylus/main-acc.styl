@@ -22,8 +22,15 @@
 // START GENERAL STYLE FOR ACCOUNT TYPE PAGE
 // 
 //////////////////////////////////////////////////////////
+body
+    position relative
+
+.subscribe-body 
+    position inherit
+
 main
     overflow hidden
+    padding-bottom 120px
 
 h2 
     color semiPurple
@@ -173,7 +180,8 @@ h2
     position fixed
     max-width 620px
     width 100%
-    right 0
+    right 0%
+    top 0%
 
     @media screen and (max-width: 1280px) {
         order 1
@@ -416,10 +424,9 @@ h2
     @media screen and (max-width: 1280px) {
         padding 0
         display none
-    }
-
-    @media screen and (max-width: 1280px) {
-        position absolute
+        position fixed
+        top 0vw
+        height 100%
     }
 
     @media screen and (max-height: 600px) {
@@ -493,7 +500,10 @@ h2
     display none
 
     @media screen and (max-width: 1280px) {
-        padding 25px 67px
+        max-width 320px
+        width 100%
+        max-height 50px
+        height 100%
         display flex
         align-items center
         background semiViolet
@@ -502,9 +512,9 @@ h2
         top 0%
     }
 
-    @media screen and (max-width: 760px) {
-        display none
-    }
+    // @media screen and (max-width: 760px) {
+    //     display none
+    // }
 
     .menu__close-img 
         width 19px
@@ -530,17 +540,6 @@ h2
         margin-top 10px
     }
 
-.menu__close-img--mob
-    display none
-
-    @media screen and (max-width: 760px) {
-        display block
-        margin-right 20px
-        max-width 18px
-        max-height 20px
-        width 100%
-        height 100%
-    }
 
 .menu__logo-link--img 
     width 170px
@@ -555,9 +554,7 @@ h2
 .menu__logo-link 
     margin-bottom 30px
 
-    @media screen and (max-width: 760px) {
-        display none
-    }
+
 
 .menu-burger-mobile 
     display none
@@ -639,11 +636,22 @@ main
     padding-left 50px
     padding-right 50px
 
-    @media screen and (max-width 1280px){
+    @media screen and (max-width 1280px)
         padding-left 35px
         padding-right 35px
-        }
 
+    @media screen and (max-width 760px)
+        padding-left 20px
+        padding-right 20px
+
+    @media screen and (max-width 420px)
+        max-width 280px
+
+.header
+    @media screen and (max-width 760px)
+        left 0
+        position absolute
+        
 .info-wrap
     max-width 1380px
     width 100%
@@ -723,6 +731,7 @@ footer
         max-height 110px
         height 100%
         bottom 0
+        position absolute
     }
 
     @media screen and (max-width: 760px) {
@@ -960,7 +969,7 @@ footer
     flex-direction row
     align-items center
     position relative
-    margin-bottom 25px
+    margin-bottom 20px
 
 .account-checkbox__input
     appearance none
@@ -999,9 +1008,216 @@ footer
     background url('../img/all/dots-active.png') no-repeat
 
 .account-checkbox__descr
-    margin-left 17px
+    margin-left 5px
     font-family 'Helvetica-Regular'
     font-size 24px
+    line-height 30px
 
     @media screen and (max-width 760px)
         font-size 16px
+
+
+//////////////////////////////////////////////////////////
+//
+// START STYLE TABLE-PAYMOUNT
+// 
+//////////////////////////////////////////////////////////
+
+.table__wrap
+    max-height 710px
+    height 100%
+
+#table_id
+    width 100%
+    height 100%
+    box-sizing border-box
+
+#table_id_previous, #table_id_next
+#table_id_info, #table_id_filter,
+#table_id_length
+    display none
+
+.payment-date__title,
+.payment-amount__title
+    text-transform uppercase
+    font-size 18px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    color #ffffff
+    letter-spacing 0.9px
+    background url('../img/staff/bottom__bg.png') center top no-repeat
+    background-size cover
+    width 250px !important
+    height 60px !important
+    vertical-align middle
+    text-align center
+    border-right: 5px solid #ffffff
+    border-bottom: 5px solid #ffffff
+    box-sizing border-box
+
+    @media screen and (max-width: 760px){
+        font-size 10px
+    }
+
+.payment-date__title
+    @media screen and (max-width: 1280px){
+        width 220px !important 
+    }
+
+.payment-date 
+    padding-right 15px
+    position relative
+
+    @media screen and (max-width: 760px){
+        padding 0
+    }
+
+    &:after
+        top 0
+        right 0
+        display block
+        content ''
+        position absolute
+        height 100%
+        width 1px
+        border-right 1px solid #343537
+
+        @media screen and (max-width: 760px){
+            display none
+        }
+
+.payment-date__time 
+    padding-left 15px
+
+    @media screen and (max-width: 760px){
+        padding 0
+        display block
+    }
+
+.payment-amount__title
+    @media screen and (max-width: 1280px){
+        width 130px !important 
+    }
+
+.payment-purpose__title
+    text-transform uppercase
+    font-size 18px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    color #ffffff
+    letter-spacing 0.9px
+    background url('../img/staff/bottom__bg.png') center top no-repeat
+    background-size cover
+    width 250px
+    height 60px
+    vertical-align middle
+    text-align center
+    border-bottom: 5px solid #ffffff
+
+    @media screen and (max-width: 760px){
+        font-size 10px
+    }
+
+.payment-date__wrap,
+.payment-amount,
+.payment-purpose
+    vertical-align middle
+    background-color #f0f2f4
+    font-family 'HelveticaNeue-Roman', sans-serif
+    font-size 16px
+    color #343537
+    box-sizing: border-box
+
+    @media screen and (max-width: 760px){
+        font-size 12px
+    }
+
+.payment-date__wrap,
+.payment-amount 
+    text-align center
+    width 250px
+    height 60px
+    border-right: 5px solid #ffffff
+    border-bottom: 5px solid #ffffff
+
+.payment-date__wrap
+    @media screen and (max-width: 1280px){
+        width 220px
+    }
+
+.payment-amount
+    @media screen and (max-width: 1280px){
+        width 220px
+    }
+
+.payment-purpose
+    text-align left
+    padding-left 40px
+    border-bottom: 5px solid #ffffff
+    width 870px
+    height 60px
+
+    @media screen and (max-width: 760px){
+        padding-left 5px
+    }
+
+#table_id_paginate
+    margin-top 40px
+    float left
+
+    span
+        display flex
+
+
+.paginate_button.current
+    color: #ffffff
+
+    &:after
+        background url('../img/account/table-btn-active.png') center center no-repeat
+
+        @media screen and (max-width: 760px){
+            background url('../img/account/table-btn-active-mob.png') center center no-repeat
+        }
+.paginate_button
+    display flex
+    justify-content center
+    align-items center
+    font-size 18px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    position relative
+    margin-right 12px
+    width 48px
+    height 40px
+    z-index 2
+    color #5073b6
+
+    @media screen and (max-width: 760px){
+        font-size 12px
+        width 34px
+        height 28px
+    }
+
+    &:after
+        display block
+        width 48px
+        height 40px
+        content ''
+        top 0%
+        left -1px
+        position absolute
+        z-index -1
+        background url('../img/account/table-btn.png') center center no-repeat
+
+        @media screen and (max-width: 760px){
+            width 34px
+            height 28px
+            background url('../img/account/table-btn-mob.png') center center no-repeat
+        }
+
+.info-wrap.payment 
+    margin-bottom 40px 
+
+    .info__title
+        @media screen and (max-width 760px){
+            margin-top 40px
+        }
+    
+    

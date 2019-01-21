@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
     <link rel="stylesheet" type="text/css" href="css/main-acc.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.min.css">
-    <title>Особистий кабінет користувача</title>
+    <title>Підписки</title>
 </head>
-<body>
+<body class="subscribe-body">
     <div class="overlay"> </div>
     <main>
 
@@ -20,7 +20,6 @@
 
             <a href="#" class="menu__logo-link"><img src="img/account/logo.png" class="menu__logo-link--img" alt="logo"></a>
             <div class="menu__btn-wrap"> 
-                <img src="img/account/close.png" class="menu__close-img--mob" alt="close">
                 <a class="btn-asidemenu btn-account" href="index.html">перейти на сайт ААУ</a>
             </div>
 
@@ -41,14 +40,14 @@
                         </a>
                     </li>
                     <li class="nav__list-item">
-                        <a href="" class="nav__list-item--link">
+                        <a href="account-subscribe.html" class="nav__list-item--link">
                             <img src="img/account/subscribe.png" alt="subscribe" class="link-img--hover">
                             <img src="img/account/subscribe-hover.png" alt="subscribe" class="link-img"> 
                             <span class="nav__list-item--link---txt">Підписки</span>
                         </a>
                     </li>
                     <li class="nav__list-item">        
-                        <a href="" class="nav__list-item--link">
+                        <a href="account-history-payment.html" class="nav__list-item--link">
                             <img src="img/account/paymenthistory.png" alt="paymenthistory"  class="link-img">
                             <img src="img/account/paymenthistory-hover.png" alt="paymenthistory" class="link-img--hover"> 
                             <span class="nav__list-item--link---txt">Історія платежів</span>
@@ -105,21 +104,23 @@
                     <div class="account-checkbox__wrap">
 
                         <div class="account-checkbox__input-wrap">
-                            <input type="checkbox" class="account-checkbox__input">
+                            <input type="checkbox" class="account-checkbox__input" name="news" id="news">
                             <span class="account-checkbox__input-checkmark"></span>
                         </div>
 
-                       <span class="account-checkbox__descr">
+                       <label class="account-checkbox__descr" for="news">
                            Хочу отримувати розсилку про новини ААУ на e-mail
-                       </span> 
+                       </label> 
                     </div>
 
                     <div class="account-checkbox__wrap">
                         <div class="account-checkbox__input-wrap">
-                            <input type="checkbox" class="account-checkbox__input">
+                            <input type="checkbox" class="account-checkbox__input" id="forums" class="forums">
                             <span class="account-checkbox__input-checkmark"></span>
                         </div>
-                        <span class="account-checkbox__descr">Хочу отримувати розсилку про новини ААУ на e-mail</span> 
+                        <label class="account-checkbox__descr" for="forums">
+                            Хочу отримувати розсилку про нові форуми і заходи ААУ на e-mail
+                        </label> 
                     </div>
                 </form>
             </section> 
