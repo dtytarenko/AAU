@@ -1,8 +1,13 @@
 @import 'vars'
 
 //-----------------------start geneeral styles ------------------------
-.container
-    flex-direction column
+.about-stndrt
+    .container
+        flex-direction column
+
+        @media screen and (max-width:768px){
+            padding-bottom 0
+        }
 
 //-----------------------end general styles------------------------
 .about-stndrt
@@ -36,7 +41,12 @@
         @media screen and (max-width: 1280px){
             font-size 30px
             letter-spacing 1.5px
-            }
+        }
+        
+        @media screen and (max-width: 768px){
+            font-size 20px
+            letter-spacing 0
+        }
     
     .about-aau--subsliders 
         .partners-committee__title, .media-partners__title
@@ -44,10 +54,16 @@
             font-size 30px
             letter-spacing 1.5px
 
+            @media screen and (max-width: 768px){
+                font-size 20px
+                line-height 20px
+                letter-spacing 0
+            }
+
+
 .about-stndrt
     .stndrt__text:not(:last-of-type) 
         margin-bottom 20px
-        width 100%
 
 //---card worker
 .worker-card-group
@@ -120,10 +136,27 @@
     margin-top 45px
     display flex
 
+    @media screen and (max-width:768px){
+        flex-direction column
+        align-items center
+    }
+
 .worker-card__article
     margin-left 40px
     display flex
     flex-direction column
+
+    @media screen and (max-width: 768px){
+        margin-left 0
+        margin-top 40px
+    }
+
+    .worker-card__article--text.stndrt__text{
+        @media screen and (max-width: 510px) {
+            text-align justify
+            font-size 14px
+            } 
+        }
 
 .stndrt__competence-list
     list-style-type disc

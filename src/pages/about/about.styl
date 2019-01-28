@@ -22,6 +22,7 @@
     display flex
     justify-content space-between
     align-items center
+    overflow-x: hidden
 
 .about-aau__intro-article
     width 50%
@@ -29,6 +30,11 @@
     @media screen and (max-width: 1280px){
         width 100%
     }
+
+    .stndrt__text.about-aau__intro-text
+        @media screen and (max-width: 768px){
+            font-size 14px
+            }
 
 .about-aau__intro-video
     align-self flex-end
@@ -40,6 +46,14 @@
         margin-top 50px
         align-self center
         }
+
+    .video {
+        @media screen and (max-width: 500px){
+            max-width: 280px;
+            max-height: 160px;
+        }
+    }
+        
 
 .about-aau__list
     display flex
@@ -54,7 +68,11 @@
     
     @media screen and (max-width: 1280px){
         max-width 200px
-        }
+    }
+
+    @media screen and (max-width: 768px){
+        font-size 16px
+    }
 
 .main-info
     display flex
@@ -155,4 +173,5 @@
         font-size 30px
 
 
+        
             
