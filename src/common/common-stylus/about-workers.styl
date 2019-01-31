@@ -229,7 +229,7 @@
     white-space pre-line
     width 100%
     text-transform uppercase
-    height 32px
+    height auto
 
 .departments-list__item-img
     width 290px
@@ -246,8 +246,48 @@
     align-items center
     justify-content center
 
+.departments-list__item-descr--name
+    font-size 18px
+    color whiteColor
+    text-transform uppercase
+    font-family 'HelveticaNeue-Black', sans-serif
+    white-space pre-line
+    text-align center
+
+.departments-list__item-descr--contacts
+    color whiteColor 
+    font-size 14px
+    font-family 'HelveticaNeue-Medium'
+    text-transform: none 
+    margin-top 20px
+    position relative
+    transition all 0.5s ease
+    letter-spacing: -0.5px;
+    display flex
+    align-items center
+    width 100%
+
+    &:hover
+        color rgba(255, 255, 255, .5)
+
+        &:before
+            opacity 0.5 
+
+    &:before
+        display inline-block
+        margin-right 20px
+        content: ''
+        width 20px
+        height 14px
+        background url('../img/staff/mail.png') center center no-repeat
+        transition all 0.5s ease
+        margin-left 20px
+
+    
+    
 //////////////////////////////////////////////////////////
 //
 // END STYLE FOR DEPARTMENTS
 // 
 //////////////////////////////////////////////////////////
+

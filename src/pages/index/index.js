@@ -22,7 +22,7 @@ $(document).ready(function () {
         // autoplay: true,
         infinite: true,
         autoplaySpeed: 2000,
-        speed: 500,
+        speed: 200,
         slidesToShow: 1,
         slidesToScroll: 1
     });
@@ -148,6 +148,16 @@ $(document).ready(function () {
             }
         }
     ]
+    });
+});
+
+
+$(document).ready(function() {
+    $( ".panel-registration" ).click(function() {
+        $( ".overlay-main, .reg-wrap").slideToggle('fast');
+    });
+    $('.reg-close').click(function() {
+        $( ".overlay-main, .reg-wrap").slideToggle('fast');
     });
 });
 
