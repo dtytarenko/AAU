@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакти</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+	<link rel="stylesheet" type="text/css" href="css/contacts.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="contacts">
+        <section class="breadcrumbs">
+
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="contacts.html" class="breadcrumbs__list-item--link active">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </section>
+
+        <section class="contacts-wrap"> 
+            <div class="contacts-map" id="map"></div>
+
+            <article class="contacts-info">
+                <div class="contacts-info__wraper"> 
+                    <div class="contacts-heading">
+                        <h1 class="defaultTitle contacts-title">Контактна інформація</h1>
+                        <div class="separator">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                        </div>
+                    </div>
+
+                    <p class="contacts-subtitle">
+                        Всеукраїнська громадська організація 
+                        <span>"Асоціація адвокатів України" </span> 
+                    </p>    
+
+                    <ul class="contacts-list">
+                        <li class="contacts-list__item">
+                            <p class="contacts-list__item-text">
+                                <a href="tel:+380443399493 " class="contacts-list__item-text--link">044 339-94-93 </a>
+                                <a href="tel:+380673433407 " class="contacts-list__item-text--link">067 343-34-07 </a>
+                            </p>
+                        </li>
+                        <li class="contacts-list__item">
+                            <p class="contacts-list__item-text">
+                                <a href="mailto:info@uaa.org.ua " class="contacts-list__item-text--link">info@uaa.org.ua</a>
+                            </p>
+                        </li>
+                        <li class="contacts-list__item">
+                            <p class="contacts-list__item-text">
+                                вул. Мечникова, 16, <br>
+                                офіс 307, офіс 316. <br>
+                                м. Київ, 01021 <br>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <div class="requisites-wrap">
+                        <p class="requisites-title">Реквізити: </p>
+                        <p class="requisites-descr">ВГО “Асоціація адвокатів України”
+                            Р/р 26001153697 (UAH) 
+                            АТ “Райффайзен Банк Аваль” 
+                            Код установи банку 380805  
+                            Код ЄДРПОУ 34294645 
+                        </p>
+                    </div>
+
+                
+                    <div class="contacts-people__wrap">
+                        <a class="contacts-people__descr"  href="about-president-aau.html">
+                            <span class="contacts-people__descr-position" >Президент</span>
+                            Ярош Зоя Володимирівна 
+                        </a>
+                        <a class="contacts-people__descr"  href="about-vice-president-aau.html">
+                            <span class="contacts-people__descr-position">Віце - Президент</span>
+                            Мацелюх Віталій Анатолійович
+                        </a>
+                        <p class="contacts-people__descr">
+                            <span class="contacts-people__descr-position">
+                                Виконавчий директор
+                            </span>
+                            Аксьонова Ганна
+                            <a href="mailto:aksenova@uaa.org.ua " class="contacts-people__descr-link">aksenova@uaa.org.ua </a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </article>
+        </section>
+
+        <section class="contacts-form__wrap">
+            <form action="" class="contacts-form">
+                <div class="contacts-heading">
+                    <h2 class="defaultTitle contacts-title">Форма зворотного зв'язку</h2>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+        @@include('../../common/common-html/general-partners-slider.html')
+
+
+        <section class="subsliders">
+
+                @@include('../../common/common-html/committee-partners.html')
+                @@include('../../common/common-html/information-media-partners-slider.html')
+        </section>
+    </main>
+
+    @@include('../../common/common-html/footer.html')
+    
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMLOlGeGBkQOTjZAmvjyoA3YFP3OIeyP8"
+    type="text/javascript"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>  
+    <script type="text/javascript" src="js/contacts.js"></script>
+</body>
+</html>
