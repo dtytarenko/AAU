@@ -120,6 +120,7 @@ h3
 .breacrumbs__nav
     position relative
     height 40px
+    text-align: center
 
     @media screen and (max-width: 768px){
         display none
@@ -129,19 +130,17 @@ h3
     background-color semiGray
 
 .breadcrumbs__list
+    padding 10px 0
     display flex
-    padding 10px 40px
-    position absolute
-    right 50%
-    transform: translateX(50%)
+    margin: 0 auto
+    display inline-block
 
     .breadcrumbs__list-item
-        padding-right 30px
+        padding-right 15px
         position relative
-        padding-left 30px
-        top 0%  
-        right 50%
-        transform translateX(50%)
+        padding-left 15px
+        top 0%
+        float: left
 
         &:after
             display block

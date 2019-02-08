@@ -1,17 +1,17 @@
-const   gulp         = require('gulp'),  //основной плагин gulp
-				stylus       = require('gulp-stylus'),  //препроцессор stylus
-				browserSync  	= require('browser-sync'),
-				concat       = require('gulp-concat'), // конкатенация (используется для js)
-				uglify       = require('gulp-uglifyjs'),  //минификация js
-				maps		 = require('gulp-sourcemaps'),
-				csso		 = require('gulp-csso'), // минификация css
-				rename       = require('gulp-rename'), // используется для переименования конечных файлов css и для изменения конечной структуры проекта
-				del          = require('del'), // очистка сборочной директории	
-				autoprefixer = require('gulp-autoprefixer'),  //расставление автопрефиксов
-				imagemin     = require('gulp-imagemin'),  //минимизация изображений
-				fileinclude  = require('gulp-file-include'); // инклюд js и html
-				plumber 		=	require('gulp-plumber') // отслеживание ошибок
-				watch 			= require('gulp-watch');
+const	gulp         = require('gulp'),  //основной плагин gulp
+			stylus       = require('gulp-stylus'),  //препроцессор stylus
+			concat       = require('gulp-concat'), // конкатенация (используется для js)
+			browserSync  	= require('browser-sync'),
+			uglify       = require('gulp-uglifyjs'),  //минификация js
+			maps		 = require('gulp-sourcemaps'),
+			csso		 = require('gulp-csso'), // минификация css
+			rename       = require('gulp-rename'), // используется для переименования конечных файлов css и для изменения конечной структуры проекта
+			del          = require('del'), // очистка сборочной директории	
+			autoprefixer = require('gulp-autoprefixer'),  //расставление автопрефиксов
+			imagemin     = require('gulp-imagemin'),  //минимизация изображений
+			fileinclude  = require('gulp-file-include'); // инклюд js и html
+			plumber 		=	require('gulp-plumber') // отслеживание ошибок
+			watch 			= require('gulp-watch');
 
 gulp.task('css', () => {
 	return gulp
@@ -112,4 +112,3 @@ gulp.task('watch', ['html','css','js','fileinclude', 'reload'], () => {
 	watch(['src/common/common-html/*.html', 'src/pages/**/*.html'], () => gulp.start('html'));
 	watch(['src/common/common-js/*.js', 'src/pages/**/*.js', 'src/libs/**/*.js'], () => gulp.start('js'));
 });
-

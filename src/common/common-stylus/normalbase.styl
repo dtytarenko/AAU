@@ -292,7 +292,7 @@ button
 .container
     max-width 1280px
     width 100%
-    padding 100px 0
+    padding 60px 0 90px
     box-sizing border-box
     margin 0 auto
     display flex
@@ -332,3 +332,33 @@ button
         height 100%
 
 
+.btn-template
+    width 100%
+    display flex
+    justify-content center
+    box-sizing border-box
+    align-items center
+
+.btn-withbg
+  background-color semiPurple
+  color whiteColor
+  border 2px solid semiPurple
+  font-family 'Helvetica-Bold'
+  transition all 0.5s ease-in-out
+  
+  &:hover
+    background-color transparent
+    color semiPurple  
+    border 2px solid semiPurple
+
+
+.btn-withoutbg
+  background-color whiteColor
+  color semiPurple
+  border 2px solid semiPurple
+  font-family 'Helvetica-Bold'
+  transition all 0.5s ease-in-out
+  
+  &:hover
+    background-color semiPurple
+    color whiteColor
