@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Шаблон</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="about-stndrt">
+
+
+        @@include('../../common/common-html/general-partners-slider.html')
+
+
+        <section class="about-aau--subsliders subsliders">
+
+                @@include('../../common/common-html/committee-partners.html')
+                @@include('../../common/common-html/information-media-partners-slider.html')
+        </section>
+    </main>
+
+    @@include('../../common/common-html/footer.html')
+    
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $( ".partners-join" ).click(function() {
-        $( ".overlay-main, .reg-wrap").slideToggle('fast');
+        $( ".overlay-main, .popup-wrap").slideToggle('fast');
     });
-    $('.reg-close').click(function() {
-        $( ".overlay-main, .reg-wrap").slideToggle('fast');
+    $('.popup-close, .overlay-main').click(function() {
+        $( ".overlay-main, .popup-wrap").slideToggle('fast');
     });
 });
 

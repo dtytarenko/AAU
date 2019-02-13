@@ -1,0 +1,176 @@
+@import '../../common/common-stylus/vars'
+
+//-----------------------start geneeral styles ------------------------
+.container
+    flex-direction column
+
+.membership-popup-subtitle
+    font-family 'HelveticaNeue-Roman', sans-serif
+    font-size 18px
+    text-align center
+    line-height 30px
+    margin-bottom 20px
+
+.membership-popup-descr
+    font-size 16px
+    line-height 24px
+    color: #010101
+    font-family 'Helvetica-Regular', sans-serif
+    text-align center
+
+    &:not(:last-of-type)
+        margin-bottom 20px
+
+.popup-btn__group
+    margin-top 40px
+    display flex
+    width 100%
+
+.popup-btn
+    height 60px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    font-size 14px
+
+    &:not(:last-of-type)
+        margin-right 20px
+//-----------------------end general styles------------------------
+
+//----------------------- START MEMBERSHIP INFO PAGE------------------------
+.membership-info__wrap
+    margin-bottom 20px
+
+.membership-advantages__wrap
+    margin-top 40px
+
+.membership-advantages__heading
+    .membership-template
+        font-size 24px
+        letter-spacing normal
+        line-height 24px
+
+.membership-advantages__btn-group
+    display flex
+    margin-top 60px
+
+.membership-advantages__btn
+    width: 33%
+    max-width: inherit
+    text-transform uppercase
+    margin-right: 40px
+
+    &:hover
+        cursor pointer
+
+    &:not(:last-of-type)
+        margin-right 40px
+        height 75px
+
+    &:nth-child(3)
+        margin-right 0
+
+.membership-advantages__list
+    display flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.membership-advantages__list-item
+    margin-bottom 30px
+    width 45%
+
+    &:last-child
+        margin-bottom 0
+
+    &:nth-last-child(2)
+        margin-bottom 0
+
+.membership-advantages__list-item.checklist-item
+    &:before
+        transform: translateY(0%)
+//-----------------------END MEMBERSHIP INFO PAGE------------------------
+
+.membership
+    &-heading
+        width 100%
+    
+    .tpc-slider.general-partners
+        background-color: #f0f2f4
+
+
+.membership-step
+    &__btn-group
+        display flex
+        margin-top: 60px
+
+    &__btn
+        max-width: 400px
+        width 100%
+        height 75px
+
+        &:first-of-type
+            margin-right: 40px
+
+.membership-step__list
+    &-item
+        position relative
+        display flex
+        align-items center
+        left: -20px
+
+        &:not(:last-of-type)
+            margin-bottom 30px
+
+        
+            
+    &-item--num
+        font-family 'HelveticaNeue-Bold', sans-serif
+        color: #3877bb;
+        font-size 14px
+        margin-right: 25px
+        position relative    
+        padding-left: 35px;  
+
+        &:before
+            content: ''
+            display block
+            width 35px
+            height 30px
+            position absolute
+            left: 50%
+            top: 50%
+            transform: translateY(-50%);
+            background url('../img/all/dots-bg.png')
+
+    &-item--text
+        font-family 'HelveticaNeue-Light', sans-serif
+        font-size 18px
+        color semiBlack
+
+.membership-info
+    margin-top 100px
+
+    &__text
+        font-family 'HelveticaNeue-Light', sans-serif
+        font-size 16px
+        color semiBlack
+        text-align justify
+        line-height 30px
+
+        &:not(:last-child)
+            margin-bottom 20px
+
+
+.membership-info__list
+    margin-bottom 20px
+    list-style-type: disc
+    padding-left 15px
+    
+
+.membership-info__list-item
+    color: #0080c6
+
+.membership-info__list-item--text
+    font-family 'HelveticaNeue-Light', sans-serif
+    font-size 16px
+    color semiBlack
+    text-align justify
+    line-height 30px
