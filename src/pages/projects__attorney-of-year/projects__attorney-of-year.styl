@@ -72,3 +72,149 @@
     height 70px
     width 100%
     color whiteColor
+
+.section-projects__info-column
+    .projects-list__wrap
+        margin-bottom: 40px
+        padding-left 55px
+        position relative
+
+.projects-list__title
+    position relative
+
+    &:before
+        content: ''
+        display: block
+        top: 0%
+        left: -60px
+        position: absolute
+        background-repeat: no-repeat
+        background-size: cover
+        width 46px
+        height 40px
+
+    &:nth-child(1):before
+        background-image: url('../img/projects/step-1.png')
+        
+    &:nth-child(2):before
+        background-image: url('../img/projects/step-2.png')
+
+    &:nth-child(3):before
+        background-image: url('../img/projects/step-3.png')
+
+.projects-list__title
+    font-size 16px
+    line-height 18px
+    color semiPurple
+    font-family 'HelveticaNeue-Bold', sans-serif
+    text-transform uppercase
+
+.projects-list__subtitle, .projects-mainlist__item-text
+    font-size 16px
+    line-height 30px
+    color semiBlack
+
+.projects-list__subtitle
+    font-family 'HelveticaNeue-Medium', sans-serif
+
+.projects-mainlist__item-text
+    font-family 'HelveticaNeue-Light', sans-serif
+
+.projects-mainlist
+    margin-bottom: 20px
+    list-style-type: disc
+    padding-left: 10px
+    margin-left 20px
+
+.projects-mainlist__item
+    color: #0080c6
+
+.projects-contactslist__item-text
+    font-family 'HelveticaNeue-Light', sans-serif
+    font-size 16px
+    line-height 24px
+    color semiBlack
+    text-transform none
+
+.projects-contactslist__item:nth-child(1)
+    .projects-contactslist__item-text:nth-child(1)
+        margin-right: 20px
+
+.projects-contactslist__item:nth-child(2)
+    .projects-contactslist__item-text:nth-child(1)
+        margin-right: 32px
+    
+
+.project__btn-info
+    color semiPurple
+    font-size 18px
+    line-height 36px
+    font-family 'HelveticaNeue-Bold', sans-serif
+
+.project__btn-price
+    margin-left 30px
+    color semiBlack
+    font-family 'HelveticaNeue-Black', sans-serif
+
+.project__btn-group
+    display flex
+    justify-content space-between
+    margin-top: 45px
+
+.project__btn-link
+    text-transform uppercase
+    height 60px
+    max-width 400px
+    width 100%
+
+    &:hover
+        cursor pointer
+
+.defaultTitle.popup-title.projects--popup-title
+    line-height 36px
+    font-size 22px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    color semiViolet
+    text-transform uppercase
+    text-align center
+
+    span
+        display block
+        font-size 30px
+
+
+.popup__attorney
+    .projects--popup-title__wrap
+        svg
+            margin:  0 auto
+    
+    .projects-popup-subtitle
+        font-family 'HelveticaNeue-Roman', sans-serif
+        font-size 18px
+        line-height 30px
+        color semiPurple
+        text-align center
+        padding-right: 5px
+        padding-left: 5px
+        margin-bottom 30px
+    
+    .projects-popup-descr
+        font-family 'Helvetica-Regular', sans-serif
+        padding-right: 5px;
+        padding-left: 5px;
+        color: #010101
+        text-align center
+        margin-bottom 30px
+
+    .popup-btn__group
+        display flex
+        justify-content: center
+        
+        .btn-template
+            height 55px
+            max-width: 230px
+            width 100%
+            font-size 14px
+
+            &:first-of-type
+                margin-right: 40px
