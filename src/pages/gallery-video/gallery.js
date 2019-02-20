@@ -12,7 +12,7 @@
        // число страниц
        this.numPages = function() {
            var numPages = 0;
-           //          ('div.z')                               5
+           //          ('div.z')   
            if (this.paragraphs != null && this.paragraphsPerPage != null) {
            // метод ceil - возвращает наименьшее целое
                numPages = Math.ceil(this.paragraphs.length / this.paragraphsPerPage);

@@ -183,7 +183,7 @@
                         <li class="submenu-item"><a href="#">Новини партнерiв ААУ</a></li>
                     </ul>
                 </li>
-                <li class="menu-item"><a href="#">Бюлетень</a></li>
+                <li class="menu-item"><a href="bulletin.html">Бюлетень</a></li>
                 <li class="menu-item">
                     <a href="#" class="item-with-sublist">Партнери </a>
                     <ul class="submenu">
@@ -300,200 +300,132 @@
                     <form action="" method="GET" class="personal-info__form personal-info__form-maininfo" id="personal-info__form-maininfo">
                     
                         <label for="personal-info__company" class="personal-info__label personal-info__title"> Місце здійснення адвокатської діяльності, Назва фірми(АО):*
-                            <input type="text" class="personal-info__input personal-info__position" id="personal-info__work" placeholder="Введіть відповідь" tabindex="1">
+                            <input type="text" class="personal-info__input personal-info__position" id="personal-info__work" placeholder="Введіть відповідь" tabindex="1" required>
                         </label>
 
                         <label for="personal-info__position" class="personal-info__label personal-info__title">Посада:*
-                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__position" placeholder="Введіть відповідь" tabindex="2">
+                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__position" placeholder="Введіть відповідь" tabindex="2" required>
                         </label>
 
                         <label for="personal-info__adress-work" class="personal-info__label personal-info__title">Адреса мiсця роботи:*
                             <p class="personal-info__label-subtitle">(поштовий індекс, область, район, населений пункт, вулиця, будинок, кв.офіс)</p>
-                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__adress-work" placeholder="Введіть відповідь" tabindex="3">
+                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__adress-work" placeholder="Введіть відповідь" tabindex="3" required>
                         </label>
             
                     <div class="committee-membership__wrap">
 
                         <p class="committee-membership__title title">Практики, в яких номінується учасник:*</p>
                     
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
 
-                            <span class="account-checkbox__descr">
-                                Кримінальне право
-                            </span> 
-                        </div>
+                        <label for="nomination__criminal" class="nomanation__label">Кримінальне право
+                            <input type="checkbox" class="nomination__input" tabindex="4" id="nomination__criminal">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Цивільне право</span> 
-                        </div>
+                        <label for="nomination__civil" class="nomanation__label">Цивільне право
+                            <input type="checkbox" class="nomination__input" tabindex="5" id="nomination__civil">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Цивільне право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Сімейне право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Фінансове та банківське право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Податкове право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Аграрне та земельне право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Медичне та фармацевтичне право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Корпоративне право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Господарське (комерційне) право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Міжнародний арбітраж</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Міжнародне торгове право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Злиття та поглинання</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">IT право</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Іноземні інвестиції</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Антирейдерська практика</span> 
-                        </div>
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Митне право</span> 
-                        </div>
+                        <label for="nomination__family" class="nomanation__label">Сімейне право
+                            <input type="checkbox" class="nomination__input" tabindex="6" id="nomination__family">
+                            <span class="nomination__checkmark"></span>
+                        </label>
                         
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Інтелектуальна власність та патентне право</span> 
-                        </div>
+                        <label for="nomination__finance" class="nomanation__label">Фінансове та банківське право
+                            <input type="checkbox" class="nomination__input" tabindex="7" id="nomination__finance">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr"> Трудове право</span> 
-                        </div>
+                        <label for="nomination__tax" class="nomanation__label">Податкове право
+                            <input type="checkbox" class="nomination__input" tabindex="8" id="nomination__tax">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Медіа-право</span> 
-                        </div>
+                        <label for="nomination__land" class="nomanation__label">Аграрне та земельне право
+                            <input type="checkbox" class="nomination__input" tabindex="9" id="nomination__land">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Морське і транспортне право</span> 
-                        </div>
+                        <label for="nomination__medical" class="nomanation__label">Медичне та фармацевтичне право
+                            <input type="checkbox" class="nomination__input" tabindex="10" id="nomination__medical">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Антимонопольне та конкурентне право</span> 
-                        </div>
+
+                        <label for="nomination__corporate" class="nomanation__label">Корпоративне право
+                            <input type="checkbox" class="nomination__input" tabindex="11" id="nomination__corporate">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__comerical" class="nomanation__label">Господарське (комерційне) право
+                            <input type="checkbox" class="nomination__input" tabindex="12" id="nomination__comerical">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__arbitr" class="nomanation__label">Міжнародний арбітраж
+                            <input type="checkbox" class="nomination__input" tabindex="13" id="nomination__arbitr">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__trading" class="nomanation__label">Міжнародне торгове право
+                            <input type="checkbox" class="nomination__input" tabindex="14" id="nomination__trading">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__merge" class="nomanation__label">Злиття та поглинання
+                            <input type="checkbox" class="nomination__input" tabindex="15" id="nomination__merge">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__it" class="nomanation__label">IT право
+                            <input type="checkbox" class="nomination__input" tabindex="16" id="nomination__it">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__invset" class="nomanation__label">Іноземні інвестиції
+                            <input type="checkbox" class="nomination__input" tabindex="17" id="nomination__invset">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                        
+                        <label for="nomination__antibreeding" class="nomanation__label">Антирейдерська практика
+                            <input type="checkbox" class="nomination__input" tabindex="18" id="nomination__antibreeding">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__customs" class="nomanation__label">Митне право
+                            <input type="checkbox" class="nomination__input" tabindex="19" id="nomination__customs">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                        
+                        <label for="nomination__intellectual" class="nomanation__label">Інтелектуальна власність та патентне право
+                            <input type="checkbox" class="nomination__input" tabindex="20" id="nomination__intellectual">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__work" class="nomanation__label">Трудове право
+                            <input type="checkbox" class="nomination__input" tabindex="21" id="nomination__work">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__media" class="nomanation__label">Медіа-право
+                            <input type="checkbox" class="nomination__input" tabindex="23" id="nomination__media">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__transport" class="nomanation__label">Морське і транспортне право
+                            <input type="checkbox" class="nomination__input" tabindex="24" id="nomination__transport">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__antitrust" class="nomanation__label">Антимонопольне та конкурентне право
+                            <input type="checkbox" class="nomination__input" tabindex="25" id="nomination__antitrust">
+                            <span class="nomination__checkmark"></span>
+                        </label>
 
                     </div>
 
@@ -504,38 +436,38 @@
                     <label for="personal-info__education" class="personal-info__label personal-info__title">Друга вища освіта:*
                         <p class="personal-info__label-subtitle">назва вищого навчального закладу, спеціальність, рік закінчення</p>
                         <p class="personal-info__label-points">1 додаткова вища освіта = 7 балів</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education" placeholder="Введіть відповідь" tabindex="4">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education" placeholder="Введіть відповідь" tabindex="26">
                     </label>
                     
                     <label for="personal-info__academic" class="personal-info__label personal-info__title">Науковий ступінь:*
                         <p class="personal-info__label-points">Науковий ступінь =15 балів; Вчене звання=10 балів</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__academic" placeholder="Введіть відповідь" tabindex="5">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__academic" placeholder="Введіть відповідь" tabindex="27">
                     </label>
 
                     <label for="personal-info__publications" class="personal-info__label personal-info__title">Кількість професійних публікацій в спеціалізованих юридичних
                             виданнях:*
                         <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
                         <p class="personal-info__label-points">1 публікація = 1 бал</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications" placeholder="Введіть відповідь" tabindex="6">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications" placeholder="Введіть відповідь" tabindex="28">
                     </label>
 
                     <label for="personal-info__publications-foreign" class="personal-info__label personal-info__title">Кількість професійних публікацій в іноземних фахових виданнях:*
                         <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications-foreign" placeholder="Введіть відповідь" tabindex="7">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications-foreign" placeholder="Введіть відповідь" tabindex="29">
                     </label>
 
                     <label for="personal-info__speaker" class="personal-info__label personal-info__title">У яких юридичних заходах, направлених на підвищення кваліфікації, 
                             Ви брали участь у якості доповідача
                         <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
                         <p class="personal-info__label-points">1 виступ у заході в якості доповідача - 1 бал</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__speaker" placeholder="Введіть відповідь" tabindex="8">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__speaker" placeholder="Введіть відповідь" tabindex="30">
                     </label>
                     
                     <label for="personal-info__participant" class="personal-info__label personal-info__title">У яких юридичних заходах, направлених на підвищення кваліфікації,
                             Ви брали участь у якості учасника:*
                         <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
                         <p class="personal-info__label-points">1 виступ = 0,5 бали</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__participant" placeholder="Введіть відповідь" tabindex="9">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__participant" placeholder="Введіть відповідь" tabindex="31">
                     </label>
 
 
@@ -545,42 +477,37 @@
 
                     <label for="personal-info__exp" class="personal-info__label personal-info__title">Стаж адвокатської діяльності:*
                         <p class="personal-info__label-subtitle">Більше 10 років = 3 бали, більше 5 років = 2 бали, більше 3 роки =1 бал</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__exp" placeholder="Введіть відповідь" tabindex="10">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__exp" placeholder="Введіть відповідь" tabindex="32">
                     </label>
 
                     <label for="personal-info__community" class="personal-info__label personal-info__title">Досягнення в громадській діяльності в юридичній галузі:*
                         <p class="personal-info__label-subtitle">за період 15 травня 2017 р. по 15 травня 2018 р. : нагороди, відзнаки, звання, тощо *</p>
                         <p class="personal-info__label-points">1 нагорода = 3 балів</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__community" placeholder="Введіть відповідь" tabindex="11">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__community" placeholder="Введіть відповідь" tabindex="33">
                     </label>
 
                     <label for="personal-info__wins" class="personal-info__label personal-info__title">Кількість виграних справ у Європейському суді:*
                         <p class="personal-info__label-points">1 виграна справа = 5 балів</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__wins" placeholder="Введіть відповідь" tabindex="12">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__wins" placeholder="Введіть відповідь" tabindex="34">
                     </label>
 
                     <label for="personal-info__education-branch" class="personal-info__label personal-info__title">Опис досвіду заявлених галузях, практиках:*
                         <p class="personal-info__label-subtitle">по кожній</p>
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education-branch" placeholder=Введіть відповідь" tabindex="13">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education-branch" placeholder="Введіть відповідь" tabindex="35">
                     </label>
 
                     <label for="personal-info__lawyer" class="personal-info__label personal-info__title">Назвіть провідних українських адвокатів у Вашій номінації:*
-                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__lawyer" placeholder="Введіть відповідь" tabindex="14">
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__lawyer" placeholder="Введіть відповідь" tabindex="36">
                     </label>
 
                     <div class="agreement-wrap">
                         <p class="agreement-text title">
                             Я надаю згоду на обробку моїх персональних даних ААУ за адресою: вул. Мечникова, 16, офіс 307, м.Київ, 01021 *
                         </p>
-                            
-
-                        <div class="account-checkbox__wrap">
-                            <div class="account-checkbox__input-wrap">
-                                <input type="checkbox" class="account-checkbox__input" id="agreement">
-                                <span class="account-checkbox__input-checkmark"></span>
-                            </div>
-                            <span class="account-checkbox__descr">Так</span> 
-                        </div>
+                        <label for="agreement-yes" class="nomanation__label">Так
+                            <input type="checkbox" class="nomination__input" tabindex="37" id="agreement-yes" required>
+                            <span class="nomination__checkmark"></span>
+                        </label>
                     </div>
 
                     <div class="account-payment-amount__wrap">
@@ -589,8 +516,8 @@
                     </div> 
 
                     <div class="account-submit__wrap">
-                        <input type="submit" class="personal-info__form-submit btn-template btn-withbg" value="Сплатити членський внесок online" id="account-pay" tabindex="3">
-                        <input type="submit" class="personal-info__form-submit btn-template btn-withoutbg" value="Скачати квитанцію на оплату" id="account-download-check" tabindex="4">
+                        <input type="submit" class="personal-info__form-submit btn-template btn-withbg" value="Сплатити членський внесок online" id="account-pay" tabindex="38">
+                        <input type="submit" class="personal-info__form-submit btn-template btn-withoutbg" value="Скачати квитанцію на оплату" id="account-download-check" tabindex="39">
                     </div>
                     
                     

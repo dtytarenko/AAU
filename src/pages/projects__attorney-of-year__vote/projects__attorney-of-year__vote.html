@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Голосування</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+	<link rel="stylesheet" type="text/css" href="css/projects__attorney-of-year.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="project-main">
+
+        <section class="breadcrumbs">
+
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__list-item--link">Проекти</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="projects__attorney-of-year.html" class="breadcrumbs__list-item--link">Конкурс "Адвокат року"</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="projects__attorney-of-year__vote.html" class="breadcrumbs__list-item--link active">Голосування"</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </section>
+
+        <div class="container">
+            <div class="heading">
+                <h1 class="defaultTitle project-title">Голосування</h1>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>
+            </div>
+
+        </div> 
+
+        @@include('../../common/common-html/general-partners-slider.html')
+
+
+        <section class="about-aau--subsliders subsliders">
+
+                @@include('../../common/common-html/committee-partners.html')
+                @@include('../../common/common-html/information-media-partners-slider.html')
+        </section>
+    </main>
+    
+    @@include('../../common/common-html/footer.html')
+    
+
+    <div class="popup-wrap popup__attorney">
+        <div class="popup-close"></div>
+
+        <div class="heading popup-title__wrap projects--popup-title__wrap">
+            <h4 class="defaultTitle popup-title projects--popup-title">
+                <span>Заявка на участь</span>
+                    у Щорічному Всеукраїнському
+                    конкурсi ААУ "Адвокат Року 2018"
+            </h4>
+            <div class="separator">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+            </div>
+        </div>
+
+        <h5 class="popup-subtitle projects-popup-subtitle">Подати заявку на участь у Щорічному Всеукраїнському конкурсi ААУ "Адвокат Року 2018" можуть тільки Зареєстровані користувач</h5>
+        <p class="popup-descr  projects-popup-descr">Якщо у вас вже є обліковий запис на сайті - виконайте вхід на сайт.</p>
+        <p class="popup-descr  projects-popup-descr">Якщо ви ще не зареєстрований користувач - пройдіть просту реєстрацію на сайті.</p>
+
+        <div class="popup-btn__group">
+            <a href="account.html" class="popup-btn btn-template btn-withbg">увійти на сайт</a>
+            <a href="" class="popup-btn btn-template btn-withoutbg">Реєстрація на сайті</a>
+        </div>
+    </div>
+
+    <div class="overlay-main" id="overlay-join-aau"></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/projects__attorney-of-year.js"></script>
+</body>
+</html>

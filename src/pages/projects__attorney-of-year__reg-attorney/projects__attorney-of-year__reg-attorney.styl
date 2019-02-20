@@ -21,13 +21,18 @@
 
 .projects-list__title.reg
     &:before
+        content: ''
+        display: block
+        top: 0%
+        left: -60px
+        position: absolute
+        background-repeat: no-repeat
+        background-size: cover
+        width 46px
+        height 40px
         background-image: url('../img/projects/step-3.png')
 
-.user-info__list
-    margin-bottom 35px
-
 .user-info__list-item
-    margin-bottom 20px
     width 100%
     display flex
 
@@ -39,6 +44,7 @@
         max-height 20px
         line-height 18px
         width 100%
+        margin-bottom: 20px
 
         &:last-of-type
             max-width inherit
@@ -69,14 +75,16 @@
 
 .user-info__list
     margin-top 60px
-    margin-bottom 30px
 
 .license-title.title
     margin-bottom 10px
 
 .license-link.title
     color: #2d3484
-    margin-right 30px
+    margin-right 0px
+    max-width: 400px
+    width 100%
+    display: inline-block
 
 // form
 
