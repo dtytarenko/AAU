@@ -1,5 +1,5 @@
 
-body, main
+body, main, html
     overflow-x: hidden
 
 button
@@ -101,11 +101,11 @@ button
         top 5px
         right 0
 
-        @media screen and (max-width: 510px) {
+        @media screen and (max-width: 720px) {
             width 100%
         }
 
-    @media screen and (max-width: 510px) {
+    @media screen and (max-width: 720px) {
         justify-content center
     }
 
@@ -498,3 +498,118 @@ button
 .popup-wrap
     height auto
     overflow: auto
+
+.typical-label
+    display: flex
+    flex-direction: column
+    margin-bottom: 30px
+    font-size: 18px
+    color: #5073b6
+    line-height: 2
+    font-family: 'HelveticaNeue-Bold',sans-serif
+    box-sizing: border-box
+
+    @media screen and (max-width 720px)
+        font-size 14px
+        margin-bottom 20px
+
+.typical-input[placeholder]
+    font-style: italic
+    font-size: 14px
+    font-family: 'HelveticaNeue-Light',sans-serif
+    color: #343537
+    line-height: 2.571
+
+    @media screen and (max-width 720px)
+        font-size 12px
+
+.typical-input    
+    border: 1px solid #dbe0ea
+    margin-top: 16px
+    height: 60px
+    max-width: 620px
+    width: 100%
+    box-sizing: border-box
+    padding-left: 28px
+    transition: .2s all ease-in-out
+    font-style: normal
+
+    &:focus,
+    &:active
+        border: 2px solid #5073b6
+
+    @media screen and (max-width 720px)
+        margin-top 5px
+        height 40px
+        padding-left 24px
+
+.typical-submit
+    height: 70px
+    max-width: 330px
+    width: 100%
+    text-transform: uppercase
+    font-size: 16px
+    font-family: 'Helvetica-Bold', sans-serif
+    transition: all .4s ease-in-out
+    background-color: semiPurple
+    border: 2px solid semiPurple
+    color: whiteColor
+    box-sizing: border-box
+
+    &:hover
+        background-color: whiteColor
+        color: semiPurple
+        border 2px solid semiPurple
+
+    @media screen and (max-width 720px)
+        height 40px
+        font-size 12px
+        max-width: inherit
+
+.checkmark-label
+    display flex
+    flex-direction: row-reverse
+    justify-content: flex-end
+    align-items flex-start
+    font-family 'Helvetica-Regular', sans-serif
+    font-size 18px
+    color: #343537
+    position relative
+    line-height 18px
+    max-width: 620px
+    width 100%
+    margin-top 20px
+
+    &:last-of-type
+        margin-bottom 20px
+
+    &:hover
+        cursor pointer
+
+    @media screen and (max-width 720px)
+        font-size 14px
+
+.typical-checkbox
+    appearance none
+    width: 23px
+    height: 20px
+    box-sizing: border-box
+    z-index: 10
+    margin 2px 10px 0 0
+
+.typical-checkmark
+    position: absolute
+    top: 50%
+    left 0%
+    transform: translateY(-50%)
+    content: ''
+    display inline-block
+    background: url(../img/all/dots.png) no-repeat
+    width 23px
+    height 20px
+
+.typical-checkbox:checked + .typical-checkmark
+    background url(../img/all/dots-active.png) no-repeat
+
+.typical-checkbox:focus + .typical-checkmark
+    background url(../img/all/dots-active.png) no-repeat

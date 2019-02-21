@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Реєстрація на сайті ААУ - Студент</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="registration__main">
+        <section class="registration__wrap">
+            <section class="registration__info">
+                <article class="registration__info-article">
+                    <div class="heading">
+                        <h1 class="defaultTitle registration-title">реєстрація на сайті аау - Студент</h1>
+                        <div class="separator">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="registration-subtitle">
+                        Реєстрація на сайті ААУ
+                    </h3>
+
+                    <form action="" method="GET" class="registration__info-form" id="registration__info-form">
+                        <label for="name" class="registration__info-form--label typical-label"> Ім’я:*
+                            <input type="text" id="name" placeholder="Введіть відповідь" class="registration__info-form--input typical-input">
+                        </label>
+
+                        <label for="secondname" class="registration__info-form--label typical-label">Прізвище:*
+                            <input type="text" name="secondname" placeholder="Введіть відповідь" class="registration__info-form--input typical-input">
+                        </label>
+
+                        <label for="email" class="registration__info-form--label typical-label">E-mail:*
+                            <input type="email" name="email" placeholder="Введіть відповідь" class="registration__info-form--input typical-input">
+                        </label>
+
+                        <label for="pasword" class="registration__info-form--label typical-label ">Пароль:*
+                            <input type="password" name="password" placeholder="Введіть відповідь" class="registration__info-form--input typical-input">
+                        </label>
+
+                        <label for="repassword" class="registration__info-form--label typical-label">Підтвердження пароля:*
+                            <input type="password" name="repassword" placeholder="Введіть відповідь" class="registration__info-form--input typical-input">
+                        </label>
+
+                        <div class="registration__info-form--btn-group">
+                            <input type="submit" value="зареєструватися" class="typical-submit registration__info-form--submit">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            
+            <section class="registration__authorization">
+                <article class="registration__authorization-article">
+                    <div class="heading">
+                    <h2 class="defaultTitle registration-title">Авторизація</h2>
+                        <div class="separator">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="registration-subtitle">
+                        Ви вже маєте акаунт
+                        на сайті ААУ?
+                    </h3>
+
+                    <p class="stndrt__text">Якщо Ви вже проходили реєстрацію на сайті ААУ, натисніть на кнопку нижче, та перейдіть на сторінку авторизації за попосиланням, та виконайте вхід на сайт.</p>
+
+                    <a href="log-in.html" class="registration__authorization-btn btn-template btn-withoutbg">перейти до авторизації</a>
+                </article>
+            </section>
+        </section>
+        
+    </main>
+
+    @@include('../../common/common-html/footer.html')
+    
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import '../../common/common-stylus/vars'
+
+.registration__wrap
+    display flex
+    width 100%
+    box-sizing: border-box
+    
+    .registration-title
+        font-family: 'Helvetica-Bold', sans-serif
+        font-size 36px
+        line-height 36px
+        color semiViolet
+
+        @media screen and (max-width 1280px)
+            font-size 30px
+            line-height auto 
+        
+        @media screen and (max-width 720px)
+            font-size 22px
+            line-height 22px
+            text-align center
+
+    .registration-subtitle
+        font-family 'HelveticaNeue-Roman', sans-serif
+        font-size 30px
+        line-height 30px
+        color semiPurple
+        margin-bottom 40px
+
+        @media screen and (max-width 1280px)
+            font-size 24px
+
+        @media screen and (max-width 720px)
+            font-size 16px
+            text-align center
+            margin-bottom 27px
+
+    @media screen and (max-width 1280px)
+        flex-direction column
+
+.registration__authorization
+    background: #f0f2f4
+
+.registration__authorization
+    width 37%
+    padding-top 100px
+    padding-bottom 100px
+
+    @media screen and (max-width 1280px)
+        width 100%
+        padding-top 60px
+        padding-bottom 60px
+
+    @media screen and (max-width 720px)
+        padding-top 40px
+        padding-bottom 40px
+
+    &-article
+        max-width 330px
+        width 100%
+        margin-right: auto
+        margin-left: 70px
+
+        @media screen and (max-width 1440px)
+            margin-left auto
+        
+        @media screen and (max-width 1280px)
+            max-width 700px
+        
+        @media screen and (max-width 720px)
+            max-width 280px 
+            margin-right 20px
+            margin-left: 20px
+            margin 0 auto
+    
+    .stndrt__text
+        @media screen and (max-width 720px)
+            text-align center
+            font-size 14px
+            line-height 24px
+
+.registration__info
+    width 63%
+    padding-top 100px
+    padding-bottom 100px
+
+    @media screen and (max-width 1280px)
+        width 100%
+        padding-top 60px
+        padding-bottom 60px
+
+    @media screen and (max-width 720px)
+        padding-top 40px
+        padding-bottom 40px
+
+    &-article
+        max-width: 770px
+        width 100%
+        margin-left: auto
+        margin-right: 110px
+
+        @media screen and (max-width 1440px)
+            margin-right auto
+
+        @media screen and (max-width 1280px)
+            max-width 700px
+        
+        @media screen and (max-width 720px)
+            max-width 280px 
+            padding-right 20px
+            padding-left: 20px
+            margin 0 auto
+        
+        .separator
+            @media screen and (max-width 720px)
+                margin-bottom 20px
+
+.registration__authorization-btn
+    height 70px
+    width 100%
+
+    @media screen and (max-width 1280px)
+        max-width: 330px
+    
+    @media screen and (max-width 720px)
+        max-width inherit 
+        height 40px
+        font-size 12px
+        line-height auto 
+
+.registration__info-form
+    .registration__info-form--input.typical-input
+        max-width: inherit 
+
+.registration__info-form--label
+    .registration__info-form--wrap
+        display flex
+        align-items center
+
+        @media screen and (max-width 720px)
+            flex-direction column
+            align-items flex-start
+
+        .registration__info-form--input
+            max-width: 480px
+
+            @media screen and (max-width 720px)
+                max-width inherit
+
+.registration__info-form--link
+    color #2d3484
+    font-size 18px
+    line-height 36px
+    font-family 'HelveticaNeue-Medium', sans-serif
+    margin-right 35px
+    letter-spacing 0
+    text-transform none
+
+    @media screen and (max-width 720px)
+        font-size 14px
+
+.registration__info-form--btn-group
+    display flex
+    justify-content: space-between
+
+    @media screen and (max-width 720px)
+        flex-direction column
+
+.typical-submit.registration__info-form--submit.forget-password
+    margin-left 30px
+    max-width 370px
+    height 70px
+    display flex
+    justify-content center
+    align-items center
+    background-color #f0f2f4
+    border 2px solid #f0f2f4
+    color semiPurple
+    transition: all .4s ease-in-out
+
+    &:hover
+        background-color: semiPurple
+        color: whiteColor
+        border 2px solid whiteColor
+    
+    @media screen and (max-width 720px)
+        margin-left 0
+        margin-top 10px
+        height 40px
