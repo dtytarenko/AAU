@@ -135,52 +135,7 @@
 
 // paging
 
-#pagingControls
-    ul
-        display flex
-        align-items
 
-        li, a
-            font-family: 'HelveticaNeue-Bold', sans-serif
-            font-size 18px
-            line-height 24px
-            color: semiPurple
-            display flex
-            align-items center
-            justify-content center
-        
-        a
-            width 100%
-            height 100%
-        
-        li
-            position relative
-            width 48px
-            height 40px
-            text-align center
-            margin-right 15px
-
-            &:hover
-                cursor pointer
-
-            &:before
-                position absolute
-                content: ''
-                display block
-                top: 0px
-                left: 0%
-                background url('../img/account/table-btn.png') center center no-repeat
-                background-size: cover
-                width 48px
-                height 40px
-                z-index -1
-
-        .active
-            color: whiteColor
-
-            &:before
-                background url('../img/account/table-btn-active.png') center center no-repeat
-                z-index: -1
 
 .bulletin__mainsubtitle
     font-size: 36px
