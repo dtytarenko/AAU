@@ -161,3 +161,31 @@ $(document).ready(function() {
     });
 });
 
+// calendar js
+
+var monthNames = ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
+            var calendarDate = new Date()
+            var monthNum = calendarDate.getMonth();     
+            var prevMonth = monthNames[monthNum - 1];
+            var nextMonth = monthNames[monthNum + 1];
+
+$(document).ready(function() {
+    $('#calendar').fullCalendar({
+        firstDay: 1,
+        defaultView: 'month',
+        header: {
+            left: 'prev,next',
+            center: 'title',
+        },
+        monthNames: ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
+        monthNamesShort: ['Січ.','Лют.','Бер.','Квіт.','Трав.','Черв.','Лип.','Серп.','Вер.','Жовт.','Лис.','Груд.'],
+        dayNames: ["Неділя","Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"],
+        dayNamesShort: ["НД","ПН","ВТ","СР","ЧТ","ПТ","СБ"],
+        buttonText: {
+        prev: prevMonth,
+        next: nextMonth
+        },
+    });
+});
+
+// calendar js

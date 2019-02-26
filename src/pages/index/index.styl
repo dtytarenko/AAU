@@ -1036,7 +1036,7 @@
 .reg-checkbox__descr
 	margin-left 15px
 	margin-bottom 20px
-	font-family 'Helvetica-Regular'
+	font-family 'Helvetica-Regular', sans-serif
 	font-size 24px
 	line-height 30px
 
@@ -1058,3 +1058,159 @@
 		color #fff
 		border 2px solid #5073b6
 
+
+// calendar style
+.fc-toolbar.fc-header-toolbar
+	margin-bottom 0
+	background-color #2d3484
+	color: #ffffff
+	display flex
+	flex-direction column-reverse
+	position relative
+	min-height: 130px
+	height 100%
+	justify-content space-between
+	align-items center
+
+.fc-left
+	.fc-button-group
+		height 30px
+		display flex
+		justify-content space-between
+
+		.fc-button.fc-state-default
+			background-color: #94bee7
+			height 30px
+			font-family 'HelveticaNeue-Bold', sans-serif
+			font-size 14px
+			color #2d3484
+			text-transform uppercase
+			width calc(50% - 40px)
+			position relative
+		
+			&:before
+				content ''
+				display block
+				position absolute
+				top 0%
+				width 40px
+				height 30px
+				background-color: #5c77b3
+				background-repeat: no-repeat
+				background-position: center center 
+
+		.fc-corner-left.fc-prev-button
+			margin-left auto
+
+			&:before
+				left -40px
+				background-image: url('../img/all/left.png')
+
+		.fc-corner-right.fc-next-button
+			margin-right auto
+
+			&:before
+				width 41px
+				right -41px
+				background-image url('../img/all/right.png')
+
+// .fc-prev-button.fc-button.fc-state-default.fc-corner-left
+// 	width 7px
+// 	height 12px
+
+.fc-day-grid.fc-unselectable
+	font-family 'HelveticaNeue-Light', sans-serif
+
+.fc-content-skeleton > table > thead
+	height 100%
+
+.fc-left > .fc-button-group,
+.fc-left
+	width 100%
+
+// .fc-left,
+// .fc-right
+// 	width 40px
+// 	height 30px
+// 	background-color: #5c77b3
+
+// .fc-right
+// 	clear both
+// 	align-self flex-
+// 	position absolute
+// 	bottom 0
+// 	right 0
+
+// hide another button
+.fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-disabled,
+.fc-right
+	display none
+
+// end hide another btn
+.fc th,
+.fc td,
+.fc hr,
+.fc thead,
+.fc tbody,
+.fc-row
+	background-color whiteColor
+
+.fc-center > h2
+	font-family 'Helvetica-Bold', sans-serif
+	font-size 30px
+	line-height 30px
+	color: #ffffff
+
+.fc-day-header.fc-widget-header
+	font-family 'HelveticaNeue-Light', sans-serif
+	font-size 14px
+	color #343537
+	background-color #dbe0ea
+	width 58px
+	height 30px
+	vertical-align: middle
+	border-right 2px solid whiteColor
+
+.fc-day-header.fc-widget-header.fc-sat,
+.fc-day-header.fc-widget-header.fc-sun
+	background-color #a5aec1
+
+.fc-day-top
+	vertical-align: middle
+	text-align center
+	border 1px solid #dbe0ea
+	height 62px
+
+	span
+		margin 0 auto
+
+.fc-day-number
+	font-size 24px
+	line-height 24px
+	
+
+
+// start style calendar - today
+.fc-today
+	border 2px solid #d64848 !important
+	background-color: #ffffff
+	font-family 'HelveticaNeue-Bold', sans-serif
+
+.fc-today >	.fc-day-number
+	color: #d64848
+
+// end style for today
+tr > .fc-other-month.fc-past,
+.fc-day-top.fc-other-month.fc-future
+	background-color:  #dbe0ea
+	color: #ffffff
+	border: 1px solid #ffffff
+	
+
+.fc-day-top.fc-sat.fc-past,
+.fc-day-top.fc-sun.fc-past
+	background-color #f1f3f7
+
+.fc-day-header.fc-widget-header.fc-sun
+	border-right 0px !important
+	margin-right 0px !important

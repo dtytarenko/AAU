@@ -108,7 +108,7 @@ gulp.task('fileinclude', function() {
 
 
 gulp.task('watch', ['html','css','js','fileinclude', 'reload'], () => {
-	watch(['src/common/common-stylus/**/*.styl', 'src/pages/**/*.styl'], ()  => gulp.start('css'));
+	watch(['src/common/common-stylus/**/*.styl', 'src/pages/**/*.styl', 'src/libs/**/*.css'], ()  => gulp.start('css'));
 	watch(['src/common/common-html/*.html', 'src/pages/**/*.html'], () => gulp.start('html'));
 	watch(['src/common/common-js/*.js', 'src/pages/**/*.js', 'src/libs/**/*.js'], () => gulp.start('js'));
 });
