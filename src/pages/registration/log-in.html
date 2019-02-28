@@ -43,7 +43,7 @@
                             
                         <div class="registration__info-form--btn-group">
                             <input type="submit" value="Увійти на сайт" class="typical-submit registration__info-form--submit">
-                            <a class="typical-submit registration__info-form--submit forget-password">забув пароль</a>
+                            <div class="typical-submit registration__info-form--submit forget-password">забув пароль</div>
                         </div>
                     </form>
                 </article>
@@ -68,12 +68,34 @@
                 </article>
             </section>
         </section>
-    </main>
+        <div class="popup-wrap popup__forget-pasword">
+            <div class="popup-close"></div>
 
-    @@include('../../common/common-html/footer.html')
+            <div class="heading popup-title__wrap partners--popup-title__wrap">
+                <h2 class="defaultTitle popup-title partners--popup-title">Забули пароль?</h2>
+                <div class="separator">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                </div>
+            </div>
+            
+            <form action="" method="GET">
+                <label for="" class="typical-label"> Введіть ваш E-mail
+                    <input type="email" class="typical-input" placeholder="Введіть E-mail">
+                </label>
+            </form>
+
+            <div class="popup-btn__group">
+                <a href="account.html" class="popup-btn btn-template btn-withbg btn-forget-password">Відправити лист на пошту</a>
+            </div>
+        </div>
+    </main>
     
+    
+    @@include('../../common/common-html/footer.html')
+    <div class="overlay-main"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/reg.js"></script>
 </body>
 </html>

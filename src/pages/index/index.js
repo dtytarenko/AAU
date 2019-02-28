@@ -12,7 +12,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function () {
     $('.intro-slider').slick({
         dots: true,
         dotsClass: "intro-dots", //customize dot`s with add class dot`s
@@ -24,9 +23,10 @@ $(document).ready(function () {
         autoplaySpeed: 2000,
         speed: 200,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand'
     });
-});
+
 
 
 
@@ -151,7 +151,6 @@ $(document).ready(function () {
     });
 });
 
-
 $(document).ready(function() {
     $( ".panel-registration" ).click(function() {
         $( ".overlay-main, .reg-wrap").slideToggle('fast');
@@ -162,30 +161,44 @@ $(document).ready(function() {
 });
 
 // calendar js
-
 var monthNames = ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
-            var calendarDate = new Date()
-            var monthNum = calendarDate.getMonth();     
-            var prevMonth = monthNames[monthNum - 1];
-            var nextMonth = monthNames[monthNum + 1];
+var calendarDate = new Date()
+var monthNum = calendarDate.getMonth();
+var prevMonth = monthNames[monthNum - 1];
+var nextMonth = monthNames[monthNum + 1];
 
 $(document).ready(function() {
     $('#calendar').fullCalendar({
-        firstDay: 1,
+        firstDay: 1, /* первый день  недели */ 
         defaultView: 'month',
         header: {
             left: 'prev,next',
             center: 'title',
+        },
+        viewRender: function (view, element) {
+            var monthNames = ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
+            var currentMonth = $("#calendar").fullCalendar('getDate').month();
+            var customMonth = monthNames[currentMonth];
+            $('.fc-prev-button, .fc-next-button').click(function(){
+                prevMonth = monthNames[customMonth - 1];
+                nextMonth = monthNames[currentMonth + 1];
+            });
         },
         monthNames: ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
         monthNamesShort: ['Січ.','Лют.','Бер.','Квіт.','Трав.','Черв.','Лип.','Серп.','Вер.','Жовт.','Лис.','Груд.'],
         dayNames: ["Неділя","Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"],
         dayNamesShort: ["НД","ПН","ВТ","СР","ЧТ","ПТ","СБ"],
         buttonText: {
-        prev: prevMonth,
-        next: nextMonth
+            prev: prevMonth,
+            next: nextMonth
         },
+    });
+    
+    $('.fc-prev-button, .fc-next-button').click(function(){
+        var currentMonth = $("#calendar").fullCalendar('getDate').month();
+        var customMonth = monthNames[currentMonth];
+        prevMonth = monthNames[customMonth - 1];
+        nextMonth = monthNames[currentMonth + 1];
     });
 });
 
-// calendar js

@@ -22,17 +22,32 @@
 // START GENERAL STYLE FOR ACCOUNT TYPE PAGE
 // 
 //////////////////////////////////////////////////////////
+html
 body
     position relative
+    height: 100%
 
 .subscribe-body 
     position inherit
+
+    @media screen and (max-width 760px)
+        display flex
+        flex-direction column
+
+        main
+            flex 1 0 auto
+        footer
+            flex: 0 0 auto
 
 main
     overflow hidden
 
     @media screen and (max-width: 1280px){
         padding-bottom: 120px
+    }
+
+    @media screen and (max-width: 760px){
+        padding-bottom:     20px
     }
 
 h2 
@@ -61,22 +76,31 @@ h2
 .header
     overflow hidden
     width 100%
-    position relative
-    left -50px //size of padding info block;
+    position fixed
+    height 70px
+    background-color #f0f2f4
+    z-index: 100
+    padding-left 320px
 
     @media screen and (max-width: 1280px) {
-        left -35px
+        padding-left 0
     }
 
+    @media screen and (max-width: 760px) {
+        height 90px
+        background-color whiteColor
+    }
+
+.header.header-big
+    @media screen and (max-width: 760px) {
+        height 140px
+    }
+    
 .controlpanel
     display flex
     justify-content space-between
     align-items center
-    background-color #f0f2f4
-    position fixed
     width 100%
-    max-width 1380px
-    max-height 70px
     height 100%
     z-index 9
 
@@ -145,8 +169,14 @@ h2
 
     @media screen and (max-width 760px) {
         background-color whiteColor
-        padding-left 5px
-        }
+        padding-left 30px
+        height 45px
+    }
+
+    @media screen and (max-width 340px){
+        padding-left 10px
+    }
+        
 
 .controlpanel__left-name
     font-size 18px
@@ -180,11 +210,9 @@ h2
 
 .controlpanel__right 
     display flex
-    position fixed
     max-width 620px
     width 100%
-    right 0%
-    top 0%
+    height 100%
 
     @media screen and (max-width: 1280px) {
         order 1
@@ -193,54 +221,6 @@ h2
         max-height 50px
         height 100%
     }
-
-.btn__violet
-    background semiViolet
-    max-width  320px
-    width 100%
-    height 70px
-    transform skewX(30deg)
-    transition all 0.4s ease-in-out
-    display flex
-    justify-content center
-    z-index 2
-
-    &:hover
-        background semiPurple
-
-    
-    @media screen and (max-width: 1280px) {
-        transform skewX(0deg)
-        max-width 33%
-        height 100%
-    }
-    
-    @media screen and (max-width 760px) {
-        max-width 50%
-        }
-
-.btn__violet-link 
-    display flex
-    width 100%
-    align-items center
-    justify-content center
-    text-align center
-
-    @media screen and (max-width: 760px) {
-        margin 0 14px
-    }
-
-    p
-        font-family 'HelveticaNeue-Bold'
-        font-size 14px
-        color whiteColor
-        letter-spacing 1.4px   
-        padding 0
-        transform skewX(-30deg)
-
-        @media screen and (max-width: 1280px) {
-        transform skewX(0deg)
-        }
     
 .btn__semiViolet
     background-color semiPurple 
@@ -253,11 +233,11 @@ h2
 
     @media screen and (max-width: 1280px) {
         height 100%
-        max-width 33%
+        max-width 50%
     }
 
     @media screen and (max-width 760px){
-        max-width 50%
+        max-width 100%
     }
 
     &:hover
@@ -334,63 +314,59 @@ h2
                 max-width inherit
             }
 
-        .info-user
-            display flex
-            flex-direction column
-            align-items flex-start
-            background-color inherit
-            transform skewX(0deg)
-            margin-left 40px
-            margin-right 40px
+.info-user
+    display flex
+    flex-direction column
+    align-items flex-start
+    background-color inherit
+    transform skewX(0deg)
+    margin-left auto
+    margin-right 40px
 
-            @media screen and (max-width 1360px){
-                margin 0
-            }
-    
+    @media screen and (max-width 1280px){
+        position absolute
+        align-items flex-end
+        max-width 500px
+        right 0
+        top 35px
+        background-color #f0f2f4
+    }
+
+    @media screen and (max-width 760px){
+        top 105px
+        padding-right 0
+        align-items center
+        max-width inherit 
+        width 100%
+        background-color whiteColor
+        margin-right 0
+    }
+
+    .user-date-entry
+        font-size 14px
+        text-align left
+        transform skewX(0deg)
+        font-family 'HelveticaNeue-Medium'
+
+    .user-time
+        font-size 18px
+        text-transform none
+        text-align left
+        transform skewX(0deg)
+        font-family 'HelveticaNeue-Bold'
+        color semiPurple
+
+        @media screen and (max-width 1280px){
+            font-size 14px
+        }
+
+        .time-number
+            font-weight 1000
+            font-size 24px
+
             @media screen and (max-width 1280px){
-                position absolute
-                align-items flex-end
-                max-width 500px
-                top 50px
-                right 0
-                padding-right 35px
-            }
-
-            @media screen and (max-width 760px){
-                top 100px
-                padding-right 0
-                align-items center
-                max-width inherit 
-                width 100%
-                background-color whiteColor
-            }
-
-            .user-date-entry
-                font-size 14px
-                text-transform underline
-                text-align left
-                transform skewX(0deg)
-                font-family 'HelveticaNeue-Medium'
-
-            .user-time
                 font-size 18px
-                text-transform none
-                text-align left
-                transform skewX(0deg)
-                font-family 'HelveticaNeue-Bold'
-                color semiPurple
-
-                @media screen and (max-width 1280px){
-                    font-size 14px
-                }
-
-                .time-number
-                    font-weight 1000
-                    font-size 24px
-
-                    @media screen and (max-width 1280px){
-                        font-size 18px
-                    }
+            }
     
 
 .account-user
@@ -422,7 +398,7 @@ h2
     display flex
     flex-direction column
     align-items center
-    z-index 99
+    z-index 101
 
     @media screen and (max-width: 1280px) {
         padding 0
@@ -453,6 +429,7 @@ h2
 
 .nav__list-item 
     margin-bottom 5px
+    outline none
 
 .nav__list
     max-width 240px
@@ -466,6 +443,7 @@ h2
     letter-spacing 0.8px
     display flex
     align-items center
+    outline none
 
     .link-img 
         display block
@@ -549,11 +527,6 @@ h2
     height 125px
     margin-top 70px
 
-    @media screen and (max-width: 1280px) {
-        margin-top 140px
-    }
-
-
 .menu__logo-link 
     margin-bottom 30px
 
@@ -595,7 +568,7 @@ h2
         display flex
         align-items center
         background whiteColor
-        max-width 34%
+        max-width 50%
         width 100%
         padding-left 35px
     }
@@ -649,11 +622,6 @@ main
 
     @media screen and (max-width 420px)
         max-width 280px
-
-.header
-    @media screen and (max-width 760px)
-        left 0
-        position absolute
         
 .info-wrap
     max-width 1380px
@@ -712,6 +680,10 @@ footer
     display flex
     width 100%
 
+    // @media screen and (max-width 760px)
+    //     position absolute
+    //     bottom: 0
+
 .bottom-footer
     position relative
     margin 0
@@ -741,6 +713,8 @@ footer
         max-height 155px
         padding-left 30px
         padding-right 30px
+        position: relative
+        bottom: 0
     }
 
     .copyright 
@@ -981,7 +955,11 @@ footer
     height 20px
     box-sizing border-box
     position relative
-    z-index 3
+    z-index 1
+    border-radius: 0
+    -webkit-appearance: none
+    box-shadow none
+    background-color 0
 
 .account-checkbox__input-wrap
     width 23px

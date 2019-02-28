@@ -10,11 +10,17 @@
 		justify-content space-between
 		align-items center
 
+
+
 .intro__slide-item
 	background: url('../img/main/introbg.jpg')
 	background-size cover
 	background-repeat no-repeat
 	position relative
+	display none
+
+	&:first-child
+		display block
 
 	&:before 
 		content ''
@@ -39,6 +45,10 @@
 		background url('../img/main/sota-right.png')
 		background-repeat no-repeat
 		background-size cover !important
+
+.slick-initialized
+	.intro__slide-item
+		display block
 
 .intro__event 
 	width 100%
@@ -1058,10 +1068,10 @@
 		color #fff
 		border 2px solid #5073b6
 
-
+tr, td
+	max-width 62px
 // calendar style
 .fc-toolbar.fc-header-toolbar
-	margin-bottom 0
 	background-color #2d3484
 	color: #ffffff
 	display flex
@@ -1071,7 +1081,11 @@
 	height 100%
 	justify-content space-between
 	align-items center
+	margin-bottom 1px
 
+.fc-view-container
+	.fc-head
+		margin-bottom 1px
 .fc-left
 	.fc-button-group
 		height 30px
@@ -1128,18 +1142,14 @@
 .fc-left
 	width 100%
 
-// .fc-left,
-// .fc-right
-// 	width 40px
-// 	height 30px
-// 	background-color: #5c77b3
-
-// .fc-right
-// 	clear both
-// 	align-self flex-
-// 	position absolute
-// 	bottom 0
-// 	right 0
+// .fc-body
+// 	.fc-widget-content
+// 		.fc-content-skeleton
+// 			table
+// 				tr
+// 					td
+// 						&:last-of-type
+// 							border-right 0
 
 // hide another button
 .fc-today-button.fc-button.fc-state-default.fc-corner-left.fc-corner-right.fc-state-disabled,
@@ -1166,10 +1176,12 @@
 	font-size 14px
 	color #343537
 	background-color #dbe0ea
-	width 58px
+	box-sizing border-box
 	height 30px
 	vertical-align: middle
-	border-right 2px solid whiteColor
+	// border-right 1px solid whiteColor
+	// border-bottom 1px solid whiteColor
+	width 62px
 
 .fc-day-header.fc-widget-header.fc-sat,
 .fc-day-header.fc-widget-header.fc-sun
@@ -1178,8 +1190,11 @@
 .fc-day-top
 	vertical-align: middle
 	text-align center
-	border 1px solid #dbe0ea
 	height 62px
+	border 1px solid #dbe0ea
+	max-width 62px
+	box-sizing: content-box
+	word-break break-all
 
 	span
 		margin 0 auto
@@ -1204,8 +1219,10 @@ tr > .fc-other-month.fc-past,
 .fc-day-top.fc-other-month.fc-future
 	background-color:  #dbe0ea
 	color: #ffffff
-	border: 1px solid #ffffff
-	
+	border 1px solid #ffffff
+	border-top-color #dbe0ea
+	border-bottom-color #dbe0ea
+
 
 .fc-day-top.fc-sat.fc-past,
 .fc-day-top.fc-sun.fc-past

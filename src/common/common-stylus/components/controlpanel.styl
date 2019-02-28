@@ -670,7 +670,11 @@
 		flex-grow 1
 		width 200px
 		max-width: inherit
+		border-left none 
 	}
+
+	@media screen and (max-width: 720px)
+		border-left 1px solid #dbe0ea
 
 	@media screen and (max-width: 630px) {
 		order 3
@@ -1037,10 +1041,6 @@ header
 
 .menu-item:not(:last-child)
 	margin-right 30px
-
-	@media screen and (max-width: 1370px) {
-		margin-right 5px
-	}
 
 //////////!* Start style for triangle in main navigation
 
