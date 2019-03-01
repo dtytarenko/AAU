@@ -7,6 +7,10 @@
     #pagingControls
         margin-top 100px
 
+.events__main
+    .tpc-slider.general-partners
+        background-color: #f0f2f4
+        
 .events-pages__list
     border-bottom: 5px solid semiPurple
     width 100%
@@ -133,3 +137,175 @@
         max-height 115px
         height 100%
         overflow hidden
+
+.calendar-wrap
+    margin-top: 100px
+
+.calendar-wrap.calendar-page
+    margin-top 0
+
+.calendar-content
+    display flex
+
+    .calendar-content__object
+        max-width 440px
+        width 100%
+        margin-right: 70px
+
+    .calendar-content__descr
+        max-width 770px
+        width 100%
+
+    .calendar-content__descr-list
+        display flex
+        flex-direction column
+
+.calendar-content__descr-list--item
+    position relative
+    display flex
+
+    &:not(:last-of-type)
+        margin-bottom 55px
+    
+    &:hover
+        cursor pointer
+
+    &---date
+        max-width: 130px
+        width 100%
+        height 118px
+        background-image: url('../img/events/events-bg.png')
+        background-repeat no-repeat
+        display flex
+        flex-direction column
+        align-items center
+        font-family 'HelveticaNeue-Bold', sans-serif
+        color whiteColor
+        letter-spacing 0.1em
+        line-height auto
+        position relative
+        padding-right 60px
+        transition: .2s all ease-in-out
+
+        &__time
+            font-size 36px
+            padding-top 12px
+                    
+        &__month
+            font-size 18px
+            text-transform uppercase
+                
+        &__year
+            font-size 24px
+            padding-top 3px
+            padding-bottom: 20px
+        
+        &:after
+            content ''
+            display block
+            position absolute
+            z-index 10
+            top 50%
+            right 0%
+            transform translateY(-50%)
+            background-image: url('../img/events/events-bg-before.png')
+            background-repeat no-repeat
+            transition: .2s all ease-in-out
+            width 60px
+            height 20px
+
+.calendar-content__descr-list--item:hover > .calendar-content__descr-list--item---date,
+.calendar-content__descr-list--item.active > .calendar-content__descr-list--item---date
+    background-image: url('../img/events/events-bg__hover.png')
+
+
+.calendar-content__descr-list--item:hover > .calendar-content__descr-list--item---date::after,
+.calendar-content__descr-list--item.active > .calendar-content__descr-list--item---date::after
+    background-image: url('../img/events/events-bg-before-hover.png')
+
+.calendar-content__descr-list--item:hover > .calendar-content__descr-list--item---maininfo > .maininfo-title,
+.calendar-content__descr-list--item.active > .calendar-content__descr-list--item---maininfo > .maininfo-title
+    color semiPurple
+
+.calendar-content__descr-list--item.active > .calendar-content__descr-list--item---maininfo > .maininfo-title
+    margin-top 45px
+
+.calendar-content__descr-list--item.active > .calendar-content__descr-list--item---maininfo:before
+    display block
+
+.calendar-content__descr-list--item---maininfo
+    display flex
+    max-width 550px
+    width 100%
+    flex-direction column
+    padding-left 30px
+    position relative
+
+    &:before
+        content ''
+        display none
+        border-left 4px dotted #0080c6
+        height calc(100% - 30px)
+        position: absolute
+        left -13px
+        top 75px
+        z-index 2
+        
+
+    .maininfo-title
+        font-size 24px
+        color #3e3f40
+        font-family 'HelveticaNeue-Bold', sans-serif
+        margin auto 0
+        transition: .2s all ease-in-out
+
+.calendar-content__descr-list--item__descr
+    display none
+    max-width 550px
+    width 100%
+    flex-direction column
+
+
+.calendar-content__descr-list--item__descr-title
+    font-family 'HelveticaNeue-Bold', sans-serif
+    font-size 18px
+    line-height 24px
+    color semiPurple
+    margin-top 60px
+    margin-bottom 35px
+    position relative
+
+    &:before
+        content ''
+        display block
+        position absolute
+        top 50%
+        transform: translateY(-50%)
+        background-image url('../img/events/hexagon-before.png') 
+        background-position: center center
+        background-repeat no-repeat
+        background-color whiteColor
+        width 22px
+        height 20px
+        left -52px
+        z-index 10
+        padding-top 15px
+        padding-bottom 15px
+
+.calendar-content__descr-list--item__descr-list
+    list-style: disc
+
+    &--item
+        color semiPurple
+        
+        p
+            font-family 'HelveticaNeue-Roman', sans-serif
+            font-size 16px
+            line-height 24px
+            color semiBlack
+
+.calendar-content__descr-list--item__descr-link
+    height 80px
+    max-width 330px
+    width 100%
+    margin-top 45px

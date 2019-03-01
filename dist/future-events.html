@@ -7,8 +7,9 @@
     <title>Майбутні заходи</title>
     <link rel="stylesheet" type="text/css" href="css/slick.min.css">
     <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
-	<link rel="stylesheet" type="text/css" href="css/about-president-aau.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fullcalendar.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fullcalendar.print.min.css">
 </head>
 <body>
     <header>
@@ -106,7 +107,7 @@
                         <li class="submenu-item">
                             <a href="about-structure.html" class="submenu-item__link">Структура ААУ</a>
                               <ul class="second-submenu">
-                                <li class="submenu-item"><a href="congress-aau.html">З'їзд ААУ</a></li>
+                                <li class="submenu-item"><a href="about-congress-aau.html">З'їзд ААУ</a></li>
                                 <li class="submenu-item"><a href="about-president-aau.html">Президент</a></li>
                                 <li class="submenu-item"><a href="about-vice-president-aau.html">Віце-президент</a></li>
                                 <li class="submenu-item"><a href="about-board-members.html">Правління</a></li>
@@ -114,7 +115,7 @@
                                 <li class="submenu-item"><a href="about-revision-commission.html">Ревізійна комісія</a></li>
                                 <li class="submenu-item"><a href="about__naukova-rada.html">Науково-експертна рада</a></li>
                                 <li class="submenu-item"><a href="about-departments.html">Відділення ААУ</a></li>
-                                <li class="submenu-item"><a href="committee.html">Комітети ААУ</a></li>
+                                <li class="submenu-item"><a href="about-committee.html">Комітети ААУ</a></li>
                                 <li class="submenu-item"><a href="about-secretariat.html">Секретаріат</a></li>
                             </ul>
                         </li>
@@ -143,7 +144,7 @@
                         </li>
                         
                         
-                        <li class="submenu-item"><a href="#">Календар</a></li>
+                        <li class="submenu-item"><a href="calendar.html">Календар</a></li>
                     </ul>
                 </li>
                 
@@ -230,6 +231,13 @@
 
         <section class="events__content">
             <div class="container">
+                <div class="heading">
+                    <h1 class="defaultTitle bulletin-template">майбутні заходи</h1>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>
+                </div>
+
                 <ul class="events-pages__list">
                     <li class="events-pages__list-item active">
                         <a href="" class="events-pages__list-item--link">
@@ -806,6 +814,411 @@
 
                 <div id="pagingControls"></div>
 
+                <section class="calendar-wrap">
+                    <div class="heading">
+                        <h2 class="defaultTitle bulletin-template">календарь</h2>
+                        <div class="separator">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                        </div>
+                    </div>
+
+                    <section class="calendar-content">
+                        <article class="calendar-content__object">
+                            <div id="calendar"></div>
+                        </article>
+                        
+                        <article class="calendar-content__descr">
+                            <ul class="calendar-content__descr-list">
+                                <li class="calendar-content__descr-list--item">
+                                    <div class="calendar-content__descr-list--item---date">
+                                        <span class="calendar-content__descr-list--item---date__time">7</span>
+                                        <span class="calendar-content__descr-list--item---date__month">вересня</span>
+                                        <span class="calendar-content__descr-list--item---date__year">2018</span>
+                                    </div>
+                                    <div class="calendar-content__descr-list--item---maininfo">
+                                        <p class="maininfo-title">
+                                            Засідання комітету, присвячене особливостям охорони і захисту прав інтелектуальної власності за кордоном
+                                        </p>
+
+                                        <div class="calendar-content__descr-list--item__descr">
+                                            <p class="calendar-content__descr-list--item__descr-title">Основні зміни у законодавстві та підходах Патентного відомства Польщі:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни у підходах Патентного відомства Польщі до експертизи computer 
+                                                        implemented винаходів; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        вимоги до патентування корисних моделей у Польщі;
+                                                    </p>
+                                                    
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни щодо проведення експертизи по ТМ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Особливості захисту прав інтелектуальної власності в Грузії:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        прискорення реєстрації ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        захист прав інтелектуальної власності на митниці в Грузії; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        паралельний імпорт в Грузії; - визнання недійсними ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        судовий захист прав ІВ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Охорона та захист прав інтелектуальної власності в РФ:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        особливості експертизи заявок поданих відповідно до Гаагської угоди 
+                                                        з заявленням РФ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        експертиза винаходів, корисних моделей, ТМ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        митний реєстр об’єктів права інтелектуальної власності, легалізація 
+                                                        паралельного імпорту; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        дострокове припинення ТМ - обов'язковість претензійного порядку;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        компенсація за порушення прав інтелектуальної власності.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="btn-template btn-withbg calendar-content__descr-list--item__descr-link">
+                                                Дізнатися більше
+                                            </a>
+                                        </div>
+                                    </div>
+                                   
+                                </li>
+                                <li class="calendar-content__descr-list--item">
+                                    <div class="calendar-content__descr-list--item---date">
+                                        <span class="calendar-content__descr-list--item---date__time">11</span>
+                                        <span class="calendar-content__descr-list--item---date__month">вересня</span>
+                                        <span class="calendar-content__descr-list--item---date__year">2018</span>
+                                    </div>
+                                    <div class="calendar-content__descr-list--item---maininfo">
+                                        <p class="maininfo-title">
+                                            Засідання Жіночого Клубу ААУ
+                                        </p>
+
+                                        <div class="calendar-content__descr-list--item__descr">
+                                            <p class="calendar-content__descr-list--item__descr-title">Основні зміни у законодавстві та підходах Патентного відомства Польщі:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни у підходах Патентного відомства Польщі до експертизи computer 
+                                                        implemented винаходів; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        вимоги до патентування корисних моделей у Польщі;
+                                                    </p>
+                                                    
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни щодо проведення експертизи по ТМ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Особливості захисту прав інтелектуальної власності в Грузії:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        прискорення реєстрації ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        захист прав інтелектуальної власності на митниці в Грузії; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        паралельний імпорт в Грузії; - визнання недійсними ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        судовий захист прав ІВ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Охорона та захист прав інтелектуальної власності в РФ:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        особливості експертизи заявок поданих відповідно до Гаагської угоди 
+                                                        з заявленням РФ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        експертиза винаходів, корисних моделей, ТМ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        митний реєстр об’єктів права інтелектуальної власності, легалізація 
+                                                        паралельного імпорту; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        дострокове припинення ТМ - обов'язковість претензійного порядку;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        компенсація за порушення прав інтелектуальної власності.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class=" btn-template btn-withbg calendar-content__descr-list--item__descr-link">
+                                                Дізнатися більше
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar-content__descr-list--item">
+                                    <div class="calendar-content__descr-list--item---date">
+                                        <span class="calendar-content__descr-list--item---date__time">18</span>
+                                        <span class="calendar-content__descr-list--item---date__month">вересня</span>
+                                        <span class="calendar-content__descr-list--item---date__year">2018</span>
+                                    </div>
+                                    <div class="calendar-content__descr-list--item---maininfo">
+                                        <p class="maininfo-title">
+                                            Круглий стіл: Ліцензування і акредитація медичної практики: що нового і на що чекати?
+                                        </p>
+
+                                        <div class="calendar-content__descr-list--item__descr">
+                                            <p class="calendar-content__descr-list--item__descr-title">Основні зміни у законодавстві та підходах Патентного відомства Польщі:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни у підходах Патентного відомства Польщі до експертизи computer 
+                                                        implemented винаходів; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        вимоги до патентування корисних моделей у Польщі;
+                                                    </p>
+                                                    
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни щодо проведення експертизи по ТМ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Особливості захисту прав інтелектуальної власності в Грузії:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        прискорення реєстрації ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        захист прав інтелектуальної власності на митниці в Грузії; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        паралельний імпорт в Грузії; - визнання недійсними ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        судовий захист прав ІВ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Охорона та захист прав інтелектуальної власності в РФ:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        особливості експертизи заявок поданих відповідно до Гаагської угоди 
+                                                        з заявленням РФ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        експертиза винаходів, корисних моделей, ТМ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        митний реєстр об’єктів права інтелектуальної власності, легалізація 
+                                                        паралельного імпорту; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        дострокове припинення ТМ - обов'язковість претензійного порядку;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        компенсація за порушення прав інтелектуальної власності.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="btn-template btn-withbg calendar-content__descr-list--item__descr-link">
+                                                Дізнатися більше
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="calendar-content__descr-list--item">
+                                    <div class="calendar-content__descr-list--item---date">
+                                        <span class="calendar-content__descr-list--item---date__time">20</span>
+                                        <span class="calendar-content__descr-list--item---date__month">вересня</span>
+                                        <span class="calendar-content__descr-list--item---date__year">2018</span>
+                                    </div>
+                                    <div class="calendar-content__descr-list--item---maininfo">
+                                        <p class="maininfo-title">
+                                            Осінній форум ААУ 
+                                            "Адвокатура. Формула успіху"!
+                                        </p>
+
+                                        <div class="calendar-content__descr-list--item__descr">
+                                            <p class="calendar-content__descr-list--item__descr-title">Основні зміни у законодавстві та підходах Патентного відомства Польщі:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни у підходах Патентного відомства Польщі до експертизи computer 
+                                                        implemented винаходів; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        вимоги до патентування корисних моделей у Польщі;
+                                                    </p>
+                                                    
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        зміни щодо проведення експертизи по ТМ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Особливості захисту прав інтелектуальної власності в Грузії:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        прискорення реєстрації ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        захист прав інтелектуальної власності на митниці в Грузії; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        паралельний імпорт в Грузії; - визнання недійсними ТМ в Грузії;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        судовий захист прав ІВ.
+                                                    </p>
+                                                    
+                                                </li>
+                                            </ul>
+
+                                            <p class="calendar-content__descr-list--item__descr-title">Охорона та захист прав інтелектуальної власності в РФ:</p>
+                                            <ul class="calendar-content__descr-list--item__descr-list">
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        особливості експертизи заявок поданих відповідно до Гаагської угоди 
+                                                        з заявленням РФ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        експертиза винаходів, корисних моделей, ТМ;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        митний реєстр об’єктів права інтелектуальної власності, легалізація 
+                                                        паралельного імпорту; 
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        дострокове припинення ТМ - обов'язковість претензійного порядку;
+                                                    </p>
+                                                </li>
+                                                <li class="calendar-content__descr-list--item__descr-list--item">
+                                                    <p>
+                                                        компенсація за порушення прав інтелектуальної власності.
+                                                    </p>
+                                                </li>
+                                            </ul>
+
+                                            <a href="" class="btn-template btn-withbg calendar-content__descr-list--item__descr-link">
+                                                Дізнатися більше
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                    </section>
+                </section>
             </div>
         </section>
 
@@ -1257,9 +1670,11 @@
         </div>
     </footer>
     
-	<script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/moment.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/fullcalendar.min.js"></script>
     <script src="js/future-events.js"></script>
 
     <script type="text/javascript">
