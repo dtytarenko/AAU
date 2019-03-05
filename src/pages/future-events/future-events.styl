@@ -7,6 +7,8 @@
     #pagingControls
         margin-top 100px
 
+    .tpc-slider.general-partners
+        background-color: #f0f2f4
 .events__main
     .tpc-slider.general-partners
         background-color: #f0f2f4
@@ -651,12 +653,12 @@
         margin 5px 0 30px 0
 
     .event__speaker-subtitle
-        font-family 'HelveticaNeue-Light', sans-serif
+        font-family: 'HelveticaNeue-Light',sans-serif
         font-size 16px
         line-height 24px
         color semiBlack
         margin-bottom 30px
-        font-weight 1000
+       
 
     .event__speaker-personlist,
     .event__speaker-partnerlist
@@ -719,6 +721,444 @@
     max-width 80%
     max-height 80%
     object-fit: cover
+
+.event__descr-infolist--item
+    position relative
+    padding-left 61px
+
+    &:before
+        content ''
+        display block
+        position absolute
+        width 46px
+        height 40px
+        top 0%
+        background-position center center
+        left 0
+        margin-right 15px
+    
+        
+    &:nth-child(1):before
+        background url('../img/events/calendar.png')
+    
+    &:nth-child(2):before
+        background: url('../img/events/time.png')
+        
+    &:nth-child(3):before
+        background url('../img/events/location.png')
+
+.event__descr-descrlist
+    margin 30px 0
+    display flex
+    flex-direction column
+
+    &--item
+        position relative
+        padding-left 61px
+
+        &:not(:last-child)
+            margin-bottom 60px
+        
+        &:before
+            content ''
+            display block
+            position absolute
+            width 46px
+            height 40px
+            top 0%
+            background-position center center
+            left 0
+            margin-right 15px
+            
+    h5, .event__descr-descrlist--item-title
+        font-size 16px
+        line-height 18px
+        color semiPurple
+        font-family 'HelveticaNeue-Bold', sans-serif
+        text-transform uppercase
+    
+    p, .event__descr-descrlist--item-text
+        font-family: 'HelveticaNeue-Light',sans-serif
+        font-size: 16px
+        line-height: 24px
+        color: #343537
+        text-transform: none
+    
+    h6, .event__descr-descrlist--item-subtitle
+        font-size 16px
+        line-height 30px
+        font-weight 400
+        color semiBlack
+        font-family 'HelveticaNeue-Medium', sans-serif
+    
+    ul, .sublist
+        list-style: disc
+        padding-left 90px
+
+        li, &__item
+            color: #0080c6
+            letter-spacing 1.0px
+
+
+.event__descr-descrlist--item.format
+    &:before
+        background: url('../img/events/buck.png')
+
+.event__descr-descrlist--item.info
+    &:before
+        background: url('../img/events/info.png')
+
+.event__descr-descrlist--item.speakers
+    &:before
+        background url('../img/events/user.png')
+
+.event__descr-descrlist--item.contacts
+    &:before
+        background: url('../img/events/tel.png')
+.event__descr-descrlist--item-row
+    width 100%
+    display flex
+
+.event__descr-descrlist--item-column
+    margin-right 100px
+
+    .sublist
+        padding-left 30px
+
+.event-price
+    font-family 'HelveticaNeue-Black', sans-serif
+    font-size 16px
+    line-height 30px
+    color semiPurple
+
+
+.event__descr-video
+    margin-bottom: 60px
+    margin-top: 60px
+    border: 5px solid #fff
+    box-sizing: border-box
+    width: 100%
+    box-shadow: 0 0 20px 0 rgb(0,0,0)
+    height 490px
+
+.event-contancts
+    text-decoration none
+    text-transform none
+    color #343537
+    letter-spacing normal
+    font-family: 'HelveticaNeue-Light',sans-serif
+
+.event__btngroup
+    max-width 600px
+    width 100%
+    display flex
+    flex-wrap: wrap
+    flex-direction row
+    justify-content space-between
+
+.event__btn
+    height 70px
+    max-width 290px
+    width 100%
+    margin-bottom 20px
+    text-align center
+    white-space: pre-line
+
+.event__share
+    .event_share-title, p
+        font-size 16px
+        line-height 18px
+        color semiPurple
+        text-transform uppercase
+        letter-spacing 0.1em
+        font-family 'HelveticaNeue-Bold'
+        margin-bottom 17px
+        margin-top 20px
+
+
+.event__share-network
+    max-width 46px
+    margin-right 15px
+    display inline
+    float left
+
+    .event__share-network--link
+        display flex
+        width 46px
+        height 40px
+        background-repeat: no-repeat
+        background-position: center center
+        background: url('../img/events/network-bg.png')
+        transition .2s all ease-in-out
+
+        &:hover
+            background url('../img/events/network-bg-hover.png')
+
+        .hover
+            display none
+        
+        .event__share-network--img
+            margin auto
+        
+        .event-facebook
+            width 8px
+            height 16px
+        
+        .event-linked
+            width 16px
+            height 16px
+
+
+.event__share-network--link:hover > .hover,
+.event__share-network--link:focus > .hover
+    display block
+    
+.event__share-network--link:hover > .default
+.event__share-network--link:focus > .default
+    display none 
+
+
+.partners-event__slider
+    width 100%
+    background-color: #f0f2f4
+
+.partners-event__slide.slick-slide
+    max-width 290px
+    width 290px
+    height 260px
+    margin-right 40px
+
+.tpc-slider__slide--img.partners-event__slide-img
+    width 100%
+    max-width: inherit 
+    height 200px
+
+.partners-event__slide-descr
+    display flex
+    justify-content center
+    align-items center
+    height 60px
+    
+    p, .partners-event__slide-descr--text
+        font-family 'HelveticaNeue-Medium', sans-serif
+        font-size 15px
+        letter-spacing 0.1em
+        color whiteColor
+        white-space: pre-line
+        text-align center
+        text-transform uppercase
+
+.expo-partners__descr.partners-event__slide-descr
+    background-color: #284988
+
+.partners-event__slide-descr.media-partners__descr
+    background-color: #345ca7
+
+.info-partners__descr.partners-event__slide-descr
+    background-color: #5073b6
+
+.partners-event__slide-descr.general-partners__descr
+    background-color: #0d86c9
+
+.partners-event__slider.info-partners
+    background-color: whiteColor
+
+// event-program__tablist
+
+
+.event-program__tablist, .event-program__tablist-item
+    display flex
+    flex-direction column
+    
+    .tablist__header
+        display flex
+        justify-content: space-between
+
+    .tablist__nav,
+    .tablist-btnlist
+        display flex
+        align-items: flex-start
+    
+    .tablist-btnlist__item
+        width 50px
+        height 50px
+        display flex
+        justify-content center
+        align-items center
+        background-color #f0f2f4
+
+        &:hover
+            cursor pointer
+
+        &:not(:last-of-type)
+            margin-right: 2px
+
+.tablist__header
+    border-bottom: 5px solid #5073b6
+
+.event-program__tablist-item
+    display none
+
+.event-program__tablist-item.active
+    display flex
+
+
+.tablist__nav-tabitem
+    background-color: #f0f2f4
+    position: relative
+    height 50px
+    margin-right: 2px
+    text-transform none
+    font-family 'HelveticaNeue-Bold', sans-serif
+    font-size 18px
+    width: 130px
+    color semiPurple
+    z-index 5
+    display flex
+    justify-content center
+    align-items center
+
+    &:hover
+        cursor pointer
+
+.tablist__nav-tabitem.active
+    background: url(../img/all/litle-bg.jpg)
+
+    &:before
+        content: ''
+        position absolute
+        top 0%
+        left: 0%
+        background-image: url('../img//all/sota-left.png')
+        background-repeat: no-repeat
+        width 107px
+        height 50px
+        background-size: cover
+        background-position-x: -5px
+        background-position-y: bottom
+    
+    .tablist__nav-tabitem--text
+        color whiteColor 
+        text-transform uppercase
+        z-index 10
+
+.event-program__infolist
+    display flex
+    flex-direction column
+    margin-top 60px
+
+.event-program__infolist-item
+    display flex
+    padding-bottom 60px
+    padding-left 20px
+    position relative
+    margin-left: 10px
+    border-left: 4px dotted #0080c6
+
+    &:before
+        content ''
+        display block
+        position absolute
+        top 0
+        left -12px
+        background-image url('../img/events/hexagon-before.png') 
+        background-position: center center
+        background-repeat no-repeat
+        background-color whiteColor
+        width 22px
+        height 20px
+        z-index 10
+
+    .infolist-item__time
+        font-family 'HelveticaNeue-Black', sans-serif
+        font-size 20px
+        color #3877bb
+        margin-right: 40px
+        max-width: 160px
+        width 100%
+    
+    .infolist-item__descr
+        font-family 'HelveticaNeue-Medium', sans-serif
+        font-size 18px
+        color #3e3f40
+        letter-spacing: 0.2px
+
+.infolist-item__row
+    max-width 1060px
+    width 100%
+    display flex
+
+    .infolist-item__title, h6
+        font-family 'HelveticaNeue-Bold', sans-serif
+        font-size 16px
+        line-height 24px
+        color #3877bb
+        max-width: 290px
+        width 100%
+
+    .infolist-item__text, p
+        font-family 'HelveticaNeue-Light', sans-serif
+        font-size 16px
+        line-height 24px
+        color #3e3f40
+
+
+.infolist-item__column.theme
+    max-width 400px
+    width 100%
+    margin-right 40px
+
+.infolist-item__column.speakers
+    max-width 620px
+    width 100%
+
+
+    .speakers-row
+        display flex
+        margin-bottom 20px
+
+        span, .speakers-company
+            display block
+            color #3877bb
+            font-family 'HelveticaNeue-Light', sans-serif
+            font-size 16px
+            line-height 24px
+            font-weight 600
+            max-width 290px
+            width 100%
+
+        h6, .infolist-item__title
+            margin-right 40px
+
+            span, .country
+                display inline
+                font-family 'HelveticaNeue-Light', sans-serif
+                font-size 16px
+                line-height 24px
+                color #000000
+            
+// end event-program__tablist
+
+.future-events-preview
+    background-color: #f0f2f4
+
+.future-events-preview__list
+    display flex
+    justify-content: space-between
+
+    .future-events-preview__list-item
+        max-width 400px
+        width 100%
+
+        &:not(:last-of-type)
+            margin-right 40px
+
+.future-events-preview__archive
+    height 70px
+    max-width 290px
+    margin 100px auto 0
+
+
 //////////////////////////////////////////////////////////
 //
 // END STYLE FOR FUTURE-EVENTS__EVENT

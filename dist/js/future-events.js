@@ -51,3 +51,51 @@ $(document).ready(function() {
 });
 
 // tabs
+
+// slider
+
+$(document).ready(function () {
+    $('.partners-event__js').slick({
+        dots: true,
+        dotsClass: "main-dots", //customize dot`s with add class dot`s
+        infinite: false,
+        prevArrow: false,
+        nextArrow: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        lazyLoad: 'ondemand',
+        // autoplay: true,
+        infinite: true,
+        autoplaySpeed: 1500,
+        responsive: [
+        {
+            breakpoint: 900,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false
+            }
+        },
+    ]
+    });
+});
+
+
+$(document).ready(function() {
+    $( ".tablist__nav-tabitem" ).click(function() {
+        $(this).children( ".committee-list__item-descr--wraper").slideToggle( "slow");
+        $(this).children( ".committee-list__item-descr--wraper").css('display', 'flex');
+        $(this).toggleClass('active');
+    });
+});
