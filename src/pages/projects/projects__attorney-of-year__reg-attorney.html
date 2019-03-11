@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Анкета учасника Адвокат</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+    <link rel="stylesheet" type="text/css" href="css/projects.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="project-main">
+
+        <section class="breadcrumbs">
+
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__list-item--link">Проекти</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="projects__attorney-of-year.html" class="breadcrumbs__list-item--link">Конкурс "Адвокат року"</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="projects__attorney-of-year__reg-attorney.html" class="breadcrumbs__list-item--link active">Реєстрація</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </section>
+
+        <div class="container">
+            <div class="heading">
+                <h1 class="defaultTitle project-title">Анкета учасника Адвокат</h1>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>
+            </div>
+            <section class="section-projects__info reg">
+                <h2 class="projects__info-column--title reg">Щорічного Всеукраїнського конкурсу ААУ «Адвокат Року 2018»</h2>
+
+                <p class="projects-infotext">
+                    ПІБ учасників (номінантів) Конкурсу будуть розміщені на сайті ААУ www.uaa.org.ua  для online  голосування.
+                    Конкурс складається з 2-х етапів: online голосування на сайті ААУ та розгляд анкет номінантів Конкурсною комісією.
+                    Для участі у Конкурсі потрібно повністю заповнити дану анкету. 
+                </p>
+                <div class="projects-list__wrap">
+                    <h3 class="projects-list__title reg">Для довідки звертайтесь:</h3>
+                    <ul class="projects-contactslist">
+                        <li class="projects-contactslist__item">
+                            <span class="projects-contactslist__item-text">
+                                за тел.:   
+                            </span>
+                            <a href="tel:380673433407" class="projects-contactslist__item-text">
+                                067-343-34-07
+                             </a>
+                        </li>
+                        <li class="projects-contactslist__item">
+                            <span class="projects-contactslist__item-text">
+                                email:
+                            </span>
+                            <a href="mailto:reiting@uaa.org.ua" class="projects-contactslist__item-text">
+                                reiting@uaa.org.ua
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <ul class="user-info__list">
+                    <li class="user-info__list-item">
+                        <p class="personal-info__title title title">ПІБ:</p>
+                        <p class="user-info__text text" id="personal-info__name-user text">Іванов Іван Іванович</p>
+                    </li>
+                    <li class="user-info__list-item">
+                        <p class="personal-info__title title title">Електронна пошта:</p>
+                        <p class="user-info__text text" id="personal-info__email-user text">ivanov.i@gmail.com</p>
+                    </li>
+                    <li class="user-info__list-item">
+                        <p class="personal-info__title title">Контактний телефон:</p>
+                        <p class="user-info__text text"  id="personal-info__tel text">+38 /093/ 000 00 00</p>
+                    </li>
+                    <li class="user-info__list-item">
+                        <p class="personal-info__title title " id="personal-info__birthday">Дата народження:</p>
+                        <p class="user-info__text text">01.01.1979</p>
+                    </li>
+                </ul>
+                <div class="license-wrap">
+                    <p class="license-title title">Свідоцтво про право на
+                        заняття адвокатською діяльністю:</p>
+                        <span class="license-link title">www.erau.unba.org.ua/profile/</span>
+                        <span class="text" id="license-user">ivanov.i</span>
+                </div>
+                
+                    <form action="" method="GET" class="personal-info__form personal-info__form-maininfo" id="personal-info__form-maininfo">
+                    
+                        <label for="personal-info__company" class="personal-info__label personal-info__title"> Місце здійснення адвокатської діяльності, Назва фірми(АО):*
+                            <input type="text" class="personal-info__input personal-info__position" id="personal-info__work" placeholder="Введіть відповідь" tabindex="1" required>
+                        </label>
+
+                        <label for="personal-info__position" class="personal-info__label personal-info__title">Посада:*
+                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__position" placeholder="Введіть відповідь" tabindex="2" required>
+                        </label>
+
+                        <label for="personal-info__adress-work" class="personal-info__label personal-info__title">Адреса мiсця роботи:*
+                            <p class="personal-info__label-subtitle">(поштовий індекс, область, район, населений пункт, вулиця, будинок, кв.офіс)</p>
+                            <input type="text" class="personal-info__input personal-info__skype" id="personal-info__adress-work" placeholder="Введіть відповідь" tabindex="3" required>
+                        </label>
+            
+                    <div class="committee-membership__wrap">
+
+                        <p class="committee-membership__title title">Практики, в яких номінується учасник:*</p>
+                    
+
+                        <label for="nomination__criminal" class="nomanation__label">Кримінальне право
+                            <input type="checkbox" class="nomination__input" tabindex="4" id="nomination__criminal">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__civil" class="nomanation__label">Цивільне право
+                            <input type="checkbox" class="nomination__input" tabindex="5" id="nomination__civil">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__family" class="nomanation__label">Сімейне право
+                            <input type="checkbox" class="nomination__input" tabindex="6" id="nomination__family">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                        
+                        <label for="nomination__finance" class="nomanation__label">Фінансове та банківське право
+                            <input type="checkbox" class="nomination__input" tabindex="7" id="nomination__finance">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__tax" class="nomanation__label">Податкове право
+                            <input type="checkbox" class="nomination__input" tabindex="8" id="nomination__tax">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__land" class="nomanation__label">Аграрне та земельне право
+                            <input type="checkbox" class="nomination__input" tabindex="9" id="nomination__land">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__medical" class="nomanation__label">Медичне та фармацевтичне право
+                            <input type="checkbox" class="nomination__input" tabindex="10" id="nomination__medical">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__corporate" class="nomanation__label">Корпоративне право
+                            <input type="checkbox" class="nomination__input" tabindex="11" id="nomination__corporate">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__comerical" class="nomanation__label">Господарське (комерційне) право
+                            <input type="checkbox" class="nomination__input" tabindex="12" id="nomination__comerical">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__arbitr" class="nomanation__label">Міжнародний арбітраж
+                            <input type="checkbox" class="nomination__input" tabindex="13" id="nomination__arbitr">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__trading" class="nomanation__label">Міжнародне торгове право
+                            <input type="checkbox" class="nomination__input" tabindex="14" id="nomination__trading">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+
+                        <label for="nomination__merge" class="nomanation__label">Злиття та поглинання
+                            <input type="checkbox" class="nomination__input" tabindex="15" id="nomination__merge">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__it" class="nomanation__label">IT право
+                            <input type="checkbox" class="nomination__input" tabindex="16" id="nomination__it">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__invset" class="nomanation__label">Іноземні інвестиції
+                            <input type="checkbox" class="nomination__input" tabindex="17" id="nomination__invset">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                        
+                        <label for="nomination__antibreeding" class="nomanation__label">Антирейдерська практика
+                            <input type="checkbox" class="nomination__input" tabindex="18" id="nomination__antibreeding">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__customs" class="nomanation__label">Митне право
+                            <input type="checkbox" class="nomination__input" tabindex="19" id="nomination__customs">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                        
+                        <label for="nomination__intellectual" class="nomanation__label">Інтелектуальна власність та патентне право
+                            <input type="checkbox" class="nomination__input" tabindex="20" id="nomination__intellectual">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__work" class="nomanation__label">Трудове право
+                            <input type="checkbox" class="nomination__input" tabindex="21" id="nomination__work">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__media" class="nomanation__label">Медіа-право
+                            <input type="checkbox" class="nomination__input" tabindex="23" id="nomination__media">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__transport" class="nomanation__label">Морське і транспортне право
+                            <input type="checkbox" class="nomination__input" tabindex="24" id="nomination__transport">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                        <label for="nomination__antitrust" class="nomanation__label">Антимонопольне та конкурентне право
+                            <input type="checkbox" class="nomination__input" tabindex="25" id="nomination__antitrust">
+                            <span class="nomination__checkmark"></span>
+                        </label>
+
+                    </div>
+
+                    <h4 class="form-typical-subtitle">
+                        Особиста інформація
+                    </h4>
+
+                    <label for="personal-info__education" class="personal-info__label personal-info__title">Друга вища освіта:*
+                        <p class="personal-info__label-subtitle">назва вищого навчального закладу, спеціальність, рік закінчення</p>
+                        <p class="personal-info__label-points">1 додаткова вища освіта = 7 балів</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education" placeholder="Введіть відповідь" tabindex="26">
+                    </label>
+                    
+                    <label for="personal-info__academic" class="personal-info__label personal-info__title">Науковий ступінь:*
+                        <p class="personal-info__label-points">Науковий ступінь =15 балів; Вчене звання=10 балів</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__academic" placeholder="Введіть відповідь" tabindex="27">
+                    </label>
+
+                    <label for="personal-info__publications" class="personal-info__label personal-info__title">Кількість професійних публікацій в спеціалізованих юридичних
+                            виданнях:*
+                        <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
+                        <p class="personal-info__label-points">1 публікація = 1 бал</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications" placeholder="Введіть відповідь" tabindex="28">
+                    </label>
+
+                    <label for="personal-info__publications-foreign" class="personal-info__label personal-info__title">Кількість професійних публікацій в іноземних фахових виданнях:*
+                        <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__publications-foreign" placeholder="Введіть відповідь" tabindex="29">
+                    </label>
+
+                    <label for="personal-info__speaker" class="personal-info__label personal-info__title">У яких юридичних заходах, направлених на підвищення кваліфікації, 
+                            Ви брали участь у якості доповідача
+                        <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
+                        <p class="personal-info__label-points">1 виступ у заході в якості доповідача - 1 бал</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__speaker" placeholder="Введіть відповідь" tabindex="30">
+                    </label>
+                    
+                    <label for="personal-info__participant" class="personal-info__label personal-info__title">У яких юридичних заходах, направлених на підвищення кваліфікації,
+                            Ви брали участь у якості учасника:*
+                        <p class="personal-info__label-subtitle">за період з 15 травня 2017 р. по 15 травня 2018 р.</p>
+                        <p class="personal-info__label-points">1 виступ = 0,5 бали</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__participant" placeholder="Введіть відповідь" tabindex="31">
+                    </label>
+
+
+                    <h4 class="form-typical-subtitle">
+                        Професійна інформація
+                    </h4>
+
+                    <label for="personal-info__exp" class="personal-info__label personal-info__title">Стаж адвокатської діяльності:*
+                        <p class="personal-info__label-subtitle">Більше 10 років = 3 бали, більше 5 років = 2 бали, більше 3 роки =1 бал</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__exp" placeholder="Введіть відповідь" tabindex="32">
+                    </label>
+
+                    <label for="personal-info__community" class="personal-info__label personal-info__title">Досягнення в громадській діяльності в юридичній галузі:*
+                        <p class="personal-info__label-subtitle">за період 15 травня 2017 р. по 15 травня 2018 р. : нагороди, відзнаки, звання, тощо *</p>
+                        <p class="personal-info__label-points">1 нагорода = 3 балів</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__community" placeholder="Введіть відповідь" tabindex="33">
+                    </label>
+
+                    <label for="personal-info__wins" class="personal-info__label personal-info__title">Кількість виграних справ у Європейському суді:*
+                        <p class="personal-info__label-points">1 виграна справа = 5 балів</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__wins" placeholder="Введіть відповідь" tabindex="34">
+                    </label>
+
+                    <label for="personal-info__education-branch" class="personal-info__label personal-info__title">Опис досвіду заявлених галузях, практиках:*
+                        <p class="personal-info__label-subtitle">по кожній</p>
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__education-branch" placeholder="Введіть відповідь" tabindex="35">
+                    </label>
+
+                    <label for="personal-info__lawyer" class="personal-info__label personal-info__title">Назвіть провідних українських адвокатів у Вашій номінації:*
+                        <input type="text" class="personal-info__input personal-info__skype" id="personal-info__lawyer" placeholder="Введіть відповідь" tabindex="36">
+                    </label>
+
+                    <div class="agreement-wrap">
+                        <p class="agreement-text title">
+                            Я надаю згоду на обробку моїх персональних даних ААУ за адресою: вул. Мечникова, 16, офіс 307, м.Київ, 01021 *
+                        </p>
+                        <label for="agreement-yes" class="nomanation__label">Так
+                            <input type="checkbox" class="nomination__input" tabindex="37" id="agreement-yes" required>
+                            <span class="nomination__checkmark"></span>
+                        </label>
+                    </div>
+
+                    <div class="account-payment-amount__wrap">
+                        <p class="account-payment-amount__title title">Благодійний внесок за  обробку анкети:</p>
+                        <p class="account-payment-amount__user" id="account-payment-amount__user">500 грн <span class="more-info"> </span></p>
+                    </div> 
+
+                    <div class="account-submit__wrap">
+                        <input type="submit" class="personal-info__form-submit btn-template btn-withbg" value="Сплатити членський внесок online" id="account-pay" tabindex="38">
+                        <input type="submit" class="personal-info__form-submit btn-template btn-withoutbg" value="Скачати квитанцію на оплату" id="account-download-check" tabindex="39">
+                    </div>
+                    
+                    
+                </form>
+            </section>
+            
+
+        </div>
+
+        @@include('../../common/common-html/general-partners-slider.html')
+
+
+        <section class="about-aau--subsliders subsliders">
+
+                @@include('../../common/common-html/committee-partners.html')
+                @@include('../../common/common-html/information-media-partners-slider.html')
+        </section>
+    </main>
+    
+    @@include('../../common/common-html/footer.html')
+    
+
+    <div class="popup-wrap popup__attorney">
+        <div class="popup-close"></div>
+
+        <div class="heading popup-title__wrap projects--popup-title__wrap">
+            <h4 class="defaultTitle popup-title projects--popup-title">
+                <span>Заявка на участь</span>
+                    у Щорічному Всеукраїнському
+                    конкурсi ААУ "Адвокат Року 2018"
+            </h4>
+            <div class="separator">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+            </div>
+        </div>
+
+        <h5 class="popup-subtitle projects-popup-subtitle">Подати заявку на участь у Щорічному Всеукраїнському конкурсi ААУ "Адвокат Року 2018" можуть тільки Зареєстровані користувач</h5>
+        <p class="popup-descr  projects-popup-descr">Якщо у вас вже є обліковий запис на сайті - виконайте вхід на сайт.</p>
+        <p class="popup-descr  projects-popup-descr">Якщо ви ще не зареєстрований користувач - пройдіть просту реєстрацію на сайті.</p>
+
+        <div class="popup-btn__group">
+            <a href="account.html" class="popup-btn btn-template btn-withbg">увійти на сайт</a>
+            <a href="" class="popup-btn btn-template btn-withoutbg">Реєстрація на сайті</a>
+        </div>
+    </div>
+
+    <div class="overlay-main" id="overlay-join-aau"></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+</body>
+</html>

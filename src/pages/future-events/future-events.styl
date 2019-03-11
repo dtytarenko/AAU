@@ -966,41 +966,33 @@
 // event-program__tablist
 
 
-.event-program__tablist, .event-program__tablist-item
+    
+.tablist__header
     display flex
-    flex-direction column
+    justify-content: space-between
+
+.tablist__nav,
+.tablist-btnlist
+    display flex
+    align-items: flex-start
     
-    .tablist__header
-        display flex
-        justify-content: space-between
+.tablist-btnlist__item
+    width 50px
+    height 50px
+    display flex
+    justify-content center
+    align-items center
+    background-color #f0f2f4
 
-    .tablist__nav,
-    .tablist-btnlist
-        display flex
-        align-items: flex-start
-    
-    .tablist-btnlist__item
-        width 50px
-        height 50px
-        display flex
-        justify-content center
-        align-items center
-        background-color #f0f2f4
+    &:hover
+        cursor pointer
 
-        &:hover
-            cursor pointer
-
-        &:not(:last-of-type)
-            margin-right: 2px
+    &:not(:last-of-type)
+        margin-right: 2px
 
 .tablist__header
     border-bottom: 5px solid #5073b6
 
-.event-program__tablist-item
-    display none
-
-.event-program__tablist-item.active
-    display flex
 
 
 .tablist__nav-tabitem
@@ -1047,6 +1039,13 @@
     flex-direction column
     margin-top 60px
 
+.tabs
+    .event-program__infolist
+        display none
+
+    .event-program__infolist.active
+        display flex
+
 .event-program__infolist-item
     display flex
     padding-bottom 60px
@@ -1055,12 +1054,18 @@
     margin-left: 10px
     border-left: 4px dotted #0080c6
 
+    &:last-of-type
+        border-left none
+
+        &:before
+            left - 9px
+
     &:before
         content ''
         display block
         position absolute
         top 0
-        left -12px
+        left -13px
         background-image url('../img/events/hexagon-before.png') 
         background-position: center center
         background-repeat no-repeat

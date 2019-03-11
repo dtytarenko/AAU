@@ -91,11 +91,37 @@ $(document).ready(function () {
     });
 });
 
+class TabList {
+    constructor(buttonsContainer, tabs) {
+      this.buttonsContainer = buttonsContainer;
+      this.tabs = tabs;
+      
+      this.buttonsContainer.addEventListener('click', event => {
+        const index = event.target.closest('.tablist__nav-tabitem').dataset.value;
+        this.openTab(index);
+      });
+    }
+
+    
+    
+    openTab(index) {
+      this.tabs.querySelector('.active').classList.remove('active');
+      this.tabs.querySelector(`.infolist--${index}`).classList.add('active');
+    }
+  }
+
+
+
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const buttonsContainer = document.querySelector('.tablist__nav');
+    const tabs             = document.querySelector('.tabs');
+    const tabList = new TabList(buttonsContainer, tabs);
+})
+
 
 $(document).ready(function() {
-    $( ".tablist__nav-tabitem" ).click(function() {
-        $(this).children( ".committee-list__item-descr--wraper").slideToggle( "slow");
-        $(this).children( ".committee-list__item-descr--wraper").css('display', 'flex');
-        $(this).toggleClass('active');
+    $('.tablist__nav-tabitem').click(function() {
+        $('.tablist__nav').children('.tablist__nav-tabitem').removeClass('active');
+        $(this).addClass('active');
     });
 });
