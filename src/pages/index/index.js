@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
-    $( ".menu-burger" ).click(function() {
-        $( ".menu-block-left, .menu-block-right").slideToggle( "slow");
+    $( ".menu-burger-wrap" ).click(function() {
+        $( ".main-menu").slideToggle( "slow");
+        $( ".main-menu").css('display', 'flex');
+        $(this).toggleClass("active");
     });
     
     $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {

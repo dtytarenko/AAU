@@ -829,6 +829,7 @@
 .menu-burger-wrap
 	display none
 	height 50px
+	outline none
 
 	@media screen and (max-width: 1280px) {
 		display flex
@@ -846,7 +847,8 @@
 	&:hover
 		cursor pointer
 
-.menu-burger 
+.menu-burger,
+.menu-burger__close
 	display none
 
 	img
@@ -905,8 +907,30 @@
 		justify-content center
 	}
 
-	
+.menu-burger__close
+	display none
 
+	@media screen and (max-width: 1280px)
+		display none
+
+.menu-burger-wrap.active
+	.menu-burger
+		display none
+	
+	.menu-burger__close
+		display flex
+		background-color semiViolet
+	
+		&::after
+			background-color semiViolet
+
+		p
+			color whiteColor
+			font-size 14px
+		
+		img
+			width 20px
+			height 20px
 //--------------------------------------MENU------------------------
 
 header
@@ -932,13 +956,30 @@ header
 	max-width 100%
 	width 100%
 	box-sizing: border-box
+	overflow hidden
 
 	@media screen and (max-width 1600px)
 		padding 0 20px
 		justify-content space-around
 
 	@media screen and (max-width: 1280px) {
-		padding 0 20px
+		display none
+		padding 0 
+		flex-direction column
+		justify-content flex-start
+		align-items flex-end
+		max-width 265px
+		width 100%
+		align-self flex-end
+		margin-left auto
+		height auto
+		position absolute
+		right 0%
+		top 103px
+		background-color #f1f3f7
+		z-index: 110
+		padding 20px
+		
 	}
  
 .logo-wrap 
@@ -956,16 +997,8 @@ header
 	}
 
 	@media screen and (max-width: 1280px) {
-		bottom 20px
-		width 113px
-		height 70px
+		display none
 	}
-
-	@media screen and (max-width: 720px) {
-		width 96px
-		height 70px
-	}
-
 
 	.logo-link
 		width 100%
@@ -991,21 +1024,37 @@ header
 		display none
 	}
 
+.menu-block-left,
+.menu-block-right
+	.menu
+		display flex
 
-.menu
-	display flex
+		@media screen and (max-width 1280px)
+			flex-direction column
+			align-items flex-start
 
 .menu-block-left
 	margin-right: 50px
 
 	@media screen and (max-width 1600px)
 		margin-right: 0
+	
+	@media screen and (max-width 1280px)
+		width 100%
+		margin-top 0
+		margin-bottom 0
 
 .menu-block-right
 	margin-left: 50px
 
 	@media screen and (max-width 1600px)
 		margin-left: 0
+	
+	@media screen and (max-width 1280px)
+		width 100%
+		margin-top 0px
+		margin-bottom: 0
+
 .menu-item
 	z-index 99
 	text-align center
@@ -1025,6 +1074,12 @@ header
 		width 100%
 		padding-right 3px
 
+		@media screen and (max-width 1280px)
+			width 100%
+			max-width inherit
+			padding-right 0
+			display block
+			text-align left
 
 	&:hover
 		a
@@ -1038,6 +1093,9 @@ header
 		.item-with-sublist::after 
 			border-top-color semiViolet
 
+	@media screen and (max-width 1280px)
+		width 100%
+		margin-right 0
 
 .menu-item:not(:last-child)
 	margin-right 30px
