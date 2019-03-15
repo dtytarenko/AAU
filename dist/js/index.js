@@ -14,6 +14,24 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('.menu-item').click(function() {
+        $(this).children(".submenu").toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    $('.item__with-second-menu').click(function() {
+        $(this).children('.second-submenu').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+});
+
+// $('.submenu-item').one("click", false);
+// $(document).ready(function() {
+//     $('.second-submenu').children('.submenu-item')('click', true);
+// });
+
+
+
     $('.intro-slider').slick({
         dots: true,
         dotsClass: "intro-dots", //customize dot`s with add class dot`s
@@ -177,7 +195,7 @@ $(document).ready(function() {
             left: 'prev,next',
             center: 'title',
         },
-        viewRender: function (view, element) {
+            viewRender: function (view, element) {
             var monthNames = ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'];
             var currentMonth = $("#calendar").fullCalendar('getDate').month();
             var customMonth = monthNames[currentMonth];
@@ -185,6 +203,9 @@ $(document).ready(function() {
                 prevMonth = monthNames[customMonth - 1];
                 nextMonth = monthNames[currentMonth + 1];
             });
+            $('.fc-day-top').click(function(){
+                console.log($(this).attr('data-date'));
+            })
         },
         monthNames: ['Січень','Лютий','Березень','Квітень','Травень','Червень','Липень','Серпень','Вересень','Жовтень','Листопад','Грудень'],
         monthNamesShort: ['Січ.','Лют.','Бер.','Квіт.','Трав.','Черв.','Лип.','Серп.','Вер.','Жовт.','Лис.','Груд.'],

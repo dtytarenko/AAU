@@ -1,13 +1,11 @@
 
-$(document).ready(function() {
-    $( ".menu-burger" ).click(function() {
-        $( ".menu-block-left, .menu-block-right").slideToggle( "slow");
-        // $('.menu').css('display', 'flex');
 
-        // $('.menu').css('z-index', '4');
-        // if(window.innerWidth >= 321) {
-        //     $('.overlay').slideToggle("slow");
-        // } // it`s for delete overlay for mobile-width
+$(document).ready(function() {
+    $( ".menu-burger-wrap" ).click(function() {
+        $( ".main-menu").slideToggle( "slow");
+        $( ".main-menu").css('display', 'flex');
+        $(this).toggleClass("active");
+        $('.main-menu').toggleClass("active");
     });
     
     $( ".menu__close, .overlay, .menu__close-img--mob" ).click(function() {
@@ -17,6 +15,21 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $('.menu-item').click(function() {
+        $(this).children(".submenu").toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    $('.submenu-item').click(function() {
+        $(this).children('.second-submenu').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+    
+});
+
+$('.submenu-item').one("click", false);
+
 
 
 $(document).ready(function () {

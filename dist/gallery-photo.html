@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Шаблон</title>
+    <title>Фото галерея</title>
     <link rel="stylesheet" type="text/css" href="css/slick.min.css">
     <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.min.css">
@@ -104,10 +104,12 @@
         <div class="menu-block-left">
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="about.html" class="item-with-sublist">про ААУ</a>
+                    <p class="item-with-sublist">про ААУ</p>
                     <ul class="submenu">
-                        <li class="submenu-item"><a href="about.html">Про ААУ</a></li>
                         <li class="submenu-item">
+                            <a href="about.html">Про ААУ</a>
+                        </li>
+                        <li class="submenu-item item__with-second-menu">
                             <a href="about-structure.html" class="submenu-item__link">Структура ААУ</a>
                               <ul class="second-submenu">
                                 <li class="submenu-item"><a href="about-congress-aau.html">З'їзд ААУ</a></li>
@@ -126,9 +128,9 @@
                 </li>
                 
                 <li class="menu-item">
-                    <a href="#" class="item-with-sublist">Форуми і заходи </a>
+                    <p class="item-with-sublist">Форуми і заходи </p>
                     <ul class="submenu">
-                        <li class="submenu-item">
+                        <li class="submenu-item item__with-second-menu">
                             <a href="future-events.html" class="submenu-item__link">Майбутні заходи</a>
                             <ul class="second-submenu">
                                 <li class="submenu-item"><a href="future-events.html">Всi</a></li>
@@ -137,7 +139,7 @@
                             </ul>
                         </li>
                         
-                        <li class="submenu-item">
+                        <li class="submenu-item item__with-second-menu">
                             <a href="future-events.html" class="submenu-item__link">Архів форумів і заходів</a>
                             <ul class="second-submenu">
                                 <li class="submenu-item"><a href="future-events.html">Всi</a></li>
@@ -152,7 +154,7 @@
                 </li>
                 
                 <li class="menu-item">
-                    <a href="#" class="item-with-sublist">Членство</a>
+                    <p class="item-with-sublist">Членство</p>
                     <ul class="submenu">
                         <li class="submenu-item"><a href="membership-info.html">Інформація про членство</a></li>
                         <li class="submenu-item"><a href="membership-how-to-join__aau.html">Як приєднатись до ААУ</a></li>
@@ -161,7 +163,7 @@
                 </li>
                 
                 <li class="menu-item">
-                    <a href="#" class="item-with-sublist">Проекти </a>
+                    <p class="item-with-sublist">Проекти </p>
                     <ul class="submenu">
                         <li class="submenu-item"><a href="projects__face-attroney.html">Обличчя адвокатури</a></li>
                         <li class="submenu-item"><a href="projects__attorney-of-year.html">Конкурс «Адвокат року»</a></li>
@@ -180,7 +182,7 @@
         <div class="menu-block-right">
             <ul class="menu">
                 <li class="menu-item">
-                    <a href="#" class="item-with-sublist">Новини </a>
+                    <p class="item-with-sublist">Новини</p>
                     <ul class="submenu">
                         <li class="submenu-item"><a href="news-aau.html">Новини ААУ</a></li>
                         <li class="submenu-item"><a href="news-aau__partners.html">Новини партнерiв ААУ</a></li>
@@ -196,10 +198,10 @@
                         <li class="submenu-item"><a href="partners-program.html">Партнерська програма</a></li>
                     </ul>
                 </li>
-                <li class="menu-item">
-                    <a href="#" class="item-with-sublist">Галерея </a>
+                <li class="menu-item ">
+                    <p class="item-with-sublist">Галерея </p>
                     <ul class="submenu">
-                        <li class="submenu-item">
+                        <li class="submenu-item item__with-second-menu">
                             <a href="#" class="submenu-item__link">Галерея</a>
                             <ul class="second-submenu">
                                 <li class="submenu-item"><a href="#">Форуми</a></li>
@@ -216,7 +218,87 @@
 </header>
 
     <main class="about-stndrt">
+        <section class="breadcrumbs">
 
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__list-item--link">Галерея</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="gallery-video.html" class="breadcrumbs__list-item--link active">Фото галерея</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </section>
+
+        <div class="container">
+            <ul class="stndrt__linklist">
+                <li class="stndrt__linklist-item active">
+                    <a href="#" class="stndrt__linklist-item--link">всі</a>
+                </li>
+                <li class="stndrt__linklist-item">
+                    <a href="#" class="stndrt__linklist-item--link">Форуми</a>
+                </li>
+                <li class="stndrt__linklist-item">
+                    <a href="#" class="stndrt__linklist-item--link">Інші заходи</a>
+                </li>
+            </ul>
+
+            <ul class="photo__list">
+                <li class="photo__list-item">
+                    <p class="photo__list-item--title">Місце для назви фотоальбому, швидше за все в 2 рядки</p>
+                    <span class="photo__list-item--time">19.08.2018</span>
+
+                    <div class="photo__slider-wrap">
+                        
+                        <div class="photo__slider-content">
+                            <div class="slider__header">
+                                <h6 class="slider__header-title">
+                                    Місце для назви фотоальбому, швидше за все в 2 рядки
+                                </h6>
+                                <span class="photo__list-item--time">19.08.2018</span>
+                            </div>
+                            
+                            <div class="slider__preview">
+                                <div class="slider__preview-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                        <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                            </div>
+                            <div class="slider__nav">
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                        <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
 
         <section class="tpc-slider general-partners">
 	<div class="container">
@@ -666,8 +748,11 @@
         </div>
     </footer>
     
+    <div class="overlay-main"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/gallery-photo.js"></script>
+
 </body>
 </html>

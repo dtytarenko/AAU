@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Шаблон</title>
+    <title>Фото галерея</title>
     <link rel="stylesheet" type="text/css" href="css/slick.min.css">
     <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
 	<link rel="stylesheet" type="text/css" href="css/gallery.min.css">
@@ -14,7 +14,87 @@
     @@include('../../common/common-html/header.html')
 
     <main class="about-stndrt">
+        <section class="breadcrumbs">
 
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="#" class="breadcrumbs__list-item--link">Галерея</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="gallery-video.html" class="breadcrumbs__list-item--link active">Фото галерея</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </section>
+
+        <div class="container">
+            <ul class="stndrt__linklist">
+                <li class="stndrt__linklist-item active">
+                    <a href="#" class="stndrt__linklist-item--link">всі</a>
+                </li>
+                <li class="stndrt__linklist-item">
+                    <a href="#" class="stndrt__linklist-item--link">Форуми</a>
+                </li>
+                <li class="stndrt__linklist-item">
+                    <a href="#" class="stndrt__linklist-item--link">Інші заходи</a>
+                </li>
+            </ul>
+
+            <ul class="photo__list">
+                <li class="photo__list-item">
+                    <p class="photo__list-item--title">Місце для назви фотоальбому, швидше за все в 2 рядки</p>
+                    <span class="photo__list-item--time">19.08.2018</span>
+
+                    <div class="photo__slider-wrap">
+                        
+                        <div class="photo__slider-content">
+                            <div class="slider__header">
+                                <h6 class="slider__header-title">
+                                    Місце для назви фотоальбому, швидше за все в 2 рядки
+                                </h6>
+                                <span class="photo__list-item--time">19.08.2018</span>
+                            </div>
+                            
+                            <div class="slider__preview">
+                                <div class="slider__preview-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                        <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                            </div>
+                            <div class="slider__nav">
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                        <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                                <div class="slider__nav-slide">
+                                    <img src="/img/all/slider-img.jpg" alt="slider-img">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
 
         @@include('../../common/common-html/general-partners-slider.html')
 
@@ -28,8 +108,11 @@
 
     @@include('../../common/common-html/footer.html')
     
+    <div class="overlay-main"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
     <script src="js/about.js"></script>
+    <script src="js/gallery-photo.js"></script>
+
 </body>
 </html>
