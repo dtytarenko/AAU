@@ -28,8 +28,6 @@ $(document).ready(function() {
     
 });
 
-$('.submenu-item').one("click", false);
-
 
 
 $(document).ready(function () {

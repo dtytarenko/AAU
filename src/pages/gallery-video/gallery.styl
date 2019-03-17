@@ -170,6 +170,8 @@
         background-position center
         background-image url('../img/all/slider-img.jpg') // delete when gallery will be complete
 
+        &:hover
+            cursor pointer
 
     .photo__slider-content
         display none
@@ -201,36 +203,59 @@
             line-height 24px
             color #2b3384
             margin-bottom 15px
-    
+
     .slider__preview
         height 500px
         width 100%
+        margin: 30px auto 1px;
         display block
-
-        .slick-list.draggable,
-        .slick-track
-            height 100%
+        box-sizing border-box
+        position relative
+        
+        .slick-list.draggable
+            height inherit
             width 100%
 
-            img
-                width 100%
-                height 100%
-                // object-fit fill
+            .slick-track
+                height inherit
+                min-width 100%
 
-        .slider__preview-slide
-            display block
+                .slider__preview-slide
+                    position relative
+                    box-sizing: border-box 
 
-            img
-                object-fit cover
+                    img
+                        width 100%
+                        min-height 100%
+                
+        .slick-arrow
+            position absolute
+            top 50%
+            transform translateY(-50%)
+            width 15px
+            height 25px
+            z-index 10
+
+
     .slider__nav
         display flex
         margin-top 10px
         height 100px
         width 100%
+
+        .slick-list.draggable
+            width 100%
+            min-height 100px
+
+        .slick-track
+            min-height 100px
+            width 100%
+            transform: translate3d(0,0,0) !important
     
         .slider__nav-slide
+            min-width 100px
             max-width: 100px
-            height 100px
+            min-height 100px
             margin-right 10px
             
             &:last-child
@@ -241,4 +266,9 @@
                 height 100%
                 object-fit cover
 
-        
+.slider__preview .slick-next.slick-arrow.prev
+    left -30px
+    background-image: url('../img/all/prev-arrow.png')
+
+.slider__preview .slick-prev.slick-arrow
+    right -30px
