@@ -122,6 +122,7 @@
         margin-bottom 60px
         max-width 290px
         margin-right 40px
+        position relative
 
         &:last-of-type
             margin-bottom 0
@@ -161,7 +162,7 @@
             left: 110px
             background-color: #5073b6
 
-    .photo__slider-wrap
+    .photo__slider-preview
         display flex
         height 290px
         width 290px
@@ -175,6 +176,15 @@
 
     .photo__slider-content
         display none
+    
+    .photo__slider-wrap
+        height 290px
+        width 290px
+        position absolute
+        bottom 0px
+
+        &:hover
+            cursor pointer
 
 .photo__slider-wrap.active
     background-image: none
@@ -184,10 +194,9 @@
     position fixed
     max-width 1060px
     width 100%
-    height calc(100% - 120px)
-    margin-top 60px
-    margin-bottom 60px
-    overflow auto
+    height calc(100% - 80px)
+    margin-top 40px
+    margin-bottom 40px
     z-index 110
     display block
     background-color whiteColor
@@ -196,6 +205,21 @@
         display flex
         flex-direction column
         padding 70px
+        position relative
+        
+        .photo__slider-close
+            width 30px
+            height 30px
+            background-repeat no-repat
+            background-position center
+            background-size cover
+            background-image url('../img/main/close.jpg')
+            position absolute
+            right 20px
+            top 20px
+
+            &:hover
+                cursor pointer
 
         h6, .slider__header-title
             font-family: 'HelveticaNeue-Bold', sans-serif
@@ -203,6 +227,8 @@
             line-height 24px
             color #2b3384
             margin-bottom 15px
+
+        
 
     .slider__preview
         height 500px
@@ -220,13 +246,27 @@
                 height inherit
                 min-width 100%
 
-                .slider__preview-slide
+                .slider__preview-slide,
+                .slider__nav-slide.slick-slide.slick-current.slick-active
                     position relative
-                    box-sizing: border-box 
+                    box-sizing: border-box
+                    overflow hidden
+                    text-align center
+                    display flex
+                    
 
-                    img
+                    img, .slider-img,
+                    .slick-slide img
+                        object-fit cover
+                        vertical-align: middle
+                        margin auto
+                        max-width 100%
                         width 100%
-                        min-height 100%
+                        max-height 100%
+                        height auto
+
+                        &:hover
+                            cursor grab
                 
         .slick-arrow
             position absolute
@@ -235,20 +275,41 @@
             width 15px
             height 25px
             z-index 10
+        
+        .prev.slick-arrow
+            left -40px
+            background-image: url('../img/all/prev-arrow.png')
+            background-repeat: no-repeat
+            background-size cover
+            transition all 0.2s ease
 
+            &:hover
+                opacity 0.4
+        
+        .next.slick-arrow
+            right -40px
+            background-image: url('../img/all/next-arrow.png')
+            background-repeat: no-repeat
+            background-size cover
+            transition all 0.2s ease
+
+            &:hover
+                opacity 0.4
 
     .slider__nav
         display flex
-        margin-top 10px
+        margin-top 20px
         height 100px
         width 100%
+        box-sizing border-box
 
         .slick-list.draggable
             width 100%
-            min-height 100px
+            min-height 100px    
 
         .slick-track
             min-height 100px
+            max-height 100px
             width 100%
             transform: translate3d(0,0,0) !important
     
@@ -256,13 +317,16 @@
             min-width 100px
             max-width: 100px
             min-height 100px
+            max-height 100px
             margin-right 10px
+
             
             &:last-child
                 margin-right 0
 
             img
                 width 100%
+                min-height 100px
                 height 100%
                 object-fit cover
 
@@ -272,3 +336,6 @@
 
 .slider__preview .slick-prev.slick-arrow
     right -30px
+
+.overlay-main.active
+    display block

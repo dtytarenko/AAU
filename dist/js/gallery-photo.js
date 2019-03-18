@@ -10,8 +10,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     slidesToShow: 1,
     speed: 300,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
+    prevArrow: '<div class="prev"></div>',
+    nextArrow: '<div class="next"></div>',
+    centerPadding: '0px'
   });
   
     $('.slider__nav').slick({
@@ -40,7 +41,12 @@ $(document).ready(function () {
 $(document).ready(function() {
   $('.photo__slider-wrap').click(function() {
       $(this).addClass('active');
-      $('.overlay-main').slideUp("slow");
+      $('.overlay-main').addClass('active');
+  });
+  $('.photo__slider-close, .overlay-main').click(function() {
+    $('.photo__slider-wrap').removeClass('active');
+    $('.overlay-main').removeClass('active');
+    return false;
   });
 });
 
