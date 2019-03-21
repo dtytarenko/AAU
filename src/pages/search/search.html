@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Пошук</title>
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main-index.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+    @@include('../../common/common-html/header.html')
+
+    <main class="search__main">
+        <section class="breadcrumbs">
+            <nav class="breacrumbs__nav">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__list-item--link">Головна</a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <a href="projects__face-attroney.html" class="breadcrumbs__list-item--link active">Пошук</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        
+        <div class="container">
+            <div class="heading">
+                <h1 class="defaultTitle search__title">ПОШУК</h1>
+                    <div class="separator">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                    </div>
+            </div>
+
+            <div class="search__query">
+                <h2 class="search__query-title">Ви шукаєте:</h2>
+                <span class="search__query-keywords">АДВОКАТ</span>
+            </div>
+            <ul class="search__result-list">
+                <li class="search__result-list--item">
+                    <a href="#" class="search__result-heading">
+                        <div class="search__result-number">
+                            <span>1</span>
+                        </div>
+
+                        <h3 class="search__result-title">Конкурс “Адвокат РОКУ”</h3>
+                    </a>
+
+                    <h4 class="search__result-category">Майбутні заходи</h4>
+                    <p class="search__result-text">Асоціація адвокатів України оголошує про старт Всеукраїнського незалежного публічного конкурсу “Адвокат року – 2018”, який цього року збільшує масштаби та презентує нові правила проведення.</p>
+                    <a href="#" class="search__result-more blog-entry__more">читати далі</a>
+                </li>
+                <li class="search__result-list--item">
+                    <a href="#" class="search__result-heading">
+                        <div class="search__result-number">
+                            <span>2</span>
+                        </div>
+
+                        <h3 class="search__result-title">Конкурс “Адвокат РОКУ”</h3>
+                    </a>
+
+                    <h4 class="search__result-category">Майбутні заходи</h4>
+                    <p class="search__result-text">Асоціація адвокатів України оголошує про старт Всеукраїнського незалежного публічного конкурсу “Адвокат року – 2018”, який цього року збільшує масштаби та презентує нові правила проведення.</p>
+                    <a href="#" class="search__result-more blog-entry__more">читати далі</a>
+                </li>
+            </ul>
+        </div>
+
+        @@include('../../common/common-html/general-partners-slider.html')
+
+
+        <section class="about-aau--subsliders subsliders">
+
+                @@include('../../common/common-html/committee-partners.html')
+                @@include('../../common/common-html/information-media-partners-slider.html')
+        </section>
+    </main>
+
+    @@include('../../common/common-html/footer.html')
+    
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+    <script src="js/about.js"></script>
+</body>
+</html>

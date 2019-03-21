@@ -1,0 +1,122 @@
+@import '../../common/common-stylus/vars'
+
+//-----------------------start geneeral styles ------------------------
+.search__main
+    .container
+        flex-direction column
+    
+    .tpc-slider.general-partners
+        background-color: #f0f2f4
+    
+
+//-----------------------end general styles------------------------
+.search__query
+    display flex
+    align-items center
+    margin-bottom 50px
+    flex-wrap wrap
+
+    .search__query-title, h2
+        font-family 'HelveticaNeue-Roman', sans-serif
+        font-size 24px
+        color #3e3f40
+        text-transform none
+        display inline
+        margin-right 5px
+    
+        @media screen and (max-width 767px)
+            font-size 18px
+
+    .search__query-keywords, span
+        color #5073b6
+        text-transform uppercase
+        font-family 'HelveticaNeue-Bold', sans-serif
+        font-size 24px
+
+        @media screen and (max-width 767px)
+            font-size 16px
+
+.search__result-list
+    display flex
+    flex-direction column
+
+    .search__result-list--item, li
+        display flex
+        flex-direction column
+        margin-bottom 40px
+        webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+        h4, .search__result-category
+            font-family: 'HelveticaNeue-Medium', sans-serif
+            font-size 16px
+            color #343537
+            font-weight: 600
+            margin-bottom 30px
+
+            @media screen and (max-width 767px)
+                font-size 14px
+        
+        .search__result-text, p
+            font-family 'HelveticaNeue-Light', sans-serif
+            font-size 16px
+            line-height 20px
+            color #343537
+            text-align justify
+
+            @media screen and (max-width 767px)
+                font-size 14px
+                text-align center
+
+.search__result-heading
+    display flex
+    align-items center
+    margin-bottom 30px
+    webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+    @media screen and (max-width 767px)
+        flex-direction column
+    
+    .search__result-number
+        min-width 70px
+        width 70px
+        max-height 62px
+        min-height 62px
+        background-image: url('../img/events/events-bg.png')
+        background-position center 
+        background-size cover
+        background-repeat no-repeat
+        margin-right 40px
+        display flex
+        align-items center
+        justify-content center
+        transition 0.2s all ease
+
+        @media screen and (max-width 767px)
+            margin-right 0
+            margin-bottom 10px
+
+
+        span 
+            font-size 30px
+            font-family 'HelveticaNeue-Bold', sans-serif
+            color #ffffff
+    
+    h3, .search__result-title
+        font-size 16px
+        font-family 'HelveticaNeue-Bold', sans-serif
+        color #5073b6
+        text-transform uppercase
+        transition 0.2s all ease
+        letter-spacing normal
+
+    &:hover
+        .search__result-number
+            background-image: url('../img/events/events-bg__hover.png')
+
+        h3, .search__result-title
+            color #2d3585    
+
+.search__result-more.blog-entry__more 
+    @media screen and (max-width 767px)
+        margin-top 20px
+        justify-content flex-end

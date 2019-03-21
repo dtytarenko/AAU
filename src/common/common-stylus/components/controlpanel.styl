@@ -110,6 +110,11 @@
 			justify-content center
 		}
 
+		.youtube, .instagram, .linkedin, .facebook, .telegram
+			width 20%
+			max-width none
+
+
 		.youtube
 			@media screen and (max-width: 720px) {
 				border-left none
@@ -784,7 +789,7 @@
 	flex-direction column
 	align-items flex-start
 	justify-content center
-	padding-left 50px
+	padding-left 20px
 
 	@media screen and (max-width: 1280px) {
 		padding-left 10%
@@ -795,26 +800,31 @@
 	}
 
 .search-bar
-	width 80%
+	width 100%
 	display block
 	transition all 0.5ms ease-in-out
 	cursor text
 	position relative
-	bottom 10px
+	bottom -7px
 
 .input-search:focus ~ .search-bar
 	padding-top 2px
 	border-bottom 3px solid semiViolet
-	
+
+ 
+
 .input-search
 	cursor text
 	width 100%
 	height 100%
 
 	&:focus ~ .search-input-label
-		top 5px
+		top 0px
 		color semiViolet
 		font-size 12px
+
+	&:focus
+		height 20px
 
 .search-input-label 
 	font-family 'HelveticaNeue-Light', sans-serif
@@ -984,6 +994,7 @@ header
 		z-index: 100
 		padding 20px 0
 		overflow hidden
+		webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 	}
 
 	@media screen and (max-width: 767px)
@@ -997,13 +1008,11 @@ header
 	align-self center
 	position: relative
 	bottom: 25px
-	width 123px
-	height 90px
+	width 110px
+	height 80px
 
 
 	@media screen and (max-width: 1600px) {
-		width 123px
-		height 90px
 		bottom: 23px
 	}
 
@@ -1046,6 +1055,7 @@ header
 			flex-direction column
 			align-items flex-start
 			outline none
+			webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 .main-menu.active
 	.menu-block-left,
@@ -1064,6 +1074,7 @@ header
 		margin-top 0
 		margin-bottom 0
 		user-select: none
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 .menu-block-right
 	margin-left: 50px
@@ -1130,20 +1141,24 @@ header
 		margin-right 0	
 		margin-bottom 20px
 		user-select: none
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 		&:hover
 			.submenu
 				position relative
+				
 	
 	.item-with-sublist::hover
 		@media screen and (max-width 1280px)
 			color #2d3585
+			webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 .menu-item:not(:last-child)
 	margin-right 30px
 
 	@media screen and (max-width 1280px)
 		margin-right 0
+		webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 .submenu
 	position absolute
@@ -1158,6 +1173,7 @@ header
 	transition visibility 1s, opacity 0.5s ease
 	box-sizing border-box
 	outline-style none
+	webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 	.submenu-item
 		width 100%
@@ -1177,6 +1193,7 @@ header
 			.second-submenu
 				visibility visible
 				opacity 1
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 		a, p
 			display block
@@ -1190,18 +1207,20 @@ header
 			margin-right 10px
 			text-transform none 
 			box-sizing border-box
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 
 
 			@media screen and (max-width 1280px)
 				padding 0
-				padding-left 60px
-				right 20px
+				padding-left 100px
+				right 60px
 				position relative
 				user-select: none
 
 				&:hover
 					background-color: transparent 
-					color semiViolet 
+					color semiViolet
+
 
 				&:hover
 					text-transform capitalize
@@ -1214,7 +1233,7 @@ header
 		position relative
 		display none
 		flex-direction column
-
+		z-index 110
 
 		&:hover
 			display flex
@@ -1233,9 +1252,7 @@ header
 		&:hover
 			display block
 // this style for mobile version when item-nav active
-.submenu.active
-	display block
-	outline none
+
 // end this shit
 
 //-------------------------------- second submenu-------------------//
@@ -1315,6 +1332,10 @@ header
 	&:hover
 		cursor pointer
 
+		@media screen and (max-width 1280px)
+			cursor 
+
+
 		&:after
 			cursor pointer
 
@@ -1347,10 +1368,6 @@ header
 		z-index: 10
 		transform translateY(-50%)
 
-		@media screen and (max-width 1280px)
-			border-left 5px solid transparent
-			border-right 5px solid transparent
-			border-top 7px solid semiBlack
 
 	&:hover
 		a.submenu-item__link
@@ -1375,19 +1392,33 @@ header
 		&::after
 			top 10px
 	
-	.item__with-second-menu.active
-		&:after
-			border: 5px solid transparent
-			border-bottom: 7px solid #2b3384
-			border-top 0
-			display block
-			width 0
-			height 0
+	
+
+	.item__with-second-menu:hover a.submenu-item__link, .menu-item .submenu .submenu-item a:hover
+		background-color #f0f2f4
+		cursor pointer
+		text-transform none
+		color semiViolet
+
+	.second-submenu.active
+		.submenu-item
+			&:hover
+				a
+					color whiteColor
+					background-color semiViolet
+
+@media screen and (max-width: 1280px)
+	// .menu-item
+	// 	pointer-events none
+
+	// 	&:after
+	// 		pointer-events all
 
 	.menu-item.active
 		user-select: none
 		outline: none
 		box-shadow: none !important
+		webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important
 
 		&:after
 			border: 5px solid transparent
@@ -1401,16 +1432,25 @@ header
 		.item-with-sublist
 			color semiViolet
 			user-select: none
-	
-	.item__with-second-menu:hover a.submenu-item__link, .menu-item .submenu .submenu-item a:hover
-		background-color #f0f2f4
-		cursor pointer
-		text-transform none
-		color semiViolet
 
-	.second-submenu.active
-		.submenu-item
-			&:hover
-				a
-					color whiteColor
-					background-color semiViolet
+		.submenu
+			display block 
+			outline none !important
+			webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important 
+
+
+.item__with-second-menu.active
+		&:after
+			border: 5px solid transparent
+			border-bottom: 7px solid #2b3384
+			border-top 0
+			display block
+			width 0
+			height 0
+
+.item__with-second-menu
+	&:after
+		@media screen and (max-width 1280px)
+			border-left 5px solid transparent
+			border-right 5px solid transparent
+			border-top 7px solid semiBlack

@@ -15,20 +15,14 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.menu-item').click(function() {
-        $(this).children(".submenu").toggleClass('active');
-        $(this).toggleClass('active');
+    $('.item-with-sublist').click(function() {
+        $(this).parent(".menu-item").toggleClass('active');
     });
     $('.item__with-second-menu').click(function() {
         $(this).children('.second-submenu').toggleClass('active');
         $(this).toggleClass('active');
     });
 });
-
-// $('.submenu-item').one("click", false);
-// $(document).ready(function() {
-//     $('.second-submenu').children('.submenu-item')('click', true);
-// });
 
 
 

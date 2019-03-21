@@ -6,7 +6,7 @@
 @import '../../pages/registration/registration'
 @import '../../pages/news/news'
 @import '../../pages/future-events/future-events'
-
+@import '../../pages/search/search'
 h2 
     color semiViolet
     font-family 'Helvetica-Bold'
@@ -61,6 +61,11 @@ h3
 .about-stndrt
     .media-partners__title, .partners-committee__title
         font-size 30px
+        
+        @media screen and (max-width 767px)
+            font-size: 22px 
+            letter-spacing 0.1px
+            line-height: 24px
 
     .subsliders
         display flex
@@ -174,12 +179,18 @@ h3
     display flex
     justify-content center
     width 100%
+
+    @media screen and (max-width 1280px)
+        flex-direction column
     
 
     .partners-committee, 
     .media-partners
         max-width: 610px
         width: 100%
+
+        @media screen and (max-width 1280px)
+            max-width inherit 
 
         .partners-committee__title,
         .media-partners__title
@@ -420,3 +431,9 @@ tr > .fc-other-month.fc-past,
     display flex
     justify-content center
     align-items center
+
+.about-stndrt .media-partners__title, .about-stndrt .partners-committee__title, .subsliders .media-partners .media-partners__title, .subsliders .media-partners .partners-committee__title, .subsliders .partners-committee .media-partners__title, .subsliders .partners-committee .partners-committee__title, h3
+    @media screen and (max-width 767px)
+        font-size: 22px 
+        letter-spacing 0.1px
+        line-height: 24px

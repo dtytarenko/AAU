@@ -7,32 +7,64 @@
     .tpc-slider.general-partners
         background-color #f0f2f4
         z-index 10
-
+    
+    .subsliders
+        .media-partners.tpc-slider
+            background-color #f0f2f4
 
 .contacts-wrap
     display flex
     margin-bottom -25px
 
+    @media screen and (max-width 1280px)
+        flex-direction column
+        margin-bottom 0
+
 
 .contacts-map
     width 50%
 
+    @media screen and (max-width 1280px)
+        width 100%
+        height 500px
 
 .contacts-info
     width 50%
     display flex
     flex-direction column
     justify-content flex-start
+    box-sizing border-box
+    
+    @media screen and (max-width 1280px)
+        width 100%
+        padding 50px 40px
+
 
 .contacts-info__wraper
     max-width 550px
     padding 90px 0px 115px 90px
     width 100%
 
+    .contacts-heading
+        .separator
+            &:before,
+            &:after
+                background-color: rgb(0, 128, 198)
+
+    @media screen and (max-width 1280px)
+        max-width inherit
+        margin 0 auto
+        padding 0
+
 .contacts-title
     font-size 36px
     color semiViolet
     font-family 'HelveticaNeue-Bold', sans-serif
+
+    @media screen and (max-width: 767px)
+        font-size 22px
+        line-height 22px
+        letter-spacing: 0.1px
 
 .contacts-subtitle
     color semiPurple
@@ -41,9 +73,18 @@
     font-family 'HelveticaNeue-Roman', sans-serif
     margin-bottom 55px
 
+    @media screen and (max-width: 767px)
+        text-align center
+        font-size 16px
+        line-height 16px
+        margin-bottom 25px
+
     span
         display block
 
+.contacts-list__item
+    @media screen and (max-width 767px)
+        flex-direction column
 
 .contacts-list__item-text,
 .contacts-list__item-text--link
@@ -51,6 +92,11 @@
     font-size 24px
     color #3e3f40
     text-transform: none
+
+    @media screen and (max-width 767px)
+        text-align center
+        font-size 18px
+        line-height 18px
 
 .contacts-list__item-text--link
     transition all 0.8s ease
@@ -72,6 +118,10 @@
     box-sizing: border-box
     align-items center
 
+    @media screen and (max-width 767px)
+        padding-left 0
+        height auto
+
     &:not(:last-child)
         margin-bottom 30px
     
@@ -86,20 +136,42 @@
         width 150px
         height 98px
 
+        @media screen and (max-width 767px)
+            width 56px
+            height 50px
+            min-height 50px
+            margin 0 auto 10px
+            position relative
+            background-size cover
+            background-position center
+
     &:nth-child(1)
         &:before
             background-image url('../img/contacts/tel.png')
-    
+            
+            @media screen and (max-width 767px)
+                background-image url('../img/contacts/tel-mob.png')
     &:nth-child(2)
         &:before
             background-image url('../img/contacts/email.png')
+            
+            @media screen and (max-width 767px)
+                background-image url('../img/contacts/email-mob.png')
 
     &:nth-child(3)
         &:before
             background-image url('../img/contacts/location.png')
 
+            @media screen and (max-width 767px)
+                background-image url('../img/contacts/location-mob.png')
+
+
 .requisites-wrap
     margin-top 60px
+
+    @media screen and (max-width 767px)
+        margin-top 35px
+        text-align center
 
 .requisites-title
     font-size 22px
@@ -109,6 +181,9 @@
     margin-bottom 33px
     text-transform uppercase
 
+    @media screen and (max-width 767px)
+        margin-bottom 15px
+
 .requisites-descr
     font-family 'HelveticaNeue-Light', sans-serif
     font-size 18px
@@ -116,6 +191,10 @@
     color semiBlack
     white-space pre-line
     margin-bottom 30px
+
+    @media screen and (max-width 767px)
+        font-size 14px
+        line-height 24px
 
 .contacts-people__descr
     font-size 16px
@@ -129,9 +208,20 @@
     &:not(:last-child)
         margin-bottom 30px
 
+    @media screen and (max-width 767px)
+        font-size 14px
+        line-height 24px
+        text-align: center
+
 .contacts-people__descr-position
     color semiPurple
     margin-right 10px
+
+    @media screen and (max-width 767px)
+        display block
+        text-align center
+        width 100%
+        margin-right 0
 
 
 .contacts-people__descr-link
@@ -147,6 +237,7 @@
         color darkCerulean
 
 
+
 //////////////////////////////////////////////////////////
 //
 // start style form  
@@ -160,6 +251,10 @@
     height 695px
     background url('../img/contacts/bg.jpg') center center no-repeat
 
+    @media screen and (max-width 767px)
+        height auto
+        background-size cover
+
     &:before,
     &:after
         content: ''
@@ -171,12 +266,25 @@
         left 0
         width 520px
         height 340px
+
+        @media screen and (max-width 1280px)
+            width 515px
+            height 250px
+            opacity 0.5
+        
+        @media screen and (max-width 767px)
+            width 300px
+            height 260px
+            background-size cover
     
     &:after
         background  url('../img/contacts/sota-right.png')
         right 0
         width 600px
         height 350px
+
+        @media screen and (max-width 1280px)
+            display none
 
 .contacts-form 
     margin 100px auto
@@ -185,13 +293,24 @@
     flex-direction: column
     z-index 100
 
+    @media screen and (max-width 1280px)
+        margin 60px auto
+        padding 0 20px
+        max-width inherit
 .contacts-form__title
     color: #ffffff
     text-align center
     background-color: trasparent
 
+    @media screen and (max-width 767px)
+        font-size 22px
+        line-height 22px
+        letter-spacing 0.1px
+
 .contacts-heading
     z-index: 10
+
+
     .separator
         svg
             margin 0 auto
@@ -211,8 +330,12 @@
             top 5px
             position: absolute
 
+
 .contacts-form__input-wrap
     display flex
+
+    @media screen and (max-width 767px)
+        flex-direction column
 
 .contacts-form__input-wrap__column
     &:first-of-type
@@ -224,11 +347,23 @@
         max-height: 300px
         height 100%
 
+        @media screen and (max-width 1280px)
+            width 50%
+
+        @media screen and (max-width 767px)
+            width 100%
+
     &:last-of-type
         max-width: 880px
         width: 100%
         flex 2 0 auto
         height: 300px
+
+        @media screen and (max-width 1280px)
+            width 50%
+        
+        @media screen and (max-width 767px)
+            width 100%
 
         .contacts-form__label
             height 100%
@@ -244,11 +379,16 @@
     margin-bottom 20px
     z-index: 10
 
+    @media screen and (max-width 767px)
+        font-size 16px
+
     &:last-of-type
         margin-bottom 0
     
     &:hover
         cursor pointer
+
+    
 
 .contacts-form__input
     box-sizing: border-box
@@ -264,6 +404,12 @@
         border: 2px solid semiViolet
         background-color: #ffffff
         cursor pointer
+    
+    @media screen and (max-width 1280px)
+        max-width inherit
+    
+    @media screen and (max-width 767px)
+        padding-left 20px
 
 .contacts-form__input[placeholder]
     font-style: italic
@@ -272,12 +418,15 @@
     color: #343537
     line-height: 2.571
 
+    @media screen and (max-width 767px)
+        font-size 12px
+
 .contacts-form__input.textarea
     width 100%
     max-width: inherit
     height 100%
     z-index 10
-
+    
 
 .contacts-form__input.submit
     margin-top 20px
@@ -293,6 +442,13 @@
     font-family 'HelveticaNeue-Bold', sans-serif
     text-transform uppercase
     outline: none
+
+    @media screen and (max-width 767px)
+        font-size 12px
+        line-height 12px
+        height 40px
+        margin-left 0
+        max-width inherit
 
     &:hover
         background-color semiViolet
