@@ -320,6 +320,7 @@
 
 .intro-slider
 	margin: 20px 20px 0
+
 	.container 
 		max-width 1880px
 		width: 100%
@@ -366,14 +367,15 @@
 	.intro__slide-item
 		display block
 
-.intro__event 
-	width 100%
+.events__content
+    overflow-y hidden
+
+.intro__event
 	display flex
 	flex-direction column
 	align-items center
 	position relative
 	padding-top 5px
-    overflow hidden
 
 	&:before 
 		content ''
@@ -439,8 +441,6 @@
 	z-index: 2
 	text-align center
 
-	
-
 .main-about.container.index
 	padding-top: 40px
 	padding-bottom 0
@@ -455,7 +455,7 @@
 	color whiteColor
 	font-size 50px
 	font-weight 700 
-	font-family 'HelveticaNeue-Bold'
+	font-family 'HelveticaNeue-Bold', sans-serif
 	text-align center
 	line-height 1.2
 	z-index: 1
@@ -1252,9 +1252,12 @@
 .event__buy-btn-group
     display flex
     margin-top 30px
+    width 100%
 
     .event__buy-btn 
         height 70px
+        max-width 440px
+        width 100%
         text-transform uppercase
 
         &:not(:last-child)

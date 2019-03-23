@@ -111,8 +111,9 @@
 		}
 
 		.youtube, .instagram, .linkedin, .facebook, .telegram
-			width 20%
-			max-width none
+			@media screen and (max-width 1280px)
+				width 20%
+				max-width none
 
 
 		.youtube
@@ -952,6 +953,12 @@ header
 	user-select: none !important
 	outline: none !important
 	box-shadow: none !important
+
+	@media screen and (max-width 1280px)
+		padding-bottom 70px
+
+	@media screen and (max-width 767px)
+		padding-bottom 40px
 
 	li
 		user-select: none !important

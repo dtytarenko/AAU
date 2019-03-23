@@ -7,6 +7,10 @@
 			font-size 30px
 			letter-spacing 0.1px
 
+			@media screen and (max-width 767px)
+				font-size 22px
+				line-height 22px
+
 .tpc-slider__wrap
 	max-width 1280px
 	width 100%
@@ -89,3 +93,11 @@
 			height 18px
 			background url('../img/all/dots-active.png') no-repeat
 
+.tpc-slider.general-partners,
+.tpc-slider.partners-committee,
+.media-partners.tpc-slider
+	background-color: semiGray
+
+	@media screen and (max-width 767px)
+		.media-partners.tpc-slider
+			background-color: #ffffff

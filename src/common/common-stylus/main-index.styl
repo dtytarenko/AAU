@@ -9,7 +9,7 @@
 @import '../../pages/search/search'
 h2 
     color semiViolet
-    font-family 'Helvetica-Bold'
+    font-family 'Helvetica-Bold', sans-serif
     font-size 36px
     line-height 36px
     letter-spacing 1.8px
@@ -24,7 +24,7 @@ h3
     color lightViolet
     font-size 30px
     line-height 30px
-    font-family 'HelveticaNeue-Roman'
+    font-family 'HelveticaNeue-Roman', sans-serif
     font-weight 400
     
     @media screen and (max-width: 510px) {
@@ -42,21 +42,38 @@ h3
     box-sizing: border-box
     padding-bottom: 5px
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 767px){
         text-align left
         font-size 14px
+        padding-bottom 0
+        padding-left 35px
+        margin-bottom 10px
     }
 
     &:before
         content ''
         display block
-        background url('../img/all/icon-check.png')
+        background-image url('../img/all/icon-check.png')
         width 43px
         height 50px
         left 0
         top 0
         position absolute
         transform translateY(-25%)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        @media screen and (max-width 767px)
+            width 25px
+            height 29px
+            transform translateY(-50%)
+            top 50%
+
+.checklist-item
+    @media screen and (max-width 767px)
+        p
+            margin-bottom 0
 
 .about-stndrt
     .media-partners__title, .partners-committee__title
@@ -89,7 +106,10 @@ h3
 
             @media screen and (max-width: 1500px){
                 padding 0
-                }
+            }
+            
+            @media screen and (max-width 767px)
+                background-color: #fff
             
             .media-partners__wrap
                 margin-left 15px
@@ -111,12 +131,19 @@ h3
             padding 60px 35px
         }
 
+        @media screen and (max-width 767px) {
+            padding 40px 20px
+        }
+
 .structure__text-link
     color semiViolet
     text-decoration underline
     text-transform none
     font-family 'HelveticaNeue-Bold'
     font-weight 700
+    
+    @media screen and (max-width 767px)
+        font-size 14px
     
     &:hover
         color: semiPurple
@@ -183,14 +210,18 @@ h3
     @media screen and (max-width 1280px)
         flex-direction column
     
+    .media-partners.tpc-slider
+        @media screen and (max-width 1280px)
+            background-color: semiGray
 
     .partners-committee, 
     .media-partners
         max-width: 610px
         width: 100%
+        background-color: #ffffff
 
         @media screen and (max-width 1280px)
-            max-width inherit 
+            max-width inherit
 
         .partners-committee__title,
         .media-partners__title
@@ -359,17 +390,16 @@ tr > .fc-other-month.fc-past,
 	border-right 0px !important
 	margin-right 0px !important
 
-.fc-day-grid.fc-unselectable
-    .fc-row.fc-week.fc-widget-content:nth-child(4)
-        .fc-content-skeleton
-            .fc-day-top.fc-future:nth-child(4)
-                background-color #d64848 !important
-                border-color #d64848
 
-                span
-                    font-size 24px
-                    color #ffffff
-                    font-family 'Helvetica-Bold', sans-serif
+.fc-content-skeleton .hasEvent
+    background-color #d64848 !important
+    border-color #d64848
+    cursor pointer
+
+.fc-content-skeleton .hasEvent span
+    font-size 24px
+    color #ffffff
+    font-family 'Helvetica-Bold', sans-serif
 
 
 .bulletin__linklist, .stndrt__linklist
@@ -437,3 +467,35 @@ tr > .fc-other-month.fc-past,
         font-size: 22px 
         letter-spacing 0.1px
         line-height: 24px
+
+.logo-wrap-mobile
+    display none
+
+    @media screen and (max-width 1280px)
+        display block
+        margin 0 auto
+        overflow visible
+        position absolute
+        top 70px
+        left 50%
+        transform: translateX(-50%)
+        width: 123px
+        height 90px
+
+        .logo-link
+            width 100%
+            height 100%
+            display block
+
+            img
+                width 100%
+                height 100%
+    
+    @media screen and (max-width 767px)
+        width 96px
+        height 70px
+        left 47%
+
+    @media screen and (max-width 630px)
+        top 110px
+        left 50%

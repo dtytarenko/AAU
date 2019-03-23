@@ -137,6 +137,8 @@
 
                             <label for="personal-info__tel" class="personal-info__label personal-info__title"> Телефон
                                 <input type="text" required class="personal-info__input personal-info__tel" id="personal-info__tel" placeholder="Введіть відповідь" tabindex="5">
+                                <p class="personal-info__tel-unauthorized">Не підтверджений номер телефону</p>
+                                <div class="personal-info__tel-confirm">Підтвердити номер телефону</div>
                             </label>
 
                             <label for="personal-info__city" class="personal-info__label personal-info__title"> Micто
@@ -166,7 +168,7 @@
                                 <input type="text" class="personal-info__input personal-info__skype" id="personal-info__skype" placeholder="Введіть відповідь" tabindex="8">
                             </label>
                             
-                            <input type="submit" class="personal-info__form-submit" id="personal-info__form-submit" value="Зберегти данні" tabindex="9">
+                            <input type="submit" class="personal-info__form-submit"  value="Зберегти данні" tabindex="9">
                         </form>
                     </section> 
 
@@ -214,8 +216,42 @@
                     <div class="developer">Сайт разработан <a href="https://gagarinstudio.com.ua" target="_blank"><img src="img/main/gagarin.png" alt="gagarin"></a></div>
             </div>
     </footer>
+    <form action="" method="GET" class="popup-wrap submit-tel__first-step" id="reg-form">
 
-    
+        <div class="popup-close"></div>
+
+            <div class="heading popup-title__wrap">
+                <h4 class="defaultTitle popup-title">
+                    Реєстрація телефону
+                </h4>
+                <div class="separator">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                </div>
+            </div>
+            <label class="popup-lable"> Введіть номер мобільного телефону для реєстрації
+                <input type="tel" required class="popul-input" placeholder="Введіть номер телефону" tabindex="1">
+            </label>
+            <input type="submit" class="popup-submit submit-tel" value="Отримати СМС-код">
+    </form>
+
+    <form action="" method="GET" class="popup-wrap submit-tel__second-step">
+
+        <div class="popup-close"></div>
+
+            <div class="heading popup-title__wrap">
+                <h4 class="defaultTitle popup-title">
+                    Реєстрація телефону
+                </h4>
+                <div class="separator">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(rgba(255, 255, 255, 0.5) 0px 0px 10px);" width="13" height="11" viewbox="0 0 26 22.516660498395403"><path fill="#0080c6" d="M0 11.258330249197702L6.5 0L19.5 0L26 11.258330249197702L19.5 22.516660498395403L6.5 22.516660498395403Z"></path></svg>
+                </div>
+            </div>
+            <label class="popup-lable"> Введіть отриманий СМС-код
+                <input type="tel" required class="popul-input" placeholder="Введіть номер телефону" tabindex="1">
+            </label>
+            <input type="submit" class="popup-submit submit-tel" value="Підвердити номер">
+    </form>
+    <div class="overlay-main"></div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/account.js"></script>
 </body>

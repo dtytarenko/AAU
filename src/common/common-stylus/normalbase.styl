@@ -67,12 +67,14 @@ h1
         top 5px
         right 0
 
-        @media screen and (max-width: 720px) {
+        @media screen and (max-width: 767px) {
             width 100%
         }
 
-    @media screen and (max-width: 720px) {
+    @media screen and (max-width: 767px) {
         justify-content center
+        margin-top 10px
+        margin-bottom 30px
     }
 
 
@@ -85,7 +87,7 @@ h1
     text-align justify
     margin-bottom 20px
 
-    @media screen and (max-width: 510px) {
+    @media screen and (max-width: 767px) {
         text-align center
         line-height 22px
         font-size 16px
@@ -95,7 +97,7 @@ h1
     &:not(:last-child)
         margin-bottom 40px
 
-        @media screen and (max-width: 510px) {
+        @media screen and (max-width: 767px) {
             margin-bottom 20px
         }
 
@@ -196,6 +198,7 @@ h1
     margin-bottom 15px
     letter-spacing 0.35px
     padding-right 25px
+    
 
     @media screen and (max-width: 510px) {
         text-align center
@@ -212,7 +215,8 @@ h1
     align-items center
     justify-content flex-end
     color semiPurple
-
+    text-transform: uppercase
+    
     @media screen and (max-width: 510px) {
         justify-content center
     }
@@ -304,6 +308,7 @@ h1
     justify-content center
     box-sizing border-box
     align-items center
+    text-transform uppercase
 
 .btn-withbg
   background-color semiPurple
@@ -333,7 +338,7 @@ h1
 	background-color rgba(40, 40, 40, 0.8)
 	width 100%
 	height 100%
-	z-index 100
+	z-index 101
 	position fixed
 	left 0
 	top 0
@@ -353,6 +358,21 @@ h1
 	background-color whiteColor
 	padding 70px 70px 50px 70px
 	display none
+
+@media screen and (max-width 767px)
+    .popup-wrap
+        top 10px
+        left 10px
+        transform translate(0%, 0%)
+        padding: 35px 20px
+        max-width inherit
+        width calc(100% - 20px)
+        box-sizing border-box
+    
+        .popup-submit,
+        .popup-submit.submit-tel
+            height 40px
+            font-size 12px
 
 .popup-close
     position absolute
@@ -392,13 +412,31 @@ h1
             position: absolute
             top: 5px
             right: 0
+        
+        svg
+            margin 0 auto
 
 .popup-title
 	font-size 30px
 
+.defaultTitle.popup-title
+    font-size 30px
+    line-height 36px
+    font-size 22px
+    font-family 'HelveticaNeue-Bold', sans-serif
+    color semiViolet
+    text-transform uppercase
+    text-align center
+
+    @media screen and (max-width 767px)
+        line-height 24px
+
 .popup-form 
 	display flex
 	flex-direction column
+
+    .personal-info__input
+        appearance none
 
 
 .popup-submit
@@ -419,6 +457,21 @@ h1
 		color #fff
 		border 2px solid #5073b6
 
+.popup-submit.submit-tel
+    width 100%
+
+.submit-tel__first-step, .submit-tel__second-step
+    .popul-input
+        margin-top 20px
+        height 70px
+
+        @media screen and (max-width 767px)
+            height 40px
+    
+    .popup-close
+        width 20px
+        height 20px
+
 .popup-lable
     display flex
     flex-direction: column
@@ -430,6 +483,9 @@ h1
 
     &:nth-child(1)
         margin-top: 0
+    
+    @media screen and (max-width 767px)
+        font-size 14px
 
 .popul-input
     margin-top 5px
@@ -442,6 +498,10 @@ h1
 
     &:hover
         border: 2px solid #5073b6
+    
+    @media screen and (max-width 767px)
+        height 40px
+        padding-left 20px
 
 
 .popul-input[placeholder]
@@ -450,6 +510,9 @@ h1
     font-family: 'HelveticaNeue-Light'
     color: #343537
     line-height: 2.571
+
+    @media screen and (max-width 767px)
+        font-size 12px
 
 .partners--popup-title__wrap
     text-align: center

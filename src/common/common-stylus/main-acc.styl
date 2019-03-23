@@ -28,7 +28,11 @@ body
     height: 100%
 
 .subscribe-body 
-    position inherit
+    position relative
+
+    @media screen and (max-width 1280px)
+        .bottom-footer
+            position absolute
 
     @media screen and (max-width 760px)
         display flex
@@ -42,9 +46,6 @@ body
 main
     overflow hidden
 
-    @media screen and (max-width: 1280px){
-        padding-bottom: 120px
-    }
 
     @media screen and (max-width: 760px){
         padding-bottom:     20px
@@ -263,6 +264,7 @@ h2
         width 100%
         height 100%
         align-items center
+        text-transform uppercase
     
         @media screen and (max-width: 1280px) {
             display flex
@@ -706,7 +708,6 @@ footer
         max-height 110px
         height 100%
         bottom 0
-        position absolute
     }
 
     @media screen and (max-width: 760px) {
@@ -897,8 +898,8 @@ footer
     font-family 'HelveticaNeue-Bold'
     transition all 0.4s ease-in-out
     background-color whiteColor
-    border 2px solid rgb(0, 128, 198)
-    color rgb(0, 128, 198)
+    border 2px solid semiPurple
+    color semiPurple
 
     &:hover
         background-color #5073b6
@@ -935,6 +936,20 @@ footer
         font-size 16px
     }
 
+
+.personal-info__tel-unauthorized
+    font-size 12px
+    font-family: 'HelveticaNeue-Roman', sans-serif
+    color: #343537
+
+.personal-info__tel-confirm
+    font-size: 14px
+    text-decoration: underline
+    transition 0.2s all ease
+
+    &:hover
+        cursor pointer
+        opacity 0.8
 //////////////////////////////////////////////////////////
 //
 // END STYLE FOR INPUT
@@ -1200,5 +1215,4 @@ footer
         @media screen and (max-width 760px){
             margin-top 40px
         }
-    
     

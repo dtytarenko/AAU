@@ -19,3 +19,14 @@ $(document).ready(function() {
 $('.personal-info__city > option:first').hide();
 
 
+
+
+$(document).ready(function() {
+    $(".personal-info__tel-confirm").click(function() {
+        $( ".overlay-main, .submit-tel__first-step").slideToggle( "fast");
+    }); 
+    $(".popup-close").click(function() {
+        $(this).parents(".popup-wrap").slideToggle( "fast");
+        $(".overlay-main").slideToggle("fast");
+    });
+});
