@@ -17,6 +17,7 @@
 	background-repeat no-repeat
 	position relative
 	display none
+	overflow: hidden
 
 	&:first-child
 		display block
@@ -33,6 +34,9 @@
 		background-repeat no-repeat
 		background-size: cover !important
 
+		@media screen and (max-width 767px)
+			display none
+
 	&:after
 		content ''
 		display block
@@ -45,9 +49,17 @@
 		background-repeat no-repeat
 		background-size cover !important
 
+		@media screen and (max-width 767px)
+			width 200px
+			height 200px
+
+
 .slick-initialized
 	.intro__slide-item
 		display block
+		overflow: hidden
+		min-height: 550px
+		height: 100%
 
 //--------------------------------------------main-about---------------------------------------
 .about__article-wrap
@@ -90,16 +102,21 @@
 	}
 
 .about__article-btn-link
-	margin-top 45px
+	margin-top auto
 	
 
 .calendar
 	max-width 440px
 	width 100%
 
-	@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px)
 		max-width none
-	}
+		
+		.fc.fc-unthemed.fc-ltr
+			max-width 440px !important
+			margin 0 auto
+
+	
 
 
 .calendar__title-wrap 
@@ -141,6 +158,11 @@
 	
 	@media screen and (max-width: 1280px) {
 		flex-direction column
+		padding-top 80px
+	}
+
+	@media screen and (max-width 767px){
+		padding-top: 40px
 	}
 		
 		
@@ -588,6 +610,7 @@
 		.btn-xl
 			border 2px solid #5073b6
 			line-height 76px
+			margin-top 50px
 			
 			@media screen and (max-width: 1280px) {
 				max-width none

@@ -42,13 +42,15 @@ h3
     box-sizing: border-box
     padding-bottom: 5px
 
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 1280px){
         text-align left
         font-size 14px
         padding-bottom 0
         padding-left 35px
         margin-bottom 10px
+        line-height 14px
     }
+
 
     &:before
         content ''
@@ -59,12 +61,11 @@ h3
         left 0
         top 0
         position absolute
-        transform translateY(-25%)
         background-size: cover
         background-repeat: no-repeat
         background-position: center
 
-        @media screen and (max-width 767px)
+        @media screen and (max-width 1280px)
             width 25px
             height 29px
             transform translateY(-50%)
@@ -118,12 +119,15 @@ h3
                 margin 0
                 }
 
-        .partners-committee
-            margin-right 40px
+        
+.subsliders
+    .partners-committee
+        margin-right 40px
 
-            @media screen and (max-width: 1280px){
-                margin 0
-                }
+        @media screen and (max-width: 1280px){
+            margin 0
+            }
+
 
  .about-stndrt
     .container
@@ -283,7 +287,7 @@ h3
 
 			&:before
 				width 41px
-				right -41px
+				right -40px
 				background-image url('../img/all/right.png')
 
 // .fc-prev-button.fc-button.fc-state-default.fc-corner-left
@@ -337,9 +341,8 @@ h3
 	box-sizing border-box
 	height 30px
 	vertical-align: middle
-	// border-right 1px solid whiteColor
-	// border-bottom 1px solid whiteColor
-	width 62px
+	border-right 2px solid whiteColor
+	border-bottom 1px solid whiteColor
 
 .fc-day-header.fc-widget-header.fc-sat,
 .fc-day-header.fc-widget-header.fc-sun
@@ -360,9 +363,28 @@ h3
 .fc-day-number
 	font-size 24px
 	line-height 24px
-	
 
+@media screen and (max-width 1280px)
+    .fc-day-number
+        @media screen and (max-width 1280px)
+            font-size 16px
+    
+    .fc-center > h2
+        @media screen and (max-width 1280px)
+            font-size 22px
+    
+    .fc-left .fc-button-group .fc-button.fc-state-default
+        @media screen and (max-width 1280px)
+            font-size 12px
+    
+    .fc-day-top
+        @media screen and (max-width 767px)
+            height 42px
 
+    .fc-day-header.fc-widget-header
+        @media screen and (max-width 500px)
+            width 30px
+            font-size 10px
 // start style calendar - today
 .fc-today
 	border 2px solid #d64848 !important
@@ -408,6 +430,10 @@ tr > .fc-other-month.fc-past,
     display flex
     margin-bottom: 60px
 
+    @media screen and (max-width 767px)
+        flex-direction column
+        border-bottom 0px
+
 .bulletin__linklist-item, .stndrt__linklist-item
     width 180px
     height 50px
@@ -425,6 +451,10 @@ tr > .fc-other-month.fc-past,
 
     &:last-child
         margin-right 0px
+    
+
+    @media screen and (max-width 767px)
+        width 100%
 
 .bulletin__linklist-item.active, 
 .stndrt__linklist-item.active
@@ -499,3 +529,96 @@ tr > .fc-other-month.fc-past,
     @media screen and (max-width 630px)
         top 110px
         left 50%
+
+
+// voiting
+
+
+.vote__list-wrap
+    max-width 550px
+    width 100%
+    margin-bottom 80px
+
+    @media screen and (max-width 1280px)
+        margin-bottom 60px
+
+    &:nth-last-child(-n+2)
+        margin-bottom 0
+
+    .vote__list-title, h3
+        font-size 24px
+        line-height 30px
+        font-family 'HelveticaNeue-Roman', sans-serif
+        margin-bottom 40px
+        text-align: left
+
+        @media screen and (max-width 1280px)
+            margin-bottom 20px
+        
+        @media screen and (max-width 767px)
+            font-size 18px
+
+    .vote__list-item
+        &:not(:last-child)
+            margin-bottom 10px        
+
+    .vote__list-item--title
+        width 100%
+        display flex
+        justify-content space-between
+
+        .vote__list-item--title--votes
+            font-size 18px
+            line-height 30px
+            font-family 'HelveticaNeue-Bold', sans-serif
+            color semiPurple
+            padding-right 5px
+
+            @media screen and (max-width 767px)
+                font-size 14px
+
+        .vote__list-item--title-aspt
+            font-family 'HelveticaNeue-Roman', sans-serif
+            color #343537
+            font-size 18px
+            line-height 30px
+            
+            @media screen and (max-width 767px)
+                font-size 14px
+
+
+
+
+.vote__progressbar
+    display block
+    width 100%
+    height 20px
+    background-color #dbe0ea
+    border-top-right-radius: 10px
+    border-bottom-right-radius: 10px
+
+.vote__progressbar-active
+    background-color: semiPurple
+    display block
+    height 20px
+
+.vote__list
+    .vote__list-item:nth-child(1)
+        .vote__progressbar-active
+            width 50%
+    
+    .vote__list-item:nth-child(2)
+        .vote__progressbar-active
+            width 5%
+
+    .vote__list-item:nth-child(3)
+        .vote__progressbar-active
+            width 67%
+
+    .vote__list-item:nth-child(4)
+        .vote__progressbar-active
+            width 10%
+
+    .vote__list-item:nth-child(5)
+        .vote__progressbar-active
+            width 15%

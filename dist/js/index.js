@@ -32,7 +32,7 @@ $(document).ready(function() {
         infinite: false,
         prevArrow: false,
         nextArrow: false,
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         autoplaySpeed: 2000,
         speed: 200,
@@ -55,7 +55,7 @@ $(document).ready(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        // autoplay: true, 
+        autoplay: true, 
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
@@ -95,7 +95,8 @@ $(document).ready(function () {
             breakpoint: 430,
             settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: false
             }
         }
     ]
@@ -113,7 +114,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         infinite: true,
         lazyLoad: 'ondemand',
-        // autoplay: true, 
+        autoplay: true, 
         autoplaySpeed: 1500,
         responsive: [
         {
@@ -158,7 +159,8 @@ $(document).ready(function () {
             breakpoint: 430,
             settings: {
             slidesToShow: 1,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            dots: false
             }
         }
     ]

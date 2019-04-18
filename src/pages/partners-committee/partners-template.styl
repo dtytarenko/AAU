@@ -1,5 +1,65 @@
 @import '../../common/common-stylus/vars'
 
+.partners-advantages
+    ul
+        list-style: none
+        display flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 30px
+
+        li
+            margin-bottom 20px
+            width 45%
+            line-height: 20px
+            position: relative
+            font-family: 'HelveticaNeue-Light'
+            padding-left 50px
+            color: #4a4b4d
+            box-sizing: border-box
+            min-height: 43px
+            display flex
+            align-items center
+            
+            @media screen and (max-width: 1280px)
+                text-align left
+                font-size 14px
+                padding-bottom 0
+                padding-left 35px
+                margin-bottom 10px
+                line-height 14px
+                width 100%
+                margin-bottom 15px
+                min-height: auto
+
+                &:last-child,
+                &:nth-last-child(2)
+                    margin-bottom 15px
+            
+            &:before
+                content ''
+                display block
+                background-image url('../img/all/icon-check.png')
+                width 37px
+                height 43px
+                left 0
+                top 0
+                position absolute
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                
+                @media screen and (max-width 1280px)
+                    width 25px
+                    height 29px
+                    transform translateY(-50%)
+                    top 50%
+                    
+                    &:last-child
+                        margin-bottom 0
+                    
+                    &:nth-last-child(2)
+                        margin-bottom 0
 
 .partners-template__wrap
     .container
@@ -13,9 +73,33 @@
     margin 40px 0
     text-transform uppercase
 
+    @media screen and (max-width 1280px)
+        font-size 18px
+        margin 20px 0
+
 .partners-template__list
     display flex
-    flex-wrap: wrap
+    justify-content: space-between
+    flex-flow: row wrap
+
+    &:after
+        content: ""
+        flex: auto
+        
+        @media screen and (max-width: 600px)
+            display none    
+    
+
+    @media screen and (max-width 1280px)
+        padding-left 40px
+        padding-right 40px
+    
+    @media screen and (max-width 767px)
+        padding-left 0
+        padding-right: 0
+
+    @media screen and (max-width 600px)
+        justify-content: center
 
     &-item
         max-width: 280px;
@@ -27,13 +111,41 @@
         display flex
         justify-content center
         align-items center
-        margin-right: 40px
+
+        @media screen and (max-width 1280px)
+            min-width 290px
+            max-width 290px
+            min-height: 200px
+            height 200px
+            margin-bottom 40px
+
+        @media screen and (max-width 767px)
+            min-width 280px
+            max-height 280px
+            width 280px
+            height 190px
+            min-height 190px
+            margin-bottom 20px
+
 
         &:nth-child(n+5)
             margin-top 40px
 
-        &:nth-child(4n+4)
-            margin-right 0
+            @media screen and (max-width 1280px)
+                margin-top 0
+        
+        &:last-child
+            margin-left 3em
+
+            @media screen and (max-width: 1280px)
+                margin-left 2em
+
+            @media screen and (max-width: 767px)
+                margin-left: 1em
+
+            @media screen and (max-width: 600px)
+                margin-left 0
+
             
 
     &-item--img
@@ -52,13 +164,12 @@
     &:not(:last-child)
         margin-bottom 30px
 
-.partners-advantages
-    margin-top 50px
 
 .partners-template__section-title
     font-size 24px
     font-family 'HelveticaNeue-Bold', sans-serif
     letter-spacing: 0
+
 
 .partners-checklist
     width 100%
@@ -70,11 +181,26 @@
         margin-bottom 40px
         margin-right 40px
 
+        @media screen and (max-width 1280px)
+            margin-bottom 30px
+            margin-top 0
+            padding-left 35px
+            margin-right 0
+            width 100%
+
     &__item-text
         max-width: 480px
         font-size 20px
         color #4a4b4d
         font-family 'HelveticaNeue-Light', sans-serif
+
+        @media screen and (max-width 1280px)
+            font-size 18px
+            max-width inherit
+
+        @media screen and (max-width 1280px)
+            font-size 14px
+            line-height 14px
 
 .partners-advantages__btn-group
     width 100%
@@ -82,6 +208,15 @@
     margin-top 20px
     margin-bottom 80px
     text-transform uppercase
+
+    @media screen and (max-width 767px)
+        flex-direction column
+
+        .btn-template
+            margin-bottom: 20px
+            height 40px
+            font-size 12px
+
 
     &:hover
         cursor pointer
@@ -92,12 +227,32 @@
         font-size 14px
         letter-spacing 0
 
+
 .partners-advantages__btn
     &:first-of-type
         margin-right: 40px
 
 
 .partners-program
+    font-family: 'HelveticaNeue-Light',sans-serif
+    font-size: 16px
+    line-height: 24px
+    color: #343537
+    text-transform: none
+    
+    .container
+        section
+            &:not(:first-child)
+                margin-top: 40px
+            
+            &:last-child
+                margin-bottom 40px
+
+    @media screen and (max-width 767px)
+        font-size 14px
+        letter-spacing: normal
+        line-height 20px
+
     .tpc-slider.general-partners
         background-color: #f0f2f4
 
@@ -117,6 +272,7 @@
 	max-width 620px
 	width 100%
 	position fixed
+    height: 90vh
 	z-index 102
 	top 50%
 	left 50%
@@ -124,6 +280,8 @@
 	background-color whiteColor
 	padding 70px 70px 50px 70px
 	display none
+
+    
 
 .popup-close
     position absolute
@@ -229,6 +387,13 @@
         margin 0 auto
 
 .partners-popup__wrap
-    height: 840px
+    max-height: 840px
     overflow-y: auto
+    height: 90vh
 
+    @media screen and (max-width 767px)
+        padding: 35px 20px
+        max-width inherit
+        width calc(100% - 20px)
+        box-sizing border-box
+        max-height 720px

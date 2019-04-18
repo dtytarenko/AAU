@@ -65,12 +65,12 @@ $(document).ready(function () {
         slidesToShow: 4,
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
-        // autoplay: true,
+        autoplay: true,
         infinite: true,
         autoplaySpeed: 1500,
         responsive: [
         {
-            breakpoint: 900,
+            breakpoint: 1280,
             settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
@@ -79,7 +79,7 @@ $(document).ready(function () {
             }
         },
         {
-            breakpoint: 600,
+            breakpoint: 767,
             settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -91,37 +91,57 @@ $(document).ready(function () {
     });
 });
 
-class TabList {
-    constructor(buttonsContainer, tabs) {
-      this.buttonsContainer = buttonsContainer;
-      this.tabs = tabs;
-      
-      this.buttonsContainer.addEventListener('click', event => {
-        const index = event.target.closest('.tablist__nav-tabitem').dataset.value;
-        this.openTab(index);
-      });
-    }
+// "use strict";
 
-    
-    
-    openTab(index) {
-      this.tabs.querySelector('.active').classList.remove('active');
-      this.tabs.querySelector(`.infolist--${index}`).classList.add('active');
-    }
-  }
+// function _instanceof(left, right) { if (right != null && typeof Symbol !== "undefined" && right[Symbol.hasInstance]) { return right[Symbol.hasInstance](left); } else { return left instanceof right; } }
 
+// function _classCallCheck(instance, Constructor) { if (!_instanceof(instance, Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
+// function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-  document.addEventListener('DOMContentLoaded', ()=>{
-    const buttonsContainer = document.querySelector('.tablist__nav');
-    const tabs             = document.querySelector('.tabs');
-    const tabList = new TabList(buttonsContainer, tabs);
-})
+// function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
+// var TabList =
+// /*#__PURE__*/
+// function () {
+//   function TabList(buttonsContainer, tabs) {
+//     var _this = this;
 
-$(document).ready(function() {
-    $('.tablist__nav-tabitem').click(function() {
-        $('.tablist__nav').children('.tablist__nav-tabitem').removeClass('active');
-        $(this).addClass('active');
-    });
-});
+//     _classCallCheck(this, TabList);
+
+//     this.buttonsContainer = buttonsContainer;
+//     this.tabs = tabs;
+//     this.buttonsContainer.addEventListener('click', function (event) {
+//       var index = event.target.closest('.tablist__nav-tabitem').dataset.value;
+
+//       _this.openTab(index);
+//     });
+//   }
+
+//   _createClass(TabList, [{
+//     key: "openTab",
+//     value: function openTab(index) {
+//       this.tabs.querySelector('.active').classList.remove('active');
+//       this.tabs.querySelector(".infolist--".concat(index)).classList.add('active');
+//     }
+//   }]);
+
+//   return TabList;
+// }();
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   var buttonsContainer = document.querySelector('.tablist__nav');
+//   var tabs = document.querySelector('.tabs');
+//   var tabList = new TabList(buttonsContainer, tabs);
+// });
+// document.addEventListener('DOMContentLoaded', function () {
+//   var buttonsContainer = document.querySelector('.tablist__nav');
+//   var tabs = document.querySelector('.tabs');
+//   var tabList = new TabList(buttonsContainer, tabs);
+// });
+// $(document).ready(function() {
+//     $('.tablist__nav-tabitem').click(function() {
+//         $('.tablist__nav').children('.tablist__nav-tabitem').removeClass('active');
+//         $(this).addClass('active');
+//     });
+// });

@@ -4,6 +4,80 @@
 .container
     flex-direction column
 
+.membership-info__wrap,
+.membership-advantages__wrap
+    p
+        font-family 'HelveticaNeue-Roman', sans-serif
+        font-size 18px
+        line-height 30px
+        margin-bottom 20px
+        text-align justify
+
+        @media screen and (max-width 767px)
+            font-size 14px
+            line-height 14px
+            
+    
+    ul
+        list-style: none
+        display flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 30px
+
+        li
+            margin-bottom 20px
+            width 45%
+            line-height: 20px
+            position: relative
+            font-family: 'HelveticaNeue-Light'
+            min-height: 43px
+            display flex
+            align-items center
+            padding-left 50px
+            color: #4a4b4d
+            box-sizing: border-box
+            
+            @media screen and (max-width: 1280px)
+                text-align left
+                font-size 14px
+                padding-bottom 0
+                padding-left 35px
+                margin-bottom 10px
+                line-height 14px
+                width 100%
+                margin-bottom 15px
+
+                &:last-child,
+                &:nth-last-child(2)
+                    margin-bottom 15px
+            
+            &:before
+                content ''
+                display block
+                background-image url('../img/all/icon-check.png')
+                width 37px
+                height 43px
+                left 0
+                top 0
+                position absolute
+                background-size: cover
+                background-repeat: no-repeat
+                background-position: center
+                
+                @media screen and (max-width 1280px)
+                    width 25px
+                    height 29px
+                    transform translateY(-50%)
+                    top 50%
+                    
+                    &:last-child
+                        margin-bottom 0
+                    
+                    &:nth-last-child(2)
+                        margin-bottom 0              
+                
+
 .membership-popup-subtitle
     font-family 'HelveticaNeue-Roman', sans-serif
     font-size 18px
@@ -52,6 +126,23 @@
     display flex
     margin-top 60px
 
+    @media screen and (max-width 1280px)
+        flex-direction column
+        margin-top 30px
+
+        a, div, .btn-template
+            height 70px
+            margin-bottom 10px
+        
+        .membership-advantages__btn
+            margin-right: 0
+    
+    @media screen and (max-width 767px)
+        a, div, .btn-template
+            height 40px
+            max-height: 40px
+            width: 100%
+
 .membership-advantages__btn
     width: 33%
     max-width: inherit
@@ -67,6 +158,8 @@
 
     &:nth-child(3)
         margin-right 0
+    
+    
 
 .membership-advantages__list
     display flex
@@ -82,10 +175,25 @@
 
     &:nth-last-child(2)
         margin-bottom 0
+    
+    @media screen and (max-width 1280px)
+        width 100%
+        margin-bottom 15px
+
+        &:last-child,
+        &:nth-last-child(2)
+            margin-bottom 15px
 
 .membership-advantages__list-item.checklist-item
     &:before
         transform: translateY(0%)
+
+        @media screen and (max-width 1280px)
+            transform: translateY(-50%)
+        
+        @media screen and (max-width 767px)
+            transform: translateY(0%)
+            top 10px
 //-----------------------END MEMBERSHIP INFO PAGE------------------------
 
 .membership
@@ -101,6 +209,9 @@
         display flex
         margin-top: 60px
 
+        @media screen and (max-width 767px)
+            flex-direction: column
+
     &__btn
         max-width: 400px
         width 100%
@@ -108,6 +219,10 @@
 
         &:first-of-type
             margin-right: 40px
+
+            @media screen and (max-width 767px)
+                margin-right 0
+                margin-bottom: 20px
 
 .membership-step__list
     &-item

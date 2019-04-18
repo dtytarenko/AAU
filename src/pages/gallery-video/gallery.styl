@@ -26,6 +26,7 @@
     flex-wrap: wrap
     justify-content: flex-start
 
+
 .gallery-list__item
     width: 30%
     display flex
@@ -60,10 +61,15 @@
     
     @media screen and (max-width 767px)
         width 100%
-        margin-right 0
+        margin 0 auto
+        max-width 280px
+
 
         &:nth-child(3n)
-            margin-right 0
+            margin-right auto
+        
+        &:nth-child(2n)
+            margin-right auto
 
 .gallery-list__item-title
     font-family 'HelveticaNeue-Bold', sans-serif
@@ -107,7 +113,7 @@
 
     @media screen and (max-width 1280px)
         max-width inherit
-
+        overflow: hidden
 
 #pagingControls
     margin-top: 50px
@@ -156,6 +162,23 @@
 // photo gallery
 
 .photo__list
+    &:after
+        content: ""
+        flex: auto
+        
+        @media screen and (max-width: 600px)
+            display none
+
+    @media screen and (max-width 1600px)
+        display flex
+        justify-content: space-between
+        padding-right 40px
+        padding-left 40px
+
+    @media screen and (max-width 767px)
+        padding-right 0px
+        padding-left 0px
+
     li, .gallery-list__item
         display flex
         flex-direction column
@@ -163,6 +186,18 @@
         max-width 290px
         margin-right 40px
         position relative
+        justify-content: space-between
+
+        @media screen and (max-width 1600px)
+            margin-right 0px
+            position inherit
+        
+        @media screen and (max-width 767px)
+            max-width 280px
+            min-width 280px
+            margin 0 auto 40px
+
+        
 
         &:last-of-type
             margin-bottom 0
@@ -174,11 +209,14 @@
         &:nth-child(4n)
             margin-right 0px
 
+            @media screen and (max-width 767px)
+                margin-right auto
+
     p, .photo__list-item--title
         font-family 'HelveticaNeue-Bold', sans-serif
         font-size 18px
         color semiViolet
-        margin-bottom 20px
+        min-height: 80px
 
     span, .photo__list-item--time
         display block
@@ -204,12 +242,19 @@
 
     .photo__slider-preview
         display flex
-        height 290px
-        width 290px
+        min-height 290px
+        max-height: 290px
+        max-width: 290px
+        min-width 290px
         background-repeat no-repeat
         background-size cover
         background-position center
         background-image url('../img/all/slider-img.jpg') // delete when gallery will be complete
+
+        @media screen and (max-width 767px)
+            min-width 280px
+            max-width: 280px
+            width 100%
 
         &:hover
             cursor pointer
@@ -221,31 +266,51 @@
         height 290px
         width 290px
         position absolute
-        bottom 0px
+        bottom auto
+        left auto
 
         &:hover
             cursor pointer
 
+
 .photo__slider-wrap.active
     background-image: none
+    overflow-y: scroll
+    height auto
     top 0%
     right 50%
     transform: translateX(50%)
     position fixed
     max-width 1060px
     width 100%
-    height calc(100% - 80px)
     margin-top 40px
     margin-bottom 40px
     z-index 110
     display block
     background-color whiteColor
 
+    @media screen and (max-width 1600px)
+        width calc(100% - 60px)
+        position absolute
+
+    @media screen and (max-width 767px)
+        height inherit
+        width calc(100% - 20px)
+        max-height: 364px
+        min-height 364px
+
     .photo__slider-content
         display flex
         flex-direction column
         padding 70px
         position relative
+        background-color: #ffffff
+
+        @media screen and (max-width 1280px)
+            padding 40px
+        
+        @media screen and (max-width 767px)
+            padding 20px
         
         .photo__slider-close
             width 30px
@@ -258,6 +323,10 @@
             right 20px
             top 20px
 
+            @media screen and (max-width 767px)
+                width 20px
+                height 20px
+
             &:hover
                 cursor pointer
 
@@ -268,43 +337,69 @@
             color #2b3384
             margin-bottom 15px
 
+            @media screen and (max-width 1280px)
+                font-size 24px
+            
+            @media screen and (max-width 767px)
+                margin-top 20px
+                font-size 18px
+                text-align center
+
+
         
 
     .slider__preview
-        height 500px
         width 100%
         margin: 30px auto 1px;
         display block
         box-sizing border-box
         position relative
-        
+        min-height: 500px
+
+        @media screen and (max-width 1280px)
+            height 405px
+            min-height 405px
+            max-height 405px
+            margin-top 0
+
+        @media screen and (max-width 767px)
+            height 170px
+            min-height: 170px
+            max-height: 170px
+
         .slick-list.draggable
             height inherit
             width 100%
 
             .slick-track
                 height inherit
-                min-width 100%
+                // min-width 100%
 
                 .slider__preview-slide,
                 .slider__nav-slide.slick-slide.slick-current.slick-active
                     position relative
                     box-sizing: border-box
-                    overflow hidden
-                    text-align center
-                    display flex
-                    
 
+                    img
+                        margin 0 auto
+                    
+                
+                
+                 .slider__nav-slide.slick-active
+                    min-width: 1px
+                    min-height: 1px
+
+                .slider__nav-slide.slick-slide.slick-current.slick-active
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    
                     img, .slider-img,
-                    .slick-slide img
+                    .slick-initialized.slick-slide.slick-slideimg
                         object-fit cover
                         vertical-align: middle
-                        margin auto
-                        max-width 100%
                         width 100%
-                        max-height 100%
-                        height auto
-
+                        
                         &:hover
                             cursor grab
                 
@@ -323,6 +418,12 @@
             background-size cover
             transition all 0.2s ease
 
+            @media screen and (max-width 1280px)
+                left -30px
+            
+            @media screen and (max-width 767px)
+                left -18px
+
             &:hover
                 opacity 0.4
         
@@ -333,42 +434,57 @@
             background-size cover
             transition all 0.2s ease
 
+            @media screen and (max-width 1280px)
+                right -30px
+
+            @media screen and (max-width 767px)
+                right -18px
+
             &:hover
                 opacity 0.4
 
     .slider__nav
-        display flex
+        display none
         margin-top 20px
-        height 100px
         width 100%
         box-sizing border-box
 
-        .slick-list.draggable
-            width 100%
-            min-height 100px    
+        @media screen and (max-width 767px)
+            display none
 
         .slick-track
-            min-height 100px
-            max-height 100px
             width 100%
             transform: translate3d(0,0,0) !important
     
-        .slider__nav-slide
-            min-width 100px
-            max-width: 100px
-            min-height 100px
-            max-height 100px
+        .slider__nav-slide.slick-slide
+            min-width 100px !important
+            max-width: 100px !important
             margin-right 10px
+            margin-bottom: 10px
+            min-height: 100px !important
+            display block
 
-            
             &:last-child
                 margin-right 0
 
             img
-                width 100%
-                min-height 100px
-                height 100%
+                margin 0 auto
+                height: 100%
                 object-fit cover
+
+.photo__slider-wrap.js-popup.active
+    .slider__nav
+        display flex
+        flex-wrap wrap
+
+        .slick-list.draggable
+            height auto !important
+
+            .slick-track
+                height auto !important
+
+.slider__preview-slide.slick-slide.slick-current.slick-active
+    min-width 100% !important   
 
 .slider__preview .slick-next.slick-arrow.prev
     left -30px
@@ -379,3 +495,28 @@
 
 .overlay-main.active
     display block
+
+.photo__slider-wrap.active
+    .photo__slider-content
+        .photo__list-item--time
+            @media screen and (max-width 767px)
+                margin 0 auto 20px
+                text-align center
+                background-position center
+                padding-left 0
+                z-index 10
+                
+                &:after
+                    @media screen and (max-width 767px)
+                        z-index -1
+                        width 100%
+                        left 0
+
+@media screen and (max-width 767px)
+    .slick-slide
+        min-width: inherit
+    
+    .slick-slide img
+        width: 100%
+        height: 100%
+        object-fit: cover

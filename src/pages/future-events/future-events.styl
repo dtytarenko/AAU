@@ -4,6 +4,8 @@
     .container
         flex-direction column
 
+
+
     #pagingControls
         margin-top 100px
 
@@ -18,6 +20,10 @@
     width 100%
     display flex
     margin-bottom: 60px
+
+    @media screen and (max-width 767px)
+        flex-direction column
+        border-bottom 0px
 
     &-item
         width 180px
@@ -35,6 +41,9 @@
 
         &:last-child
             margin-right 0px
+        
+        @media screen and (max-width 767px)
+            width 100%
             
 .events-pages__list-item--link
     text-transform none
@@ -74,11 +83,22 @@
     display flex
     flex-wrap wrap
 
+    @media screen and (max-width 1280px)
+        justify-content: space-between
+    
+    @media screen and (max-width 767px)
+        align-items: center
+        justify-content center
+
 .events-mainlist__item
     max-width 400px
     width 100%
     margin-bottom 60px
     margin-right 40px
+    display flex
+    flex-direction column
+    justify-content: space-between
+    min-height 640px
 
     &:nth-of-type(3n)
         margin-right 0
@@ -87,7 +107,20 @@
     &:nth-last-child(3),
     &:last-child
         margin-bottom 0
+
+        @media screen and (max-width 1280px)
+            margin-bottom 40px
     
+    @media screen and (max-width 1280px)
+        max-width 330px
+        min-width 330px
+        margin-right 0
+        margin-bottom 40px
+    
+    @media screen and (max-width 767px)
+        min-width 280px
+        max-width 280px
+
 
     &-imgwrap
         max-width 400px
@@ -96,28 +129,40 @@
         height 100%
         margin-bottom 30px
 
+        @media screen and (max-width 1280px)
+            max-width inherit
+            height inherit
+
+        @media screen and (max-width 767px)
+            max-width 280px
+            margin 0 auto 30px
+            max-height inherit
+
     &-img
         width 100%
         height 100%
         object-fit cover
     
     &-titlewrap
-        max-height 115px
-        height 100%
         display flex
         flex-direction column
         justify-content space-between
         overflow hidden
+        min-height: 130px
 
     &-title
         font-size 18px
         line-height 24px
         font-family 'HelveticaNeue-Bold', sans-serif
         color semiViolet
+        min-height 70px
         // margin-bottom 40px
 
     .blog-entry__date
         margin-bottom 5px
+
+        @media screen and (max-width 1280px)
+            margin-top 10px
     
     &-category
         font-size 14px
@@ -134,14 +179,30 @@
         font-size 14px
         line-height 24px
         color semiBlack
-        white-space pre-line
+        width: 400px
+        min-height: 130px
+        position: relative
         margin-bottom 20px
-        max-height 115px
-        height 100%
         overflow hidden
+        display block
+        text-overflow: ellipsis
+
+        @media screen and (max-width 1280px)
+            width inherit
+
+
+
 
 .calendar-wrap
     margin-top: 100px
+
+    @media screen and (max-width 1280px)
+        margin-top 60px
+    
+    @media screen and (max-width 767px)
+        margin-top 40px
+        max-width inherit
+        width 100%
 
 .calendar-wrap.calendar-page
     margin-top 0
@@ -149,10 +210,21 @@
 .calendar-content
     display flex
 
+    @media screen and (max-width 1280px)
+        flex-direction column
+
     .calendar-content__object
         max-width 440px
         width 100%
         margin-right: 70px
+
+        @media screen and (max-width 1280px)
+            margin-right auto
+            margin-left auto
+            margin-bottom 40px
+        
+        @media screen and (max-width 767px)
+            max-width 280px
 
     .calendar-content__descr
         max-width 770px
@@ -166,6 +238,9 @@
     position relative
     display flex
 
+    @media screen and (max-width 767px)
+        flex-direction column
+
     &:not(:last-of-type)
         margin-bottom 55px
     
@@ -173,6 +248,7 @@
         cursor pointer
 
     &---date
+        min-width 130px
         max-width: 130px
         width 100%
         height 118px
@@ -189,18 +265,38 @@
         padding-right 60px
         transition: .2s all ease-in-out
 
+        @media screen and (max-width 767px)
+            margin 0 auto
+            padding-right: 0
+            min-width 90px
+            max-width 90px
+            width 100%
+            height 80px
+            min-height 80px
+            margin-bottom 20px
+            background-size cover
+
         &__time
             font-size 36px
             padding-top 12px
+
+            @media screen and (max-width 767px)
+                font-size 16px
                     
         &__month
             font-size 18px
             text-transform uppercase
+
+            @media screen and (max-width 767px)
+                font-size: 12px
                 
         &__year
             font-size 24px
             padding-top 3px
             padding-bottom: 20px
+
+            @media screen and (max-width 767px)
+                font-size 16px
         
         &:after
             content ''
@@ -215,6 +311,9 @@
             transition: .2s all ease-in-out
             width 60px
             height 20px
+
+            @media screen and (max-width 767px)
+                display none
 
 .calendar-content__descr-list--item:hover > .calendar-content__descr-list--item---date,
 .calendar-content__descr-list--item.active > .calendar-content__descr-list--item---date
@@ -232,8 +331,14 @@
 .calendar-content__descr-list--item.active > .calendar-content__descr-list--item---maininfo > .maininfo-title
     margin-top 45px
 
+    @media screen and (max-width 767px)
+        margin-top 10px
+
 .calendar-content__descr-list--item.active > .calendar-content__descr-list--item---maininfo:before
     display block
+
+    @media screen and (max-width 767px)
+        display none
 
 .calendar-content__descr-list--item---maininfo
     display flex
@@ -242,6 +347,10 @@
     flex-direction column
     padding-left 30px
     position relative
+
+    @media screen and (max-width 767px)
+        padding-left 0
+        max-width inherit
 
     &:before
         content ''
@@ -252,7 +361,6 @@
         left -13px
         top 75px
         z-index 2
-        
 
     .maininfo-title
         font-size 24px
@@ -261,11 +369,26 @@
         margin auto 0
         transition: .2s all ease-in-out
 
+        @media screen and (max-width 1280px)
+            font-size 20px
+        
+        @media screen and (max-width 767px)
+            font-size 16px
+            text-align center
+
 .calendar-content__descr-list--item__descr
     display none
     max-width 550px
     width 100%
     flex-direction column
+    font-family 'HelveticaNeue-Roman', sans-serif
+    font-size 16px
+    line-height 24px
+    color semiBlack
+
+    @media screen and (max-width 767px)
+        max-width inherit
+        font-size 14px
 
 
 .calendar-content__descr-list--item__descr-title
@@ -276,6 +399,11 @@
     margin-top 60px
     margin-bottom 35px
     position relative
+
+    @media screen and (max-width 767px)
+        margin-top 20px
+        margin-bottom: 20px
+        font-size 16px
 
     &:before
         content ''
@@ -294,8 +422,14 @@
         padding-top 15px
         padding-bottom 15px
 
+        @media screen and (max-width 767px)
+            display none
+
 .calendar-content__descr-list--item__descr-list
     list-style: disc
+
+    @media screen and (max-width 767px)
+        padding-left 20px
 
     &--item
         color semiPurple
@@ -305,6 +439,9 @@
             font-size 16px
             line-height 24px
             color semiBlack
+
+            @media screen and (max-width 767px)
+                font-size: 14px
 
 .calendar-content__descr-list--item__descr-link
     height 80px
@@ -335,6 +472,7 @@
 	background-repeat no-repeat
 	position relative
 	display none
+    overflow: hidden
 
 	&:first-child
 		display block
@@ -369,6 +507,10 @@
 
 .events__content
     overflow-y hidden
+
+.intro__event
+    min-height: inherit
+    height: inherit
 
 .intro__event
 	display flex
@@ -416,6 +558,11 @@
 		}
 
 .intro__event
+    p
+        z-index 20
+        max-width: 800px
+
+
     @media screen and (max-width 1280px)
         &:before
             left inherit
@@ -423,23 +570,29 @@
             margin 0px auto 60px
 
 .intro-title
-	text-transform uppercase
-	font-size 62px
+	font-size 50px
 	color whiteColor
-	text-align center
+	text-align left
+    z-index: 20
 	position relative
 	font-family 'Helvetica-Bold'
 	font-weight 700
 
-.intro-subtitle 
+.intro-title
+    text-align: left
+    margin-top: 35px
+
+.intro-subtitle
 	color #fcdab0
-	font-size 38px
+	font-size 30px
 	font-family 'HelveticaNeue-Bold'
 	line-height 72px
-	margin 20px 0 30px 0	
+	margin 20px 20px 30px 20px	
 	width 100%
-	z-index: 2
-	text-align center
+    text-align: center
+    z-index: 20
+
+
 
 .main-about.container.index
 	padding-top: 40px
@@ -461,7 +614,7 @@
 	z-index: 1
 
 .intro-place-wrap
-	margin 20px 0 
+	margin auto 0 20px
 	align-self flex-start
 	position relative
 	height 60px
@@ -470,6 +623,7 @@
 	display flex
 	justify-content flex-end
 	align-items center
+    
 
 	&:after
 		content ''
@@ -493,8 +647,8 @@
 	text-transform uppercase
 	align-self center
 	background-color semiViolet
-	font-family 'Helvetica-Bold'
-	font-size 20px 
+	font-family 'Helvetica-Bold', sans-serif
+	font-size 12px
 	font-weight 500
 	letter-spacing 1px
 	position relative
@@ -502,6 +656,14 @@
 	text-align right
 	z-index 99
 	width: 100%
+
+.intro__place
+    display flex
+    align-items center
+    justify-content center
+    max-height 60px
+    min-height 60px
+    overflow hidden
 
 .intro-dots
 	position relative
@@ -572,8 +734,6 @@
         opacity 0.6
         height 280px
 
-    .intro__place
-        padding 15px 25px 15px 54px
 
 @media screen and (max-width 767px)
     .intro__slide-item:before
@@ -582,13 +742,18 @@
         height 170px
 
     .intro-title
-        font-size 30px
+        font-size 26px
+        text-align center
+        margin-right 10px
+        margin-left 10px
     
     .intro-subtitle
         font-size 24px
         letter-spacing 1.2px
         line-height 36px
         margin 15px 0
+        text-align center
+
 
     .intro-bottomtitle
         font-size 24px
@@ -600,16 +765,22 @@
         width 240px
         height 63px
         margin-bottom 70px
+        z-index 20
+
+        @media screen and (max-width 767px)
+            min-width 210px
+            width 210px
 
         &:after
             height 100%
         
     .intro__place
         text-align left
-        font-size 18px
+        font-size 8px
         letter-spacing 0.9px
         line-height 1.5
         padding 5px 10px 5px 20px
+        background-color: transparent
 
     .intro-dots
         bottom 50px
@@ -617,13 +788,48 @@
 .event__mainfo
     display flex
     justify-content: space-between
+    box-sizing: border-box
+
+    @media screen and (max-width 1280px)
+        flex-direction column
 
 .event__descr
     max-width: 840px
     width 100%
-    display flex
-    flex-direction column
+    display block
     margin-right 110px
+    box-sizing: border-box
+    font-family: 'HelveticaNeue-Light',sans-serif
+    font-size: 16px
+    line-height: 24px
+    color: #343537
+    text-transform: none
+
+    p
+        font-family: 'HelveticaNeue-Light',sans-serif
+        font-size: 16px
+        line-height: 24px
+        color: #343537
+        text-transform: none
+        display block
+    
+
+        @media screen and (max-width 767px)
+            font-size 14px
+            letter-spacing: normal
+            line-height 20px
+    
+
+    @media screen and (max-width 1280px)
+        max-width inherit
+        margin-right inherit
+        padding 0 20px
+    
+    @media screen and (max-width 767px)
+        font-size 14px
+        letter-spacing: normal
+        line-height 20px
+
 
     &-title, h2
         font-size 24px
@@ -634,9 +840,18 @@
         letter-spacing 0.8px
         margin-bottom 50px
 
+        @media screen and (max-width 767px)
+            font-size 16px
+            line-height 16px
+            letter-spacing normal
+            margin-bottom 40px
+
     .event__descr-infolist
         display flex
         justify-content space-between
+
+        @media screen and (max-width 1280px)
+            flex-direction column
 
         .event__descr-infolist--item
             max-width 180px
@@ -644,6 +859,10 @@
             
             &:not(:last-child)
                 margin-right 50px
+
+                @media screen and (max-width 1280px)
+                    margin-right 0
+                    margin-bottom 30px
                 
 
             h5, .event__descr-infolist--item---title
@@ -652,6 +871,9 @@
                 color semiPurple
                 font-family 'HelveticaNeue-Bold', sans-serif
                 text-transform uppercase
+
+                @media screen and (max-width 767px)
+                    font-size 14px
             
             p, .event__descr-infolist--item---subtitle
                 font-size 14px
@@ -664,6 +886,11 @@
     flex-direction column
     max-width 330px
     width 100%
+    box-sizing border-box
+
+    @media screen and (max-width 1280px)
+        max-width inherit
+        margin-top 40px
 
     h4, .event__speaker-title
         font-size 22px
@@ -679,18 +906,37 @@
         line-height 24px
         color semiBlack
         margin-bottom 30px
-       
+
+        @media screen and (max-width 767px)
+            font-size 14px
+            padding 0 20px
 
     .event__speaker-personlist,
     .event__speaker-partnerlist
         display flex
         flex-direction column
+        box-sizing border-box
+
+        @media screen and (max-width 1280px)
+            flex-direction row
+            flex-wrap wrap
+            justify-content: flex-start
 
 .event__speaker-personlist--item
     display flex
     flex-direction column
     justify-content flex-start
     margin-bottom 20px
+
+    @media screen and (max-width 1280px)
+        max-width 320px
+        min-width 320px
+    
+    @media screen and (max-width 767px)
+        max-width 280px
+        min-width 280px
+        margin-left auto
+        margin-right auto
 
     &-img
         width 100%
@@ -715,6 +961,9 @@
         text-align: center
         text-transform uppercase
 
+        @media screen and (max-width 767px)
+            font-size 14px
+
     &-subtitle, p
         margin-top 10px
         font-size: 12px
@@ -728,6 +977,28 @@
 .event__speaker-personlist--item
     &:not(:last-child)
         margin-bottom 30px
+
+        @media screen and (max-width 1280px)
+            margin-right auto
+        
+        @media screen and (max-width 767px)
+            margin-left auto
+
+
+.event__speaker-partnerlist--item
+    @media screen and (max-width 1280px)
+        max-width 320px
+        min-width 320px
+    
+    @media screen and (max-width 767px)
+        margin-left auto
+        margin-right auto
+        max-width 280px
+        min-width 280px
+
+.event__speaker-partnerlist
+    @media screen and (max-width 1280px)
+        margin-top 40px
 
 .event__speaker-partnerlist--imgwrap
     align-items: center
@@ -779,6 +1050,9 @@
 
         &:not(:last-child)
             margin-bottom 60px
+
+            @media screen and (max-width 1280px)
+                margin-bottom: 30px
         
         &:before
             content ''
@@ -804,6 +1078,11 @@
         line-height: 24px
         color: #343537
         text-transform: none
+
+        @media screen and (max-width 767px)
+            font-size 14px
+            letter-spacing: normal
+            line-height 20px
     
     h6, .event__descr-descrlist--item-subtitle
         font-size 16px
@@ -815,6 +1094,9 @@
     ul, .sublist
         list-style: disc
         padding-left 90px
+
+        @media screen and (max-width 767px)
+            padding-left 20px
 
         li, &__item
             color: #0080c6
@@ -840,17 +1122,38 @@
     width 100%
     display flex
 
+    @media screen and (max-width 1280px)
+        justify-content space-between
+    
+    @media screen and (max-width 767px)
+        flex-direction column
+
 .event__descr-descrlist--item-column
     margin-right 100px
 
+    @media screen and (max-width 1280px)
+        margin-right 0px
+    
+    @media screen and (max-width 767px)
+        &:not(:last-of-type)
+            margin-bottom 20px
+
     .sublist
         padding-left 30px
+
+        @media screen and (max-width 1280px)
+            padding-left 15px
 
 .event-price
     font-family 'HelveticaNeue-Black', sans-serif
     font-size 16px
     line-height 30px
     color semiPurple
+
+    @media screen and (max-width 767px)
+        font-size 14px
+        line-height 24px
+        letter-spacing: normal
 
 
 .event__descr-video
@@ -861,6 +1164,10 @@
     width: 100%
     box-shadow: 0 0 20px 0 rgb(0,0,0)
     height 490px
+
+    @media screen and (max-width 1280px)
+        margin-top 20px
+        margin-bottom 20px
 
 .event-contancts
     text-decoration none
@@ -895,6 +1202,9 @@
         font-family 'HelveticaNeue-Bold'
         margin-bottom 17px
         margin-top 20px
+
+        @media screen and (max-width 767px)
+            text-align center
 
 
 .event__share-network
@@ -945,9 +1255,17 @@
 
 .partners-event__slide.slick-slide
     max-width 290px
+    min-width 290px
     width 290px
     height 260px
     margin-right 40px
+
+    @media screen and (max-width 1280px)
+        min-width 220px
+        max-width 220px
+        width 100%
+        min-height: 205px
+        height 205px
 
 .tpc-slider__slide--img.partners-event__slide-img
     width 100%
@@ -992,10 +1310,23 @@
     display flex
     justify-content: space-between
 
+    @media screen and (max-width 1280px)
+        width 100%
+    
+    @media screen and (max-width 767px)
+        flex-direction: column
+
+
+
 .tablist__nav,
 .tablist-btnlist
     display flex
     align-items: flex-start
+
+@media screen and (max-width 767px)
+    .tablist__nav
+        flex-direction: column
+        margin-bottom 10px
     
 .tablist-btnlist__item
     width 50px
@@ -1033,6 +1364,11 @@
 
     &:hover
         cursor pointer
+    
+    @media screen and (max-width 767px)
+        width 100%
+        margin-right 0
+        margin-bottom: 2px
 
 .tablist__nav-tabitem.active
     background: url(../img/all/litle-bg.jpg)
@@ -1075,6 +1411,13 @@
     margin-left: 10px
     border-left: 4px dotted #0080c6
 
+    @media screen and (max-width 1280px)
+        flex-direction column
+        padding-bottom 20px
+    
+    @media screen and (max-width 767px)
+        border-left 0px
+
     &:last-of-type
         border-left none
 
@@ -1102,17 +1445,33 @@
         margin-right: 40px
         max-width: 160px
         width 100%
-    
+
+        @media screen and (max-width 1280px)
+            margin-right 20px
+
+        @media screen and (max-width 767px)
+            font-size 16px
+            margin-bottom 10px
+            margin-right 0
+
     .infolist-item__descr
         font-family 'HelveticaNeue-Medium', sans-serif
         font-size 18px
         color #3e3f40
         letter-spacing: 0.2px
 
+        @media screen and (max-width 767px)
+            font-size 14px
+            line-height 24px
+
 .infolist-item__row
     max-width 1060px
     width 100%
     display flex
+
+    @media screen and (max-width 1280px)
+        flex-direction column
+        max-width inherit
 
     .infolist-item__title, h6
         font-family 'HelveticaNeue-Bold', sans-serif
@@ -1128,20 +1487,38 @@
         line-height 24px
         color #3e3f40
 
+        @media screen and (max-width 767px)
+            font-size 14px
+
 
 .infolist-item__column.theme
     max-width 400px
     width 100%
     margin-right 40px
 
+    @media screen and (max-width 1280px)
+        max-width inherit
+        margin-right 0
+        margin-top 20px
+    
+    @media screen and (max-width 767px)
+        margin-top 10px
+
 .infolist-item__column.speakers
     max-width 620px
     width 100%
+
+    @media screen and (max-width 1280px)
+        max-width inherit
+        margin-top 20px
 
 
     .speakers-row
         display flex
         margin-bottom 20px
+
+        @media screen and (max-width 767px)
+            flex-direction column
 
         span, .speakers-company
             display block
@@ -1153,8 +1530,17 @@
             max-width 290px
             width 100%
 
+            @media screen and (max-width 767px)
+                font-size 14px
+
         h6, .infolist-item__title
             margin-right 40px
+
+            @media screen and (max-width 1280px)
+                margin-right auto
+
+            @media screen and (max-width 767px)
+                font-size 14px
 
             span, .country
                 display inline
@@ -1162,22 +1548,48 @@
                 font-size 16px
                 line-height 24px
                 color #000000
+
+                @media screen and (max-width 767px)
+                    font-size 14px
             
 // end event-program__tablist
 
 .future-events-preview
     background-color: #f0f2f4
 
+    h2
+        @media screen and (max-width 1280px)
+            font-size 30px
+            letter-spacing: normal
+
 .future-events-preview__list
     display flex
     justify-content: space-between
+
+    @media screen and (max-width 1280px)
+        flex-wrap wrap
+        justify-content: space-between
 
     .future-events-preview__list-item
         max-width 400px
         width 100%
 
+        @media screen and (max-width 1280px)
+            max-width 330px
+        
+        @media screen and (max-width 767px)
+            margin-right auto
+            margin-left auto
+
         &:not(:last-of-type)
             margin-right 40px
+
+            @media screen and (max-width 1280px)
+                margin-right 0
+                margin-bottom: 40px
+            
+            @media screen and (max-width 767px)
+                margin-right auto
 
 .future-events-preview__archive
     height 70px
@@ -1209,6 +1621,13 @@
         display flex
         align-items center
 
+        @media screen and (max-width 767px)
+            flex-direction column
+            align-items flex-start
+            
+            &:not(:last-child)
+                margin-bottom 20px
+
         h5
             max-width 285px
             width 100%
@@ -1217,22 +1636,34 @@
             color #5073b6
             font-size 18px
             line-height 36px
-        
+
+            @media screen and (max-width 767px)
+                font-size 16px
+                margin-right 0
+                line-height 16px
         p
             color #343537
             font-family 'HelveticaNeue-Light', sans-serif
             font-size 18px
+
+            @media screen and (max-width 767px)
+                font-size 16px
         
         span
             font-family 'HelveticaNeue-Black', sans-serif
             font-size 18px
             line-height 36px
             color #343537
+            
+            
 
 .event__price-block
     display flex
     align-items center
     margin-top 50px
+
+    @media screen and (max-width 767px)
+        margin-top 10px
     
     h5
         max-width 285px
@@ -1243,16 +1674,29 @@
         font-size 18px
         line-height 36px
 
+        @media screen and (max-width 767px)
+            font-size 16px
+            margin-right 5px
+            max-width inherit
+            width auto
+
     span
         font-family 'HelveticaNeue-Black', sans-serif
         font-size 18px
         line-height 36px
         color #343537
 
+        @media screen and (max-width 767px)
+            font-size 16px
+
 .event__buy-btn-group
     display flex
     margin-top 30px
     width 100%
+
+    @media screen and (max-width 767px)
+        flex-direction column
+        margin-top 10px
 
     .event__buy-btn 
         height 70px
@@ -1262,8 +1706,18 @@
 
         &:not(:last-child)
             margin-right 20px
+
+            @media screen and (max-width 767px)
+                margin-right 0
+                margin-bottom 20px
 //////////////////////////////////////////////////////////
 //
 // END STYLE FOR FUTURE-EVENTS__EVENT-REG
 // 
 //////////////////////////////////////////////////////////
+
+.event__speaker
+    @media screen and (max-width 767px)
+        .heading
+            padding 0 20px
+            box-sizing border-box

@@ -12,22 +12,24 @@
     .about-aau__principle
         background-color: #f0f2f4
 
-.about-aau-main
+.about-aau.about-stndrt.about-aau-main
     .general-partners
         background-color #fff
 
     .about-aau--subsliders.subsliders
         background-color: semiGray
 
-        @media screen and (max-width 1280px)
-            background-color: #fff
-
-            .tpc-slider.partners-committee
+        .tpc-slider.partners-committee
+            .container
                 background-color: semiGray
 
-        @media screen and (max-width 767px)
-            .media-partners.tpc-slider
-                background-color: #fff
+        .media-partners.tpc-slider
+            .container
+                background-color: semiGray
+
+                @media screen and (max-width 1280px)
+                    background-color: #fff
+
 .about-aau
     h2
         font-size 24px
@@ -269,6 +271,14 @@
         }
 
 .worker-card__article
+    h3, h2, h4, h5
+        margin-bottom 20px
+    
+    ul, ol
+        list-style: disc
+        padding-left: 20px
+        
+
     @media screen and (max-width 767px)
         margin-left 0
         margin-top 20px
@@ -306,12 +316,22 @@
     font-family 'HelveticaNeue-Black', sans-serif
     font-size 16px
 
+    @media screen and (max-width 767px)
+        font-size 14px
+
+        a
+            font-size: 14px
+            white-space: pre-line
+            display block
+
 .departments-list
     display flex
     flex-wrap wrap
     justify-content flex-start
 
 .departments-list__item
+    min-width: 290px
+    min-height: 520px
     max-width 290px
     max-height 520px
     height 100%
@@ -328,6 +348,7 @@
 
 
 .departments-list__item-region
+    min-height 60px
     height 60px
     width 100%
     background-color semiViolet
@@ -352,12 +373,13 @@
     height auto
 
 .departments-list__item-img
-    width 290px
-    height 350px
+    min-height: 355px
+    width 100%
     object-fit cover
 
 .departments-list__item-descr
     width 100%
+    min-height 105px
     height 105px
     background: url('../img/staff/bottom__bg.png') 
     background-size cover
@@ -379,13 +401,14 @@
     font-size 14px
     font-family 'HelveticaNeue-Medium'
     text-transform: none 
-    margin-top 20px
+    margin-top 10px
     position relative
     transition all 0.5s ease
     letter-spacing: -0.5px;
     display flex
     align-items center
-    width 100%
+    margin-right: auto
+    margin-left: auto
 
     &:hover
         color rgba(255, 255, 255, .5)
@@ -395,13 +418,12 @@
 
     &:before
         display inline-block
-        margin-right 20px
+        margin-right 10px
         content: ''
         width 20px
         height 14px
         background url('../img/staff/mail.png') center center no-repeat
         transition all 0.5s ease
-        margin-left 20px
 
     
     
@@ -457,21 +479,46 @@
 
 .about-aau__list
     display flex
-    justify-content space-between
     flex-wrap wrap
     padding 0 5px
 
+.about-aau__list.principle__list.checklist
+    justify-content: space-between
+
+    .about-aau__list-item.principle__list-item.checklist-item
+        margin-right: 0
+        margin-bottom: 10px
+        display flex
+        align-items: center
+        min-height: 40px
+        height 40px
+
+        @media screen and (max-width 767px)
+            margin-bottom: 5px
+            min-height: 30px
+            height 30px
+
 .about-aau__list-item
     font-size 18px
-    max-width 330px
-    width 100%
+    line-height: 20px
+    min-width: 30%
+    width 30%
+    min-height: 60px
     height 60px
     font-family: 'HelveticaNeue-Light', sans-serif
     color: #4a4b4d
+    display flex
+    margin-right 40px
+    margin-bottom 40px
+
+    &:nth-child(3n)
+        margin-right: 0
     
     @media screen and (max-width: 1280px){
         max-width 48%
+        min-width: 48%
         margin-right: 20px
+        align-items: center
     }
 
     &:nth-child(2n)
@@ -483,6 +530,10 @@
         max-width: inherit
         width 100%
         margin-right 0
+        margin-bottom: 10px
+        min-height: inherit
+        height auto
+        
     }
 
 
@@ -496,7 +547,7 @@
 
     .structure
         width 62%
-        padding 100px 70px 100px 320px
+        padding 100px 70px 100px 100px
         background-color: #f0f2f4
 
         @media screen and (max-width: 1280px){
@@ -515,7 +566,6 @@
 
 .structure__heading
     align-self center
-    margin-left 20px
 
     @media screen and (max-width: 1280px){
         margin 0
@@ -530,8 +580,8 @@
         background-repeat repeat
         background-size cover
         position relative
-        width 38%
-        padding 100px 320px 100px 70px
+        width 50%
+        padding 100px 240px 100px 70px
 
         &:before
             content ''
@@ -607,6 +657,20 @@
 // START STYLE FOR ABOUT-STRUCTURE
 // 
 //////////////////////////////////////////////////////////
+
+.about-stndrt
+    .intro
+        font-family: 'HelveticaNeue-Light',sans-serif
+        font-size: 16px
+        line-height: 24px
+        color: #343537
+        text-transform: none
+        
+        @media screen and (max-width 767px)
+            font-size 14px
+            letter-spacing: normal
+            line-height 20px
+
 
 .about-structure.about-stndrt
     .structure__article, 
@@ -1086,6 +1150,9 @@
     background-position-y: -15px
     position relative
 
+    @media screen and (max-width 767px)
+        background semiGray
+
 
     &:hover
         cursor pointer
@@ -1101,15 +1168,24 @@
         height 21px
         z-index 10
 
+        @media screen and (max-width 767px)
+            background-image url('../img/staff/active.png')
+
 //стили для активного комитетта
 
 .committee-list__item.active
     .committee-list__item-title--wrap
         background url('../img/staff/bg-active.jpg') no-repeat
 
+        @media screen and (max-width 767px)
+            background #5073b6
+
         &:after
             content ''
             background-image url('../img/staff/active.png')
+
+            @media screen and (max-width 767px)
+                background-image url('../img/staff/unactive.png')
 
     
     .committee-list__item-title
@@ -1123,12 +1199,20 @@
     height auto
     text-align left
     padding-left 80px
+    
+    @media screen and (max-width 767px)
+        font-size 12px
+        padding-left 10px
+        padding-right 60px
 
 
 .committee-list__item-descr--wraper
     padding 55px 70px 100px 55px
     margin-bottom: 10px
     flex-direction column
+
+    @media screen and (max-width 1280px)
+        padding 20px 10px
 
 
 .committee-list__item-descr--title
@@ -1144,6 +1228,9 @@
     display flex
     justify-content space-between
 
+    @media screen and (max-width 767px)
+        flex-direction column
+
 //////////////////////////////////////////////////////////
 //
 // START STYLE FOR .worker-block
@@ -1155,11 +1242,21 @@
     width 100%
     height auto
 
+    @media screen and (max-width 1280px)
+        max-width 260px
+        min-width 260px
+        margin-right 20px
+
+        img
+            min-height: 360px
+            height 360px
+            max-height 360px
+    
+    @media screen and (max-width 767px)
+        margin 0 auto 30px
 
 .worker-img
     width 100%
-    max-height 400px
-    height 100%
     margin-bottom:  -10px
 
 .worker-info
@@ -1201,12 +1298,68 @@
 .committee-maintext__wraper
     max-width 810px
     width 100%
-
-.committee-third__title
-    color #5073b6
-    font-size 24px
-    line-height 30px
     font-family 'HelveticaNeue-Roman', sans-serif
+    
+    .committee-third__title, h3
+        color #5073b6
+        font-size 24px
+        line-height 30px
+        font-family 'HelveticaNeue-Roman', sans-serif
+        text-transform uppercase
+        margin-bottom 20px
+
+        @media screen and (max-width 767px)
+            text-align center
+    
+    p
+        color semiBlack
+        font-size 16px
+        font-family 'HelveticaNeue-Light', sans-serif
+        text-align justify
+        line-height 30px
+        margin-bottom 10px
+        margin-top 10px
+        
+        @media screen and (max-width 767px)
+            font-size 14px
+            line-height 24px
+    
+    img
+        margin-top 10px
+        margin-bottom: 10px
+    
+    ul, ol
+        margin-bottom: 10px
+        margin-top 10px
+
+        li
+            font-size 16px
+            line-height 30px
+            font-family 'HelveticaNeue-Light', sans-serif
+            color semiBlack
+            padding-left 53px
+            position relative
+            margin-bottom 20px
+            display flex
+            align-items center
+
+            &:before
+                content: ''
+                display block
+                width 35px
+                height 41px
+                position absolute
+                background: url('../img/all/icon-check.png') center center no-repeat
+                background-size cover
+                left 0%
+                top 50%
+                transform translateY(-50%)
+
+            &:last-child
+                margin-bottom 0
+            
+            @media screen and (max-width 767px)
+                font-size 14px
 
 .committee-text.stndrt-text
     color semiBlack
@@ -1217,9 +1370,19 @@
     margin-bottom 40px
     margin-top 40px
 
+    @media screen and (max-width 767px)
+        font-size 14px
+        line-height 24px
+
+
+.committee-list
+    width 100%
 
 .committee-sublist
     margin 40px 0
+
+    @media screen and (max-width 1280px)
+        margin 20px 0
 
 .committee-sublist__item
     position relative
@@ -1239,7 +1402,7 @@
         top 50%
         transform translateY(-50%)
 
-    &:last-child
+    &:last-child    
         margin-bottom 0
 
 .committee-sublist__item-text
@@ -1248,6 +1411,9 @@
     font-family 'HelveticaNeue-Light', sans-serif
     color semiBlack
     padding-left 53px
+
+    @media screen and (max-width 767px)
+        font-size 14px
 
 
 

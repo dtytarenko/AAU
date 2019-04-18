@@ -112,11 +112,6 @@
      float: right
  }
  
- .fc-divider {
-     border-style: solid;
-     border-width: 1px
- }
- 
  hr.fc-divider {
      height: 0;
      margin: 0;
@@ -155,14 +150,7 @@
      border-collapse: collapse;
      border-spacing: 0
  }
- 
- .fc td,
- .fc th {
-     border-style: solid;
-     border-width: 1px;
-     padding: 0;
-     vertical-align: middle
- }
+
  
  .fc td.fc-today {
      border-style: double
@@ -177,16 +165,6 @@
      border-width: 0
  }
  
- .fc-row table {
-     border-left: 0 hidden transparent;
-     border-right: 0 hidden transparent;
-     border-bottom: 0 hidden transparent
- }
- 
- /* .fc-row:first-child table {
-     border-top: 0 hidden transparent
- }
-  */
  .fc-row {
      position: relative
  }
@@ -216,7 +194,6 @@
  .fc-row .fc-content-skeleton {
      position: relative;
      z-index: 4;
-     padding-bottom: 2px
  }
  
  .fc-row .fc-helper-skeleton {

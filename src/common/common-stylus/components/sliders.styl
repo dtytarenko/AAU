@@ -22,9 +22,13 @@
 
 .tpc-slider__wrap
 	.tpc-slider__slide
-		display flex
+		display none
 		justify-content center
 		margin-bottom 20px
+
+.slick-initialized
+	.tpc-slider__slide
+		display flex	
 
 .tpc-slider__slide--img---wrap
 	max-width 190px
@@ -37,10 +41,17 @@
 	align-items center
 	border 1px dotted #ccc
 	background-color whiteColor
+	overflow: hidden
+
+	a
+		display flex
+		align-items center
+		justify-content center
+		overflow: hidden
 
 .tpc-slider__slide--img
-	width 80%
-	object-fit cover
+	max-width 80%
+	overflow hidden
 
 
 .tpc-slider
