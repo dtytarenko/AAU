@@ -9,10 +9,8 @@ $(document).ready(function () {
     infinite: true,
     slidesToScroll: 1,
     slidesToShow: 1,
-    speed: 300,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
-    centerPadding: '0px'
   });
   
     $('.slider__nav').slick({
@@ -25,8 +23,8 @@ $(document).ready(function () {
       slidesToShow: 4,
       speed: 0,
       swipe: false,
-      vertical: true,
-      centerPadding: '0px'
+      centerPadding: '0px',
+      variableWidth: true
     });
 
     $('.selector').slick({

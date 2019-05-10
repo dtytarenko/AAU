@@ -6,25 +6,30 @@ $(document).ready(function () {
   $('.slider__preview').slick({
     asNavFor: '.slider__nav',
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToScroll: 1,
     slidesToShow: 1,
+    speed: 300,
     prevArrow: '<div class="prev"></div>',
     nextArrow: '<div class="next"></div>',
+    centerPadding: '0px',
+    centerMode: true,
+    variableWidth: true,
   });
-  
+
     $('.slider__nav').slick({
       arrows: false,
       asNavFor: '.slider__preview',
       dots: false,
       focusOnSelect: true,
-      infinite: true,
+      infinite: false,
       slidesToScroll: 1,
       slidesToShow: 4,
+      adaptiveHeight: true,
       speed: 0,
       swipe: false,
-      centerPadding: '0px',
-      variableWidth: true
+      vertical: true,
+      centerPadding: '0px'
     });
 
     $('.selector').slick({
@@ -34,18 +39,24 @@ $(document).ready(function () {
     });
 });
 
+$('.slider-for div.slick-list').css({height: '500px'});
 
 
 $(document).ready(function() {
   $('.photo__slider-wrap').click(function() {
       $(this).addClass('active');
-      $('.overlay-main').addClass('active');
+      moverlay.slideDown('fast');
   });
-  $('.photo__slider-close, .overlay-main').click(function() {
-    $('.photo__slider-wrap').removeClass('active');
-    $('.overlay-main').removeClass('active');
+  $('.photo__slider-close').click(function()
+  {
+    $(this).closest('.js-popup').removeClass('active');
+    moverlay.slideUp('fast');
     return false;
   });
+  moverlay.click(function()
+  {
+      $('.photo__slider-wrap').removeClass('active');
+  })
 });
 
 
