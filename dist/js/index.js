@@ -38,7 +38,6 @@ $(document).ready(function() {
         speed: 200,
         slidesToShow: 1,
         slidesToScroll: 1,
-        lazyLoad: 'ondemand'
     });
 
 
@@ -54,7 +53,6 @@ $(document).ready(function () {
         speed: 500,
         slidesToShow: 6,
         slidesToScroll: 1,
-        lazyLoad: 'ondemand',
         autoplay: true, 
         infinite: true,
         autoplaySpeed: 1500,
