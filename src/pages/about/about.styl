@@ -1426,3 +1426,64 @@
         p
             text-align: justify
             font-size 14px
+
+.surrogate__commmittee
+    max-width 290px
+    width 100%
+    height auto
+    display flex
+    flex-direction: column
+    margin-bottom 30px
+
+    img
+        width 100%
+        margin-top 0px
+        margin-bottom 0px
+    
+    p, .worker-name
+        text-transform uppercase
+        font-family 'HelveticaNeue-Black', sans-serif
+        font-size 18px
+        line-height 24px
+        color whiteColor
+
+    span, .worker-position
+        font-family 'HelveticaNeue-Roman', sans-serif
+        font-size 16px
+        color whiteColor
+        text-transform: none
+        line-height 16px
+    
+    .surrogate__commmittee-bio
+        background-color #2d3484
+        padding 10px 20px 10px
+
+        p, .worker-bio-text
+            color whiteColor
+            font-size 12px
+            text-align center
+            line-height 20px
+            font-family 'HelveticaNeue-Medium', sans-serif
+            text-transform: none
+
+    @media screen and (max-width 1280px)
+        max-width 260px
+        min-width 260px
+        margin-right 20px
+
+        img
+            min-height: 360px
+            height 360px
+            max-height 360px
+    
+    @media screen and (max-width 767px)
+        margin 0 auto 30px
+
+.surrogate__commmittee-info
+    height 80px
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+    background url('../img/staff/bottom__bg.png')
+

@@ -139,9 +139,13 @@ h1
 
 .blog-entry__wraptext
     margin-left 40px
+    display flex
+    flex 1 1 auto
+    flex-direction: column
+
     @media screen and (max-width: 1280px){
         width 100%
-        }
+    }
 
 .blog-entry__wraptext
         @media screen and (max-width: 510px) {
@@ -209,7 +213,7 @@ h1
     padding-right 25px
     max-height 60px
     text-overflow: ellipsis
-    width: 330px
+    width: 100%
     overflow: hidden
     min-height: 60px
     max-height: 60px
@@ -776,3 +780,7 @@ h1
             padding-bottom: 0
             
     
+.news-entry__wraptext.blog-entry__wraptext
+    flex 1 1 auto
+    flex-direction: column
+    display flex
