@@ -32,7 +32,7 @@ $(document).ready(function() {
         infinite: false,
         prevArrow: false,
         nextArrow: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         autoplaySpeed: 2000,
         speed: 200,

@@ -135,7 +135,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         lazyLoad: 'ondemand',
         autoplay: true,
-        infinite: true,
+        infinite: false,
         autoplaySpeed: 1500,
         responsive: [
         {
@@ -143,7 +143,7 @@ $(document).ready(function () {
             settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             dots: false
             }
         },
@@ -152,7 +152,7 @@ $(document).ready(function () {
             settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            infinite: true,
+            infinite: false,
             dots: false
             }
         },
@@ -174,5 +174,24 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+                }
+            },
+            ]
     });
 });
