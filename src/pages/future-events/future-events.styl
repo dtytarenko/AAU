@@ -908,8 +908,6 @@
         @media screen and (max-width 1280px)
             flex-wrap nowrap
             flex-direction column
-            max-width 280px
-                
 
 .event__speaker-personlist--item
     display flex
@@ -1212,10 +1210,20 @@
         background-position: center center
         background: url('../img/events/network-bg.png')
         transition .2s all ease-in-out
+        position relative
 
         &:hover
             background url('../img/events/network-bg-hover.png')
+        
+        img
+            position: absolute
+            top 50%
+            left 50%
+            transform: translate(-50%, -50%)
 
+        .default
+            display block
+        
         .hover
             display none
         
@@ -1232,12 +1240,24 @@
 
 
 .event__share-network--link:hover > .hover,
-.event__share-network--link:focus > .hover
+.event__share-network--link:focus > .hover,
+.event__share-network--link:active > .hover
+    visibility visible
+    opacity 1
     display block
-    
+
+// .event__share-network--link:visited > .event__share-network--img,
+// .event__share-network--link:visited .default
+//     display block
+
 .event__share-network--link:hover > .default
 .event__share-network--link:focus > .default
-    display none 
+    visibility hidden
+    opacity 0
+
+.event__share-network--link:visited .default
+    display block
+
 
 
 .partners-event__slider
@@ -1833,14 +1853,21 @@
             .tablet
                 display none
             
-            @media screen and (max-width 800px)
+            @media screen and (max-width 1660px)
                 .desktop
+                    display none
+                
+                .laptop
+                    display block
+            
+            @media screen and (max-width 800px)
+                .laptop
                     display none
                 
                 .tablet
                     display block
                 
-            @media screen and (max-width 767px)
+            @media screen and (max-width 500px)
                 .tablet
                     display none
                 
@@ -1857,10 +1884,6 @@
 .event__speaker-personlist.slick-initialized.slick-slider.slick-dotted
     .main-dots
         padding-top 0
-
-.intro-place-wrap
-    position absolute
-    bottom 60px
 
 
 .event__speaker-partnerlist--imgwrap

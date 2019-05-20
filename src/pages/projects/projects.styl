@@ -16,6 +16,8 @@
     color: #343537
     text-transform: none
 
+    
+
     @media screen and (max-width 767px)
         font-size 14px
         letter-spacing: normal
@@ -27,6 +29,20 @@
 
     .container
         flex-direction column
+    
+        img
+            @media screen and (max-width 1280px)
+                margin-left: 40px !important
+                margin-right: 40px !important
+                margin-bottom: 40px
+
+            @media screen and (max-width 767px)
+                max-width inherit 
+                width 100% !important
+                height auto !important
+                margin-left: auto !important
+                margin-right: auto !important
+                margin-bottom: 20px
 
 .section-projects__info
     display flex

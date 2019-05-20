@@ -33,7 +33,8 @@
             font-family: 'HelveticaNeue-Light'
             min-height: 43px
             display flex
-            align-items center
+            align-items flex-start
+            padding-top 10px
             padding-left 50px
             color: #4a4b4d
             box-sizing: border-box
@@ -100,6 +101,9 @@
     display flex
     width 100%
 
+    @media screen and (max-width: 1280px)
+        flex-direction: column
+
 .popup-btn
     height 60px
     font-family 'HelveticaNeue-Bold', sans-serif
@@ -107,6 +111,10 @@
 
     &:not(:last-of-type)
         margin-right 20px
+
+        @media screen and (max-width: 1280px)
+            margin-right 0
+            margin-bottom 15px
 //-----------------------end general styles------------------------
 
 //----------------------- START MEMBERSHIP INFO PAGE------------------------
@@ -216,6 +224,10 @@
         max-width: 400px
         width 100%
         height 75px
+        text-align center
+        display flex
+        align-items center
+        justify-content center
 
         &:first-of-type
             margin-right: 40px
