@@ -176,15 +176,10 @@
 	max-width 35%
 	width 100%
 	position relative
-	background url('../img/main/main-forum.jpg')
-	background-size cover
-	background-position center
 
 	@media screen and (max-width: 1280px) {
 		max-width none
 		width 100%
-		height 450px
-		background-size cover
 		display flex
 		align-items flex-end
 		justify-content center
@@ -873,3 +868,33 @@
 		color #fff
 		border 2px solid #5073b6
 
+.forum__media
+	background-color: #0080c6
+
+	.forum__media-img
+		object-fit: cover
+		width 100%
+		height 100%
+
+	.forum__media-img.desktop
+		display block
+	
+	.forum__media-img.tablet
+		display none
+	
+	.forum__media-img.mobile
+		display none
+	
+	@media screen and (max-width: 1280px)
+		.forum__media-img.desktop
+			display none
+		
+		.forum__media-img.tablet
+			display block
+		
+	@media screen and (max-width: 1280px)
+		.forum__media-img.tablet
+			display none
+		
+		.forum__media-img.mobile
+			display block

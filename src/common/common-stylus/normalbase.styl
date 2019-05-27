@@ -130,8 +130,6 @@ h1
     }
 
     img
-        min-width 180px
-        min-height 180px
         max-width 180px
         max-height 180px
         object-fit cover
@@ -387,15 +385,13 @@ h1
 
 @media screen and (max-width 1280px)
     .popup-wrap
-        position: absolute
-        top 90px
-        transform: translate(-50%, 0)
+        position: fixed
 
 @media screen and (max-width 767px)
     .popup-wrap
-        top 10px
-        left 10px
-        transform translate(0%, 0%)
+        // top 10px
+        // left 10px
+        // transform translate(0%, 0%)
         padding: 35px 20px
         max-width inherit
         width calc(100% - 20px)

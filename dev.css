@@ -155,7 +155,6 @@
 @media screen and (min-width: 760px) {
     .events-mainlist__item-img {
         max-width: 100%;
-        width: auto;
     }
 }
 .photo__slider-wrap.active .slider__nav .slider__nav-slide {
@@ -245,4 +244,21 @@ label.error {
 #modal {
     border: 2px solid #5073b6;
     max-width: 570px;
+}
+/*.news-entry__wrapimage.blog-entry__wrapimage {*/
+    /*overflow: hidden;*/
+/*}*/
+/*.news-entry__wrapimage.blog-entry__wrapimage img {*/
+    /*max-width: none;*/
+/*}*/
+.speakers-row.experts-row {
+    margin-top: 4px;
+}
+.speakers-row.experts-row .infolist-item__theme {
+    font-weight: bold;
+}
+.speakers-row.experts-row .infolist-item__title,
+.speakers-row.experts-row .speakers-company
+{
+    color: #3e3f40;
 }

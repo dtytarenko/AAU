@@ -1160,6 +1160,7 @@
         width 25px
         height 21px
         z-index 10
+        transform: rotate(180deg)
 
         @media screen and (max-width 767px)
             background-image url('../img/staff/active.png')
@@ -1250,9 +1251,14 @@
     
     @media screen and (max-width 767px)
         margin 0 auto 30px
+        max-width 300px
+        min-width 300px
     
-        .worker-img.desktop
+        .worker-img.mobile
             display block
+        
+        .worker-img.desktop
+            display none
         
     
    
@@ -1444,6 +1450,9 @@
     flex-direction: column
     margin-top 30px
 
+    .worker-img.mobile
+        display none
+
     img
         width 100%
         margin-top 0px
@@ -1482,6 +1491,12 @@
 
     @media screen and (max-width 767px)
         margin 0 auto 30px
+
+        .worker-img.mobile
+            display block
+        
+        .worker-img.desktop
+            display none
 
 .surrogate__commmittee-info
     height 80px

@@ -23,9 +23,10 @@ $(document).ready(function() {
     });
     $('.submenu-item').click(function() {
         $(this).children('.second-submenu').toggleClass('active');
+    });
+    $('.submenu-item').dblclick(function() {
         $(this).toggleClass('active');
     });
-    
 });
 
 
