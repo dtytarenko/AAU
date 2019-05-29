@@ -219,3 +219,6 @@ $(document).ready(function() {
     });
 });
 
+$('.dev-close').click(function() {
+    $(".develop").slideToggle('fast');
+});

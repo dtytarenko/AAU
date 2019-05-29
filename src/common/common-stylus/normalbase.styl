@@ -780,3 +780,71 @@ h1
     flex 1 1 auto
     flex-direction: column
     display flex
+
+.develop
+    background: linear-gradient(to bottom, rgb(68, 101, 168) 0%, rgb(118, 164, 216) 60%, rgb(175, 201, 236) 100%)
+    display flex
+    justify-content center
+    align-items center
+    position relative
+    flex-direction: column
+
+    p
+        margin 10px 20px 0px
+        font-size 16px
+        line-height 18px
+        color: #ffffff
+        white-space: pre-line
+        text-align center
+        font-family: 'HelveticaNeue-Roman',sans-serif
+
+        @media screen and (max-width 1280px)
+            white-space: inherit
+            margin-bottom 10px
+    
+    a
+        display block
+        font-family: 'HelveticaNeue-Bold',sans-serif
+        color: #ffffff
+        text-decoration: underline
+
+    .dev-close
+        max-width: 120px
+        margin 0 auto 10px
+        min-height: 40px
+    
+footer
+    .develop
+        position fixed
+        bottom: 0
+        left 0
+        width 100%
+        z-index 100
+    
+        .dev-close
+            position: absolute
+            top 20px
+            right 20px
+            background-image: url('../img/account/close.png')
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+            min-height: 15px
+            max-height 15px
+            max-width: 15px
+            min-width 15px
+            transition: all 0.3ms ease
+
+            &:hover
+                cursor pointer
+            
+            @media screen and (max-width 1280px)
+                top 10px
+                right 10px
+
+ 
+
+@media screen and (max-width 1280px)
+    header
+        .develop
+            margin-top 50px
