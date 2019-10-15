@@ -227,12 +227,27 @@
 
     @media screen and (max-width 1280px)
         flex-direction: column
+    
+    .project__btn-link.btn-template.btn-withoutbg
+        background-color: #5073b6
+        color: #fff
+        border: 2px solid #5073b6
+        text-align center
+
+        &:hover
+            background-color #fff
+            border-color #fff
+            color #5073b6
+    
+    .project__btn-link.btn-template.btn-withbg
+        text-align center
 
 .project__btn-link
     text-transform uppercase
     height 60px
     max-width 400px
-    width 100%
+    width 100% 
+    text-align center
 
     &:hover
         cursor pointer
@@ -240,6 +255,8 @@
     @media screen and (max-width 1280px)
         &:not(:last-child)
             margin-bottom 20px
+
+    
 
 .popup-wrap
     .separator
@@ -639,6 +656,13 @@
     margin-top 30px
     font-size 16px
     font-family 'Helvetica-Bold', sans-serif
+    border-radius: 0
+    -webkit-appearance none
+    -webkit-border-radius 0px
+    -webkit-appearance: none
+    appearance: none
+    border-radius: 0
+    box-shadow: none
 
     &:hover
         cursor pointer
@@ -710,6 +734,11 @@
         margin-top 50px
 
         .btn-template
+            -webkit-appearance: none
+            appearance: none
+            border-radius: 0
+            box-shadow: none
+
             &:first-of-type
                 margin-right 20px
 
@@ -801,3 +830,17 @@
 .vote__radio:checked ~ .vote__radio-checkmark:before
     z-index 10
     background-image url('../img/all/dots-active.png')
+
+.vote__submit.btn-template.btn-withoutbg,
+.popup-btn.btn-template.btn-withbg
+.popup-btn.btn-template.btn-withoutbg
+    border-radius: 0
+    appearance: none
+    border-radius: 0
+    box-shadow: none
+    -webkit-appearance none
+    -webkit-border-radius 0px
+    -webkit-appearance: none
+
+
+    
