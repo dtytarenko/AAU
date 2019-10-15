@@ -691,6 +691,10 @@
 			height 18px
 			background url('../img/all/intro-dots-actv.png') no-repeat
 
+@media screen and (max-width 1660px)
+    .intro-dots
+        bottom: 80px
+
 @media screen and (max-width 1280px)
     .intro-place-wrap
         margin-bottom 90px
@@ -1271,6 +1275,9 @@
     width 100%
     background-color: #f0f2f4
 
+    .container
+        padding-bottom: 0
+
 .partners-event__slide.slick-slide
     flex-direction: column
     display flex
@@ -1744,96 +1751,6 @@
             padding 0 20px
             box-sizing border-box
 
-
-
-// .intro-title:before 
-//     content ''
-//     display block
-//     width 180px
-//     height 131px
-//     background url('../img/all/logo.png') no-repeat
-//     position absolute
-//     top 60px
-//     left -20px
-//     margin-bottom 120px
-//     background-size cover
-    
-    
-//     @media screen and (max-width 1280px)
-//         display block
-//         position relative
-//         top 40px
-    
-
-
-// .intro-title
-//     display flex
-//     align-items center
-//     text-align center
-//     min-width 1020px
-//     text-align center
-//     justify-content center
-//     max-width inherit
-//     margin-left 50px
-
-//     @media screen and (max-width 1800px)
-//         min-width: 920px
-    
-//     @media screen and (max-width 1700px)
-//         min-width 820px
-//         max-width 820px
-    
-//     @media screen and (max-width 1600px)
-//         min-width 720px
-//         max-width: 720px
-    
-//     @media screen and (max-width 1500px)
-//         min-width: 630px
-//         max-width 630px
-    
-//     @media screen and (max-width 1400px)
-//         min-width 520px
-//         max-width 520px
-    
-//     @media screen and (max-width 1400px)
-//         min-width 480px
-//         max-width 480px
-    
-//     @media screen and (max-width 1280px)
-//         margin-left 0
-//         min-width inherit
-//         max-width inherit
-//         margin-bottom 20px
-
-// .intro-title__wrap
-//     display flex
-//     align-items center
-
-//     @media screen and (max-width 1280px)
-//         flex-direction column
-
-//     .intro-title__img
-//         width 180px
-//         height 131px
-//         margin-left: 200px
-//         margin-top 70px
-        
-//         @media screen and (max-width 1280px)
-//             margin-left 0
-        
-//         @media screen and (max-width 767px)
-//             width 130px
-//             height 101px
-
-
-// .intro-subtitle
-//     max-width 800px
-//     margin 0 auto
-//     text-align center
-
-//     @media screen and (max-width 1280px)
-//         margin-bottom 20px
-
 .intro-slider
     overflow: hidden
 
@@ -1921,6 +1838,7 @@
 
     .tpc-slider__slide--img.partners-event__slide-img, img
         width 80%
+        max-height: 180px
 
 .tcp-slider__wrap.partners-event__slider-wrap
     width 100%

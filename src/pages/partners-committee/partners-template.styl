@@ -78,29 +78,19 @@
         margin 20px 0
 
 .partners-template__list
-    display flex
-    justify-content: space-between
-    flex-flow: row wrap
+    display grid
+    width 100%
+    grid-template-columns: repeat(4, 1fr);
 
-    &:after
-        content: ""
-        flex: auto
-        
-        @media screen and (max-width: 600px)
-            display none    
+    @media screen and (max-width: 1360px)
+        grid-template-columns: repeat(3, 1fr);
     
-
-    @media screen and (max-width 1280px)
-        padding-left 40px
-        padding-right 40px
-        justify-content: space-around
+    @media screen and (max-width 980px)
+        grid-template-columns: repeat(2, 1.5fr);
+        justify-items: center
     
-    @media screen and (max-width 767px)
-        padding-left 0
-        padding-right: 0
-
-    @media screen and (max-width 600px)
-        justify-content: center
+    @media screen and (max-width: 620px)
+        grid-template-columns: repeat(1, 1.5fr);
 
     &-item
         max-width: 280px;
@@ -112,55 +102,7 @@
         display flex
         justify-content center
         align-items center
-
-        @media screen and (max-width 1280px)
-            min-width 290px
-            max-width 290px
-            min-height: 200px
-            height 200px
-            margin-bottom 40px
-
-        @media screen and (max-width 767px)
-            min-width 280px
-            max-height 280px
-            width 280px
-            height 190px
-            min-height 190px
-            margin-bottom 20px
-
-
-        &:nth-child(n+5)
-            margin-top 40px
-
-            @media screen and (max-width 1280px)
-                margin-top 0
-            
-        &:nth-last-child(2)
-            @media screen and (max-width: 1024px)
-                margin-left: 4.5em
-        
-        &:last-child
-            margin-left 0
-
-            @media screen and (max-width: 1280px)
-                margin-left 2.5em
-
-            @media screen and (max-width: 1200px)
-                margin-left: 1.5em
-            
-            @media screen and (max-width: 1110px)
-                margin-left: 4.5em
-            
-            @media screen and (max-width: 1024px)
-                margin-left: 9em
-
-            @media screen and (max-width: 769px)
-                margin-left: 0.5em
-
-            @media screen and (max-width: 600px)
-                margin-left 0
-
-            
+        margin-bottom: 40px
 
     &-item--img
         max-width: 235px
