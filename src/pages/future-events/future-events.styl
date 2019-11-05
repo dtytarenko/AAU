@@ -258,6 +258,7 @@
         display flex
         flex-direction column
         align-items center
+        justify-content: center
         font-family 'HelveticaNeue-Bold', sans-serif
         color whiteColor
         letter-spacing 0.1em
@@ -279,22 +280,20 @@
 
         &__time
             font-size 36px
-            padding-top 12px
 
             @media screen and (max-width 767px)
                 font-size 16px
                     
         &__month
-            font-size 18px
+            font-size 14px
             text-transform uppercase
 
             @media screen and (max-width 767px)
-                font-size: 12px
+                font-size: 10px
                 
         &__year
             font-size 24px
-            padding-top 3px
-            padding-bottom: 20px
+            padding-top 5px
 
             @media screen and (max-width 767px)
                 font-size 16px
@@ -572,7 +571,7 @@
 
 .main-about.container.index
 	padding-top: 40px
-	padding-bottom 0
+	padding-bottom 40px
 
 	.heading.about__article-title--wrap
 		.separator
@@ -1423,7 +1422,6 @@
 .event-program__infolist
     display flex
     flex-direction column
-    margin-top 60px
 
 .tabs
     .event-program__infolist
@@ -1434,30 +1432,28 @@
 
 .event-program__infolist-item
     display flex
-    padding-bottom 60px
     padding-left 20px
     position relative
-    margin-left: 10px
     border-left: 4px dotted #0080c6
+    border-bottom 2px solid #5073B6
+    border-right 2px solid #5073B6
 
     @media screen and (max-width 1280px)
         flex-direction column
         padding-bottom 20px
     
     @media screen and (max-width 767px)
-        border-left 0px
-
-    &:last-of-type
-        border-left none
+        border-left 2px solid #5073B6
+        padding-left 0
 
         &:before
-            left - 9px
+            left - 8px
 
     &:before
         content ''
         display block
         position absolute
-        top 0
+        top 10px
         left -13px
         background-image url('../img/events/hexagon-before.png') 
         background-position: center center
@@ -1467,16 +1463,23 @@
         height 20px
         z-index 10
 
+        @media screen and (max-width 767px)
+            display none
+
     .infolist-item__time
         font-family 'HelveticaNeue-Black', sans-serif
         font-size 20px
         color #3877bb
-        margin-right: 40px
+        padding-right 40px
+        border-right 2px solid #5073B6
+        padding-top 10px
+        padding-bottom: 10px
         max-width: 160px
         width 100%
 
         @media screen and (max-width 1280px)
             margin-right 20px
+            border-right 0
 
         @media screen and (max-width 767px)
             font-size 16px
@@ -1488,10 +1491,15 @@
         font-size 18px
         color #3e3f40
         letter-spacing: 0.2px
+        display flex
+        align-items center
 
         @media screen and (max-width 767px)
             font-size 14px
             line-height 24px
+        
+        p
+            padding-left 10px
 
 .infolist-item__row
     max-width 1060px
@@ -1505,6 +1513,10 @@
     
     .speakers-row
         display flex
+        border-bottom: 2px solid #5073B6
+
+        &:last-of-type
+            border-bottom: 0
 
         @media screen and (max-width 1280px)
             flex-direction column
@@ -1528,10 +1540,9 @@
 
 .infolist-item__column.theme,
 .infolist-item__theme
-    max-width 400px
+    max-width 440px
     width 100%
-    margin-right 40px
-    min-width 400px
+    min-width 440px
     
 
     @media screen and (max-width 1280px)
@@ -1542,6 +1553,20 @@
     @media screen and (max-width 767px)
         margin-top 10px
         min-width inherit
+
+.infolist-item__theme
+    padding-left 10px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-right 10px
+
+    &.infolist-item__theme_empty
+        border-right 0
+        border-bottom: 0
+
+.infolist-item__title
+    padding-left 10px
+    padding-top 10px
 
 .infolist-item__column.speakers
     .speakers-row
@@ -1839,6 +1864,10 @@
     .tpc-slider__slide--img.partners-event__slide-img, img
         width 80%
         max-height: 180px
+        
+        @media screen and (max-width: 767px)
+            width: 70%
+            max-height 150px
 
 .tcp-slider__wrap.partners-event__slider-wrap
     width 100%
@@ -1848,6 +1877,17 @@
         .infolist-item__title, h6
             margin-right 0
 
+.speakers-row
+    .infolist-item__title
+        border-left 2px solid #5073b6
+        
+        @media screen and (max-width 1280px)
+            border-left 0
+
+    .infolist-item__theme
+        .infolist-item__title
+            border-left 0
+            padding-top 0
 
 .speakers-company
     display block
@@ -1857,13 +1897,22 @@
     line-height 24px
     font-weight 600
     width 100%
+    border-left 2px solid #5073b6
+    padding-top 10px
+    padding-bottom: 10px
+    padding-left 10px
+
+    @media screen and (max-width 1280px)
+        border-left 0
 
     @media screen and (max-width 767px)
         font-size 14px
+        padding-left 0
 
 .event-program
     .tabs
         width 100%
+        max-width inherit
 
 
 .event__speaker-personlist.slick-initialized.slick-slider
