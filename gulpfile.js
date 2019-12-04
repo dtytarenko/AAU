@@ -24,7 +24,7 @@ gulp.task('css', () => {
 			'src/libs/**/*.css'
 		]) // массив путей
 		.pipe(plumber()) // отслеживание ошибок
-		.pipe(maps.init())
+		// .pipe(maps.init())
 		.pipe(stylus()) // для препроцессора css - stylus 
 		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'],
 		{ cascade: true })) // для кроссбраузерности
