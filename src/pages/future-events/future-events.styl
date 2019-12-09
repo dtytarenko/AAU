@@ -908,16 +908,8 @@
         box-sizing border-box
 
         @media screen and (max-width 1280px)
-            justify-content center
-            align-items center
+            display block
     
-    .event__speaker-personlist.slick-initialized.slick-slider
-        flex-wrap nowrap
-        max-height 500px
-        
-        @media screen and (max-width 1280px)
-            flex-wrap nowrap
-            flex-direction column
 
 .event__speaker-personlist--item
     display flex
@@ -926,6 +918,7 @@
 
     @media screen and (max-width 1280px)
         width 320px
+        display block
 
     &-img
         width 100%
@@ -1846,6 +1839,7 @@
 
 .event__speaker-personlist.slick-initialized.slick-slider.slick-dotted
     .main-dots
+        margin-top: 10px
         padding-top 0
         flex-wrap: wrap
         justify-content: flex-start
