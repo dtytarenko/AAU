@@ -7,7 +7,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "jquery.breadcrumbs-generator": "^1.0.3",
     "magnific-popup": "^1.1.0",
-    "npm": "^6.7.0",
+    "npm": "^6.14.6",
     "slick-carousel": "^1.8.1"
   },
   "version": "1.0.0",
